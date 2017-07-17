@@ -1,0 +1,2 @@
+Rally Movement: +1 Move[NL]
+to allies within 2 tiles.[X]

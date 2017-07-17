@@ -1,0 +1,3 @@
+//Label:
+//#incext PortraitFormatter "Zane.png"
+//setMugEntry(portrait index to be replaced, Label, mouthx, mouthy, eyex, eyey)

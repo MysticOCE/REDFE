@@ -1,0 +1,7 @@
+[OpenLeft][LoadFace][0xFF][0xFF]
+[OpenRight][LoadFace][0x61][0x01]
+Oh...[......][NL]
+You said there were bandits outside?[A][NL]
+We'll close the gates then.[NL]
+Please, take this.[A]
+[X]

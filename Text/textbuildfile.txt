@@ -1,0 +1,6 @@
+#include "Unit Text/RoyName.txt"
+#include "ItemChanges.txt"
+#include "statscreen_text.txt"
+#include "unitmenu_text.txt"
+#include "skilldesc_text.txt"
+#include "ChapterTexts.txt"

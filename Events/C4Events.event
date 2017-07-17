@@ -1,0 +1,122 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0x17,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Village(0x8,Village1C4,7,2)
+END_MAIN
+
+Village1C4:
+VillageEventItem(Ch4VillageText,Village,AngelicRobe) 
+
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [2,2] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [2,4] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [1,3] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+UNIT Salem Monk 0x0 Level(2, Ally, 0) [3, 1] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
+UNIT Priscilla Troubadour 0x0 Level(2, Ally, 0) [1,1] 0x00 0x00 0x0 0x00 [Heal, Vulnerary] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [1,5] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Ewan Pupil_1 0x0 Level(1,Ally,0) [4,2] 0x00 0x00 0x0 0x00 [Fire, Vulnerary] NoAI
+UNIT Radd Myrmidon 0x0 Level(4,Ally,0) [4,4] 0x00 0x00 0x0 0x00 [SteelSword,PoisonSword] NoAI
+UNIT Cain Cavalier 0x0 Level(4,Ally,0) [3,5] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT
+
+RoyCutscene:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [0,1] 0x00 0x00 0x1 RoyMovements [Rapier, Vulnerary] NoAI
+UNIT
+
+RoyMovements:
+REDA [3,3] 0x10 0x0 0x0 0x0 0x0
+
+
+HumanEnemies:
+UNIT Zonta Mercenary 0x0 Level(8,Enemy,0) [27,9] 0x00 0x00 0x0 0x00 [LightBrand] GuardTileAI
+UNIT 0x81 Knight_F 0x0 Level(4,Enemy,1) [25, 4] 0x00 0x00 0x0 0x00 [Javelin] GuardTileAI
+UNIT 0x81 Fighter 0x0 Level(4,Enemy,1) [26, 3] 0x00 0x00 0x0 0x00 [HandAxe] GuardTileAI
+UNIT 0x80 Fighter 0x0 Level(4,Enemy,1) [13,7] 0x00 0x00 0x0 0x00 [HandAxe] GuardTileAI
+UNIT 0x80 Mercenary 0x0 Level(4,Enemy,1) [16,8] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
+UNIT 0x80 Archer 0x0 Level(4,Enemy,1) [14,1] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI
+UNIT 0x80 Shaman 0x0 Level(4,Enemy,1) [12,9] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI
+UNIT 0x80 Soldier 0x0 Level(5,Enemy,1) [26,9] DropItem 0x00 0x0 0x00 [KillerLance] AttackInRangeAI
+UNIT
+
+
+Monsters:
+UNIT 0xAB Wight 0x0 Level(1,Enemy,1) [23,3] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI
+UNIT 0xAB Bonewalker 0x0 Level(2,Enemy,1) [10,4] 0x00 0x00 0x0 0x00 [IronSword] DefaultAI
+UNIT 0xAB Bonewalker 0x0 Level(2,Enemy,1) [9,3] 0x00 0x00 0x0 0x00 [IronLance] DefaultAI
+UNIT 0xAB Mogall 0x0 Level(2, Enemy,1) [14,11] 0x00 0x00 0x0 0x00 [EvilEye] AttackInRangeAI
+UNIT 0xAB Mogall 0x0 Level(2, Enemy,1) [16,11] 0x00 0x00 0x0 0x00 [EvilEye] AttackInRangeAI
+UNIT 0xAB Mogall 0x0 Level(2, Enemy,1) [15,10] 0x00 0x00 0x0 0x00 [EvilEye] AttackInRangeAI
+UNIT 0xAB Tarvos 0x0 Level(4, Enemy, 0) [29,4] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0xAB Tarvos 0x0 Level(4, Enemy, 0) [29,5] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT
+
+
+BeginningScene:
+LOAD2 0x1 RoyCutscene
+ENUN
+TEXTSTART
+SetBackground(Plain_Fog)
+TEXTSHOW C4OpeningText
+TEXTEND
+ClearBackground
+REMA
+FADU 10
+MUSC Tension
+TEXTSTART
+SetBackground(Plain_Fog)
+TEXTSHOW ZontaSoldierTalk
+TEXTEND
+ClearBackground
+REMA
+LOAD2 0x1 Monsters
+LOAD2 0x1 HumanEnemies
+LOAD2 0x1 Units
+FADU 30
+ENDA
+
+EndingScene:
+MoveToChapter(Ch5)
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET

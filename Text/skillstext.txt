@@ -1,0 +1,71 @@
+#0x3A SS_TalkText
+Talk[X]
+
+#0x3B SS_SkillsText
+Skills[X]
+
+#0x3C LearnedSkillText
+Learned  [X]
+
+#0x3D SS_TalkRText
+Character with whom this unit may[NL]
+talk to on the battlefield.[X]
+
+#0x3E SS_SkillsRText
+Special abilities that can do[NL]
+many different things.[X]
+
+#0x3F SS_SkillsDefaultRText
+No skill description found.[X]
+
+#0x40 SD_Savior
+Savior: Can rescue[NL]
+without penalties.[X]
+
+#0x41 SD_Str2
+Strength-2: Strength is[NL]
+reduced by 2.[X]
+
+#0x42 SD_Mistwalker
+Mistwalker: All traversable[NL]
+terrain costs 1 movement.[X]
+
+#0x43 SD_Pass
+Pass: Can move through[NL]
+enemy units.[X]
+
+#0x44 SD_CantoPlus
+Canto+: Infantry gain Canto,[NL]
+mounts can move after attack.[X]
+
+#0x45 SD_WaryFighter
+Wary Fighter: Unit cannot[NL]
+double or be doubled.[X]
+
+#0x46 SD_SureShot
+Sure Shot: Always hit,[NL]
+but cannot crit.[X]
+
+#0x47 SD_Provoke
+Provoke: Enemies are more[NL]
+likely to target this unit.[X]
+
+#0x48 SD_Mercy
+Mercy: Enemies are left[NL]
+with at least 1 HP.[X]
+
+#0x49 SD_Frenzy
+Frenzy: For every 4 damage[NL]
+taken, +1 to damage dealt.[X]
+
+#0x4a SD_Canto
+Canto: Can move again[NL]
+after certain actions.[X]
+
+#0x4b SD_Steal
+Steal: Can steal items, pick[NL]
+locks, and see in darkness.[X]
+
+#0x4c SD_Lethality
+Lethality: Instantly kill opponent.[NL]
+(Crit/2 % activation)[X]

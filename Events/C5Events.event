@@ -1,0 +1,163 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0x21,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+CharacterEvent(0x5,RoyRecruitsLukas,Roy,Lukas)
+END_MAIN
+
+LocationBasedEvents:
+House(0x10,C5YellowVillage,18,8)
+Village(0x7, C5HeroCrest, 20,8)
+Village(0x8, C5Halberd, 19,1)
+Village(0x9, C5XaneRecruitment, 9,1)
+END_MAIN
+
+MiscBasedEvents:
+//AREA 0x6 HurrDurr [0,9] [1,9]
+CauseGameOverIfLordDies
+END_MAIN
+
+C5XaneRecruitment:
+CHECK_ACTIVE //gets char id in slot C
+SETVAL 0x2 0x3//setting dorcas's id in slot 2
+IFEQ 0x0 0xC 0x2
+TEXTSTART
+SetBackground(HouseBG)
+TEXTSHOW C5XaneVillageDorcas
+TEXTEND
+ClearBackground
+REMA
+LOAD1 0x1 XaneRecruit
+ENUT 0x9
+ELSE 0x1
+ENIF 0x0
+TEXTSTART
+SetBackground(HouseBG)
+TEXTSHOW C5XaneVillageNotDorcas
+TEXTEND
+ClearBackground
+REMA
+ENIF 0x1
+ENDA
+
+XaneRecruit:
+UNIT Xane Brigand 0x0 Level(4,Ally,0) [9,2] 0x00 0x0 0x0 0x0 [IronAxe] NoAI
+UNIT
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+BLST [15,2] 0x35
+ENDTRAP
+
+ALIGN 4
+
+RoyRecruitsLukas:
+Text(RoyLukasWhatTheHell)
+TurnNPC(Lukas)
+MOVE 0x10 Lukas [0,3]
+ENUN
+DISA Lukas
+ENDA
+
+C5Halberd:
+VillageEventItem(C5HalberdVillage,HouseBG,Halberd)
+ENDA
+
+C5HeroCrest:
+VillageEventItem(C5HeroCrestVillage,HouseBG,HeroCrest)
+ENDA
+
+C5YellowVillage:
+HouseEvent(C5YellowVillageText,HouseBG)
+ENDA
+
+Units:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [3,10] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [4,9] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [5,10] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [4,11] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+UNIT Salem Monk 0x0 Level(2, Ally, 0) [5, 12] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
+UNIT Priscilla Troubadour 0x0 Level(2, Ally, 0) [3,12] 0x00 0x00 0x0 0x00 [Heal, Vulnerary] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [2,9] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Ewan Pupil_1 0x0 Level(1,Ally,0) [1,10] 0x00 0x00 0x0 0x00 [Fire, Vulnerary] NoAI
+UNIT Radd Myrmidon 0x0 Level(4,Ally,0) [2,11] 0x00 0x00 0x0 0x00 [SteelSword,PoisonSword] NoAI
+UNIT Cain Cavalier 0x0 Level(4,Ally,0) [1,12] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT
+
+/*HurrDurr:
+Text(0x950)
+ENUT 0x6
+ENDA*/
+
+LukasBoss:
+UNIT Lukas Knight 0x0 Level(8,Enemy,0) [3,2] DropItem 0x00 0x0 0x0 [SilverLance,Javelin,KnightCrest] GuardTileAI
+UNIT Bernard General 0x0 Level(1,Enemy,0) [3,3] 0x0 0x0 0x0 0x0 [SilverAxe] NoAI
+UNIT
+
+
+RudeDudes:
+UNIT 0x80 Priest 0x0 Level(4,Enemy,1) [2,4] DropItem 0x0 0x0 0x0 [Physic] HealUnits
+UNIT 0x80 Soldier 0x0 Level(4, Enemy, 1) [14,8] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT 0x80 Soldier 0x0 Level(4, Enemy, 1) [16,8] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT 0x81 Knight_F 0x0 Level(6, Enemy, 1) [15,9] 0x0 0x0 0x0 0x0 [Javelin, RedGem] GuardTileAI
+UNIT 0x80 Mercenary 0x0 Level(5, Enemy, 1) [11,11] 0x0 0x0 0x0 0x0 [IronSword] DefaultAI
+UNIT 0x80 Soldier 0x0 Level(5,Enemy,1) [10,10] 0x0 0x0 0x0 0x0 [IronLance] DefaultAI
+UNIT 0x80 Fighter 0x0 Level(5, Enemy,1) [11,9] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
+UNIT 0x82 Archer 0x0 Level(4, Enemy,1) [15,2] 0x0 0x0 0x0 0x0 [IronBow] GuardTileAI
+UNIT
+
+BeginningScene:
+LOAD2 0x1 Units
+LOAD2 0x1 RudeDudes
+CAM1 [3,3]
+TEXTSTART
+TEXTSHOW Memes
+TEXTEND
+REMA
+LOAD1 0x1 LukasBoss
+FADI 10
+TEXTSTART
+SetBackground(Town_Day)
+TEXTSHOW LukasBernardIsThisRight
+TEXTEND
+ClearBackground
+REMA
+FADU 10
+MOVE 0x10 Lukas [3,1]
+ENUN
+MOVE 0x10 Bernard [0,3]
+ENUN
+DISA Bernard
+NoFade
+ENDA
+
+EndingScene:
+MoveToChapter(Ch6)
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET

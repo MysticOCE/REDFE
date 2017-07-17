@@ -1,0 +1,108 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0xa,C1Events)
+
+C1Events:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+
+Units:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [15, 12] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [16,11] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI 
+UNIT Breguet Knight 0x0 Level(4, Enemy, 0) [3,4] 0x00 0x00 0x0 0x00 [SteelLance] GuardTileAI
+UNIT 0x80 Knight Breguet Level(5, Enemy, 0) [9,7] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x80 Shaman Breguet Level(2, Enemy, 0) [8,6] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI
+UNIT 0x80 Mercenary Breguet Level(3, Enemy, 0) [15,8] DropItem 0x00 0x0 0x00 [IronSword] DefaultAI
+UNIT 0x80 Fighter Breguet Level(3, Enemy, 0) [12,9] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 0) [2,5] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 0) [4,5] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI
+UNIT 0x80 Fighter Breguet Level(2, Enemy, 0) [13,6] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0x80 Mercenary Breguet Level(3, Enemy, 0) [2,7] 0x00 0x00 0x0 0x00 [IronSword] ChaseOnceApproachedAI
+UNIT
+
+TurnBasedEvents:
+TurnEventPlayer(0,Recruitment,2)
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Seize(3,4)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+BeginningScene:
+MUSC Tension
+LOAD1 0x1 Units
+ENUN
+CAM1 Roy
+TEXTSTART
+TEXTSHOW C1OpeningText
+TEXTEND
+REMA
+CAM1 Breguet
+TEXTSTART
+TEXTSHOW BreguetWantsToKillRoy
+TEXTEND
+REMA
+FADU 30
+ENDA
+
+EndingScene:
+//LOAD1 0x1 PrisArtur
+MUSC Victory
+Text(Castle_Hall, C1EndingText)
+REMA
+MNCH Ch2
+ENDA
+
+Recruits:
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [19,6] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [18,6] 0x00 0x00 0x0 0x00 [SteelAxe, HandAxe, Vulnerary] NoAI
+UNIT
+
+PrisArtur:
+UNIT Priscilla Troubadour 0x0 Level(2, Ally,0) [1,1] 0x00 0x00 0x0 0x00 [Heal, Vulnerary] NoAI
+UNIT Salem Monk 0x0 Level(3, Ally, 0) [2,2] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
+UNIT
+
+Recruitment:
+MUSC Comrades
+LOAD1 0x1 Recruits
+FlashCursor(Anna,64)
+ENUN
+TEXTSTART
+TEXTSHOW AnnaDorcasJoin
+TEXTEND 
+REMA
+ENDA
+
+MESSAGE C1Events end at offset CURRENTOFFSET

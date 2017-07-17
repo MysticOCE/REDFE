@@ -1,0 +1,17 @@
+#0x0A33 innes_speech
+[OpenMidLeft][LoadFace][0x3A][0x01][OpenMidLeft]Yahh[ToggleMouthMove]...!?[.][ToggleMouthMove][A][NL]
+You! You're[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
+Prince Innes![.][A][OpenMidLeft][ClearFace][OpenMidRight][LoadFace][0x0F][0x01][OpenMidRight][ToggleMouthMove]...[.][ToggleMouthMove]You're one of Carcino's[.][NL]
+councilmen.[.][A][NL]
+Trying to trap me is a mistake.[.][NL]
+Failing, an expensive one.[A][NL]
+I think it's time for you to[NL]
+learn how expensive.[A][OpenMidRight][ClearFace][X]
+
+#0x0A34
+[OpenMidLeft][LoadFace][0x3A][0x01][OpenMidLeft]No one can withstand the
+might of Grado[ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
+Logic dictates we join now[NL]
+or be subjugated later.[.][A][NL]
+I made the rational decision.[.][NL]
+The only decision![A][OpenMidLeft][ClearFace][X]

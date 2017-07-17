@@ -1,0 +1,25 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 10.1.1.0                              //
+// Game: FE8                                      //
+// File: FE8Clean.gba                             //
+// Offset: $A39D44                                //
+//                                                //
+////////////////////////////////////////////////////
+
+
+
+ORG $A39D44
+EVBIT_MODIFY 0x1 //Don't touch
+WM_SPAWNLORD 0x0 0x0 0x1 0x2 0x0 // WM_SPAWNLORD 0x0 0x0 0xYY 0xZZ 0x0 YY = main lord. ZZ = just completed chapter
+WM_LOADLOCATION2 0x0 0x01 0x0 //Silently and instantly load world map location. All three XX's should be the same. Remember that this XX should be the world map location offset and be the same location thechapter occurs in vanilla FE8
+WM_SETDESTINATION 0x0 0x01 0x0 //Sets WM destination
+_0xA640 0x0 0x0 0x01 //sets your position to that place
+SKIPWN
+ENDA
+ENDA
+
+//The next line is for re-assembling purposes. Do not delete!
+MESSAGE Original ending offset is $A39DB4 and the new ending offset is CURRENTOFFSET

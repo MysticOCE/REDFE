@@ -1,0 +1,8 @@
+#define DeathQuoteTable(index,Character,Chapter,TextPointer,EventPointer,TriggerID) "PUSH; ORG DQTableOffset+(16*index); BYTE Character Chapter 0x0 0x0; SHORT TextPointer 0x0; POIN EventPointer; BYTE TriggerID 0x0 0x0 0x0; POP"
+#define DeathQuoteTable(index,Character,TextPointer,EventPointer,TriggerID) "PUSH; ORG DQTableOffset+(16*index); BYTE Character 0x43 0x0 0x0; SHORT TextPointer 0x0; POIN EventPointer; BYTE TriggerID 0x0 0x0 0x0; POP"
+#define BattleQuoteTable(index,Character1,Character2,Chapter,TextPointer,EventPointer,ID) "PUSH; ORG BQTableOffset+(16*index); BYTE Character1 Character2 Chapter 0x0; SHORT TextPointer 0x0; POIN EventPointer; BYTE ID 0x0 0x0 0x0; POP"
+
+MESSAGE Putting Quotes at CurrentOffset table is at DQTableOffset
+
+BattleQuoteTable(0x68,Colm,Bazba,0x3,0x00,BazbaRaddBossQuote,0x6)
+BattleQuoteTable(0x69,Bazba,Colm,0x3,0x00,BazbaRaddBossQuote,0x6)

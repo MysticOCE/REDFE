@@ -1,0 +1,6 @@
+#include eastdlib.event
+
+ORG 0xB2A610 //or whatever free space
+//Include music
+#include "Music Installer.event"
+#include "FE8EssentialFixes.event"

@@ -1,0 +1,47 @@
+
+ALIGN 4
+#include "../Event Assembler/Tools/Tool Helpers.txt"
+RoyMug:
+#incext PortraitFormatter "Roy6.png"
+setMugEntry(0x02, RoyMug, 3, 6, 3, 4)
+
+AlanMug:
+#incext PortraitFormatter "Alan3.png"
+setMugEntry(0x04, AlanMug, 3, 5, 3, 3)
+
+DorcasMug:
+#incext PortraitFormatter "Dorcas2.png"
+setMugEntry(0x05, DorcasMug, 2, 4, 3, 2)
+
+AnnaMug:
+#incext PortraitFormatter "Anna2.png"
+setMugEntry(0x06, AnnaMug, 3, 6, 3, 4)
+
+PriscillaMug:
+#incext PortraitFormatter "Priscilla2.png"
+setMugEntry(0x07, PriscillaMug, 2, 6, 3, 4)
+
+SalemMug:
+#incext PortraitFormatter "BlueyLexouSalem.png"
+setMugEntry(0x08, SalemMug, 3, 5, 3, 3)
+
+LeilaMug:
+#incext PortraitFormatter "Leila2.png"
+setMugEntry(0x0E, LeilaMug, 2, 6, 3, 4)
+
+ElbertMug:
+#incext PortraitFormatter "Elbert2.png"
+setMugEntry(0x0A, ElbertMug, 2,5,3,3)
+
+CainMug:
+#incext PortraitFormatter "ZmrCain.png"
+setMugEntry(0x0F, CainMug, 3, 5, 2,3)
+
+RaddMug:
+#incext PortraitFormatter "BlueyRadd.png"
+setMugEntry(0x0C, RaddMug, 3,6,3,4)
+
+BernardMug:
+#incext PortraitFormatter "Bernard2.png"
+setMugEntry(0x1A, BernardMug, 2,5, 3,2)
+

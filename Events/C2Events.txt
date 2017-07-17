@@ -1,0 +1,146 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0x0D,C2Events)
+
+C2Events:
+POIN TurnBasedEvents2
+POIN CharacterBasedEvents2
+POIN LocationBasedEvents2
+POIN MiscBasedEvents2
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene2 EndingScene2
+
+TurnBasedEvents2:
+TURN 0x0 C2Reinforcements [2,0] 0x0
+TURN 0x0 BanditsWantRevenge [3,0] 0x0
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents2:
+END_MAIN
+
+C2Reinforcements:
+ReinforcementEvent(C2ReinforcementsUnits)
+ENDA
+
+C2ReinforcementsUnits:
+UNIT 0x80 Brigand 0x0 Level(2,Enemy,1)[1,0] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+//UNIT 0x80 Mercenary 0x0 Level(2, Enemy, 1) [8,0] 0x00 0x00 0x0 0x00 [IronSword] DefaultAI
+//UNIT 0x80 Archer 0x0 Level(2, Enemy, 1) [9,0] 0x00 0x00 0x0 0x00 [IronBow] DefaultAI
+UNIT
+
+RecruitsC2:
+UNIT Ewan Pupil_1 0x0 Level(1,Ally,0) [12,2] 0x00 0x00 0x1 EwanMovements [Fire, Vulnerary] NoAI
+UNIT Leila Thief 0x0 Level(3,Ally,0) [12,2] 0x00 0x00 0x1 LeilaMovements [IronSword, Lockpick] NoAI
+UNIT
+
+LeilaMovements:
+REDA [12,3] 0x10 0x0 0x0 0x0 0x0
+
+EwanMovements:
+REDA [13,3] 0x10 0x0 0x0 0x0 0x0
+
+
+LocationBasedEvents2:
+Armory(ArmoryC2,5,11)
+Vendor(VendorC2,4,10)
+Village(0x8,Village1C2,12,2)
+END_MAIN
+
+ArmoryC2:
+SHLI 0x01 0x02 0x14 0x15 0x1C 0x1F 0x28 0x2D
+
+VendorC2:
+SHLI 0x38 0x3F 0x4B 0x6C
+
+Village1C2:
+VillageEventItem(Ch2VillageText,Village,IronBlade) 
+
+MiscBasedEvents2:
+DefeatAll(EndingScene2)
+CauseGameOverIfLordDies
+END_MAIN
+
+BanditsWantRevenge:
+LOAD2 0x1 Avengers
+ENUN
+CAM1 [2,10]
+STAL 60
+TEXTSTART
+TEXTSHOW Ch2AvengersText
+TEXTEND
+REMA
+ENDA
+
+
+Avengers:
+UNIT Bone Brigand 0x0 Level(4,Enemy,1) [2,13] 0x00 0x00 0x0 0x00 [SteelAxe] PursueWithoutHeedAI
+UNIT 0x8E Archer 0x0 Level(3,Enemy,1) [1,14] 0x00 0x00 0x0 0x00 [IronBow] PursueWithoutHeedAI
+UNIT 0x8E Brigand 0x0 Level(3,Enemy,1) [3,14] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
+UNIT
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT
+
+Good:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [2, 12] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [3,11] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [1,11] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [4,12] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+UNIT Salem Monk 0x0 Level(2, Ally, 0) [1, 13] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
+UNIT Priscilla Troubadour 0x0 Level(2, Ally, 0) [3,13] 0x00 0x00 0x0 0x00 [Heal, Vulnerary] NoAI
+UNIT 0x8E Brigand 0x0 Level(3, Enemy, 0) [1, 1] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0x8E Mercenary 0x0 Level(3, Enemy, 1) [2,8] 0x00 0x00 0x0 0x00 [IronSword] DefaultAI
+UNIT 0x8E Archer 0x0 Level(2, Enemy, 1) [3,7] 0x00 0x00 0x0 0x00 [IronBow] DefaultAI
+UNIT 0x8E Fighter 0x0 Level(3, Enemy, 1) [9,3] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0x8E Mage 0x0 Level(2, Enemy, 1) [5,2] 0x00 0x00 0x0 0x00 [Fire] DefaultAI
+UNIT 0x8E Brigand 0x0 Level(3, Enemy, 1) [2,3] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0x8E Mercenary 0x0 Level(2,Enemy,1) [4,3] 0x00 0x00 0x0 0x00 [IronSword] DefaultAI
+UNIT
+
+BeginningScene2:
+LOAD2 0x1 Good
+MUSC Tension
+CAM1 [7,4]
+LOAD1 0x1 RecruitsC2
+TEXTSTART
+TEXTSHOW LeilaEwanRecruit
+TEXTEND
+REMA
+CAM1 Roy
+FlashCursor(Roy,30)
+MUSC 0x9
+STAL 60
+TEXTSTART
+TEXTSHOW Ch2RoyStartText
+TEXTEND
+REMA
+FADU 30
+ENDA
+
+EndingScene2:
+MUSC Advance
+Text(Outside_Village_Day,Ch2EndingSceneTextLeilaAlive)
+REMA
+MoveToChapter(Ch3)
+ENDA
+
+MESSAGE C2Events end at offset CURRENTOFFSET

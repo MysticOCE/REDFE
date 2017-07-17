@@ -1,0 +1,1 @@
+#incext Png2Dmp "AlanCav.png" --palette-only

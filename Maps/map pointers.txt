@@ -1,0 +1,5 @@
+C1 - 0x8
+C2 - 0xB for main map, 0xC for map changes
+C3 - 0x11 for main map, 0x13 for changes
+C4 - 0x15 for main map, 0x16 for map changes
+C5 - 0x1f for main map, 0x20 for map changes

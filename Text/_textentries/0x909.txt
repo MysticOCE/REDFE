@@ -1,0 +1,2 @@
+Trample: +5 damage to[NL]
+unmounted units.[X]

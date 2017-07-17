@@ -1,0 +1,4 @@
+[OpenMidRight][LoadFace][0x02][0x01]
+That seems to be the last of them.[NL]
+Best to continue on our way then.[A]
+[X]

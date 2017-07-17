@@ -1,0 +1,2 @@
+Tomefaire: +4 damage[NL]
+when equipping a tome.[X]

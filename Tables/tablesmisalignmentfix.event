@@ -1,0 +1,9 @@
+#include "Skills\FE8 Class Skill Editor.event"
+ALIGN 4
+#include "Skills\FE8 Level Up Skill Editor.event"
+
+#include "Skills\FE8 Personal Skill Editor.event"
+ALIGN 4
+#include "Skills\FE8 Skill Animation Editor.event"
+ALIGN 2
+#include "Skills\FE8 Skill Description Editor.event"

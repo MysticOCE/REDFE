@@ -1,0 +1,2 @@
+Wrath: If HP < 50%,[NL]
++20 critical rate.[X]

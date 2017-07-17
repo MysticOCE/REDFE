@@ -1,0 +1,2 @@
+Charm: Allies within 2[NL]
+tiles deal +2 damage.[X]

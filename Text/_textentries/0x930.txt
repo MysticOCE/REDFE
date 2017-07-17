@@ -1,0 +1,2 @@
+Critical Force: Base critical is[NL]
+Skl * 1.5.[X]

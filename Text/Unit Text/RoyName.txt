@@ -1,0 +1,74 @@
+# 0x212
+Roy[X]
+
+# 0x26e
+The next heir to Frelia.[NL]
+The protagonist of this story.[X]
+
+# 0x213
+Alan[X]
+
+# 0x26f
+A knight serving Frelia.[NL]
+Hot-headed, but loyal.[X]
+
+# 0x214
+Dorcas[X]
+
+# 0x270
+A man from a small village in Frelia.[NL]
+Currently serving as a soldier of Frelia.[X]
+
+# 0x215
+Anna[X]
+
+# 0x271
+A mercenary currently employed by Frelia.[NL]
+Cheery but values gold above all.[X]
+
+# 0x216
+Priscilla[X]
+
+# 0x272
+A retainer of Frelia.[NL]
+Quiet and trusting.[X]
+
+# 0x217
+Salem[X]
+
+# 0x273
+A mysterious mage in[NL]
+service of Frelia.[X]
+
+# 0x21b
+Leila[X]
+
+# 0x277
+A spy in service to Frelia.[X]
+
+# 0x219
+Elbert[X]
+
+# 0x275
+The King of Frelia.[NL]
+Stern but kind.[X]
+
+# 0x21A
+Radd[X]
+
+# 0x276
+A young mercenary formerly from[NL]
+from Renais. Fights for his family.[X]
+
+# 0x21C
+Cain[X]
+
+# 0x278
+A knight in service to Frelia.[NL]
+Known as the Bull.[X]
+
+# 0x404 
+Savage[X]
+
+# 0x405
+Scary[.][X]

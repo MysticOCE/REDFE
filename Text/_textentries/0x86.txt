@@ -1,0 +1,2 @@
+Spur Strength: Adjacent allies[NL]
+deal +4 physical damage.[X]

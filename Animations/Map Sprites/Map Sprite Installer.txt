@@ -1,0 +1,6 @@
+MapRoyLord:
+#incext Png2Dmp "Roy Standing.png" --lz77
+//originally 0x81b79d4
+MapRoyLordMove:
+#incext Png2Dmp "Roy Moving.png" --lz77
+//0x81c3ed4

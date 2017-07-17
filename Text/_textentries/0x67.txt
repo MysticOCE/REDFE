@@ -1,0 +1,2 @@
+Death Blow: +20 Crit[NL]
+when initiating battle.[X]

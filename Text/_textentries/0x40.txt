@@ -1,0 +1,2 @@
+Press Select to toggle[NL]
+between stats and growths.[X]
