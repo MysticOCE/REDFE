@@ -45,7 +45,7 @@ beq End
 
 ldrb r0, [r4, #0x15] @skill/2 stat as activation rate
 lsr r0, #1
-mov r1, #0 @some param
+mov r1, r4 @skill user
 blh d100Result
 cmp r0, #1
 bne End

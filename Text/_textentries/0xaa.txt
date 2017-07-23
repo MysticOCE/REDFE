@@ -1,2 +1,2 @@
-Anathema: -10 Avoid/Dodge to all[NL]
-enemies within 3 tiles.[X]
+Lunge: Swap places with the[NL]
+opponent after combat.[X]

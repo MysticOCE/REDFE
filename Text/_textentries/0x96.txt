@@ -1,2 +1,2 @@
-Rally Resistance: +4 Res[NL]
-to allies within 2 tiles.[X]
+Nihil: Cancels the opponent's[NL]
+skills in combat.[X]

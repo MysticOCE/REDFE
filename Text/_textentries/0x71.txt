@@ -1,2 +1,2 @@
-Miracle: Survive a lethal[NL]
-attack if HP > 50%.[X]
+Duelist's Blow: +30 Avo[NL]
+when initiating battle.[X]

@@ -4,3 +4,9 @@ MapRoyLord:
 MapRoyLordMove:
 #incext Png2Dmp "Roy Moving.png" --lz77
 //0x81c3ed4
+MapAxeCavalierMove:
+#incext Png2Dmp "Axe Cav Moving.png" --lz77
+//0x81e06e4
+MapAxeCavalierStand:
+#incext Png2Dmp "New Axe Cav Stand.png" --lz77
+//0x81bb580

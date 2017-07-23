@@ -1,2 +1,2 @@
-Adept: Gain a consecutive attack.[NL]
-(Speed % activation)[X]
+Push an adjacent unit one[NL]
+tile away.[X]

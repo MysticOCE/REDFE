@@ -1,2 +1,2 @@
-Killing Machine: Total critical[NL]
-rate is doubled.[X]
+Seal Defense: Debuff opponent's Def[NL]
+by 6 after combat. (Recover 1/turn)[X]

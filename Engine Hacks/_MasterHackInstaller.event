@@ -18,7 +18,6 @@ PUSH
 	BYTE 0x1A
 POP
 
-
 ////////////////////////////////FREE SPACE WITHIN BL RANGE
 PUSH
 ORG FreeSpaceBLRange //defined in custom definitions
@@ -48,9 +47,6 @@ ORG FreeSpaceBLRange //defined in custom definitions
   //clears the gamble/lunge/mercy when cancelling out of attack menu
   Unset_Attack_Flag:
   #incbin "Skill System/Internals/unset attack flag.dmp"
-
-  //modular stat getters
-  #include "ModularStatGetters/InstallBLRange.event"
 
   //page 4 helptext
   RText_Page4_ladder:
@@ -139,7 +135,10 @@ POP
   #include "FE8-Battle Stats with Anims Off/FE8-Battle Stats Master EA File.event"
 
   ALIGN 4
-  #include "ModularStatGetters.event"
+  #include "MSG/InstallCore.event"
+  #include "MSG/InstallHelpers.event"
+  
+  #include "StatGetters/_InstallStatGetters.event"
 
 ALIGN 4
 
@@ -201,6 +200,13 @@ ALIGN 4
   UM_Vendor
   UM_Secret
   UM_Arena
+  
+  // Shove & cie
+  MenuCommand(UM_Shove,      UM_ShoveDesc,      NormalText, prShoveCommand_Usability,      prShoveCommand_Effect)
+  MenuCommand(UM_Smite,      UM_SmiteDesc,      NormalText, prSmiteCommand_Usability,      prSmiteCommand_Effect)
+  MenuCommand(UM_Pivot,      UM_PivotDesc,      NormalText, prPivotCommand_Usability,      prPivotCommand_Effect)
+  MenuCommand(UM_Reposition, UM_RepositionDesc, NormalText, prRepositionCommand_Usability, prRepositionCommand_Effect)
+  MenuCommand(UM_Swap,       UM_SwapDesc,       NormalText, prSwapCommand_Usability,       prSwapCommand_Effect)
   
   UM_Rescue
   UM_Give

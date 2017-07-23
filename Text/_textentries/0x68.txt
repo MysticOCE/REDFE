@@ -1,2 +1,2 @@
-Darting Blow: +5 Attack Speed[NL]
-when initiating battle.[X]
+Astra: 5 attacks at half damage.[NL]
+(Skill % activation)[X]

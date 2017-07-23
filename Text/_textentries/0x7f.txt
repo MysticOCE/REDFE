@@ -1,2 +1,2 @@
-Demoiselle: Male allies within[NL]
-2 tiles receive -2 damage.[X]
+Axefaire: +4 damage[NL]
+when equipping an axe.[X]

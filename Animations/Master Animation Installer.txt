@@ -29,6 +29,16 @@
   #include "Map Sprites/Map Sprite Installer.txt"
   #include "RoyLord/RoyLordDisarm Installer.event"
   #include "RoyLord/RoyLordSword Installer.event"
+  #include "AxeCav/AxeKnight Installer.event"
+  #include "AxeCav/AxeKnightHandaxe Installer.event"
+  SetAnimationPointers(0x37,AxeCavalierAnimations)
+  AxeCavalierAnimations:
+  weaponTypeAnim(animAxe,0x96)
+  weaponTypeAnim(animNone,0x36)
+  weaponAnim(HandAxe,0x97)
+  weaponAnim(Tomahawk,0x97)
+  weaponAnim(Hatchet,0x97)
+  weaponAnimEnd
   //SetAnimationPointers(Fighter, HandAxeTest)
   //HandAxeTest:
   //weaponAnim(SteelAxe,0xB4)

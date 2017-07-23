@@ -1,2 +1,2 @@
-Impale: Deal 4x damage.[NL]
-(Skill % activation)[X]
+Charm: Allies within 2[NL]
+tiles deal +2 damage.[X]

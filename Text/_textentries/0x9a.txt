@@ -1,2 +1,2 @@
-Staff Savant: Maximum range[NL]
-of staves is increased by 1.[X]
+Colossus: Triples Strength.[NL]
+(Skill % activation)[X]

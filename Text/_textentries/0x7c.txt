@@ -1,2 +1,2 @@
-Galeforce: Move again after[NL]
-attacking and defeating an enemy.[X]
+Miracle: Survive a lethal[NL]
+attack if HP > 50%.[X]

@@ -1,3 +1,2 @@
-Nice Personality: This unit has[NL]
-a deep and engaging character,[NL]
-bursting at the seams with development.[X]
+Fiery Blood: +4 damage[NL]
+when HP is not at max.[X]

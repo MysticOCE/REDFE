@@ -1,2 +1,2 @@
-Bowfaire: +4 damage[NL]
-when equipping a bow.[X]
+Certain Blow: +40 Hit[NL]
+when initiating battle.[X]

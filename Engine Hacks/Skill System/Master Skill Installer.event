@@ -7,6 +7,11 @@ SkillIcons:
 #incext Png2Dmp "SkillIcons.png"
 PUSH
 
+//Rightful X
+ORG $2a52e //modifies the 1RN roll skill to check for rightful skills
+SHORT 0x46C0
+jumpToHack(RightfulCheck)
+
 //acrobat
 ORG $1a4cc
 jumpToHack(AcrobatCheck)
@@ -16,10 +21,10 @@ ORG $800 //modifies movement ARM code
 WORD 0xE59FC000 0xE12FFF1C //ldr r12,Pass; bx r12
 POIN PassCheck|1
 
-//Post combat skills
-ORG $1D258
-callHack_r1(PostCombatSkills)
-SHORT 0x2800 0xD017 0xE006 //cmp r0,0; beq RetFalse; b NextPart
+// //Post combat skills
+// ORG $1D258
+// callHack_r1(PostCombatSkills)
+// SHORT 0x2800 0xD017 0xE006 //cmp r0,0; beq RetFalse; b NextPart
 
 //waryfighter
 ORG $2AF90
@@ -30,6 +35,10 @@ WORD WaryFighterID
 //Provoke
 ORG $3DF78
 jumpToHack(Provoke)
+
+//LethalitySkill
+ORG $2ACF8  //ignore the vanilla lethality routine
+SHORT 0x4770
 
 //Frenzy
 ORG $2AB4C
@@ -73,7 +82,23 @@ jumpToHack(SealSkills)
 
 ORG $2c1f4
 jumpToHack(Armsthrift)
+
+//remove critup ability (for critup skill)
+ORG $2AC4A
+SHORT 0x46C0
 POP
+
+NonGBALethalitySkill: //makes lethality skill/x% (/2 by default, and halved on bosses) instead of crit/2%, include this in the battle calculations after LethalitySkill (do NOT remove LethalitySkill)
+#incbin "Other Skills/NonGBALethalitySkill.dmp" //if you decide to go with this please remember to change the skill definition to match the new effect
+ALIGN 4
+
+Bane: //skill/2% of leaving the enemy with 1hp if the normal damage would not have killed (bane is ignored if the unit has lethality)
+#incbin "Other Skills/Bane.dmp"
+POIN SkillTester
+WORD LethalityID
+WORD BaneID
+ALIGN 4
+
 
 FaireCheck: //added to fe8_calc_loop.event
 #incbin "Ross Skills/FaireCheck.dmp"
@@ -123,15 +148,15 @@ PassCheck:
 POIN SkillTester
 WORD PassID
 
-PostCombatSkills: //plus lifetaker
-#incbin "Post Combat Skills/CantoPlus_Galeforce.dmp"
-POIN SkillTester
-WORD CantoPlusID
-WORD CantoID
-WORD GaleforceID
-WORD LifetakerID
-WORD SavageBlowID
-POIN AuraSkillCheck
+// PostCombatSkills: //plus lifetaker
+// #incbin "Post Combat Skills/CantoPlus_Galeforce.dmp"
+// POIN SkillTester
+// WORD CantoPlusID
+// WORD CantoID
+// WORD GaleforceID
+// WORD LifetakerID
+// WORD SavageBlowID
+// POIN AuraSkillCheck
 
 Provoke:
 #incbin "Teq Skills/Provoke.dmp"
@@ -264,11 +289,57 @@ CriticalIDList:
 BYTE CriticalForceID KillingMachineID
 ALIGN 4
 
+LethalitySkill:
+#incbin "Other Skills/LethalitySkill.dmp"
+POIN SkillTester
+WORD LethalityID
+
 Armsthrift:
 #incbin "Other Skills/Armsthrift.dmp"
 POIN SkillTester
 WORD ArmsthriftID
 
+CritUpSkill:
+#incbin "Other Skills/CritUpSkill.dmp"
+POIN SkillTester
+WORD CritUpID
+
+RightfulCheck:
+#incbin "Other Skills/RightfulCheck.dmp"
+POIN SkillTester
+WORD RightfulArchID
+WORD RightfulKingID
+WORD RightfulGodID
+
+LuckySeven:
+#incbin "Other Skills/LuckySeven.dmp"
+POIN SkillTester
+WORD LuckySevenID
+
+OddRhythm:
+#incbin "Other Skills/OddRhythm.dmp"
+POIN SkillTester
+WORD OddRhythmID
+
+EvenRhythm:
+#incbin "Other Skills/EvenRhythm.dmp"
+POIN SkillTester
+WORD EvenRhythmID
+
+QuickBurn:
+#incbin "Other Skills/QuickBurn.dmp"
+POIN SkillTester
+WORD QuickBurnID
+
+SlowBurn:
+#incbin "Other Skills/SlowBurn.dmp"
+POIN SkillTester
+WORD SlowBurnID
+
+
 #include "Aura Skills/Aura Skills Installer.event"
 #include "Proc Skills/Proc Skills Installer.event"
 #include "Rally Skills/Rally Installer.event"
+
+#include "Stan Skills/HeroesMovement/HeroesMovement.event"
+#include "Post Combat Skills/Post Combat Skills Installer.event"

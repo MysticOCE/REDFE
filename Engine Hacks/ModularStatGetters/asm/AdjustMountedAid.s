@@ -27,7 +27,7 @@ AdjustMountedAid:
 	cmp r1, #0
 	beq MaleAid
 	
-	mov r0, #24
+	mov r0, #19
 	
 	b Skip
 	

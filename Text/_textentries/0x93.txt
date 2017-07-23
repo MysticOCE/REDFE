@@ -1,2 +1,2 @@
-Rally Speed: +4 Spd to[NL]
-allies within 2 tiles.[X]
+Spur Speed: Adjacent allies[NL]
+gain +4 Attack Speed.[X]

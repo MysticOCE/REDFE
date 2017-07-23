@@ -1,0 +1,2 @@
+Swap: Allows unit to swap positions[NL]
+with an adjacent ally.[X]

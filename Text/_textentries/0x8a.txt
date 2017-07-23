@@ -1,2 +1,2 @@
-Spur Resistance: Adjacent allies[NL]
-take -4 magical damage.[X]
+Demoiselle: Male allies within[NL]
+2 tiles receive -2 damage.[X]

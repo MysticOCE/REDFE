@@ -1,2 +1,2 @@
-Warding Blow: +20 Res[NL]
-when initiating battle.[X]
+Discipline: Weapon experience[NL]
+gains are doubled.[X]

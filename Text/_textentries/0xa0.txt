@@ -1,2 +1,2 @@
-Intimidate: -10 Avoid to[NL]
-all enemies within 2 tiles.[X]
+Rally Defense: +4 Def to[NL]
+allies within 2 tiles.[X]

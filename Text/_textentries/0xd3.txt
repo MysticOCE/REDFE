@@ -1,4 +1,3 @@
-[OpenMidRight][LoadFace][0x30][0x01][OpenMidRight]What was that? Do you think you can[.][NL]
-take me, wretched lordling?[.][A][NL]
-Come! It's time you high-and-mighty[.][NL]
-knights learned to respect a true warrior![A][X]
+Down with Arch: If the hit lands,[NL]
+instantly kill the enemy unit.[NL]
+(Only if name starts with "Arch")[X]

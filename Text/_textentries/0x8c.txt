@@ -1,2 +1,2 @@
-Nullify: Unit is protected[NL]
-from all effective attacks.[X]
+Malefic Aura: Enemies within 2[NL]
+tiles receive +2 magic damage.[X]

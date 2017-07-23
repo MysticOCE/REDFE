@@ -33,7 +33,7 @@ beq End
 @if user has sure shot, check for proc rate
 
 ldrb r0, [r4, #0x15] @skill stat as activation rate
-mov r1, #0 @some param
+mov r1, r4 @skill user
 blh d100Result
 cmp r0, #1
 bne End

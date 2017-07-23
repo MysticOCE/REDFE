@@ -1,2 +1,2 @@
-Charm: Allies within 2[NL]
-tiles deal +2 damage.[X]
+Slayer: Deal effective damage[NL]
+to monster units.[X]

@@ -1,2 +1,2 @@
-Armored Blow: +10 Def[NL]
-when initiating battle.[X]
+Lancebreaker: +50 Hit/Avo when[NL]
+enemy has a lance equipped.[X]

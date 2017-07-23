@@ -1,2 +1,2 @@
-Frenzy: For every 4 damage[NL]
-taken, +1 to damage dealt.[X]
+Swap positions with adjacent[NL]
+ally.[X]

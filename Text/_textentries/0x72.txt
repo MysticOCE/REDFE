@@ -1,2 +1,2 @@
-Swordfaire: +4 damage[NL]
-when equipping a sword.[X]
+Death Blow: +20 Crit[NL]
+when initiating battle.[X]

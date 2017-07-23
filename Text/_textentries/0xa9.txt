@@ -1,2 +1,2 @@
-Bond: All allies within 3 tiles[NL]
-recover 10% HP each turn.[X]
+Locktouch: Can open locks[NL]
+without keys or picks.[X]

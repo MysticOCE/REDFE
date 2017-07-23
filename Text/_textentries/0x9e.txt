@@ -1,2 +1,2 @@
-Locktouch: Can open locks[NL]
-without keys or picks.[X]
+Rally Speed: +4 Spd to[NL]
+allies within 2 tiles.[X]

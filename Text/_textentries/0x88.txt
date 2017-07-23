@@ -1,2 +1,2 @@
-Spur Speed: Adjacent allies[NL]
-gain +4 Attack Speed.[X]
+Renewal: Restore 30% of max HP[NL]
+at the start of each turn.[X]

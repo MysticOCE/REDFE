@@ -1,2 +1,2 @@
-Lifetaker: Restore up to 50% HP after[NL]
-attacking and defeating an enemy.[X]
+Countermagic: Magic damage taken[NL]
+at 1-2 range is reflected.[X]

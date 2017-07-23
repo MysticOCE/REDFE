@@ -1,2 +1,2 @@
-Trample: +5 damage to[NL]
-unmounted units.[X]
+Rally Movement: +1 Move[NL]
+to allies within 2 tiles.[X]

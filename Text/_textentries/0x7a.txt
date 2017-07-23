@@ -1,2 +1,2 @@
-Dance: Refresh an ally unit[NL]
-to let them act again.[X]
+Counter: Physical damage taken[NL]
+at 1-2 range is reflected.[X]

@@ -1,5 +1,2 @@
-[OpenMidRight][LoadFace][0x42][0x01]
-What a waste of time...[A][2NL]
-Perhaps I'll look for that[NL]
-Silver Knight of Renais now.[A][2NL]
-[X]
+Pragmatic: When foe is not at full HP,[NL]
+attack +3 and def/res+1.[X]

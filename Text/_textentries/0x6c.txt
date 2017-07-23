@@ -1,2 +1,2 @@
-Vantage: If HP < 50%,[NL]
-strike first when attacked.[X]
+Axebreaker: +50 Hit/Avo when[NL]
+enemy has an axe equipped.[X]

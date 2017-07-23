@@ -155,7 +155,7 @@
 #define GorgonEgg 0x34
 #define GreatKnight 0x35
 #define GreatKnight_F 0x36
-#define Recruit_2 0x37
+#define AxeCavalier 0x37
 #define Journeyman_3 0x38
 #define Pupil_3 0x39
 #define Recruit_3 0x3A

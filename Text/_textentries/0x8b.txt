@@ -1,2 +1,2 @@
-Nihil: Cancels the opponent's[NL]
-skills in combat.[X]
+Gentilhomme: Female allies within[NL]
+2 tiles receive -2 damage.[X]

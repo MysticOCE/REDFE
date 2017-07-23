@@ -1,3 +1,2 @@
-Aether: First strike absorbs HP,[NL]
-second strike negates defenses.[NL]
-(Skill/2 % activation)[X]
+Wary Fighter: Unit cannot[NL]
+double or be doubled.[X]

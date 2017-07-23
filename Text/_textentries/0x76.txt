@@ -1,2 +1,2 @@
-Tomefaire: +4 damage[NL]
-when equipping a tome.[X]
+Armored Blow: +10 Def[NL]
+when initiating battle.[X]

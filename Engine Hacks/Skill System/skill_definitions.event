@@ -11,7 +11,7 @@
 #define AdeptID 10 // DONE
 #define CantoID 11 //DONE
 #define CunningID 12 //display only
-#define LethalityID 13 //display only
+#define LethalityID 13 //DONE
 #define LunaID 14 //DONE
 #define SolID 15 //DONE
 #define AetherID 16 //DONE
@@ -61,7 +61,7 @@
 #define SpurSpdID 60 //DONE
 #define SpurDefID 61 //DONE
 #define SpurResID 62 //DONE
-#define NihilID 63 //this is a giant pain tbh
+#define NihilID 63 //DONE
 #define NullifyID 64
 #define ParagonID 65 //DONE
 #define ImpaleID 66 //DONE
@@ -120,3 +120,20 @@
 #define PragmaticID 119 //DONE
 #define ArmsthriftID 120 //DONE
 #define MoonbowID 121 //DONE
+#define ShoveID 122 //DONE
+#define SmiteID 123 //DONE
+#define BaneID 124 //DONE
+#define DownWithArchID 125 //DONE
+#define UpWithArchID 126 //DONE
+#define RightfulArchID 127 //DONE
+#define RightfulKingID 128 //DONE
+#define RightfulGodID 129 //DONE
+#define LuckySevenID 130 //DONE
+#define OddRhythmID 131 //DONE
+#define EvenRhythmID 132 //DONE
+#define QuickBurnID 133 //DONE
+#define SlowBurnID 134 //DONE
+#define DespoilID 135//DONE
+#define PivotID 136 //DONE
+#define RepositionID 137 //DONE
+#define SwapID 138 //DONE

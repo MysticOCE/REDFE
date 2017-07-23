@@ -50,7 +50,11 @@ locks, and see in darkness.[X]
 
 ## SD_Lethality
 Lethality: Instantly kill opponent.[NL]
-(Crit/2 % activation)[X]
+(Skill/2 % activation)[X]
+
+## SD_Bane
+Bane: Leave the opponent at 1 HP.[NL]
+(Skill/2 % activation)[X]
 
 ## SD_Luna
 Luna: Negates enemy defenses.[NL]
@@ -484,3 +488,71 @@ consume weapon durability.[X]
 ## SD_Moonbow
 Moonbow: Enemy Def/Res is[NL]
 reduced by 25%. Charge: 2[X]
+
+## SD_Shove
+Shove: Allows unit to push[NL]
+other units one tile away.[X]
+
+## SD_Smite
+Smite: Allows unit to push[NL]
+other units two tiles away.[X]
+
+## SD_DownWithArch
+Down with Arch: If the hit lands,[NL]
+instantly kill the enemy unit.[NL]
+(Only if name starts with "Arch")[X]
+
+## SD_UpWithArch
+Up with Arch: Adjacent ally units gain[NL]
+might equal to half this unit's might.[NL]
+(Only if name starts with "Arch")[X]
+
+## SD_RightfulArch
+Rightful Arch: Sets Skill[NL]
+activation rate to 100%.[X]
+
+## SD_RightfulKing
+Rightful King: +10% to[NL]
+Skill activation rate.[X]
+
+## SD_RightfulGod
+Rightful God: +30% to[NL]
+Skill activation rate.[X]
+
+## SD_LuckySeven
+Lucky Seven: +20 Hit and Avoid[NL]
+until the 7th turn.[X]
+
+## SD_OddRhythm
+Odd Rhythm: +10 Hit and Avoid[NL]
+on odd numbered turns.[X]
+
+## SD_EvenRhythm
+Even Rhythm: +10 Hit and Avoid[NL]
+on even numbered turns.[X]
+
+## SD_QuickBurn
+Quick Burn: +15 Hit and Avoid.[NL]
+This bonus decreases each turn.[X]
+
+## SD_SlowBurn
+Slow Burn: +1 Hit and Avoid for[NL]
+each passing turn, up to 15.[X]
+
+## SD_Despoil
+Despoil: Obtain a Red Gem after[NL]
+attacking and defeating an enemy.[NL]
+(Luck % activation)[X]
+
+## SD_Pivot
+Pivot: Allows unit to move to the[NL]
+opposite side of an adjacent ally.[X]
+
+## SD_Reposition
+Reposition: Allows unit to pull an[NL]
+adjacent ally to its opposite side.[X]
+
+## SD_Swap
+Swap: Allows unit to swap positions[NL]
+with an adjacent ally.[X]
+

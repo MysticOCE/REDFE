@@ -2,6 +2,9 @@
 
 PUSH
 //things go here
+ORG 0x2B1AC //fix triangle attack
+    BYTE 0x02
+
 POP
 
 ALIGN 4
@@ -104,3 +107,8 @@ LilysPoise:
 #incbin "LilysPoise.dmp"
 POIN AuraSkillCheck
 WORD LilysPoiseID
+
+UpWithArch:
+#incbin "UpWithArch.dmp"
+POIN AuraSkillCheck
+WORD UpWithArchID

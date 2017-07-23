@@ -53,7 +53,7 @@ Rogue,0x81ded90,0x81df548
 Gorgon Egg,0x81df6a0,0x81dfacc
 Great Knight,0x81dfc24,0x81e058c
 Great Knight (F),0x81dfc24,0x81e058c
-Trainee Soldier (2),0x81e06e4,0x81e0e40
+Axe Cavalier,MapAxeCavalierMove|IsPointer,0x81e0e40
 Trainee Fighter (3),0x81e0f98,0x81e173c
 Trainee Mage (3),0x81e189c,0x81e2088
 Trainee Soldier (3),0x81e06e4,0x81e0e40

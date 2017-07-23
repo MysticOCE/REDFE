@@ -1,2 +1,2 @@
-Pass: Can move through[NL]
-enemy units.[X]
+Push an adjacent unit two[NL]
+tiles away.[X]

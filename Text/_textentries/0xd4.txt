@@ -1,1 +1,3 @@
-[OpenMidLeft][LoadFace][0x04][0x01][OpenMidLeft]All that's left is their leader[.][ToggleMouthMove]...[.][ToggleMouthMove][A][X]
+Up with Arch: Adjacent ally units gain[NL]
+might equal to half this unit's might.[NL]
+(Only if name starts with "Arch")[X]

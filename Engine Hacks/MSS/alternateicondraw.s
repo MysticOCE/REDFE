@@ -51,7 +51,8 @@ lsl r1,r4,#2
 add r5,r1,r0
 ldrb r0, [r5,#1]
 cmp r0, #0
-beq loc_3670
+b loc_3670
+@ beq loc_3670
 ldrb r0, [r5]
 cmp r0, #0xfe
 bhi loc_36a4

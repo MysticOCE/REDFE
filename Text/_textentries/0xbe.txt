@@ -1,2 +1,2 @@
-Pursuit: When under attack,[NL]
-attack speed +2. [X]
+Seal Speed: Debuff opponent's Spd[NL]
+by 6 after combat. (Recover 1/turn)[X]

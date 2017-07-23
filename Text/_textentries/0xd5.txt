@@ -1,1 +1,2 @@
-[OpenMidLeft][LoadFace][0x30][0x01][OpenMidLeft]You will be the first to die![.][A][X]
+Rightful Arch: Sets Skill[NL]
+activation rate to 100%.[X]

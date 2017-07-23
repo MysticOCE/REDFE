@@ -1,3 +1,2 @@
-[OpenMidLeft][LoadFace][0x42][0x01]
-Ho? wjatYou think you can fight?[A]
-[X]
+Critical Force: Base critical is[NL]
+Skl * 1.5.[X]

@@ -1,2 +1,2 @@
-Paragon: Experience gain[NL]
-is doubled.[X]
+Inspiration: Allies within 2 tiles[NL]
+deal +2 damage and receive -2 damage.[X]

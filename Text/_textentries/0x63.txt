@@ -1,2 +1,2 @@
-Tomebreaker: +50 Hit/Avo when[NL]
-enemy has a tome equipped.[X]
+Lethality: Instantly kill opponent.[NL]
+(Skill/2 % activation)[X]

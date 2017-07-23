@@ -1,2 +1,2 @@
-Seal Defense: Debuff opponent's Def[NL]
-by 6 after combat. (Recover 1/turn)[X]
+Anathema: -10 Avoid/Dodge to all[NL]
+enemies within 3 tiles.[X]

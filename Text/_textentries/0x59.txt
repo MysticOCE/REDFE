@@ -1,2 +1,2 @@
-Lethality: Instantly kill opponent.[NL]
-(Crit/2 % activation)[X]
+Acrobat: All traversable[NL]
+terrain costs 1 movement.[X]

@@ -263,6 +263,11 @@
   mov r0, r8
   blh MovGetter
   pop {r1-r3}
+  cmp r0, #0
+  bne MoveNotNegated
+    mvn r0, r0
+    mov r3, r0
+  MoveNotNegated:
   str r0, [sp] @final
   mov r6, #0xF
   str r6, [sp, #4]

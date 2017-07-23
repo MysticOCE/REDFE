@@ -1,19 +1,22 @@
 EphraimLordSkillList:
+// BYTE 1 OddRhythmID
 BYTE 10 BondID
 BYTE 20 AetherID
 BYTE 00 00
 ALIGN 4
 
 EirikaLordSkillList:
-BYTE 10 BondID
-BYTE 11 MoonbowID
-BYTE 20 AetherID
+BYTE 255 ShoveID
+// BYTE 10 EvenRhythmID
+BYTE 10 RightfulKingID
+BYTE 20 BondID
 BYTE 00 00
 ALIGN 4
 
 EphraimGreatLordSkillList:
 BYTE 255 BondID
 BYTE 255 AetherID //255 means "automatically given to prepromotes"
+// BYTE 255 SmiteID
 BYTE 5 RallySpectrumID
 BYTE 15 AxebreakerID
 BYTE 00 00
@@ -22,7 +25,8 @@ ALIGN 4
 EirikaGreatLordSkillList:
 BYTE 255 BondID
 BYTE 255 AetherID
-BYTE 5 RallySpectrumID
+// BYTE 255 SmiteID
+BYTE 5 NihilID
 BYTE 15 LancebreakerID
 BYTE 00 00
 ALIGN 4
@@ -42,6 +46,7 @@ ALIGN 4
 
 KnightSkillList:
 BYTE 1 ProvokeID
+// BYTE 1 SlowBurnID
 BYTE 10 NaturalCoverID
 BYTE 00 00
 ALIGN 4
@@ -56,6 +61,7 @@ ALIGN 4
 
 ThiefSkillList:
 BYTE 15 AcrobatID
+BYTE 1 DespoilID
 BYTE 00 00
 ALIGN 4
 
@@ -89,6 +95,7 @@ ALIGN 4
 
 AssassinSkillList:
 BYTE 255 AcrobatID
+BYTE 255 DespoilID
 BYTE 5 LifetakerID
 BYTE 15 PassID
 BYTE 00 00
@@ -136,12 +143,14 @@ BYTE 00 00
 ALIGN 4
 
 MageSkillList:
+BYTE 1 FocusID
 BYTE 10 AdeptID
 BYTE 00 00
 ALIGN 4
 
 SageSkillList:
 BYTE 255 AdeptID
+BYTE 255 FocusID
 BYTE 5 TomefaireID
 BYTE 15 IgnisID
 BYTE 00 00
@@ -149,8 +158,9 @@ ALIGN 4
 
 MageKnightSkillList:
 BYTE 255 AdeptID
+BYTE 255 FocusID
 BYTE 5 RallyResID
-BYTE 15 FocusID
+BYTE 15 QuickBurnID
 BYTE 00 00
 ALIGN 4
 
@@ -163,27 +173,28 @@ ALIGN 4
 
 ShamanSkillList:
 BYTE 1 MaleficAuraID
-BYTE 10 LifeAndDeathID
+BYTE 10 SpurDefID
 BYTE 00 00
 ALIGN 4
 
 DruidSkillList:
 BYTE 255 MaleficAuraID
-BYTE 255 LifeAndDeathID
-BYTE 5 SealStrID
+BYTE 255 SpurDefID
+BYTE 5 FrenzyID
 BYTE 15 TomebreakerID
 BYTE 00 00
 ALIGN 4
 
 SummonerSkillList:
 BYTE 255 MaleficAuraID
-BYTE 255 LifeAndDeathID
+BYTE 255 SpurDefID
 BYTE 5 AnathemaID
 BYTE 15 RenewalID
 BYTE 00 00
 ALIGN 4
 
 RogueSkillList:
+BYTE 255 DespoilID
 BYTE 255 AcrobatID
 BYTE 5 LungeID
 BYTE 15 CelerityID
@@ -200,6 +211,7 @@ ALIGN 4
 
 ManaketeFSkillList:
 BYTE 01 MiracleID
+BYTE 05 OddRhythmID
 BYTE 10 SpurDefID
 BYTE 00 00
 ALIGN 4
@@ -284,12 +296,16 @@ BYTE 00 00
 ALIGN 4
 
 DancerSkillList:
+BYTE 255 WaryFighterID
 BYTE 10 AmaterasuID
 BYTE 20 CelerityID
 BYTE 00 00
 ALIGN 4
 
 SoldierSkillList:
+BYTE 255 RepositionID
+BYTE 10 CamaraderieID
+BYTE 20 RallyStrID
 BYTE 00 00
 ALIGN 4
 
@@ -308,3 +324,30 @@ PhantomSkillList:
 BYTE 00 00
 ALIGN 4
 
+SuperJourneymanSkillList:
+BYTE 5 ParagonID
+BYTE 00 00
+ALIGN 4
+SuperPupilSkillList:
+BYTE 5 ParagonID
+BYTE 00 00
+ALIGN 4
+SuperRecruitSkillList:
+BYTE 10  ParagonID
+// BYTE 10 AxebreakerID
+BYTE 00 00
+ALIGN 4
+ManaketeMSkillList:
+BYTE 01 MiracleID
+BYTE 05 OddRhythmID
+BYTE 10 SpurDefID
+BYTE 00 00
+ALIGN 4
+
+DemonKingSkillList:
+BYTE 255 BaneID
+BYTE 255 SummonID
+BYTE 255 ReliefID
+BYTE 255 AnathemaID
+BYTE 00 00
+ALIGN 4

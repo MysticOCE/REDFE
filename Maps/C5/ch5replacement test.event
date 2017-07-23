@@ -8,12 +8,12 @@ Map:
 #incbin "ch5replacement test_data.dmp"
 
 MapChanges:
-TileMap(0,20,8,1,1,Hero_Crest_Visited)
-TileMap(1,19,7,3,2,Hero_Crest_Dead)
-TileMap(2,19,1,1,1,Halberd_Visited)
-TileMap(3,18,0,3,2,Halberd_Dead)
-TileMap(4,9,1,1,1,Xane_Visited)
-TileMap(5,8,0,3,2,Xane_Dead)
+TileMap(1,20,8,1,1,Hero_Crest_Visited)
+TileMap(0,19,7,3,2,Hero_Crest_Dead)
+TileMap(3,19,1,1,1,Halberd_Visited)
+TileMap(2,18,0,3,2,Halberd_Dead)
+TileMap(5,9,1,1,1,Xane_Visited)
+TileMap(4,8,0,3,2,Xane_Dead)
 TileMapEnd
 
 Hero_Crest_Visited:

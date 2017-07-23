@@ -1,2 +1,2 @@
-Critical Force: Base critical is[NL]
-Skl * 1.5.[X]
+Seal Resistance: Debuff opponent's Res[NL]
+by 6 after combat. (Recover 1/turn)[X]

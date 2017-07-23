@@ -1,2 +1,2 @@
-Lunge: Swap places with the[NL]
-opponent after combat.[X]
+Rally Luck: +4 Luck to[NL]
+allies within 2 tiles.[X]

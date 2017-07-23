@@ -1,2 +1,2 @@
-Counter: Physical damage taken[NL]
-at 1-2 range is reflected.[X]
+Aegis: Nullify a magic attack.[NL]
+(Skill % activation)[X]

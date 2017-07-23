@@ -1,2 +1,2 @@
-Gentilhomme: Female allies within[NL]
-2 tiles receive -2 damage.[X]
+Bowfaire: +4 damage[NL]
+when equipping a bow.[X]

@@ -1,2 +1,2 @@
-Discipline: Weapon experience[NL]
-gains are doubled.[X]
+Provoke: Enemies are more[NL]
+likely to target this unit.[X]

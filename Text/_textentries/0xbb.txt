@@ -1,2 +1,2 @@
-Wind Disciple: +10 Hit and[NL]
-Avoid when HP is not at max.[X]
+Natural Cover: -3 damage taken[NL]
+when on terrain with effects.[X]

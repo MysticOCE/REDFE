@@ -1,2 +1,2 @@
-Patience: When under[NL]
-attack, avoid +10. [X]
+Seal Skill: Debuff opponent's Skl[NL]
+by 6 after combat. (Recover 1/turn)[X]

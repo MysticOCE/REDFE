@@ -1,2 +1,2 @@
-Foreign Princess: Foreign army units[NL]
-take -2/+2 damage dealt/taken.[X]
+Bow Range +1: Maximum range[NL]
+of equipped bows is increased.[X]

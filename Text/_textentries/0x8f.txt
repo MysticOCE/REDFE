@@ -1,2 +1,2 @@
-Colossus: Triples Strength.[NL]
-(Skill % activation)[X]
+Voice of Peace: Enemies within[NL]
+2 tiles deal -2 damage.[X]

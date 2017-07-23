@@ -29,3 +29,38 @@ at least 1 HP.[X]
 
 ## UMText_DVDesc
 Use the power of dragons.[X]
+
+## UM_Shove
+ Shove[X]
+
+## UM_ShoveDesc
+Push an adjacent unit one[NL]
+tile away.[X]
+
+## UM_Smite
+ Smite[X]
+
+## UM_SmiteDesc
+Push an adjacent unit two[NL]
+tiles away.[X]
+
+## UM_Pivot
+ Pivot[X]
+
+## UM_PivotDesc
+Move to opposite side of[NL]
+an adjacent ally.[X]
+
+## UM_Reposition
+ Reposition[X]
+
+## UM_RepositionDesc
+Move adjacent ally to this[NL]
+unit's opposite side.[X]
+
+## UM_Swap
+ Swap[X]
+
+## UM_SwapDesc
+Swap positions with adjacent[NL]
+ally.[X]

@@ -28,7 +28,7 @@ beq Normal
 @if user has Armsthrift, check for proc rate
 mov r0, r4
 blh luckgetter
-mov r1, #0 @some param
+mov r1, r4 @skill user
 blh d100Result
 cmp r0, #1
 bne Normal

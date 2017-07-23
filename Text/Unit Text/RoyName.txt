@@ -72,3 +72,10 @@ Savage[X]
 
 # 0x405
 Scary[.][X]
+
+# 0x02DA
+Axe Cavalier[X]
+
+# 0x332
+Mounted knights with swift movement.[NL]
+Equip: Axes.[X]

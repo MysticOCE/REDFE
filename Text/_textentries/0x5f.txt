@@ -1,2 +1,2 @@
-Swordbreaker: +50 Hit/Avo when[NL]
-enemy has a sword equipped.[X]
+Mercy: Enemies are left[NL]
+with at least 1 HP.[X]

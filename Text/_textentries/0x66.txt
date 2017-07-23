@@ -1,2 +1,2 @@
-Duelist's Blow: +30 Avo[NL]
-when initiating battle.[X]
+Sol: Restore damage dealt as HP.[NL]
+(Skill % activation)[X]

@@ -1,2 +1,2 @@
-Rally Magic: +4 Mag to[NL]
-allies within 2 tiles.[X]
+Spur Strength: Adjacent allies[NL]
+deal +4 physical damage.[X]

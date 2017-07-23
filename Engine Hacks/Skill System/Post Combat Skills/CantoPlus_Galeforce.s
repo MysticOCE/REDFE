@@ -20,7 +20,7 @@ bne   RetFalse
 
 @check for Savage Blow
 @check if attacking unit died
-ldr r2, [r7]
+mov r2, r7
 ldrb r2, [r2, #0x13] @currenthp
 cmp r2, #0
 beq LifetakerCheck

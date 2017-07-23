@@ -1,2 +1,2 @@
-Countermagic: Magic damage taken[NL]
-at 1-2 range is reflected.[X]
+Pavise: Nullify a physical attack.[NL]
+(Skill % activation)[X]
