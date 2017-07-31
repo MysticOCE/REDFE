@@ -4,7 +4,7 @@ PUSH
 ORG 0x59EE20
 #incbin "EPPal.DMP" //red palettte for users
 ORG 0x59EE40
-#incbin "EPPal2.DMP" //purple palette for enemy
+#incbin "EPPal2x.DMP" //purple palette for enemy
 ORG 0x59EEA0
 #incbin "EPPal2.DMP" //blue for Link Arena team 4
 ORG 0x802558

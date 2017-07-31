@@ -22,6 +22,8 @@
 #define MapMusicGroup 1
 #define SFXGroup 6
 
+/*
+look at all these great examples
 #include "decisive2.event"
 //Example song
 
@@ -30,3 +32,4 @@ SongTable(9,ggxky,1)
 #include "ggxky.event"
 SongTable(16,Colin,1)
 #include "Colin.event"
+*/
