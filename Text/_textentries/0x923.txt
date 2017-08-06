@@ -1,2 +1,2 @@
-Seal Resistance: Debuff opponent's Res[NL]
-by 6 after combat. (Recover 1/turn)[X]
+Vantage: If HP < 50%,[NL]
+strike first when attacked.[X]

@@ -1,2 +1,2 @@
-Seal Skill: Debuff opponent's Skl[NL]
-by 6 after combat. (Recover 1/turn)[X]
+Darting Blow: +5 Attack Speed[NL]
+when initiating battle.[X]

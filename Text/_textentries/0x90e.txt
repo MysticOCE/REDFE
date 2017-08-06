@@ -1,2 +1,2 @@
-Tantivy: +10 Hit/Avoid if there are[NL]
-no allies within 3 tiles.[X]
+Cunning: Can steal items, pick[NL]
+locks, and see in darkness.[X]

@@ -1,2 +1,2 @@
-Opportunist: +4 damage[NL]
-if the foe cannot counter.[X]
+Wary Fighter: Unit cannot[NL]
+double or be doubled.[X]

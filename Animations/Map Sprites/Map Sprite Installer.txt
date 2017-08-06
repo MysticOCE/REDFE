@@ -1,8 +1,8 @@
 MapRoyLord:
-#incext Png2Dmp "Roy Standing.png" --lz77
+#incext Png2Dmp "Roy Standing2.png" --lz77
 //originally 0x81b79d4
 MapRoyLordMove:
-#incext Png2Dmp "Roy Moving.png" --lz77
+#incext Png2Dmp "Roy Moving2.png" --lz77
 //0x81c3ed4
 MapAxeCavalierMove:
 #incext Png2Dmp "Axe Cav Moving.png" --lz77

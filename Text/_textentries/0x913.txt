@@ -1,1 +1,3 @@
- Rally[X]
+Aether: First strike absorbs HP,[NL]
+second strike negates defenses.[NL]
+(Skill/2 % activation)[X]

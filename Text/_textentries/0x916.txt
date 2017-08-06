@@ -1,2 +1,2 @@
-Switch places with opponent[NL]
-after combat.[X]
+Swordbreaker: +50 Hit/Avo when[NL]
+enemy has a sword equipped.[X]

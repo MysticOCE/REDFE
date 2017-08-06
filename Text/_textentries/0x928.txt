@@ -1,3 +1,2 @@
-Nice Personality: This unit has[NL]
-a deep and engaging character,[NL]
-bursting at the seams with development.[X]
+Miracle: Survive a lethal[NL]
+attack if HP > 50%.[X]

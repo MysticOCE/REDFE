@@ -1,1 +1,2 @@
-Use the power of dragons.[X]
+Renewal: Restore 30% of max HP[NL]
+at the start of each turn.[X]

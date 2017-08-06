@@ -29,7 +29,7 @@ LocationBasedEvents:
 House(0x10,C5YellowVillage,18,8)
 Village(0x7, C5HeroCrest, 20,8)
 Village(0x8, C5Halberd, 19,1)
-Village(0x9, C5XaneRecruitment, 9,1)
+House(0x9, C5XaneRecruitment, 9,1)
 END_MAIN
 
 MiscBasedEvents:
@@ -49,6 +49,7 @@ ClearBackground
 REMA
 LOAD1 0x1 XaneRecruit
 ENUT 0x9
+TILECHANGE 0x2
 ELSE 0x1
 ENIF 0x0
 TEXTSTART
@@ -144,8 +145,11 @@ UNIT
 
 BeginningScene:
 LOAD2 0x1 Units
+ENUN
 LOAD2 0x1 RudeDudes
+ENUN
 LOAD2 0x1 CavalierReinforcements
+ENUN
 CAM1 [3,3]
 TEXTSTART
 TEXTSHOW Memes
@@ -165,7 +169,8 @@ ENUN
 MOVE 0x10 Bernard [0,3]
 ENUN
 DISA Bernard
-FlashCursor(Roy,60)
+//FlashCursor(Roy,60)
+GotoPrepScreen
 NoFade
 ENDA
 

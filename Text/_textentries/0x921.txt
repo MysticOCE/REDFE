@@ -1,2 +1,2 @@
-Seal Luck: Debuff opponent's Luck[NL]
-by 6 after combat. (Recover 1/turn)[X]
+Certain Blow: +40 Hit[NL]
+when initiating battle.[X]

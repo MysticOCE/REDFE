@@ -1,2 +1,2 @@
-Pragmatic: When foe is not at full HP,[NL]
-attack +3 and def/res+1.[X]
+Lifetaker: Restore up to 50% HP after[NL]
+attacking and defeating an enemy.[X]

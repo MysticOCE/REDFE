@@ -1,2 +1,2 @@
-Camaraderie: Recover 10% HP each turn[NL]
-if there are allies within 2 tiles.[X]
+Provoke: Enemies are more[NL]
+likely to target this unit.[X]

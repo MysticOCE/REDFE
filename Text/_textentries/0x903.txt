@@ -1,3 +1,2 @@
-Ignis: Add Def/2 and Res/2[NL]
-to damage dealt.[NL]
-(Skill % activation)[X]
+Savior: Can rescue[NL]
+without penalties.[X]

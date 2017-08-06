@@ -1,2 +1,2 @@
-Quick Draw: +4 Damage[NL]
-when initiating battle.[X]
+Swordfaire: +4 damage[NL]
+when equipping a sword.[X]

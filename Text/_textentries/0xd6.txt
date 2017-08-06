@@ -1,2 +1,2 @@
-Rightful King: +10% to[NL]
-Skill activation rate.[X]
+Impale: Deal 4x damage.[NL]
+(Skill % activation)[X]

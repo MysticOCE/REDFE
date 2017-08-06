@@ -1,2 +1,2 @@
-Patience: When under[NL]
-attack, avoid +10. [X]
+Bowfaire: +4 damage[NL]
+when equipping a bow.[X]

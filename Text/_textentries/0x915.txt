@@ -1,1 +1,2 @@
- Lunge[X]
+Discipline: Weapon experience[NL]
+gains are doubled.[X]

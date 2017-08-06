@@ -1,2 +1,2 @@
-Foreign Princess: Foreign army units[NL]
-take -2/+2 damage dealt/taken.[X]
+Mercy: Enemies are left[NL]
+with at least 1 HP.[X]

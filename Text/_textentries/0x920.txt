@@ -1,2 +1,2 @@
-Seal Speed: Debuff opponent's Spd[NL]
-by 6 after combat. (Recover 1/turn)[X]
+Warding Blow: +20 Res[NL]
+when initiating battle.[X]

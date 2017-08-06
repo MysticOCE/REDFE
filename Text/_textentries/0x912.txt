@@ -1,2 +1,2 @@
-Lily's Poise: Adjacent allies gain[NL]
-+1/-3 damage dealt/received.[X]
+Sol: Restore damage dealt as HP.[NL]
+(Skill % activation)[X]

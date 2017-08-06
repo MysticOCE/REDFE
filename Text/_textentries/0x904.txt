@@ -1,2 +1,2 @@
-Life and Death: +10 to[NL]
-damage dealt and taken.[X]
+Adept: Gain a consecutive attack.[NL]
+(Speed % activation)[X]

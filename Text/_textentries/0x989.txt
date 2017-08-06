@@ -1,0 +1,3 @@
+Despoil: Obtain a Red Gem after[NL]
+attacking and defeating an enemy.[NL]
+(Luck % activation)[X]

@@ -1,2 +1,2 @@
-Natural Cover: -3 damage taken[NL]
-when on terrain with effects.[X]
+Duelist's Blow: +30 Avo[NL]
+when initiating battle.[X]

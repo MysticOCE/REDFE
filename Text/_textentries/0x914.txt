@@ -1,1 +1,2 @@
-Buff nearby allies.[X]
+Astra: 5 attacks at half damage.[NL]
+(Skill % activation)[X]

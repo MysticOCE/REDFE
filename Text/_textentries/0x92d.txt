@@ -1,2 +1,2 @@
-Pursuit: When under attack,[NL]
-attack speed +2. [X]
+Tomefaire: +4 damage[NL]
+when equipping a tome.[X]

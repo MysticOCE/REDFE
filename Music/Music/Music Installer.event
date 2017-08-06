@@ -12,6 +12,7 @@
 
 #ifdef _FE8_
   #define SongTableOffset  0x224470
+  //2263B0 is the end maybe?
   #include "drumfix_fe8.event"
   voicegroup000:
   #incbin "FE8_NI_Map.bin"

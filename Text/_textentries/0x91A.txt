@@ -1,1 +1,2 @@
-Celerity: Movement +2.[X]
+Tomebreaker: +50 Hit/Avo when[NL]
+enemy has a tome equipped.[X]

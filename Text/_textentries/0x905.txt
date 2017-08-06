@@ -1,2 +1,2 @@
-Locktouch: Can open locks[NL]
-without keys or picks.[X]
+Acrobat: All traversable[NL]
+terrain costs 1 movement.[X]

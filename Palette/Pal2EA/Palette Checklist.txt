@@ -1,0 +1,48 @@
+Roy
+Lord - done
+Knight Lord - done
+
+Alan
+Cav - done
+Paladin
+Great Knight
+
+Anna
+Peg Knight
+Falco
+Wyvern Knight
+
+Dorcas
+Fighter
+Warrior
+Hero
+
+Salem
+Shaman
+Druid
+Summoner
+
+Priscilla
+Troub
+Valkyrie
+Mage Knight
+
+Leila
+Thief
+Assassin
+Rogue
+
+Radd - Portrait fixes inc.
+Myrmidon
+Hero
+Swordmaster
+
+Cain
+Cavalier
+Paladin
+Great Knight
+
+Lukas
+Knight - i need to ask FP about using the Knight recolor
+General
+Great Knight

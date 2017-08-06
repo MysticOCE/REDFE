@@ -1,2 +1,2 @@
-Intimidate: -10 Avoid to[NL]
-all enemies within 2 tiles.[X]
+Canto+: Can move again after[NL]
+attacking and other actions.[X]

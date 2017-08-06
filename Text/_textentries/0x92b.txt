@@ -1,2 +1,2 @@
-Strong Riposte: When under[NL]
-attack, damage +3. [X]
+Axefaire: +4 damage[NL]
+when equipping an axe.[X]

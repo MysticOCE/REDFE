@@ -1,0 +1,6 @@
+[OpenMidRight][LoadFace][0x04][0x01]
+[OpenLeft][LoadFace][0x02][0x01]
+[OpenMidRight]
+Prince Roy, we must[ToggleMouthMove]--[ToggleMouthMove][NL]
+Get behind me![A]
+[X]

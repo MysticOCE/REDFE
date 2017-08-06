@@ -1,4 +1,4 @@
-#0x0935 Prologue1Text
+#0x0903 Prologue1Text
 [OpenMidLeft][LoadFace][0x51][0x01][OpenFarFarRight][LoadFace][0x6A][0x01][OpenFarFarRight][MoveMidRight][OpenMidRight]Your Majesty, I bear bad news.[A][CloseSpeechSlow][OpenMidRight]The castle gate has been breached.[A][NL]
 Emperor Vigarde's forces are within[.][NL]
 the castle walls.[.][A]

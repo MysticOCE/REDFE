@@ -1,2 +1,2 @@
-Bond: All allies within 3 tiles[NL]
-recover 10% HP each turn.[X]
+Bane: Leave the opponent at 1 HP.[NL]
+(Skill/2 % activation)[X]

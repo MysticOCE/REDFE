@@ -1,2 +1,2 @@
-Seal Attack: Debuff opponent's Str/Mag[NL]
-by 6 after combat. (Recover 1/turn)[X]
+Death Blow: +20 Crit[NL]
+when initiating battle.[X]

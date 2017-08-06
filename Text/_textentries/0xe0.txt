@@ -1,2 +1,2 @@
-Swap: Allows unit to swap positions[NL]
-with an adjacent ally.[X]
+Rally Spectrum: +2 all stats[NL]
+to allies within 2 tiles.[X]

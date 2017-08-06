@@ -1,3 +1,2 @@
-[OpenMidLeft][LoadFace][0x42][0x01]
-Ho? wjatYou think you can fight?[A]
-[X]
+Voice of Peace: Enemies within[NL]
+2 tiles deal -2 damage.[X]

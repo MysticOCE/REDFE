@@ -1,2 +1,2 @@
-Leave opponent with[NL]
-at least 1 HP.[X]
+Axebreaker: +50 Hit/Avo when[NL]
+enemy has an axe equipped.[X]
