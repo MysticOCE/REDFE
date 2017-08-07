@@ -11,5 +11,11 @@ ORG 0x802558
 #incbin "RedBattleMenuPal.DMP"
 ORG 0x802578
 #incbin "GrayBattleMenuPal.DMP"
+ORG 0xAAB3F4 //for title screen background color
+#incbin "testing2.dmp"
+ORG 0xAAC58C
+#incbin "testing3.dmp"
+
+
 POP
 #include "Pal2EA/Palette Setup.event"
