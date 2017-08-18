@@ -1,2 +1,5 @@
-Mercy: Enemies are left[NL]
-with at least 1 HP.[X]
+[OpenMidRight][LoadFace][0x42][0x01]
+What a waste of time...[A][2NL]
+Perhaps I'll look for that[NL]
+Silver Knight of Renais now.[A][2NL]
+[X]

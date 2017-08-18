@@ -21,3 +21,8 @@ PUSH
 #include "C5Events.event"
 }
 POP
+PUSH
+{
+#include "wm/Prologue.txt"
+}
+POP

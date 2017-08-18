@@ -1,2 +1,2 @@
-Spur Strength: Adjacent allies[NL]
-deal +4 physical damage.[X]
+Chivalry: When foe is at full HP,[NL]
+attack and def/res +2.[X]

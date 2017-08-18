@@ -1,2 +1,4 @@
-Bane: Leave the opponent at 1 HP.[NL]
-(Skill/2 % activation)[X]
+[OpenMidRight][LoadFace][0x30][0x01][OpenMidRight]What was that? Do you think you can[.][NL]
+take me, wretched lordling?[.][A][NL]
+Come! It's time you high-and-mighty[.][NL]
+knights learned to respect a true warrior![A][X]

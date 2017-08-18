@@ -1,2 +1,4 @@
-Slayer: Deal effective damage[NL]
-to monster units.[X]
+[OpenMidRight][LoadFace][0x35][0x01]
+You're stronger than I gave you[NL]
+credit for, but you die here.[A]
+[X]

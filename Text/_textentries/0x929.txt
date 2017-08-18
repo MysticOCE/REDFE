@@ -1,2 +1,2 @@
-Swordfaire: +4 damage[NL]
-when equipping a sword.[X]
+[OpenMidLeft][LoadFace][0x33][0x01][OpenMidLeft]I'm the[.][ToggleMouthMove]...[.][ToggleMouthMove]mighty[ToggleMouthMove]...[.][ToggleMouthMove]Bazba[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
+This[ToggleMouthMove]...[.][ToggleMouthMove]ain't[.][ToggleMouthMove]--[ToggleMouthMove][A][X]

@@ -1,2 +1,4 @@
-Canto: Can move again[NL]
-after certain actions.[X]
+[OpenRight][LoadFace][0x02][0x01]
+We should get moving.[NL]
+If the enemy finds us, I'll handle them.[A]
+[X]

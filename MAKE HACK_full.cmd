@@ -14,4 +14,8 @@ cd "%~dp0Event Assembler"
 
 Core A FE8 "-output:%~dp0REDFE.gba" "-input:%~dp0ROM Buildfile.event"
 
+cd "%~dp0ups"
+
+ups diff -b "%~dp0FE8_clean.gba" -m "%~dp0REDFE.gba" -o "%~dp0REDFE.ups"
+
 pause

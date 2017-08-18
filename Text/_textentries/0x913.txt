@@ -1,3 +1,1 @@
-Aether: First strike absorbs HP,[NL]
-second strike negates defenses.[NL]
-(Skill/2 % activation)[X]
+[OpenMidLeft][LoadFace][0x30][0x01][OpenMidLeft]What? How?[A][X]

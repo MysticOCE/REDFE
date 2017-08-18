@@ -343,3 +343,4 @@ WORD SlowBurnID
 
 #include "Stan Skills/HeroesMovement/HeroesMovement.event"
 #include "Post Combat Skills/Post Combat Skills Installer.event"
+#include "Mystic Skills/StrUp.txt"

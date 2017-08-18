@@ -1,0 +1,4 @@
+bug list:
+Valter boss convo breaks, plays 90A instead
+O'Neill boss convo breaks, plays 916 instead
+Breguet boss convo breaks, plays 935 instead
