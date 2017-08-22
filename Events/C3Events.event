@@ -34,6 +34,7 @@ Chest(EnergyRing,8,2)
 Chest(Lancereaver,6,2)
 Door(7,4)
 Door(17,8)
+Door(18,8)
 END_MAIN
 
 MiscBasedEvents3:

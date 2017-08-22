@@ -1,0 +1,11 @@
+Things to fix:
+Figure out HM conditionals - found it, don't know what I'd do with it
+Wait for Paragon fix
+C4 map changes need to be checked
+Check C5 armory/shops done 
+Xane/Lukas descriptions - 
+Zonta "the brass" - not changing
+
+Things to finish:
+C5 in general
+Prologue ending text - done

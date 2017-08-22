@@ -225,5 +225,7 @@
 #define C5HalberdVillage 0x936
 #define C5XaneVillageNotDorcas 0x937
 #define C5XaneVillageDorcas 0x938
+#define C5LukasJoinsParty 0x939
+#define C5RoyAlanTalkAboutLukas 0x93a
 #define ElbertRoyChat1DorcasAlive 0xBFF
 #define RoyAlanAfterGettingHome1 0xC01

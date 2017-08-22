@@ -97,6 +97,7 @@ UNIT
 Recruitment:
 MUSC Comrades
 LOAD1 0x1 Recruits
+CAM1 Anna
 FlashCursor(Anna,64)
 ENUN
 TEXTSTART

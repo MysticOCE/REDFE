@@ -26,11 +26,20 @@ CharacterEvent(0x5,RoyRecruitsLukas,Roy,Lukas)
 END_MAIN
 
 LocationBasedEvents:
+Seize(3,1)
+Armory(ArmoryC2,12,8)
+Vendor(VendorC2,9,8)
 House(0x10,C5YellowVillage,18,8)
 Village(0x7, C5HeroCrest, 20,8)
 Village(0x8, C5Halberd, 19,1)
 House(0x9, C5XaneRecruitment, 9,1)
 END_MAIN
+
+ArmoryC2:
+SHLI 0x01 0x03 0x14 0x16 0x1C 0x1F 0x28 0x2D
+
+VendorC2:
+SHLI 0x38 0x39 0x3F 0x45 0x4B 0x4C 0x50 0x56 0x6E 0x6C
 
 MiscBasedEvents:
 //AREA 0x6 HurrDurr [0,9] [1,9]
@@ -80,8 +89,8 @@ ALIGN 4
 RoyRecruitsLukas:
 Text(RoyLukasWhatTheHell)
 TurnNPC(Lukas)
-MOVE 0x10 Lukas [0,3]
-ENUN
+//MOVE 0x10 Lukas [0,3]
+//ENUN
 DISA Lukas
 ENDA
 
@@ -120,6 +129,9 @@ UNIT Lukas Knight 0x0 Level(8,Enemy,0) [3,2] DropItem 0x00 0x0 0x0 [SilverLance,
 UNIT Bernard General 0x0 Level(1,Enemy,0) [3,3] 0x0 0x0 0x0 0x0 [SilverAxe] NoAI
 UNIT
 
+LukasFriendly:
+UNIT Lukas Knight 0x0 Level(8,Ally,0) [3,2] 0x0 0x00 0x0 0x0 [SilverLance,Javelin,KnightCrest] NoAI
+UNIT
 
 RudeDudes:
 UNIT 0x80 Priest 0x0 Level(4,Enemy,1) [2,4] DropItem 0x0 0x0 0x0 [Physic] HealUnits
@@ -169,12 +181,28 @@ ENUN
 MOVE 0x10 Bernard [0,3]
 ENUN
 DISA Bernard
-//FlashCursor(Roy,60)
+CAM1 Roy
+FlashCursor(Roy,30)
 GotoPrepScreen
 NoFade
 ENDA
 
 EndingScene:
+CHECK_ALIVE Lukas
+SETVAL 0x2 0x1
+IFEQ 0x2 0xc 0x2
+TEXTSTART
+SetBackground(Town_Day)
+TEXTSHOW C5LukasJoinsParty
+TEXTEND
+ClearBackground
+LOAD1 0x1 LukasFriendly
+TEXTSTART
+SetBackground(Fort_Ruins)
+TEXTSHOW C5RoyAlanTalkAboutLukas
+TEXTEND
+ClearBackground
+ENIF 0x2
 MoveToChapter(Ch6)
 ENDA
 

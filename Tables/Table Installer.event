@@ -310,8 +310,6 @@
 
 #include "Map sprite editor\Standing map sprite editor.event"
 
-#include "Portrait Editors\FE8 Portrait Editor.event"
-
 #include "Promotion\Promotion Branch Editor.event"
 
 #include "Promotion\Promotion Pointer Editor.event"
@@ -364,174 +362,6 @@
 
 #include "Recruitment editor\Ch 9B Recruitment editor.event"
 
-#include "Reinforcement Editor\Chapter 1.event"
-
-#include "Reinforcement Editor\Chapter 10A.event"
-
-#include "Reinforcement Editor\Chapter 10B.event"
-
-#include "Reinforcement Editor\Chapter 11A.event"
-
-#include "Reinforcement Editor\Chapter 11B.event"
-
-#include "Reinforcement Editor\Chapter 12A.event"
-
-#include "Reinforcement Editor\Chapter 12B.event"
-
-#include "Reinforcement Editor\Chapter 13A.event"
-
-#include "Reinforcement Editor\Chapter 13B.event"
-
-#include "Reinforcement Editor\Chapter 14A.event"
-
-#include "Reinforcement Editor\Chapter 14B.event"
-
-#include "Reinforcement Editor\Chapter 15A.event"
-
-#include "Reinforcement Editor\Chapter 15B.event"
-
-#include "Reinforcement Editor\Chapter 16A.event"
-
-#include "Reinforcement Editor\Chapter 16B.event"
-
-#include "Reinforcement Editor\Chapter 17A.event"
-
-#include "Reinforcement Editor\Chapter 17B.event"
-
-#include "Reinforcement Editor\Chapter 18A.event"
-
-#include "Reinforcement Editor\Chapter 18B.event"
-
-#include "Reinforcement Editor\Chapter 19A.event"
-
-#include "Reinforcement Editor\Chapter 19B.event"
-
-#include "Reinforcement Editor\Chapter 2.event"
-
-#include "Reinforcement Editor\Chapter 20A.event"
-
-#include "Reinforcement Editor\Chapter 20B.event"
-
-#include "Reinforcement Editor\Chapter 3.event"
-
-#include "Reinforcement Editor\Chapter 4.event"
-
-#include "Reinforcement Editor\Chapter 5.event"
-
-#include "Reinforcement Editor\Chapter 6.event"
-
-#include "Reinforcement Editor\Chapter 7.event"
-
-#include "Reinforcement Editor\Chapter 8.event"
-
-#include "Reinforcement Editor\Chapter 9A.event"
-
-#include "Reinforcement Editor\Chapter 9B.event"
-
-#include "Reinforcement Editor\Chapter FinalA.event"
-
-#include "Reinforcement Editor\Chapter FinalB.event"
-
-#include "Reinforcement Editor\Unknown1.event"
-
-#include "Reinforcement Editor\Unknown10.event"
-
-#include "Reinforcement Editor\Unknown11.event"
-
-#include "Reinforcement Editor\Unknown12.event"
-
-#include "Reinforcement Editor\Unknown13.event"
-
-#include "Reinforcement Editor\Unknown14.event"
-
-#include "Reinforcement Editor\Unknown15.event"
-
-#include "Reinforcement Editor\Unknown16.event"
-
-#include "Reinforcement Editor\Unknown20.event"
-
-#include "Reinforcement Editor\Unknown4.event"
-
-#include "Reinforcement Editor\Unknown6.event"
-
-#include "Reinforcement Editor\Unknown8.event"
-
-#include "Shop Editor\Battle Preparations.event"
-
-#include "Shop Editor\Battle Preperations.event"
-
-#include "Shop Editor\Chapter 10B Armoury.event"
-
-#include "Shop Editor\Chapter 10B Shop.event"
-
-#include "Shop Editor\Chapter 12A Shop.event"
-
-#include "Shop Editor\Chapter 12B Shop.event"
-
-#include "Shop Editor\Chapter 14A Secret.event"
-
-#include "Shop Editor\Chapter 14B Secret.event"
-
-#include "Shop Editor\Chapter 15A Shop.event"
-
-#include "Shop Editor\Chapter 15B Shop.event"
-
-#include "Shop Editor\Chapter 17A Armoury.event"
-
-#include "Shop Editor\Chapter 17A Shop.event"
-
-#include "Shop Editor\Chapter 17B Armoury.event"
-
-#include "Shop Editor\Chapter 17B Shop.event"
-
-#include "Shop Editor\Chapter 19A Secret.event"
-
-#include "Shop Editor\Chapter 19B Secret.event"
-
-#include "Shop Editor\Chapter 2 Armoury.event"
-
-#include "Shop Editor\Chapter 5 Armoury.event"
-
-#include "Shop Editor\Chapter 5 Shop.event"
-
-#include "Shop Editor\Chapter 9A Armoury.event"
-
-#include "Shop Editor\Chapter 9A Shop.event"
-
-#include "Shop Editor\Map - Bethroen Armoury.event"
-
-#include "Shop Editor\Map - Bethroen Shop.event"
-
-#include "Shop Editor\Map - Caer Pelyn Shop.event"
-
-#include "Shop Editor\Map - Grado Keep Secret.event"
-
-#include "Shop Editor\Map - Ide Armoury.event"
-
-#include "Shop Editor\Map - Jehanna Hall Secret.event"
-
-#include "Shop Editor\Map - Jehanna Hall Shop.event"
-
-#include "Shop Editor\Map - Narube River Armoury.event"
-
-#include "Shop Editor\Map - Narube River Shop.event"
-
-#include "Shop Editor\Map - Port Kiris Armoury.event"
-
-#include "Shop Editor\Map - Port Kiris Shop.event"
-
-#include "Shop Editor\Map - Rausten Court Armoury .event"
-
-#include "Shop Editor\Map - Rausten Court Secret.event"
-
-#include "Shop Editor\Map - Rausten Court Shop.event"
-
-#include "Shop Editor\Map - Serafew Armoury.event"
-
-#include "Shop Editor\Map - Serafew Shop.event"
-
-#include "Shop Editor\Map - Taizel Shop.event"
-
 #include "Skills\FE8 Class Skill Editor.event"
 
 #include "Skills\FE8 Level Up Skill Editor.event"
@@ -557,6 +387,10 @@
 #include "Support editors\SupportCompatibilityEditor.event"
 
 #include "Support editors\SupportConvoAvailabilityEditor.event"
+
+#include "Terrain Editors\FE8 Movement Cost Editor.event"
+
+#include "Terrain Editors\FE8 Terrain Bonus Editor.event"
 
 #include "World Map Editors\Path Connections Editor.event"
 

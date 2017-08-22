@@ -68,7 +68,7 @@ A knight in service to Frelia.[NL]
 Known as the Bull.[X]
 
 # 0x404 
-Savage[X]
+Reckless[X]
 
 # 0x405
 Scary[.][X]
@@ -79,3 +79,9 @@ Axe Cavalier[X]
 # 0x332
 Mounted knights with swift movement.[NL]
 Equip: Axes.[X]
+
+# 0x227
+Xane[X]
+
+# 0x21E
+Lukas[X]
