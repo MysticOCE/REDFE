@@ -162,6 +162,8 @@
 
 #include "Chapter Unit Editor\Valni4 + Ruins1.event"
 
+#include "Character Forcer\Character Forcer FE8.event"
+
 #include "Chest Editor\Chapter 1.event"
 
 #include "Chest Editor\Chapter 10A.event"

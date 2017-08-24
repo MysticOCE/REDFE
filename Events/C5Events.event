@@ -188,9 +188,9 @@ NoFade
 ENDA
 
 EndingScene:
-CHECK_ALIVE Lukas
-SETVAL 0x2 0x1
-IFEQ 0x2 0xc 0x2
+//CHECK_ALIVE Lukas
+//SETVAL 0x2 0x1
+//IFEQ 0x2 0xc 0x2
 TEXTSTART
 SetBackground(Town_Day)
 TEXTSHOW C5LukasJoinsParty
@@ -202,7 +202,7 @@ SetBackground(Fort_Ruins)
 TEXTSHOW C5RoyAlanTalkAboutLukas
 TEXTEND
 ClearBackground
-ENIF 0x2
+//ENIF 0x2
 MoveToChapter(Ch6)
 ENDA
 

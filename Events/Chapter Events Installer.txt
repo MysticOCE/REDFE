@@ -20,9 +20,24 @@ PUSH
 {
 #include "C5Events.event"
 }
+{
+#include "C6Events.event"
+}
 POP
 PUSH
 {
 #include "wm/Prologue.txt"
 }
 POP
+
+PUSH
+ORG 0x5A90C0
+BYTE 0x15 0xD
+POP
+
+/*PUSH
+ORG 0xFFFFFE
+#incbin "GryzSeizeAI.bin"
+ORG 0x5A8B40
+#incbin "GryzSeizeAIInstructions.bin"
+POP*/

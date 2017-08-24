@@ -23,3 +23,6 @@
 {
 #include "C5\ch5replacement test.event"
 }
+{
+#include "C6\c6form.event"
+}

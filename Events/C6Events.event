@@ -1,0 +1,85 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0x24,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+AREA 0x6 BossIsGone [20,13] [21,13]
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [2,11] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [1,4] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [1,11] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [1,12] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [1,10] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+UNIT Salem Monk 0x0 Level(2, Ally, 0) [3, 10] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
+UNIT Priscilla Troubadour 0x0 Level(2, Ally, 0) [3,11] 0x00 0x00 0x0 0x00 [Heal, Vulnerary] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [3,12] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT
+
+Enemies:
+UNIT Beran Myrmidon 0x0 Level(8,Enemy,0) [2,1] 0x00 0x00 0x0 0x0 [SteelSword] [0x3,0x10,0x0,0x0]
+UNIT 0x80 Fighter 0x0 Level(6,Enemy,1) [3,2] 0x00 0x0 0x0 0x0 [SteelAxe] DefaultAI
+UNIT 0x80 Mage 0x0 Level(6,Enemy,1) [0,5] 0x0 0x0 0x0 0x0 [Thunder] DefaultAI
+UNIT
+
+C6EscapePoint:
+EscapePoint(21, 13, NoMove)
+EscapePointEnd
+ENDA
+
+EscapePointPointerTable(0x1, C6EscapePoint)
+
+BossIsGone:
+ENUT 0x65
+ENDA
+
+BeginningScene:
+LOAD2 0x1 Units
+LOAD1 0x1 Enemies
+GotoPrepScreen
+NoFade
+ENDA
+
+EndingScene:
+MoveToChapter(Ch7)
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET
