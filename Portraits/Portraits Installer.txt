@@ -38,7 +38,7 @@ CainMug:
 setMugEntry(0x0F, CainMug, 3, 5, 2,3)
 
 RaddMug:
-#incext PortraitFormatter "BlueyRadd.png"
+#incext PortraitFormatter "BlueyRadd2.png"
 setMugEntry(0x0C, RaddMug, 3,6,3,4)
 
 BernardMug:

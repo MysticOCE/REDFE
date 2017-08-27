@@ -34,3 +34,5 @@ SongTable(9,ggxky,1)
 SongTable(16,Colin,1)
 #include "Colin.event"
 */
+#include "CloudBuster.event"
+SongTable(9,CloudBuster,1)
