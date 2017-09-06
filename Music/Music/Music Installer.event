@@ -34,5 +34,15 @@ SongTable(9,ggxky,1)
 SongTable(16,Colin,1)
 #include "Colin.event"
 */
-#include "CloudBuster.event"
-SongTable(9,CloudBuster,1)
+//#include "CloudBuster.event"
+//SongTable(9,CloudBuster,1)
+PUSH
+FE8SoundMixer:
+#incbin "FE8_Improved_Sound_Mixer.bin"
+ORG $D01CC 
+POIN FE8SoundMixer
+ORG $D01D0
+BYTE $B0 $6C $00 $03 $18 $02
+ORG $CF53C
+BYTE $B1 $6C $00 $03
+POP

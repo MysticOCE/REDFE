@@ -80,6 +80,20 @@ Axe Cavalier[X]
 Mounted knights with swift movement.[NL]
 Equip: Axes.[X]
 
+# 0x02d8
+Lancer[X]
+
+# 0x0324
+Mounted knights with swift movement.[NL]
+Equip: Lances.[X]
+
+# 0x2C1
+Sword Rider[X]
+
+# 0x30D
+Mounted knights with swift movement.[NL]
+Equip: Swords.[X]
+
 # 0x227
 Xane[X]
 

@@ -139,7 +139,7 @@ UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [11, 6] 0x00 0x00 0x0 0x00 [Rapier, Vulne
 UNIT
 
 NewUnit:
-UNIT Cain Cavalier 0x0 Level(4,Ally,0) [5,11] 0x00 0x00 0x1 CainMovements [Longsword,Javelin] NoAI
+UNIT Cain LanceCavalier 0x0 Level(4,Ally,0) [5,11] 0x00 0x00 0x1 CainMovements [Horseslayer,Javelin] NoAI
 UNIT
 
 CainMovements:

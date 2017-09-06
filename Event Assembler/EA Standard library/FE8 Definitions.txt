@@ -156,7 +156,7 @@
 #define GreatKnight 0x35
 #define GreatKnight_F 0x36
 #define AxeCavalier 0x37
-#define Journeyman_3 0x38
+#define LanceCavalier 0x38
 #define Pupil_3 0x39
 #define Recruit_3 0x3A
 #define Manakete_2 0x3B

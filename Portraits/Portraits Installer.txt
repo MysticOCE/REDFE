@@ -22,7 +22,7 @@ PriscillaMug:
 setMugEntry(0x07, PriscillaMug, 2, 6, 3, 4)
 
 SalemMug:
-#incext PortraitFormatter "BlueyLexouSalem.png"
+#incext PortraitFormatter "BlueyLexouSalem2.png"
 setMugEntry(0x08, SalemMug, 3, 5, 3, 3)
 
 LeilaMug:
@@ -38,7 +38,7 @@ CainMug:
 setMugEntry(0x0F, CainMug, 3, 5, 2,3)
 
 RaddMug:
-#incext PortraitFormatter "BlueyRadd2.png"
+#incext PortraitFormatter "BlueyRadd3.png"
 setMugEntry(0x0C, RaddMug, 3,6,3,4)
 
 BernardMug:

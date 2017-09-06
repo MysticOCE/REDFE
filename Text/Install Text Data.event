@@ -99,6 +99,22 @@ TxtData0x332:
 #incext ParseFile "_textentries\0x332.txt"
 setText(0x332,TxtData0x332)
 
+TxtData0x02d8:
+#incext ParseFile "_textentries\0x02d8.txt"
+setText(0x02d8,TxtData0x02d8)
+
+TxtData0x0324:
+#incext ParseFile "_textentries\0x0324.txt"
+setText(0x0324,TxtData0x0324)
+
+TxtData0x2C1:
+#incext ParseFile "_textentries\0x2C1.txt"
+setText(0x2C1,TxtData0x2C1)
+
+TxtData0x30D:
+#incext ParseFile "_textentries\0x30D.txt"
+setText(0x30D,TxtData0x30D)
+
 TxtData0x227:
 #incext ParseFile "_textentries\0x227.txt"
 setText(0x227,TxtData0x227)

@@ -10,3 +10,7 @@ MapAxeCavalierMove:
 MapAxeCavalierStand:
 #incext Png2Dmp "New Axe Cav Stand.png" --lz77
 //0x81bb580
+MapSwordCavStand:
+#incext Png2Dmp "MSwordCavStand.png" --lz77
+MapSwordCavMove:
+#incext Png2Dmp "MSwordCavMove.png" --lz77
