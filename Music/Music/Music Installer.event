@@ -36,6 +36,8 @@ SongTable(16,Colin,1)
 */
 //#include "CloudBuster.event"
 //SongTable(9,CloudBuster,1)
+//#include "knightprideedit.event"
+//SongTable(9,knightprideedit,1)
 PUSH
 FE8SoundMixer:
 #incbin "FE8_Improved_Sound_Mixer.bin"

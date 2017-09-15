@@ -99,3 +99,9 @@ Xane[X]
 
 # 0x21E
 Lukas[X]
+
+# 0x35B
+Pure Sword[X]
+
+# 0x40B
+Effective against mages.[X]

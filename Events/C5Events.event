@@ -160,6 +160,7 @@ UNIT 0x20 LanceCavalier 0x0 Level(10,Ally,1) [10,10] 0x0 0x0 0x0 0x0 [SilverLanc
 UNIT
 
 BeginningScene:
+MUSC Raid
 LOAD2 0x1 Units
 ENUN
 LOAD2 0x1 RudeDudes
@@ -167,6 +168,7 @@ ENUN
 LOAD2 0x1 CavalierReinforcements
 ENUN
 CAM1 [3,3]
+MUSC Advance
 TEXTSTART
 TEXTSHOW Memes
 TEXTEND

@@ -45,3 +45,6 @@ BernardMug:
 #incext PortraitFormatter "Bernard2.png"
 setMugEntry(0x1A, BernardMug, 2,5, 3,2)
 
+LukasMug:
+#incext PortraitFormatter "BladeLukas.png"
+setMugEntry(0x11, LukasMug, 3,5,3,3)

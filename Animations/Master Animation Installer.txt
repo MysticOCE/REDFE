@@ -39,6 +39,11 @@
   weaponAnim(Tomahawk,0x97)
   weaponAnim(Hatchet,0x97)
   weaponAnimEnd
+  SetAnimationPointers(0x38,LanceCavalierAnimations)
+  LanceCavalierAnimations:
+  weaponTypeAnim(animLance,0x35)
+  weaponTypeAnim(animNone,0x36)
+  weaponAnimEnd
   //SetAnimationPointers(Fighter, HandAxeTest)
   //HandAxeTest:
   //weaponAnim(SteelAxe,0xB4)

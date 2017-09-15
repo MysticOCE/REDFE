@@ -55,8 +55,8 @@ And here, take this. It might help.[A]
 
 ## ZontaBossQuote
 [OpenMidRight][LoadFace][0x35][0x01]
-You're stronger than I gave you[NL]
-credit for, but you die here.[A]
+You're stronger than I[NL]
+thought, but it ends now.[A]
 [X]
 
 ## ZontaDeathQuote

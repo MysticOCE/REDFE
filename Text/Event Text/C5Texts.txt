@@ -2,7 +2,7 @@
 [OpenLeft][LoadPortrait][0x02][0x01]
 [OpenRight][LoadPortrait][0x04][0x01]
 [OpenLeft]
-Serafew...It's been years[NL] 
+Serafew...It's been years[NL]
 since I came here.[A][NL]
 A long time ago, I came[NL]
 here with my father.[A][NL]
