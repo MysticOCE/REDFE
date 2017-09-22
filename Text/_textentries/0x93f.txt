@@ -1,2 +1,5 @@
-Spur Speed: Adjacent allies[NL]
-gain +4 Attack Speed.[X]
+[OpenMidRight][LoadPortrait][0x1B][0x01]
+Hmph...[....] Here too?[NL]
+There's no end to these rats.[A][NL]
+I'd better get started then.[A]
+[X]

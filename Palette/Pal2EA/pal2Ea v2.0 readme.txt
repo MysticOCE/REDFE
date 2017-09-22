@@ -8,6 +8,8 @@ the format for this is a # line which marks the start of an entry and holds the 
 followed by the palettes in hex form. You should be able to paste the palette hex from ferecolor or any hex editor.
 The palettes go and separate lines and are ordered Player, Enemy, NPC, and P4 Arena; with a P1 Arena at the end for character palettes
 
+//The hex is little endian
+
 You can also use auto to have the palette autofilled with the autofill palette, which is the first palette by default
 
 After running Pal2EA #include "Palette Setup.event" in your buildfile to insert all your palettes

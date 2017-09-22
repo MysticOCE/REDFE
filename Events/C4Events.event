@@ -29,7 +29,7 @@ Village(0x8,Village1C4,7,2)
 END_MAIN
 
 Village1C4:
-VillageEventItem(Ch4VillageText,Village,AngelicRobe) 
+VillageEventItem(Ch4VillageText,Village,Talisman) 
 
 
 MiscBasedEvents:

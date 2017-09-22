@@ -13,9 +13,9 @@
 #define Lute 0x0C
 #define Lukas 0x0D
 #define Cormag 0x0E
-#define Ephraim 0x0F
-#define Forde 0x10
-#define Kyle 0x11
+#define Eliwood 0x0F
+#define Kieran 0x10
+#define Miledy 0x11
 #define Amelia 0x12
 #define Bernard 0x13
 #define Raven 0x14
@@ -103,7 +103,7 @@
 //Classes
 #define EphraimLord 0x01
 #define RoyLord 0x02
-#define EphraimMasterLord 0x03
+#define KnightLord 0x03
 #define RoyMasterLord 0x04
 #define Cavalier 0x05
 #define Cavalier_F 0x06

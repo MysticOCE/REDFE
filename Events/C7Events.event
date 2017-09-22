@@ -1,0 +1,192 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0x27,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0,TiradoArrives,2)
+TurnEventPlayer(0,EliwoodArrives,4)
+TurnEventPlayer(0,TiradoForcesArriveHM,7)
+TurnEventPlayer(0,TiradoForcesArrive,8)
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+CharacterEvent(0x7,RoyRecruitsBernard,Roy,Bernard)
+CharacterEvent(0x8,LukasRecruitsBernard,Lukas,Bernard)
+CharacterEvent(0x9,RoyRecruitsEliwood,Roy,Eliwood)
+END_MAIN
+
+LocationBasedEvents:
+Door(6,3)
+Seize(19,2)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [12,27] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [10,27] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [11,27] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [13,27] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [14,27] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+UNIT Salem Monk 0x0 Level(2, Ally, 0) [10,26] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
+UNIT Priscilla Troubadour 0x0 Level(2, Ally, 0) [11,26] 0x00 0x00 0x0 0x00 [Heal, Vulnerary] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [12,26] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [13,26] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [14,26] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT
+
+Enemies:
+UNIT Murray Paladin 0x0 Level(2,Enemy,1) [19,3] 0x00 0x00 0x0 0x0 [SteelSword,Javelin] GuardTileAI
+UNIT 0x80 Soldier 0x0 Level(8,Enemy,1)[19,11] 0x0 0x0 0x0 0x0 [ShortSpear] AttackInRangeAI
+UNIT 0x80 Soldier 0x0 Level(8,Enemy,1) [19,12] 0x0 0x0 0x0 0x0 [ShortSpear] AttackInRangeAI
+UNIT 0x81 Knight 0x0 Level(7,Enemy,1) [13,19] 0x0 0x0 0x0 0x0 [ShortSpear] AttackInRangeAI
+UNIT 0x80 Mercenary 0x0 Level(7,Enemy,1) [4,21] 0x0 0x0 0x0  0x0 [SteelSword] DefaultAI
+UNIT 0x80 Fighter 0x0 Level(7,Enemy,1) [5,22] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultAI
+UNIT Bernard General 0x0 Level(4, Enemy,0) [6,14] 0x0 0x0 0x0 0x0 [SilverAxe, Javelin, IronBlade] GuardTileAI
+UNIT 0x80 Knight 0x0 Level(7,Enemy,1) [5,15] 00 00 00 00 [SteelLance] AttackInRangeAI
+UNIT 0x80 Knight 0x0 Level(7,Enemy,1) [7,15] 00 00 00 00 [SteelLance] AttackInRangeAI
+UNIT
+
+EliwoodParty:
+UNIT Eliwood KnightLord 00 Level(1,NPC,0) [22,11] 00 00 00 00 [Rapier,SilverLance] DefaultAI
+UNIT Miledy WyvernRider_F  00 Level(6,NPC,0) [23,10] 00 00 00 00 [IronLance,Javelin] DefaultAI
+UNIT Kieran AxeCavalier 00 Level(6,NPC,0) [23,12] 00 00 00 00 [SteelAxe] DefaultAI
+UNIT
+
+EliwoodArrives:
+ReinforcementEvent(EliwoodParty)
+ENDA
+
+Enemies2:
+UNIT 0x80 Archer 0x0 Level(7,Enemy,1) [2,15] 00 00 00 00 [SteelBow] DefaultAI
+UNIT 0x80 Myrmidon 0x0 Level(8,Enemy,1) [14,15] 00 00 00 00 [SteelSword] DefaultAI
+UNIT 0x80 Fighter 0x0 Level(8,Enemy,1) [10,17] 00 00 00 00 [SteelAxe] DefaultAI
+UNIT 0x80 Mercenary 0x0 Level(8,Enemy,1) [8,11] 00 00 00 00 [SteelSword] DefaultAI
+UNIT 0x80 Soldier 00 Level(8,Enemy,1) [0,1] 00 00 00 00 [Horseslayer] DefaultAI
+UNIT 0x81 LanceCavalier 00 Level(10,Enemy,1) [18,3] 00 00 00 00 [SteelLance] GuardTileAI
+UNIT 0x81 AxeCavalier 00 Level(10,Enemy,1) [20,3] 00 00 00 00 [SteelAxe] GuardTileAI
+UNIT 0x81 Fighter 00 Level(10,Enemy,1) [5,5] 00 00 00 00 [HandAxe] AttackInRangeAI
+//UNIT 0x80 Knight 00 Level(20,Enemy,1) [10,25] 00 00 00 00 [IronLance] DefaultAI
+UNIT 0x82 Archer 00 Level(7,Enemy,1) [11,15] 00 00 00 00 [IronBow] DefaultAI
+UNIT 0x80 Mercenary 00 Level(8,Enemy,1) [4,4] 00 00 00 00 [SteelSword] DefaultAI
+UNIT 0x80 Mage 00 Level(7,Enemy,1) [4,6] 00 00 00 00 [Elfire] DefaultAI
+UNIT 0x80 Shaman 00 Level(8,Enemy,1) [11,21] 00 00 00 00 [Flux] DefaultAI
+UNIT 0x80 Mage 00 Level(8,Enemy,1) [3,11] 00 00 00 0 [Thunder] DefaultAI
+UNIT
+
+MysteryBossMan:
+UNIT Tirado GreatKnight 00 Level(1,Enemy,1) [23,11] 00 00 01 TiradoMovements [SilverSword,Spear] GuardTileAI
+UNIT
+
+TiradoMovements:
+REDA [12,8] 0x10 0x0 0x0 0x0 0x0
+
+MysteryBossMan2:
+UNIT Tirado GreatKnight 00 Level(1,Enemy,1) [16,1] 00 00 01 TiradoMovements2 [SilverSword,Spear] GuardTileAI
+UNIT
+
+TiradoMovements2:
+REDA [19,2] 0x10 0x0 0x0 0x0 0x0
+
+TiradoForcesArriveHM:
+CHECK_HARD
+SETVAL 0x3 0x1
+IFEQ 0x0 0xC 0x3
+	ReinforcementEvent(TiradoBackup)
+ENIF 0x0
+ENDA
+
+TiradoForcesArrive:
+CHECK_HARD
+SETVAL 0x3 0x1
+IFNE 0x1 0xC 0x3
+	ReinforcementEvent(TiradoBackup)
+ENIF 0x1
+ENDA
+
+TiradoBackup:
+UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [23,11] 00 00 00 00 [SteelSword,SteelLance] DefaultAI
+UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [23,12] 00 00 00 00 [SteelLance,SteelAxe] DefaultAI
+UNIT
+
+TiradoArrives:
+CAM1 [16,8]
+STAL 30
+LOAD1 0x1 MysteryBossMan
+ENUN
+DISA Tirado
+CAM1 [16,1]
+STAL 30
+LOAD1 0x1 MysteryBossMan2
+ENUN
+ENDA
+
+RoyRecruitsBernard:
+TurnAlly(Bernard)
+ENDA
+
+LukasRecruitsBernard:
+TurnAlly(Bernard)
+ENDA
+
+RoyRecruitsEliwood:
+TurnAlly(Eliwood)
+CHECK_ALIVE Miledy
+SETVAL 0x3 0x1
+IFEQ 0x2 0xC 0x3
+	TurnAlly(Miledy)
+ENIF 0x2
+CHECK_ALIVE Kieran
+SETVAL 0x3 0x1
+IFEQ 0x3 0xC 0x3
+	TurnAlly(Kieran)
+ENIF 0x3
+ENDA
+
+BeginningScene:
+LOAD2 0x1 Units
+ENUN
+LOAD2 0x1 Enemies
+ENUN
+LOAD2 0x1 Enemies2
+ENUN
+//LOAD2 0x1 EliwoodParty
+//ENUN
+GotoPrepScreen
+NoFade
+ENDA
+
+EndingScene:
+MoveToChapter(Ch8)
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET

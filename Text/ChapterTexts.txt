@@ -4,5 +4,6 @@
 #include "Event Text/C3Texts.txt"
 #include "Event Text/C4Texts.txt"
 #include "Event Text/C5Texts.txt"
+#include "Event Text/C6Texts.txt"
 #include "Event Text/RenaisTexts.txt"
 #include "Event Text/GoalTexts.txt"

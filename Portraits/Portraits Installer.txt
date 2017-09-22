@@ -48,3 +48,19 @@ setMugEntry(0x1A, BernardMug, 2,5, 3,2)
 LukasMug:
 #incext PortraitFormatter "BladeLukas.png"
 setMugEntry(0x11, LukasMug, 3,5,3,3)
+
+RavenMug:
+#incext PortraitFormatter "Raven2.png"
+setMugEntry(0x1B, RavenMug, 2,5,3,3)
+
+EliwoodMug:
+#incext PortraitFormatter "Eliwood3.png"
+setMugEntry(0x14, EliwoodMug, 2,5,3,3)
+
+KieranMug:
+#incext PortraitFormatter "NicktKieran.png"
+setMugEntry(0x16, KieranMug,3,6,3,4)
+
+MiledyMug:
+#incext PortraitFormatter "Miledy2.png"
+setMugEntry(0x18, MiledyMug,3,5,3,3)

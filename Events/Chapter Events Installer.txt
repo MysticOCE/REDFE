@@ -23,6 +23,9 @@ PUSH
 {
 #include "C6Events.event"
 }
+{
+#include "C7Events.event"
+}
 POP
 PUSH
 {

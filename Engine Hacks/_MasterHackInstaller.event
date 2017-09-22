@@ -59,6 +59,9 @@ POP
 ////////////////////////////////FREE SPACE OUT OF BL RANGE
 //start of Free space
 
+  //Easy mode killer
+  #include "NoEasyMode.event"
+	
   //HP Bars (and effective weapon warning)
   #include "HPbars.txt"
 

@@ -32,8 +32,18 @@ BYTE 00 00
 ALIGN 4
 
 CavalierSkillList:
-BYTE 1 DisciplineID
-BYTE 10 ElbowRoomID
+BYTE 1 PivotID
+BYTE 10 DisciplineID
+BYTE 00 00
+
+LanceCavalierSkillList:
+BYTE 1 RepositionID
+BYTE 10 DisciplineID
+BYTE 00 00
+
+AxeCavalierSkillList:
+BYTE 1 SwapID
+BYTE 10 DisciplineID
 BYTE 00 00
 
 PaladinSkillList:
@@ -60,7 +70,7 @@ BYTE 00 00
 ALIGN 4
 
 ThiefSkillList:
-BYTE 15 AcrobatID
+BYTE 10 AcrobatID
 BYTE 1 DespoilID
 BYTE 00 00
 ALIGN 4
@@ -124,7 +134,8 @@ BYTE 00 00
 ALIGN 4
 
 WyvernRiderSkillList:
-BYTE 10 TantivyID
+BYTE 1 TantivyID
+BYTE 10 ReliefID
 BYTE 00 00
 ALIGN 4
 
@@ -217,27 +228,28 @@ BYTE 00 00
 ALIGN 4
 
 FighterSkillList:
-BYTE 10 FieryBloodID
-BYTE 20 DesperationID
+BYTE 1 FieryBloodID
+BYTE 10 ElbowRoomID
 BYTE 00 00
 ALIGN 4
 
 WarriorSkillList:
 BYTE 255 FieryBloodID
-BYTE 255 DesperationID
+BYTE 255 ElbowRoomID
 BYTE 5 DeathBlowID
 BYTE 15 CounterID
 BYTE 00 00
 ALIGN 4
 
 BrigandSkillList:
+BYTE 1 FieryBloodID
 BYTE 10 IntimidateID
 BYTE 00 00
 ALIGN 4
 
 PirateSkillList:
-BYTE 10 CamaraderieID
-BYTE 20 SealSklID
+BYTE 1 CamaraderieID
+BYTE 10 SealSklID
 BYTE 00 00
 ALIGN 4
 
@@ -250,8 +262,8 @@ BYTE 00 00
 ALIGN 4
 
 MonkSkillList:
-BYTE 10 SpurSpdID
-BYTE 20 SealResID
+BYTE 1 SpurSpdID
+BYTE 10 SealResID
 BYTE 00 00
 ALIGN 4
 
@@ -262,8 +274,8 @@ BYTE 00 00
 ALIGN 4
 
 PegKnightSkillList:
-BYTE 10 DartingBlowID
-BYTE 20 RallySpdID
+BYTE 1 DartingBlowID
+BYTE 10 RallySpdID
 BYTE 00 00
 ALIGN 4
 
@@ -282,8 +294,8 @@ BYTE 00 00
 ALIGN 4
 
 TroubadourSkillList:
-BYTE 10 DemoiselleID
-BYTE 20 VoiceOfPeaceID
+BYTE 1 DemoiselleID
+BYTE 10 VoiceOfPeaceID
 BYTE 00 00
 ALIGN 4
 
@@ -304,8 +316,8 @@ ALIGN 4
 
 SoldierSkillList:
 BYTE 255 RepositionID
-BYTE 10 CamaraderieID
-BYTE 20 RallyStrID
+BYTE 1 CamaraderieID
+BYTE 10 RallyStrID
 BYTE 00 00
 ALIGN 4
 

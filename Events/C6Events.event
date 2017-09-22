@@ -18,10 +18,12 @@ POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0,EnterRaven,3)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
 CharacterBasedEvents:
+CharacterEvent(0x7,C6RavenJoins,Roy,Raven)
 END_MAIN
 
 LocationBasedEvents:
@@ -69,6 +71,24 @@ UNIT 0x80 Fighter 0x0 Level(6,Enemy,1) [15,1] 0x0 0x0 0x0 0x0 [IronAxe] AttackIn
 UNIT 0x80 Myrmidon 0x0 Level(7,Enemy,1) [21,6] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
 UNIT
 
+RavenUnit:
+UNIT Raven Mercenary 0x0 Level(6,NPC,0) [3,0] 0x0 0x0 0x0 0x0 [KillingEdge] DefaultAI
+UNIT
+
+EnterRaven:
+LOAD1 0x1 RavenUnit
+ENUN
+TEXTSTART 
+TEXTSHOW C6RavenEnters
+TEXTEND
+REMA
+ENDA
+
+C6RavenJoins:
+Text(RavenJoinsText)
+TurnAlly(Raven)
+ENDA
+
 C6EscapePoint:
 EscapePoint(21, 13, NoMove)
 EscapePointEnd
@@ -81,8 +101,19 @@ ENUT 0x65
 ENDA
 
 BeginningScene:
+TEXTSTART
+//SetBackground(Woodland_Night)
+TEXTSHOW C6OpeningTextDebug
+//ClearBackground
+TEXTEND
+REMA
+FADU 10
 LOAD2 0x1 Units
+ENUN
 LOAD1 0x1 Enemies
+ENUN
+
+//REMA
 GotoPrepScreen
 NoFade
 ENDA

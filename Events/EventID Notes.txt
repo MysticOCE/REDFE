@@ -1,0 +1,10 @@
+0x0 - Always False
+0x1 - Boss Quote
+0x2 - Boss Death Quote
+0x3 - Seize
+0x4 - Music Change
+0x5 - Unknown
+0x6 - Rout
+0x7 - First safe EventID
+//0x20 and up maybe be temporary, wiped out on resume chapter?
+0x65 - Game Over

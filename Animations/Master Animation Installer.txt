@@ -48,3 +48,15 @@
   //HandAxeTest:
   //weaponAnim(SteelAxe,0xB4)
   //weaponAnimEnd
+  /*
+  SetAnimationPointers(the paladin anim index, PaladinAnimations)
+  PaladinAnimations:
+  weaponTypeAnim(animSword, the paladin sword anim index idk)
+  weaponTypeAnim(animLance, the paladin lance anim index also idk)
+  weaponTypeAnim(animAxe,the index where you inserted melee axes)
+  weaponTypeAnim(animNone,0x36)
+  weaponAnim(HandAxe,hand axe anim index)
+  weaponAnim(Tomahawk, hand axe anim index)
+  weaponAnim(Hatchet,hand axe anim index)
+  weaponAnimEnd
+  */

@@ -100,8 +100,51 @@ Xane[X]
 # 0x21E
 Lukas[X]
 
+# 0x27A
+A collected knight of[NL]
+Grado. Very professional.[X]
+
 # 0x35B
 Pure Sword[X]
 
 # 0x40B
 Effective against mages.[X]
+
+# 0x1A9
+Defeat Beran before[NL]
+he escapes.[X]
+
+# 0x224
+Bernard[X]
+
+# 0x280
+A knight of Grado.[NL]
+Loyal to his knightly vows.[X]
+
+# 0x225
+Raymond[X]
+
+# 0x281
+A swordfighter serving[NL]
+Frelia. A loner by nature.[X]
+
+# 0x220
+Eliwood[X]
+
+##
+Kieran[X]
+
+##
+Melady[X]
+
+#0x27C
+Eldest prince of Frelia.[NL]
+Just and honorable.[X]
+
+##
+Knight of Frelia. Good at[NL]
+fighting, poor at keeping quiet.[X]
+
+##
+Knight of Frelia.[NL]
+idk wishes help[X]

@@ -26,3 +26,6 @@
 {
 #include "C6\c6formglaceofix.event"
 }
+{
+#include "C7\C7v2.event"
+}

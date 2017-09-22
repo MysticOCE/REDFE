@@ -34,10 +34,13 @@ UNIT
 
 TurnBasedEvents:
 TurnEventPlayer(0,Recruitment,2)
+TurnEventPlayer(0,CavaliersArrive,4)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
 CharacterBasedEvents:
+CharacterEventBothWays(0x7,AnnaRoyChat,Anna,Roy)
+CharacterEventBothWays(0x8,DorcasRoyChat,Dorcas,Roy)
 END_MAIN
 
 LocationBasedEvents:
@@ -94,6 +97,30 @@ UNIT Priscilla Troubadour 0x0 Level(2, Ally,0) [1,1] 0x00 0x00 0x0 0x00 [Heal, V
 UNIT Salem Monk 0x0 Level(3, Ally, 0) [2,2] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
 UNIT
 
+CavaliersArrive: 
+Text(C1CavaliersArrive)
+CHECK_HARD
+SETVAL 0x3 0x1 //checking for hard
+IFEQ 0x0 0xC 0x3
+	//if hard mode
+	ReinforcementEvent(GradoCavsHM)
+ELSE 0x1
+ENIF 0x0
+	//if normal
+	ReinforcementEvent(GradoCavs)
+ENIF 0x1
+ENDA
+
+
+GradoCavs:
+UNIT 0x80 AxeCavalier 0x0 Level(2,Enemy,1) [18,12] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
+UNIT
+
+GradoCavsHM:
+UNIT 0x80 AxeCavalier 0x0 Level(2,Enemy,1) [18,12] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
+UNIT 0x80 LanceCavalier 0x0 Level(2,Enemy,1) [19,11] 0x0 0x0 0x0 0x0 [IronLance] DefaultAI
+UNIT
+
 Recruitment:
 MUSC Comrades
 LOAD1 0x1 Recruits
@@ -104,6 +131,18 @@ TEXTSTART
 TEXTSHOW AnnaDorcasJoin
 TEXTEND 
 REMA
+ENDA
+
+AnnaRoyChat:
+TEXTSTART
+TEXTSHOW C1AnnaRoyChat
+TEXTEND
+ENDA
+
+DorcasRoyChat:
+TEXTSTART
+TEXTSHOW C1DorcasRoyChat
+TEXTEND
 ENDA
 
 MESSAGE C1Events end at offset CURRENTOFFSET
