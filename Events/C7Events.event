@@ -22,11 +22,13 @@ TurnEventPlayer(0,TiradoArrives,2)
 TurnEventPlayer(0,EliwoodArrives,4)
 TurnEventPlayer(0,TiradoForcesArriveHM,7)
 TurnEventPlayer(0,TiradoForcesArrive,8)
+TurnEventPlayer(0,ThiefReinforce,9)
+TurnEventPlayer(0,T10Reinforce,10)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
 CharacterBasedEvents:
-CharacterEvent(0x7,RoyRecruitsBernard,Roy,Bernard)
+//CharacterEvent(0x7,RoyRecruitsBernard,Roy,Bernard)
 CharacterEvent(0x8,LukasRecruitsBernard,Lukas,Bernard)
 CharacterEvent(0x9,RoyRecruitsEliwood,Roy,Eliwood)
 END_MAIN
@@ -34,6 +36,10 @@ END_MAIN
 LocationBasedEvents:
 Door(6,3)
 Seize(19,2)
+Chest(KillerAxe,5,20)
+Chest(Dragonshield,6,20)
+Chest(Elfire,5,23)
+Chest(BlueGem,6,23)
 END_MAIN
 
 MiscBasedEvents:
@@ -138,6 +144,14 @@ UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [23,11] 00 00 00 00 [SteelSword,SteelL
 UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [23,12] 00 00 00 00 [SteelLance,SteelAxe] DefaultAI
 UNIT
 
+ThiefReinforce:
+ReinforcementEvent(ThiefyBoy)
+ENDA
+
+ThiefyBoy:
+UNIT 0x80 Thief 00 Level(8,Enemy,1) [0,21] 00 00 00 00 [IronSword,Lockpick] LootingThiefAI
+UNIT
+
 TiradoArrives:
 CAM1 [16,8]
 STAL 30
@@ -155,6 +169,15 @@ TurnAlly(Bernard)
 ENDA
 
 LukasRecruitsBernard:
+MUSI
+TEXTSTART
+TEXTSHOW LukasRecruitsBernardText
+TEXTEND
+MUNO
+STAL 16
+MUSC Comrades
+TEXTCONT
+TEXTEND
 TurnAlly(Bernard)
 ENDA
 
@@ -170,6 +193,18 @@ SETVAL 0x3 0x1
 IFEQ 0x3 0xC 0x3
 	TurnAlly(Kieran)
 ENIF 0x3
+ENDA
+
+T10Units:
+UNIT 0x80 Mercenary 00 Level(8,Enemy,1) [0,4] 00 00 00 00 [SteelSword] DefaultAI
+UNIT 0x80 Fighter 00 Level(8,Enemy,1) [0,5] 00 00 00 00 [SteelAxe] DefaultAI
+UNIT 0x80 Mage 00 Level(8,Enemy,1) [0,6] 00 00 00 00 [Elfire] DefaultAI
+UNIT 0x82 Shaman 00 Level(8,Enemy,1) [0,7] DropItem 00 00 00 [Luna] DefaultAI
+UNIT 0x80 Archer 00 Level(10,Enemy,1) [14,1] 00 00 00 00 [Longbow] DefaultAI
+UNIT
+
+T10Reinforce:
+ReinforcementEvent(T10Units)
 ENDA
 
 BeginningScene:

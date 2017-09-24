@@ -58,7 +58,7 @@ EliwoodMug:
 setMugEntry(0x14, EliwoodMug, 2,5,3,3)
 
 KieranMug:
-#incext PortraitFormatter "NicktKieran.png"
+#incext PortraitFormatter "NicktKieran2.png"
 setMugEntry(0x16, KieranMug,3,6,3,4)
 
 MiledyMug:

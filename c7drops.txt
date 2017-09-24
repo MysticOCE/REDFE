@@ -1,0 +1,36 @@
+Swords x4
+Iron/Steel
+Rapier
+Killing Edge
+Pure Sword
+Iron Blade
+Lancereaver
+
+Lances x3
+Iron/Steel
+Silver
+Javelin
+Horseslayer
+Killer
+
+Axes x2
+Iron/Steel/Hand
+Halberd
+
+Anima x0/1
+Fire
+
+Dark x1/2
+Flux 
+Nos 
+
+Staff x1
+Heal
+Physic
+
+Chests
+Elfire
+Killer Axe
+Blue Gem
+Dracoshield
+

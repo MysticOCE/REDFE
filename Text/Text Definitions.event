@@ -233,5 +233,6 @@
 #define C6OpeningTextDebug 0x93e
 #define C6RavenEnters 0x93f
 #define RavenJoinsText 0x940
+#define LukasRecruitsBernardText 0x941
 #define ElbertRoyChat1DorcasAlive 0xBFF
 #define RoyAlanAfterGettingHome1 0xC01

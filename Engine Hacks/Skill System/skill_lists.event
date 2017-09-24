@@ -154,22 +154,22 @@ BYTE 00 00
 ALIGN 4
 
 MageSkillList:
-BYTE 1 FocusID
-BYTE 10 AdeptID
+BYTE 1 QuickBurnID
+BYTE 10 LightWeightID
 BYTE 00 00
 ALIGN 4
 
 SageSkillList:
-BYTE 255 AdeptID
-BYTE 255 FocusID
+BYTE 255 QuickBurnID
+BYTE 255 LightWeightID
 BYTE 5 TomefaireID
 BYTE 15 IgnisID
 BYTE 00 00
 ALIGN 4
 
 MageKnightSkillList:
-BYTE 255 AdeptID
-BYTE 255 FocusID
+BYTE 255 QuickBurnID
+BYTE 255 LightWeightID
 BYTE 5 RallyResID
 BYTE 15 QuickBurnID
 BYTE 00 00
