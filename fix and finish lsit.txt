@@ -1,11 +1,24 @@
+Fix:
+Xane's house doesn't work properly, closes if not Dorcas visits
+Axe Cavalier moving sprite is funky, need to fix palette
+Lot of MUSI and MUNO's needed
+
+Finish:
+C7 needs text
+C6 needs something
+
+
+OLD 1
+
 Things to fix:
 Figure out HM conditionals - found it, don't know what I'd do with it
-Wait for Paragon fix
-C4 map changes need to be checked
-Check C5 armory/shops done 
-Xane/Lukas descriptions - 
+Wait for Paragon fix - lmao never getting fixed
+C4 map changes need to be checked - yeah 
+Check C5 armory/shops done - yeah
+Xane/Lukas descriptions - yeah
 Zonta "the brass" - not changing
 
 Things to finish:
-C5 in general
+C5 in general - done
 Prologue ending text - done
+

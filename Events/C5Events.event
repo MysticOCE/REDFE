@@ -34,6 +34,7 @@ House(0x10,C5YellowVillage,18,8)
 Village(0x7, C5HeroCrest, 20,8)
 Village(0x8, C5Halberd, 19,1)
 House(0x9, C5XaneRecruitment, 9,1)
+//House(0x9, C5XaneRecruitment, 3,10)
 END_MAIN
 
 ArmoryC2:
@@ -43,7 +44,7 @@ VendorC2:
 SHLI 0x38 0x39 0x3F 0x45 0x4B 0x4C 0x50 0x56 0x6E 0x6C
 
 MiscBasedEvents:
-//AREA 0x6 HurrDurr [0,9] [1,9]
+AREA 0x6 C5XaneRecruitment [0,9] [1,9]
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -51,28 +52,35 @@ C5XaneRecruitment:
 CHECK_ACTIVE //gets char id in slot C
 SETVAL 0x2 0x3//setting dorcas's id in slot 2
 IFEQ 0x0 0xC 0x2
-TEXTSTART
-SetBackground(HouseBG)
-TEXTSHOW C5XaneVillageDorcas
-TEXTEND
-ClearBackground
-REMA
-LOAD1 0x1 XaneRecruit
-ENUT 0x9
-TILECHANGE 0x2
+	TEXTSTART
+	SetBackground(HouseBG)
+	TEXTSHOW C5XaneVillageDorcas
+	TEXTEND
+	ClearBackground
+	REMA
+	LOAD1 0x1 XaneRecruit
+	ENUT 0x9
+	TILECHANGE 0x2
 ELSE 0x1
 ENIF 0x0
-TEXTSTART
-SetBackground(HouseBG)
-TEXTSHOW C5XaneVillageNotDorcas
-TEXTEND
-ClearBackground
-REMA
+	TEXTSTART
+	SetBackground(HouseBG)
+	TEXTSHOW C5XaneVillageNotDorcas
+	TEXTEND
+	ClearBackground
+	REMA
+	ENUF 0x9
 ENIF 0x1
 ENDA
 
+MESSAGE Yo Xane village debug is up don't release this to public
+
 XaneRecruit:
-UNIT Xane Brigand 0x0 Level(4,Ally,0) [9,2] 0x00 0x0 0x0 0x0 [IronAxe] NoAI
+UNIT Xane Brigand 0x0 Level(4,Ally,0) [9,2] 0x00 0x0 0x0 0x0 [IronAxe, Vulnerary] NoAI
+UNIT
+
+TestingArcherFriend:
+UNIT 0x82 Ranger 00 Level(19,Ally,1) [9,2] 00 00 00 00 [SilverBow] NoAI
 UNIT
 
 Dunno:
@@ -126,7 +134,7 @@ ENUT 0x6
 ENDA*/
 
 LukasBoss:
-UNIT Lukas Knight 0x0 Level(8,Enemy,0) [3,2] DropItem 0x00 0x0 0x0 [SilverLance,Javelin,KnightCrest] GuardTileAI
+UNIT Lukas Knight 0x0 Level(8,Enemy,0) [3,2] DropItem 0x00 0x0 0x0 [SilverLance,Javelin] GuardTileAI
 UNIT Bernard General 0x0 Level(1,Enemy,0) [3,3] 0x0 0x0 0x0 0x0 [SilverAxe] NoAI
 UNIT
 
@@ -214,6 +222,8 @@ MOVE 0x10 Bernard [0,3]
 ENUN
 DISA Bernard
 CAM1 Roy
+//LOAD2 0x1 TestingArcherFriend
+//ENUN
 FlashCursor(Roy,30)
 GotoPrepScreen
 NoFade

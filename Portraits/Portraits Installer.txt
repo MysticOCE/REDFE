@@ -10,7 +10,7 @@ AlanMug:
 setMugEntry(0x04, AlanMug, 3, 5, 3, 3)
 
 DorcasMug:
-#incext PortraitFormatter "Dorcas2.png"
+#incext PortraitFormatter "Dorcas3.png"
 setMugEntry(0x05, DorcasMug, 2, 4, 3, 2)
 
 AnnaMug:
@@ -64,3 +64,7 @@ setMugEntry(0x16, KieranMug,3,6,3,4)
 MiledyMug:
 #incext PortraitFormatter "Miledy2.png"
 setMugEntry(0x18, MiledyMug,3,5,3,3)
+
+XaneMug:
+#incext PortraitFormatter "BlueyXane.png"
+setMugEntry(0x1E, XaneMug, 2,4,3,2)

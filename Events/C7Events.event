@@ -34,8 +34,9 @@ CharacterEvent(0x9,RoyRecruitsEliwood,Roy,Eliwood)
 END_MAIN
 
 LocationBasedEvents:
-Door(6,3)
-Seize(19,2)
+Door(6,13)
+//Seize(19,2)
+Seize(12,27)
 Chest(KillerAxe,5,20)
 Chest(Dragonshield,6,20)
 Chest(Elfire,5,23)
@@ -71,13 +72,13 @@ UNIT Leila Thief 0x0 Level(2,Ally,0) [14,26] 0x00 0x00 0x0 0x00 [IronSword,Lockp
 UNIT
 
 Enemies:
-UNIT Murray Paladin 0x0 Level(2,Enemy,1) [19,3] 0x00 0x00 0x0 0x0 [SteelSword,Javelin] GuardTileAI
+UNIT Murray Paladin 0x0 Level(2,Enemy,1) [19,3] 0x00 0x00 0x0 0x0 [SteelSword,Javelin] AttackInRangeAI
 UNIT 0x80 Soldier 0x0 Level(8,Enemy,1)[19,11] 0x0 0x0 0x0 0x0 [ShortSpear] AttackInRangeAI
 UNIT 0x80 Soldier 0x0 Level(8,Enemy,1) [19,12] 0x0 0x0 0x0 0x0 [ShortSpear] AttackInRangeAI
-UNIT 0x81 Knight 0x0 Level(7,Enemy,1) [13,19] 0x0 0x0 0x0 0x0 [ShortSpear] AttackInRangeAI
+UNIT 0x81 Knight 0x0 Level(7,Enemy,1) [13,19] 00 0x0 0x0 0x0 [ShortSpear] AttackInRangeAI
 UNIT 0x80 Mercenary 0x0 Level(7,Enemy,1) [4,21] 0x0 0x0 0x0  0x0 [SteelSword] DefaultAI
 UNIT 0x80 Fighter 0x0 Level(7,Enemy,1) [5,22] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultAI
-UNIT Bernard General 0x0 Level(4, Enemy,0) [6,14] 0x0 0x0 0x0 0x0 [SilverAxe, Javelin, IronBlade] GuardTileAI
+UNIT Bernard General 0x0 Level(4, Enemy,0) [6,14] 0x0 0x0 0x0 0x0 [SilverAxe, Javelin, IronBlade,DoorKey] GuardTileAI
 UNIT 0x80 Knight 0x0 Level(7,Enemy,1) [5,15] 00 00 00 00 [SteelLance] AttackInRangeAI
 UNIT 0x80 Knight 0x0 Level(7,Enemy,1) [7,15] 00 00 00 00 [SteelLance] AttackInRangeAI
 UNIT
@@ -98,8 +99,8 @@ UNIT 0x80 Myrmidon 0x0 Level(8,Enemy,1) [14,15] 00 00 00 00 [SteelSword] Default
 UNIT 0x80 Fighter 0x0 Level(8,Enemy,1) [10,17] 00 00 00 00 [SteelAxe] DefaultAI
 UNIT 0x80 Mercenary 0x0 Level(8,Enemy,1) [8,11] 00 00 00 00 [SteelSword] DefaultAI
 UNIT 0x80 Soldier 00 Level(8,Enemy,1) [0,1] 00 00 00 00 [Horseslayer] DefaultAI
-UNIT 0x81 LanceCavalier 00 Level(10,Enemy,1) [18,3] 00 00 00 00 [SteelLance] GuardTileAI
-UNIT 0x81 AxeCavalier 00 Level(10,Enemy,1) [20,3] 00 00 00 00 [SteelAxe] GuardTileAI
+UNIT 0x81 LanceCavalier 00 Level(10,Enemy,1) [18,3] 00 00 00 00 [SteelLance] AttackInRangeAI
+UNIT 0x81 AxeCavalier 00 Level(10,Enemy,1) [20,3] 00 00 00 00 [SteelAxe] AttackInRangeAI
 UNIT 0x81 Fighter 00 Level(10,Enemy,1) [5,5] 00 00 00 00 [HandAxe] AttackInRangeAI
 //UNIT 0x80 Knight 00 Level(20,Enemy,1) [10,25] 00 00 00 00 [IronLance] DefaultAI
 UNIT 0x82 Archer 00 Level(7,Enemy,1) [11,15] 00 00 00 00 [IronBow] DefaultAI
@@ -200,7 +201,7 @@ UNIT 0x80 Mercenary 00 Level(8,Enemy,1) [0,4] 00 00 00 00 [SteelSword] DefaultAI
 UNIT 0x80 Fighter 00 Level(8,Enemy,1) [0,5] 00 00 00 00 [SteelAxe] DefaultAI
 UNIT 0x80 Mage 00 Level(8,Enemy,1) [0,6] 00 00 00 00 [Elfire] DefaultAI
 UNIT 0x82 Shaman 00 Level(8,Enemy,1) [0,7] DropItem 00 00 00 [Luna] DefaultAI
-UNIT 0x80 Archer 00 Level(10,Enemy,1) [14,1] 00 00 00 00 [Longbow] DefaultAI
+UNIT 0x82 Archer 00 Level(10,Enemy,1) [14,1] 00 00 00 00 [Longbow] DefaultAI
 UNIT
 
 T10Reinforce:
@@ -221,7 +222,8 @@ NoFade
 ENDA
 
 EndingScene:
-MoveToChapter(Ch8)
+ENUT 0x88
+MoveToChapter(0x38)
 ENDA
 
 MESSAGE Events end at offset CURRENTOFFSET

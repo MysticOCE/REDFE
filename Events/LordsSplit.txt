@@ -35,7 +35,8 @@ ENDA
 MESSAGE Original ending offset is $592114 and the new ending offset is CURRENTOFFSET
 
 ORG $8B43D0
-label29:
+
+MoulderVan:
 UNIT 0x6 0x45 0x0 0x8 [0,0] 0b 0x0 0x0 0x0 [0x15,0x1C,0x6C,0x0] [0x0,0x0,0x0,0x0]
 UNIT 0x5 0x45 0x0 0x18 [0,0] 0b 0x0 0x0 0x0 [0x4B,0x6C,0x0,0x0] [0x0,0x0,0x0,0x0]
 UNIT
@@ -151,7 +152,7 @@ ENDTRAP
 MESSAGE Original ending offset is $9EDF6C and the new ending offset is CURRENTOFFSET
 
 ORG $9EE2E8
-label16:
+bgtransition:
 CHECK_EVBIT 0x8
 BNE 0x80D2 0xC 0x0
 FADI 16
@@ -165,7 +166,7 @@ ENDA
 MESSAGE Original ending offset is $9EE310 and the new ending offset is CURRENTOFFSET
 
 ORG $9EEBB8
-label27:
+breakingarock:
 STARTFADE
 FADECOLORS 0x2000 0x8 0x80 0x80 0x80
 STAL 30
@@ -177,21 +178,21 @@ ENDA
 MESSAGE Original ending offset is $9EEBE8 and the new ending offset is CURRENTOFFSET
 
 ORG $9F33D0
-label28:
+EphEirReturn:
 MUSC 0x31
 SVAL 0x2 0xA
-CALL label16
+CALL bgtransition
 TEXTSHOW 0xC06
 TEXTEND
 FADI 16
 REMA
 SVAL 0x2 0xA
-CALL label16
+CALL bgtransition
 TEXTSHOW 0xC07
 TEXTEND
 REMA
 SVAL 0x2 0xE
-CALL label16
+CALL bgtransition
 TEXTSHOW 0xC08
 TEXTEND
 REMA
@@ -199,7 +200,7 @@ MUSCMID 0x7FFF
 STAL 30
 MUSC 0x2B
 SVAL 0x2 0xE
-CALL label16
+CALL bgtransition
 TEXTSHOW 0xC09
 TEXTEND
 MUSC 0x25
@@ -215,7 +216,7 @@ TEXTSHOW 0xC0D
 TEXTEND
 REMA
 SVAL 0x2 0xE
-CALL label16
+CALL bgtransition
 TEXTSHOW 0xC0E
 TEXTEND
 REMA
@@ -224,18 +225,21 @@ CALL label18
 SVAL 0x3 0x2710
 GIVEITEMTOMAIN 0x0
 SVAL 0x2 0xA
-CALL label16
+CALL bgtransition
 MUSC 0x29
 TEXTSHOW 0xC0F
 TEXTEND
+//split should be comign up
 REMA
 CALL label18
 EVBIT_MODIFY 0x4
+//prompt for route split
 TUTORIALTEXTBOXSTART
 SVAL 0xB 0xFFFFFFFF
 TEXTSHOW 0xC14
 TEXTEND
 REMA
+//route split menu!
 LABEL 0x0
 ASMC 0x864CD
 SADD 0xC2
@@ -246,17 +250,21 @@ TEXTEND
 REMA
 SVAL 0x7 0x1
 BNE 0x0 0xC 0x7
+//menu done
 EVBIT_MODIFY 0x0
 MUSC 0x24
+//now events branch off
 CHECK_MODE
 SVAL 0x1 0x2
 BNE 0x9 0xC 0x1
+//checks for if kyle and forde are dead
 CHECK_ALIVE 0x10
 BEQ 0x1 0xC 0x0
 CHECK_ALIVE 0x11
 BEQ 0x1 0xC 0x0
 SVAL 0x2 0xA
-CALL label16
+CALL bgtransition
+//kyle/forde alive
 TEXTSHOW 0xC10
 TEXTEND
 GOTO 0x3
@@ -264,7 +272,8 @@ LABEL 0x1
 CHECK_ALIVE 0x11
 BEQ 0x2 0xC 0x0
 SVAL 0x2 0xA
-CALL label16
+CALL bgtransition
+//only kyle alive
 TEXTSHOW 0xC11
 TEXTEND
 GOTO 0x3
@@ -272,19 +281,33 @@ LABEL 0x2
 CHECK_ALIVE 0x10
 BEQ 0x3 0xC 0x0
 SVAL 0x2 0xA
-CALL label16
+CALL bgtransition
+//only forde alive
 TEXTSHOW 0xC12
 TEXTEND
+//merging things together after the kyle/forde checks
 LABEL 0x3
 REMA
 FADI 16
 MNCH 0xA
 ASMC 0x8659D
+//end of eph
 REMU 0xF
+ENDB
+LABEL 0x9
+SVAL 0x2 0xA
+CALL 0x9EE2E8
+TEXTSHOW 0xC13
+TEXTEND
+REMA
+FADI 16
+MNCH 0x17
+ASMC 0x8659D
+REMU 0x1
 ENDB
 
 //The next line is for re-assembling purposes. Do not delete!
-MESSAGE Original ending offset is $9F35FC and the new ending offset is CURRENTOFFSET
+//MESSAGE Original ending offset is $9F35FC and the new ending offset is CURRENTOFFSET
 
 ORG $9F36C4
 label17:
@@ -294,11 +317,11 @@ LOAD1 0x1 label19
 ENUN
 FADU 16
 BROWNBOXTEXT 0x66A [8,8]
-CALL label20
-CALL label21
+CALL bigFighto
+CALL SelenaRebuke
 ENDA
 
-label20:
+bigFighto:
 LABEL 0x5F90
 LOAD1 0x1 label22
 ENUN
@@ -360,7 +383,7 @@ CLEE 0x0
 CLEN 0x0
 ENDA
 
-label21:
+SelenaRebuke:
 LABEL 0x5F90
 CAM1 [11,4]
 MUSS 0x2E
@@ -369,7 +392,7 @@ LOAD1 0x1 label26
 ENUN
 FADU 16
 SVAL 0x2 0x53
-CALL label27
+CALL breakingarock
 CUMO 0x53
 STAL 60
 CURE
@@ -418,11 +441,12 @@ ORG $9FF354
 BeginningScene:
 CHECK_EVENTID 0x88
 BEQ 0x801C 0xC 0x0
-CALL label28
+//if eventID 0x88 is 0 (not set), jump over EphEirReturn
+CALL EphEirReturn
 LABEL 0x801C
 MUSC 0x31
 SVAL 0x2 0xE
-CALL label16
+CALL bgtransition
 CHECK_ALIVE 0x3
 BEQ 0x0 0xC 0x0
 TEXTSHOW 0xBFF
@@ -457,7 +481,7 @@ TEXTSHOW 0xC01
 TEXTEND
 REMA
 FADI 16
-LOAD1 0x1 label29
+LOAD1 0x1 MoulderVan
 ENUN
 ENUT 0x8A
 MNCH 0x2

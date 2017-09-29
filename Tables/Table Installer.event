@@ -398,7 +398,3 @@
 
 #include "World Map Editors\World map locations.event"
 
-#include "World Map Editors\WM\Path Connections Editor.event"
-
-#include "World Map Editors\WM\World map locations.event"
-

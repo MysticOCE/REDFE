@@ -97,6 +97,11 @@ Equip: Swords.[X]
 # 0x227
 Xane[X]
 
+# 0x283
+A mysterious shapeshifter who[NL]
+took the form of Dorcas.
+[X]
+
 # 0x21E
 Lukas[X]
 

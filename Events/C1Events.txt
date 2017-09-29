@@ -137,12 +137,14 @@ AnnaRoyChat:
 TEXTSTART
 TEXTSHOW C1AnnaRoyChat
 TEXTEND
+NoFade
 ENDA
 
 DorcasRoyChat:
 TEXTSTART
 TEXTSHOW C1DorcasRoyChat
 TEXTEND
+NoFade
 ENDA
 
 MESSAGE C1Events end at offset CURRENTOFFSET
