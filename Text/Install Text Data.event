@@ -1111,6 +1111,10 @@ TxtData0x941:
 #incext ParseFile "_textentries\0x941.txt"
 setText(0x941,TxtData0x941)
 
+TxtData0x942:
+#incext ParseFile "_textentries\0x942.txt"
+setText(0x942,TxtData0x942)
+
 TxtData0xBFF:
 #incext ParseFile "_textentries\0xBFF.txt"
 setText(0xBFF,TxtData0xBFF)

@@ -44,3 +44,18 @@ ORG 0xFFFFFE
 ORG 0x5A8B40
 #incbin "GryzSeizeAIInstructions.bin"
 POP*/
+/*
+// #define WorldMapIntroPointerTable(id,offset) "PUSH; ORG 0x8B3ad8+(4*id); POIN offset; POP"
+
+{
+  #define PrologueWMEventsID 0x1
+  ALIGN 4
+  #include "WMPrologue.txt"
+}
+{
+  ALIGN 4
+  #include "WM2Prologue.txt"
+}
+ALIGN 4
+// #include "EpilogueEvents.event"
+*/

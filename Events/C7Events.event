@@ -31,12 +31,13 @@ CharacterBasedEvents:
 //CharacterEvent(0x7,RoyRecruitsBernard,Roy,Bernard)
 CharacterEvent(0x8,LukasRecruitsBernard,Lukas,Bernard)
 CharacterEvent(0x9,RoyRecruitsEliwood,Roy,Eliwood)
+//CharacterEvent(0xA,LossEdits,Dorcas,Roy)
 END_MAIN
 
 LocationBasedEvents:
 Door(6,13)
-//Seize(19,2)
-Seize(12,27)
+Seize(19,2)
+//Seize(12,27)
 Chest(KillerAxe,5,20)
 Chest(Dragonshield,6,20)
 Chest(Elfire,5,23)
@@ -169,6 +170,10 @@ RoyRecruitsBernard:
 TurnAlly(Bernard)
 ENDA
 
+LossEdits:
+Text(Losstxt)
+ENDA
+
 LukasRecruitsBernard:
 MUSI
 TEXTSTART
@@ -183,6 +188,7 @@ TurnAlly(Bernard)
 ENDA
 
 RoyRecruitsEliwood:
+Text(RoyRecruitsEliwoodTextCainAlive)
 TurnAlly(Eliwood)
 CHECK_ALIVE Miledy
 SETVAL 0x3 0x1
@@ -215,6 +221,9 @@ LOAD2 0x1 Enemies
 ENUN
 LOAD2 0x1 Enemies2
 ENUN
+Text(C8BeginningText)
+Text(C8DorcasAnnaSupport)
+
 //LOAD2 0x1 EliwoodParty
 //ENUN
 GotoPrepScreen

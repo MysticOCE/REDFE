@@ -234,5 +234,6 @@
 #define C6RavenEnters 0x93f
 #define RavenJoinsText 0x940
 #define LukasRecruitsBernardText 0x941
+#define Losstxt 0x942
 #define ElbertRoyChat1DorcasAlive 0xBFF
 #define RoyAlanAfterGettingHome1 0xC01

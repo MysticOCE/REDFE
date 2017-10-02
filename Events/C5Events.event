@@ -73,7 +73,7 @@ ENIF 0x0
 ENIF 0x1
 ENDA
 
-MESSAGE Yo Xane village debug is up don't release this to public
+//MESSAGE Yo Xane village debug is up don't release this to public
 
 XaneRecruit:
 UNIT Xane Brigand 0x0 Level(4,Ally,0) [9,2] 0x00 0x0 0x0 0x0 [IronAxe, Vulnerary] NoAI
