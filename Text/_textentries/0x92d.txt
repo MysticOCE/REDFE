@@ -1,4 +1,2 @@
-[OpenMidRight][LoadFace][0x02][0x01]
-There's nothing left in here.[NL]
-We've still got a lot left to do...[A]
-[X]
+[OpenMidLeft][LoadFace][0x33][0x01][OpenMidLeft]I'm the[.][ToggleMouthMove]...[.][ToggleMouthMove]mighty[ToggleMouthMove]...[.][ToggleMouthMove]Bazba[.][ToggleMouthMove]...[.][ToggleMouthMove][NL]
+This[ToggleMouthMove]...[.][ToggleMouthMove]ain't[.][ToggleMouthMove]--[ToggleMouthMove][A][X]

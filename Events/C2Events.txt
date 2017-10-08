@@ -37,16 +37,19 @@ UNIT 0x80 Brigand 0x0 Level(2,Enemy,1)[7,0] 0x00 0x00 0x0 0x00 [IronAxe] Default
 UNIT
 
 RecruitsC2:
-UNIT Ewan Pupil_1 0x0 Level(1,Ally,0) [12,2] 0x00 0x00 0x1 EwanMovements [Fire, Vulnerary] NoAI
-UNIT Leila Thief 0x0 Level(3,Ally,0) [12,2] 0x00 0x00 0x1 LeilaMovements [IronSword, Lockpick] NoAI
+
+UNIT Leila Thief 0x0 Level(3,Ally,0) [12,2] 0x00 0x00 0 0 [IronSword, Lockpick] NoAI
 UNIT
 
 LeilaMovements:
 REDA [12,3] 0x10 0x0 0x0 0x0 0x0
 
 EwanMovements:
-REDA [13,3] 0x10 0x0 0x0 0x0 0x0
+REDA [12,3] 0x10 0x0 0x0 0x0 0x0
 
+EwanCutscene:
+UNIT Ewan Pupil_1 0x0 Level(1,Ally,0) [12,2] 0x00 0x00 1 EwanMovements [Fire, Vulnerary] NoAI
+UNIT
 
 LocationBasedEvents2:
 Armory(ArmoryC2,5,11)
@@ -124,6 +127,15 @@ LOAD1 0x1 RecruitsC2
 TEXTSTART
 TEXTSHOW LeilaEwanRecruit
 TEXTEND
+LOAD1 0x1 EwanCutscene
+TEXTCONT
+TEXTEND
+MOVE 0x10 Ewan [13,3]
+ENUN
+MOVE 0x10 Leila [12,3]
+ENUN
+TEXTCONT
+TEXTEND
 REMA
 FADU 10
 CAM1 Roy
@@ -139,8 +151,16 @@ ENDA
 
 EndingScene2:
 MUSC Advance
-Text(Outside_Village_Day,Ch2EndingSceneTextLeilaAlive)
+TEXTSTART
+SetBackground(Outside_Village_Day)
+TEXTSHOW Ch2EndingSceneTextLeilaAlive
+TEXTEND
 REMA
+TEXTSTART
+TEXTSHOW C2EndingTextEwanAlive
+TEXTEND
+REMA
+ClearBackground
 MoveToChapter(Ch3)
 ENDA
 

@@ -67,6 +67,12 @@ UNIT
 RoyMovements:
 REDA [3,3] 0x10 0x0 0x0 0x0 0x0
 
+CainCutscene:
+UNIT Cain Cavalier 0x0 Level(1,Ally,0) [0,1] 0x00 0x00 0x1 CainMovements [IronLance] NoAI
+UNIT
+
+CainMovements:
+REDA [3,4] 0x10 0x0 0 0 0 
 
 HumanEnemies:
 UNIT Zonta Mercenary 0x0 Level(8,Enemy,0) [27,9] 0x00 0x00 0x0 0x00 [LightBrand] GuardTileAI
@@ -76,12 +82,12 @@ UNIT 0x80 Fighter 0x0 Level(4,Enemy,1) [13,7] 0x00 0x00 0x0 0x00 [HandAxe] Guard
 UNIT 0x80 Mercenary 0x0 Level(4,Enemy,1) [16,8] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
 UNIT 0x80 Archer 0x0 Level(4,Enemy,1) [14,1] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI
 UNIT 0x80 Shaman 0x0 Level(4,Enemy,1) [12,9] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI
-UNIT 0x80 Soldier 0x0 Level(5,Enemy,1) [26,9] DropItem 0x00 0x0 0x00 [KillerLance] AttackInRangeAI
+UNIT 0x82 Soldier 0x0 Level(5,Enemy,1) [26,9] DropItem 0x00 0x0 0x00 [KillerLance] AttackInRangeAI
 UNIT
 
 
 Monsters:
-UNIT 0xAB Wight 0x0 Level(1,Enemy,1) [23,3] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI
+UNIT 0xAC Wight 0x0 Level(1,Enemy,1) [23,3] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI
 UNIT 0xAB Bonewalker 0x0 Level(2,Enemy,1) [10,4] 0x00 0x00 0x0 0x00 [IronSword] DefaultAI
 UNIT 0xAB Bonewalker 0x0 Level(2,Enemy,1) [9,3] 0x00 0x00 0x0 0x00 [IronLance] DefaultAI
 UNIT 0xAB Mogall 0x0 Level(2, Enemy,1) [14,11] 0x00 0x00 0x0 0x00 [EvilEye] AttackInRangeAI
@@ -93,6 +99,7 @@ UNIT
 
 
 BeginningScene:
+MUSI
 LOAD2 0x1 RoyCutscene
 ENUN
 TEXTSTART
@@ -100,18 +107,34 @@ SetBackground(Plain_Fog)
 TEXTSHOW C4OpeningText
 TEXTEND
 ClearBackground
-REMA
-FADU 10
 MUSC Tension
+MUNO
+LOAD2 0x1 CainCutscene
+ENUN
+TEXTSTART
+SetBackground(Plain_Fog)
+TEXTSHOW C4OpeningText2
+TEXTEND
+REMA
+ClearBackground
+LOAD2 0x1 Monsters
+ENUN
+LOAD2 0x1 HumanEnemies
+ENUN
+FADU 60
+CAM1 [21,7]
+//FlashCursor(Zonta,30)
+FADU 10
 TEXTSTART
 SetBackground(Plain_Fog)
 TEXTSHOW ZontaSoldierTalk
 TEXTEND
 ClearBackground
 REMA
-LOAD2 0x1 Monsters
-LOAD2 0x1 HumanEnemies
+MOVE 0x10 0x82 [19,9]
+ENUN
 LOAD2 0x1 Units
+FlashCursor(0xAC, 60)
 FADU 30
 ENDA
 

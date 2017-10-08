@@ -1,2 +1,2 @@
-[OpenMidLeft][LoadFace][0x32][0x01][OpenMidLeft]Urgh[ToggleMouthMove]... [ToggleMouthMove]
-Blast[.][ToggleMouthMove]...[.][ToggleMouthMove][A][X]
+[OpenMidLeft][LoadFace][0x32][0x01][OpenMidLeft]Wait a minute![NL]
+Wh-who are you?[.][A][X]
