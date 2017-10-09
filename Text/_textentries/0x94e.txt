@@ -1,2 +1,6 @@
-Rally Movement: +1 Move[NL]
-to allies within 2 tiles.[X]
+[OpenMidRight][LoadPortrait][0x0F][0x01]
+Finally... I haven't forgetten the[NL]
+disgrace I felt when I fell back.[A][NL]
+Milord... I'm coming.[A]
+[ClearFace]
+[X]

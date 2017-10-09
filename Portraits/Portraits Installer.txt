@@ -6,8 +6,12 @@ RoyMug:
 setMugEntry(0x02, RoyMug, 3, 6, 3, 4)
 
 AlanMug:
-#incext PortraitFormatter "Alan6.png"
+#incext PortraitFormatter "Alan7.png"
 setMugEntry(0x04, AlanMug, 3, 5, 3, 3)
+
+AltAlan:
+#incext PortraitFormatter "AlanAlt2.png"
+setMugEntry(0x2C, AltAlan, 3,5,3,3)
 
 DorcasMug:
 #incext PortraitFormatter "Dorcas3.png"

@@ -57,7 +57,7 @@ UNIT Leila Thief 0x0 Level(2,Ally,0) [4,12] 0x00 0x00 0x0 0x00 [IronSword,Lockpi
 UNIT
 
 Enemies:
-UNIT Beran Myrmidon 0x0 Level(8,Enemy,0) [4,0] 0x00 0x00 0x0 0x0 [SteelSword] [0x3,0x10,0x0,0x0]
+UNIT Beran Myrmidon 0x0 Level(8,Enemy,0) [1,3] 0x00 0x00 0x0 0x0 [SteelSword, Vulnerary] [0x3,0x10,0x0,0x0]
 UNIT 0x80 Fighter 0x0 Level(6,Enemy,1) [3,2]  0x00 0x0 0x0 0x0 [SteelAxe] DefaultAI
 UNIT 0x80 Mage 0x0 Level(6,Enemy,1) [0,5] 0x0 0x0 0x0 0x0 [Thunder] DefaultAI
 UNIT 0x80 Shaman 0x0 Level(7,Enemy,1) [4,3] 0x0 0x0 0x0 0x0 [Flux] DefaultAI
@@ -69,6 +69,10 @@ UNIT 0x80 Mercenary 0x0 Level(6,Enemy,1) [9,2] 0x0 0x0 0x0 0x0 [SteelSword] Atta
 UNIT 0x80 Myrmidon 0x0 Level(6,Enemy,1) [14,2] 0x0 0x0 0x0 0x0 [IronSword] AttackInRangeAI
 UNIT 0x80 Fighter 0x0 Level(6,Enemy,1) [15,1] 0x0 0x0 0x0 0x0 [IronAxe] AttackInRangeAI
 UNIT 0x80 Myrmidon 0x0 Level(7,Enemy,1) [21,6] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT
+
+TestLukas:
+UNIT Lukas Knight 0x0 Level(4,Ally,0) [1,4] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
 UNIT
 
 RavenUnit:
@@ -101,18 +105,36 @@ ENUT 0x65
 ENDA
 
 BeginningScene:
+LOAD2 0x1 Enemies
+ENUN
+LOAD1 0x1 TestLukas
+ENUN
 TEXTSTART
-//SetBackground(Woodland_Night)
-TEXTSHOW C6OpeningTextDebug
-//ClearBackground
+SetBackground(Woodland_Night)
+TEXTSHOW C6OpeningText1
 TEXTEND
 REMA
-FADU 10
+TEXTSTART
+TEXTSHOW C6OpeningText2
+TEXTEND
+ClearBackground
+REMA
+StartBattle // SVAL rD 0x0 // scripted fight setup
+		NormalDamage(0, 0) // SVAL r1 0x20000; SAVETOQUEUE
+		MissedAttack(1, 0) // SVAL r1 0x1; SAVETOQUEUE
+EndAttack // SVAL r1 0xFFFFFFFF; SAVETOQUEUE
+FIG1 Lukas Beran 0x0 //execute fight
+TEXTSTART
+SetBackground(Woodland_Night)
+TEXTSHOW C6OpeningText3
+TEXTEND
+REMA
+ClearBackground
+FADU 30
 LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 Enemies
 ENUN
-
 //REMA
 GotoPrepScreen
 NoFade

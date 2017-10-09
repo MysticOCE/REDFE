@@ -15,7 +15,8 @@ ORG 0xAAB3F4 //for title screen background color
 #incbin "testing2.dmp"
 ORG 0xAAC58C
 #incbin "testing3.dmp"
-
+ORG 0x803590
+#incbin "EXPPal.DMP"
 
 POP
 #include "Pal2EA/Palette Setup.event"

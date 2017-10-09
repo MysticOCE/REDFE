@@ -2,6 +2,7 @@
 [OpenMidLeft][LoadFace][0x02][0x01]
 [OpenRight]
 Milord, enemy forces[NL]
+[LoadFace][0x2C][0x01]
 stand in our way.[A]
 [OpenMidLeft]
 They're already this[NL]

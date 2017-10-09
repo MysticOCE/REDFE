@@ -131,6 +131,8 @@ TEXTSHOW ZontaSoldierTalk
 TEXTEND
 ClearBackground
 REMA
+//testing
+
 MOVE 0x10 0x82 [19,9]
 ENUN
 LOAD2 0x1 Units
@@ -139,6 +141,12 @@ FADU 30
 ENDA
 
 EndingScene:
+TEXTSTART
+SetBackground(Plain_Fog)
+TEXTSHOW Ch4EndingText
+TEXTEND
+ClearBackground
+REMA
 MoveToChapter(Ch5)
 ENDA
 
