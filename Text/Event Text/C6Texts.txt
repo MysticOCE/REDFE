@@ -40,11 +40,11 @@ I had some questions to ask as well.[A]
 
 ## C6OpeningText2
 [OpenMidRight][LoadPortrait][0x3E][0x01]
-That soldier better pop up soon.[A]
+That soldier better pop up soon.[NL]
 Don't want to deal with more bandits.[A]
 [OpenMidLeft][LoadPortrait][0x11][0x01]
 My apologies for the lateness.[NL]
-Were you waiting long.[A][NL]
+Were you waiting long?[A][NL]
 [OpenMidRight]
 Not particularly. How are affairs?[A]
 [OpenMidLeft]
@@ -76,7 +76,7 @@ Huh?[A]
 
 ## C6OpeningText3
 [OpenMidRight][LoadPortrait][0x3E][0x01]
-Gyaargh![MoveMidRight]
+Gyaargh! [MoveMidRight]
 I don't know what's gotten[NL]
 into him, but I'm out of here![A]
 [X]

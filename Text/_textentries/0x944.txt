@@ -1,5 +1,5 @@
 [OpenMidRight][LoadPortrait][0x3E][0x01]
-Gyaargh![MoveMidRight]
+Gyaargh! [MoveMidRight]
 I don't know what's gotten[NL]
 into him, but I'm out of here![A]
 [X]

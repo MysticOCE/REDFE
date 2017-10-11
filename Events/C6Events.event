@@ -114,6 +114,7 @@ SetBackground(Woodland_Night)
 TEXTSHOW C6OpeningText1
 TEXTEND
 REMA
+MUSC Twisted_ShadowsB
 TEXTSTART
 TEXTSHOW C6OpeningText2
 TEXTEND
@@ -130,13 +131,14 @@ TEXTSHOW C6OpeningText3
 TEXTEND
 REMA
 ClearBackground
-FADU 30
-LOAD2 0x1 Units
+MOVE 0x10 Beran [4,0]
 ENUN
-LOAD1 0x1 Enemies
+FADU 30
+
 ENUN
 //REMA
 GotoPrepScreen
+LOAD2 0x1 Units
 NoFade
 ENDA
 
