@@ -188,7 +188,14 @@ TurnAlly(Bernard)
 ENDA
 
 RoyRecruitsEliwood:
-Text(RoyRecruitsEliwoodTextCainAlive)
+CHECK_ALIVE Cain
+SETVAL 0x3 0x1
+BNE 0x4 0xC 0x3
+	Text(RoyRecruitsEliwoodTextCainAlive)
+	GOTO 0x5
+LABEL 0x4
+	Text(RoyRecruitsEliwoodTextCainDead)
+LABEL 0x5
 TurnAlly(Eliwood)
 CHECK_ALIVE Miledy
 SETVAL 0x3 0x1
@@ -221,8 +228,19 @@ LOAD2 0x1 Enemies
 ENUN
 LOAD2 0x1 Enemies2
 ENUN
-Text(C8BeginningText)
-Text(C8DorcasAnnaSupport)
+TEXTSTART
+TEXTSHOW C8BeginningText
+TEXTEND
+TEXTSHOW2 C8DorcasAnnaSupport
+TEXTEND
+TEXTSHOW2 C8SalemPriscillaSupport
+TEXTEND
+TEXTSHOW2 C8RaddSupport
+TEXTEND
+TEXTSHOW2 C8CainSupport
+TEXTEND
+TEXTSHOW2 C8LeilaEwanSupport
+TEXTEND
 
 //LOAD2 0x1 EliwoodParty
 //ENUN

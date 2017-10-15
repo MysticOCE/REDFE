@@ -137,6 +137,7 @@ AnnaRoyChat:
 TEXTSTART
 TEXTSHOW C1AnnaRoyChat
 TEXTEND
+REMA
 NoFade
 ENDA
 
@@ -144,6 +145,7 @@ DorcasRoyChat:
 TEXTSTART
 TEXTSHOW C1DorcasRoyChat
 TEXTEND
+REMA
 NoFade
 ENDA
 
