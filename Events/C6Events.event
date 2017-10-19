@@ -133,16 +133,22 @@ REMA
 ClearBackground
 MOVE 0x10 Beran [4,0]
 ENUN
-FADU 30
+Text(C6OpeningText4)
+REMA
 
-ENUN
-//REMA
+FADU 30
 GotoPrepScreen
 LOAD2 0x1 Units
 NoFade
 ENDA
 
 EndingScene:
+TEXTSTART
+SetBackground(Woodland_Night)
+TEXTSHOW C6EndingText1
+TEXTEND
+ClearBackground
+REMA
 MoveToChapter(Ch7)
 ENDA
 

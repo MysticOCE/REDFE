@@ -1,2 +1,6 @@
-Staff Savant: Maximum range[NL]
-of staves is increased by 1.[X]
+[OpenMidRight][LoadPortrait][0x0F][0x01]
+Finally... I haven't forgetten the[NL]
+disgrace I felt when I fell back.[A][NL]
+Milord... I'm coming.[A]
+[ClearFace]
+[X]
