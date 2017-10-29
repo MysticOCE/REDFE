@@ -28,7 +28,7 @@ UNIT 0x80 Mercenary Breguet Level(3, Enemy, 0) [15,8] DropItem 0x00 0x0 0x00 [Ir
 UNIT 0x80 Fighter Breguet Level(3, Enemy, 0) [12,9] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
 UNIT 0x80 Soldier Breguet Level(2, Enemy, 0) [2,5] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI
 UNIT 0x80 Soldier Breguet Level(2, Enemy, 0) [4,5] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI
-UNIT 0x80 Fighter Breguet Level(2, Enemy, 0) [13,6] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0x80 Fighter Breguet Level(2, Enemy, 0) [10,5] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
 UNIT 0x80 Mercenary Breguet Level(3, Enemy, 0) [2,7] 0x00 0x00 0x0 0x00 [IronSword] ChaseOnceApproachedAI
 UNIT
 
