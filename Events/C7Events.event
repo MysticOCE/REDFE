@@ -19,7 +19,7 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0,TiradoArrives,2)
-TurnEventPlayer(0,EliwoodArrives,4)
+TurnEventPlayer(0,EliwoodArrives,5)
 TurnEventPlayer(0,TiradoForcesArriveHM,7)
 TurnEventPlayer(0,TiradoForcesArrive,8)
 TurnEventPlayer(0,ThiefReinforce,9)
@@ -77,6 +77,7 @@ UNIT Murray Paladin 0x0 Level(2,Enemy,1) [19,3] 0x00 0x00 0x0 0x0 [SteelSword,Ja
 UNIT 0x80 Soldier 0x0 Level(8,Enemy,1)[19,11] 0x0 0x0 0x0 0x0 [ShortSpear] AttackInRangeAI
 UNIT 0x80 Soldier 0x0 Level(8,Enemy,1) [19,12] 0x0 0x0 0x0 0x0 [ShortSpear] AttackInRangeAI
 UNIT 0x81 Knight 0x0 Level(7,Enemy,1) [13,19] 00 0x0 0x0 0x0 [ShortSpear] AttackInRangeAI
+UNIT 0x84 Soldier 0x0 Level(7,Enemy,1) [17,2] 00 00 00 00 [SteelLance] AttackInRangeAI
 UNIT 0x80 Mercenary 0x0 Level(7,Enemy,1) [4,21] 0x0 0x0 0x0  0x0 [SteelSword] DefaultAI
 UNIT 0x80 Fighter 0x0 Level(7,Enemy,1) [5,22] 0x0 0x0 0x0 0x0 [SteelAxe] DefaultAI
 UNIT Bernard General 0x0 Level(4, Enemy,0) [6,14] 0x0 0x0 0x0 0x0 [SilverAxe, Javelin, IronBlade,DoorKey] GuardTileAI
@@ -129,7 +130,7 @@ TiradoForcesArriveHM:
 CHECK_HARD
 SETVAL 0x3 0x1
 IFEQ 0x0 0xC 0x3
-	ReinforcementEvent(TiradoBackup)
+	ReinforcementEvent(TiradoHMBackup)
 ENIF 0x0
 ENDA
 
@@ -142,8 +143,15 @@ ENIF 0x1
 ENDA
 
 TiradoBackup:
-UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [23,11] 00 00 00 00 [SteelSword,SteelLance] DefaultAI
-UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [23,12] 00 00 00 00 [SteelLance,SteelAxe] DefaultAI
+UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [22,11] 00 00 00 00 [SteelAxe,SteelLance] DefaultAI
+UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [22,12] 00 00 00 00 [SteelLance,SteelAxe] DefaultAI
+UNIT
+
+TiradoHMBackup:
+UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [22,11] 00 00 00 00 [SteelAxe,SteelLance] DefaultAI
+UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [22,12] 00 00 00 00 [SteelLance,SteelAxe] DefaultAI
+UNIT 0x80 Ranger 00 Level(1,Enemy,1) [23,10] 00 00 00 00 [SteelBow] DefaultAI
+UNIT 0x80 Valkyrie 00 Level(1,Enemy,1) [23,13] 00 00 00 00 [Lightning, Heal] DefaultAI
 UNIT
 
 ThiefReinforce:
@@ -164,6 +172,20 @@ CAM1 [16,1]
 STAL 30
 LOAD1 0x1 MysteryBossMan2
 ENUN
+TEXTSTART 
+TEXTSHOW C8TiradoArrives
+TEXTEND
+REMA
+MOVE 0x10 0x84 [19,4]
+ENUN
+STAL 30
+TEXTSTART
+TEXTSHOW C8TiradoArrives2
+TEXTEND
+REMA
+MOVE 0x10 0x84 [16,1]
+ENUN
+DISA 0x84
 ENDA
 
 RoyRecruitsBernard:
@@ -213,7 +235,7 @@ T10Units:
 UNIT 0x80 Mercenary 00 Level(8,Enemy,1) [0,4] 00 00 00 00 [SteelSword] DefaultAI
 UNIT 0x80 Fighter 00 Level(8,Enemy,1) [0,5] 00 00 00 00 [SteelAxe] DefaultAI
 UNIT 0x80 Mage 00 Level(8,Enemy,1) [0,6] 00 00 00 00 [Elfire] DefaultAI
-UNIT 0x82 Shaman 00 Level(8,Enemy,1) [0,7] DropItem 00 00 00 [Luna] DefaultAI
+UNIT 0x83 Shaman 00 Level(8,Enemy,1) [0,7] DropItem 00 00 00 [Luna] DefaultAI
 UNIT 0x82 Archer 00 Level(10,Enemy,1) [14,1] 00 00 00 00 [Longbow] DefaultAI
 UNIT
 
@@ -241,7 +263,13 @@ TEXTSHOW2 C8CainSupport
 TEXTEND
 TEXTSHOW2 C8LeilaEwanSupport
 TEXTEND
-
+TEXTSHOW2 C8XaneSupport
+TEXTEND
+TEXTSHOW2 C8LukasSupport
+TEXTEND
+TEXTSHOW2 C8RavenSupport
+TEXTEND
+REMA
 //LOAD2 0x1 EliwoodParty
 //ENUN
 GotoPrepScreen

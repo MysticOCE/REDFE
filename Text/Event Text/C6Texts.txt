@@ -175,3 +175,15 @@ able to face King Fado in the afterlife?[A][NL]
 [OpenEyes]
 Enough contemplation. I need to do this.[A]
 [X]
+
+## C6BeranBattleQuote
+[OpenMidRight][LoadPortrait][0x3E][0x01]
+You're a persistant lot[NL]
+aren't you?[A][NL]
+Out of the way.[A]
+[X]
+
+## C6BeranDeathQuote
+[OpenMidRight][LoadPortrait][0x3E][0x01]
+No more[ToggleMouthMove][....]...[ToggleMouthMove][CloseEyes]running[.][ToggleMouthMove][....]...[A]
+[X]

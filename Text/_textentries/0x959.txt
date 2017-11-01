@@ -1,2 +1,5 @@
-Trample: +5 damage to[NL]
-unmounted units.[X]
+[OpenMidRight][LoadPortrait][0x1B][0x01]
+Grado, bandits, it matters not.[NL]
+You need me, you have me.[A]
+[ClearFace]
+[X]

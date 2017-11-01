@@ -303,7 +303,18 @@ You're right. I'm dwelling on[NL]
 dark thoughts too much.[A] Good night.[A]
 [X]
 
+## C5LukasBossConvo
+[OpenMidRight][LoadPortrait][0x11][0x01]
+A pity it came to this but...[A][NL]
+This is simply how it[NL]
+must end. Farewell.[A]
+[X]
 
+## C5LukasDeathQuote
+[OpenMidRight][LoadPortrait][0x11][0x01]
+Was this[ToggleMouthMove][....]...[ToggleMouthMove][CloseEyes] truely the[NL]
+only way[ToggleMouthMove][....]...[.]?[A]
+[X]
 
 
 

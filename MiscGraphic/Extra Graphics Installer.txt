@@ -1,0 +1,8 @@
+PUSH
+
+ORG $c5830
+POIN NewTitleScroll
+
+POP
+NewTitleScroll:
+#incext Png2Dmp "insertscroll.png" --lz77

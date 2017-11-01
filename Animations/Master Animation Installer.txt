@@ -31,6 +31,9 @@
   #include "RoyLord/RoyLordSword Installer.event"
   #include "AxeCav/AxeKnight Installer.event"
   #include "AxeCav/AxeKnightHandaxe Installer.event"
+  #include "Knight Lord/KnightLordLance Installer.event"
+  #include "Knight Lord/KnightLordSword Installer.event"
+  #include "Knight Lord/KnightLordUnarmed Installer.event"
   SetAnimationPointers(0x37,AxeCavalierAnimations)
   AxeCavalierAnimations:
   weaponTypeAnim(animAxe,0x96)
@@ -44,6 +47,12 @@
   weaponTypeAnim(animLance,0x35)
   weaponTypeAnim(animNone,0x36)
   weaponAnimEnd
+  SetAnimationPointers(0x3,KnightLordAnimations)
+  KnightLordAnimations:
+  weaponTypeAnim(animLance,0x8)
+  weaponTypeAnim(animSword,0x7)
+  weaponTypeAnim(animNone,0x1)
+  
   //SetAnimationPointers(Fighter, HandAxeTest)
   //HandAxeTest:
   //weaponAnim(SteelAxe,0xB4)

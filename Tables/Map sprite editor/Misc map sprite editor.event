@@ -5,7 +5,7 @@ ORG 0x9a2e00
 csvmacro153(0x81c33cc,0x81c3d7c)
 csvmacro153(MapRoyLordMove|IsPointer,0x81c46cc)
 csvmacro153(0x81c4824,0x81c52b4)
-csvmacro153(0x81c5414,0x81c5e84)
+csvmacro153(MapKnightLordMove|IsPointer,0x81c5e84)
 csvmacro153(MapSwordCavMove|IsPointer,0x81c692c)
 csvmacro153(0x81c5fe4,0x81c692c)
 csvmacro153(0x81c6a84,0x81c7428)

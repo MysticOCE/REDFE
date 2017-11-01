@@ -14,3 +14,7 @@ MapSwordCavStand:
 #incext Png2Dmp "MSwordCavStand.png" --lz77
 MapSwordCavMove:
 #incext Png2Dmp "MSwordCavMove.png" --lz77
+MapKnightLordStand:
+#incext Png2Dmp "KnightLordStand.png" --lz77
+MapKnightLordMove:
+#incext Png2Dmp "KnightLordMove.png" --lz77
