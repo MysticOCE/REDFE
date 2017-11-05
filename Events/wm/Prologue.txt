@@ -12,20 +12,30 @@
 
 
 ORG $A39768
+//Start of the game events
 EVBIT_MODIFY 0x1
 _0xC220
+//Spawns lord but doesn't actually display them
 WM_SPAWNLORD 0x0 0x0 0x1 0x0 0x0
+//idk what this centers on
 WM_CENTERCAMONLORD
+//Quick transition to silence from the menu music before we start playing the actual song
 MUSCFAST 0x7FFF
 STAL 32
+//begins playing the actual song you hear when you start a new game
 MUSC 0x4
+//This shows the 4th world map image which is only used here
 WM_SHOWDRAWNMAP 0x0 0x0 0x0 0x10 0x0
 STAL 2
 WM_FADEOUT 0x0 0x0 0x0
+//puts a fancy effect on your text box
 WM_TEXTDECORATE
 EVBIT_MODIFY 0x0
 STAL 60
+// 1st value doesn't seem to do anything, 2nd value is fade in time, if it goes for too long the fade breaks and the thing jumps around, idk what the 3rd does either
 WM_SHOWTEXTWINDOW 0x0 0x28 0x1
+
+
 WM_WAITFORTEXT
 WM_TEXTSTART
 WM_TEXT 0x8DB

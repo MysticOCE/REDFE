@@ -1,0 +1,229 @@
+//begin Mode 1
+C03
+C07
+5  p- LnCvS\LnCvId.png
+C1C
+3  p- LnCvS\Attack\LnCvAtk01.png
+15  p- LnCvS\Attack\LnCvAtk02.png
+C04
+2  p- LnCvS\Attack\LnCvAtk03.png
+2  p- LnCvS\Attack\LnCvAtk04.png
+2  p- LnCvS\Attack\LnCvAtk05p.png
+C1A
+C23
+C1F
+1  p- LnCvS\Attack\LnCvAtk06p.png
+C01
+C22
+3  p- LnCvS\Return\LnCvRet00p.png
+2  p- LnCvS\Return\LnCvRet01.png
+2  p- LnCvS\Return\LnCvRet02.png
+5  p- LnCvS\Return\LnCvRet03.png
+C1E
+3  p- LnCvS\Return\LnCvRet04.png
+5  p- LnCvS\Return\LnCvRet05.png
+3  p- LnCvS\Return\LnCvRet06.png
+3  p- LnCvS\Return\LnCvRet07.png
+3  p- LnCvS\Return\LnCvRet08.png
+20  p- LnCvS\Return\LnCvRet09.png
+C1D
+5  p- LnCvS\Return\LnCvRet10.png
+3  p- LnCvS\Return\LnCvRet11.png
+5  p- LnCvS\Return\LnCvRet12.png
+C1D
+C06
+5  p- LnCvS\LnCvId.png
+C0D
+~~~
+//begin Mode 3
+C03
+C07
+5  p- LnCvS\Critical\LnCvCrt00.png
+2  p- LnCvS\Critical\LnCvCrt01.png
+C38
+2  p- LnCvS\Critical\LnCvCrt02.png
+3  p- LnCvS\Critical\LnCvCrt03.png
+3  p- LnCvS\Critical\LnCvCrt04.png
+2  p- LnCvS\Critical\LnCvCrt05.png
+3  p- LnCvS\Critical\LnCvCrt06.png
+2  p- LnCvS\Critical\LnCvCrt07.png
+3  p- LnCvS\Critical\LnCvCrt08.png
+20  p- LnCvS\Critical\LnCvCrt09.png
+C38
+3  p- LnCvS\Critical\LnCvCrt10.png
+1  p- LnCvS\Critical\LnCvCrt11.png
+2  p- LnCvS\Critical\LnCvCrt12.png
+2  p- LnCvS\Critical\LnCvCrt13.png
+1  p- LnCvS\Critical\LnCvCrt14.png
+C38
+1  p- LnCvS\Critical\LnCvCrt15.png
+2  p- LnCvS\Critical\LnCvCrt16.png
+2  p- LnCvS\Critical\LnCvCrt17.png
+1  p- LnCvS\Critical\LnCvCrt18.png
+2  p- LnCvS\Critical\LnCvCrt19.png
+2  p- LnCvS\Critical\LnCvCrt20.png
+3  p- LnCvS\Critical\LnCvCrt21.png
+C43
+15  p- LnCvS\Critical\LnCvCrt22.png
+3  p- LnCvS\Critical\LnCvCrt23.png
+6  p- LnCvS\Critical\LnCvCrt24.png
+3  p- LnCvS\Critical\LnCvCrt25.png
+6  p- LnCvS\Critical\LnCvCrt26.png
+3  p- LnCvS\Critical\LnCvCrt27.png
+6  p- LnCvS\Critical\LnCvCrt28.png
+3  p- LnCvS\Critical\LnCvCrt29.png
+8  p- LnCvS\Critical\LnCvCrt30.png
+C1C
+9  p- LnCvS\Attack\LnCvAtk02.png
+C04
+2  p- LnCvS\Attack\LnCvAtk03.png
+//2  p- LnCvS\Attack\LnCvAtk04.png "slows down crit too much"
+2  p- LnCvS\Attack\LnCvAtk05p.png
+C08
+C23
+C1F
+1  p- LnCvS\Attack\LnCvAtk06p.png
+C01
+C22
+3  p- LnCvS\Return\LnCvRet00p.png
+2  p- LnCvS\Return\LnCvRet01.png
+2  p- LnCvS\Return\LnCvRet02.png
+5  p- LnCvS\Return\LnCvRet03.png
+C1E
+3  p- LnCvS\Return\LnCvRet04.png
+5  p- LnCvS\Return\LnCvRet05.png
+3  p- LnCvS\Return\LnCvRet06.png
+3  p- LnCvS\Return\LnCvRet07.png
+3  p- LnCvS\Return\LnCvRet08.png
+20  p- LnCvS\Return\LnCvRet09.png
+C1D
+5  p- LnCvS\Return\LnCvRet10.png
+3  p- LnCvS\Return\LnCvRet11.png
+5  p- LnCvS\Return\LnCvRet12.png
+C1D
+C06
+5  p- LnCvS\LnCvId.png
+C0D
+~~~
+//begin Mode 5
+1  p- LnCvS\LnCvId.png
+2  p- LnCvS\Javelin\LnCvJav01.png
+C43
+5  p- LnCvS\Javelin\LnCvJav02.png
+C22
+2  p- LnCvS\Javelin\LnCvJav03.png
+15  p- LnCvS\Javelin\LnCvJav04.png
+2  p- LnCvS\Javelin\LnCvJav05.png
+15  p- LnCvS\Javelin\LnCvJav06.png
+C25
+2  p- LnCvS\Javelin\LnCvJav07.png
+C05
+1  p- LnCvS\Javelin\LnCvJav08.png
+C01
+3  p- LnCvS\Javelin\LnCvJav09.png
+3  p- LnCvS\Javelin\LnCvJav10.png
+1  p- LnCvS\LnCvId.png
+C06
+C0D
+~~~
+//begin Mode 6
+1  p- LnCvS\Javelin\LnCvJav00.png
+2  p- LnCvS\Javelin\LnCvJav01.png
+C43
+5  p- LnCvS\Javelin\LnCvJav02.png
+C22
+2  p- LnCvS\Javelin\LnCvJav03.png
+15  p- LnCvS\Javelin\LnCvJav04.png
+C38
+2  p- LnCvS\Javelin Critical\LnCvJCr01.png
+2  p- LnCvS\Javelin Critical\LnCvJCr02.png
+2  p- LnCvS\Javelin Critical\LnCvJCr03.png
+C38
+2  p- LnCvS\Javelin Critical\LnCvJCr04.png
+2  p- LnCvS\Javelin Critical\LnCvJCr05.png
+2  p- LnCvS\Javelin Critical\LnCvJCr06.png
+C38
+2  p- LnCvS\Javelin Critical\LnCvJCr07.png
+5  p- LnCvS\Javelin\LnCvJav05.png
+15  p- LnCvS\Javelin\LnCvJav06.png
+C25
+2  p- LnCvS\Javelin\LnCvJav07.png
+C05
+1  p- LnCvS\Javelin\LnCvJav08.png
+C01
+3  p- LnCvS\Javelin\LnCvJav09.png
+3  p- LnCvS\Javelin\LnCvJav10.png
+1  p- LnCvS\LnCvId.png
+C06
+C0D
+~~~
+//begin Mode 7
+C02
+//1  p- LnCvS\LnCvId.png
+C0E
+3  p- LnCvS\Evade\LnCvEvd01.png
+1  p- LnCvS\Evade\LnCvEvd02.png
+C01
+3  p- LnCvS\Evade\LnCvEvd01.png
+1  p- LnCvS\LnCvId.png
+C0D
+~~~
+//begin Mode 8
+C02
+//1  p- LnCvS\LnCvId.png
+C0E
+3  p- LnCvS\Evade\LnCvEvd01.png
+1  p- LnCvS\Evade\LnCvEvd02.png
+C01
+3  p- LnCvS\Evade\LnCvEvd01.png
+1  p- LnCvS\LnCvId.png
+C0D
+~~~
+//begin Mode 9
+1  p- LnCvS\LnCvId.png
+C01
+~~~
+//begin Mode 10
+1  p- LnCvS\LnCvId.png
+C01
+~~~
+//begin Mode 11
+1  p- LnCvS\LnCvId.png
+C01
+~~~
+//begin Mode 12
+C03
+C07
+5  p- LnCvS\LnCvId.png
+C1C
+3  p- LnCvS\Attack\LnCvAtk01.png
+15  p- LnCvS\Attack\LnCvAtk02.png
+C04
+2  p- LnCvS\Attack\LnCvAtk03.png
+2  p- LnCvS\Attack\LnCvAtk04.png
+2  p- LnCvS\Attack\LnCvAtk05.png
+C23
+1  p- LnCvS\Attack\LnCvAtk06.png
+C01
+C22
+3  p- LnCvS\Return\LnCvRet00.png
+2  p- LnCvS\Return\LnCvRet01.png
+2  p- LnCvS\Return\LnCvRet02.png
+5  p- LnCvS\Return\LnCvRet03.png
+C1E
+3  p- LnCvS\Return\LnCvRet04.png
+5  p- LnCvS\Return\LnCvRet05.png
+3  p- LnCvS\Return\LnCvRet06.png
+3  p- LnCvS\Return\LnCvRet07.png
+3  p- LnCvS\Return\LnCvRet08.png
+20  p- LnCvS\Return\LnCvRet09.png
+C1D
+5  p- LnCvS\Return\LnCvRet10.png
+3  p- LnCvS\Return\LnCvRet11.png
+5  p- LnCvS\Return\LnCvRet12.png
+C1D
+C06
+5  p- LnCvS\LnCvId.png
+C0D
+~~~
+//End of animation script

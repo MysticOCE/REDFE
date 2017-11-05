@@ -1,0 +1,179 @@
+//begin Mode 1
+C03
+C07
+5  p- AxCvS\AxCvId.png
+C1C
+3  p- AxCvS\Attack\AxCvAtk01.png
+15  p- AxCvS\Attack\AxCvAtk02.png
+C04
+3  p- AxCvS\Attack\AxCvAtk03.png
+2  p- AxCvS\Attack\AxCvAtk04.png
+2  p- AxCvS\Attack\AxCvAtk05.png
+C1A
+C41
+C1F
+1  p- AxCvS\Attack\AxCvAtk06p.png
+C01
+2  p- AxCvS\Return\AxCvRet00.png
+C42
+3  p- AxCvS\Return\AxCvRet01.png
+C15
+2  p- AxCvS\Return\AxCvRet02.png
+5  p- AxCvS\Return\AxCvRet03.png
+C1E
+3  p- AxCvS\Return\AxCvRet04.png
+5  p- AxCvS\Return\AxCvRet05.png
+3  p- AxCvS\Return\AxCvRet06.png
+3  p- AxCvS\Return\AxCvRet07.png
+3  p- AxCvS\Return\AxCvRet08.png
+20  p- AxCvS\Return\AxCvRet09.png
+C1D
+5  p- AxCvS\Return\AxCvRet10.png
+3  p- AxCvS\Return\AxCvRet11.png
+5  p- AxCvS\Return\AxCvRet12.png
+C1D
+C06
+5  p- AxCvS\AxCvId.png
+C0D
+~~~
+//begin Mode 3
+C03
+C07
+10  p- AxCvS\AxCvId.png
+3  p- AxCvS\Critical\AxCvCrit01.png
+3  p- AxCvS\Critical\AxCvCrit02.png
+C22
+3  p- AxCvS\Critical\AxCvCrit03.png
+2  p- AxCvS\Critical\AxCvCrit04.png
+10  p- AxCvS\Critical\AxCvCrit05.png
+C38
+3  p- AxCvS\Critical\AxCvCrit06.png
+2  p- AxCvS\Critical\AxCvCrit07.png
+2  p- AxCvS\Critical\AxCvCrit08.png
+10  p- AxCvS\Critical\AxCvCrit09.png
+3  p- AxCvS\Critical\AxCvCrit10.png
+3  p- AxCvS\Critical\AxCvCrit11.png
+3  p- AxCvS\Critical\AxCvCrit12.png
+C43
+3  p- AxCvS\Critical\AxCvCrit13.png
+3  p- AxCvS\Critical\AxCvCrit14.png
+3  p- AxCvS\Critical\AxCvCrit15.png
+3  p- AxCvS\Critical\AxCvCrit16.png
+3  p- AxCvS\Critical\AxCvCrit17.png
+3  p- AxCvS\Critical\AxCvCrit18.png
+3  p- AxCvS\Critical\AxCvCrit19.png
+3  p- AxCvS\Critical\AxCvCrit20.png
+7  p- AxCvS\Critical\AxCvCrit21.png
+C1C
+C15
+9 p- AxCvS\Attack\AxCvAtk02.png
+C04
+3  p- AxCvS\Attack\AxCvAtk03.png
+2  p- AxCvS\Attack\AxCvAtk04.png
+2  p- AxCvS\Attack\AxCvAtk05.png
+C41
+C08
+C1F
+1  p- AxCvS\Attack\AxCvAtk06p.png
+C01
+2  p- AxCvS\Return\AxCvRet00.png
+C42
+3  p- AxCvS\Return\AxCvRet01.png
+C15
+2  p- AxCvS\Return\AxCvRet02.png
+5  p- AxCvS\Return\AxCvRet03.png
+C1E
+3  p- AxCvS\Return\AxCvRet04.png
+5  p- AxCvS\Return\AxCvRet05.png
+3  p- AxCvS\Return\AxCvRet06.png
+3  p- AxCvS\Return\AxCvRet07.png
+3  p- AxCvS\Return\AxCvRet08.png
+20  p- AxCvS\Return\AxCvRet09.png
+C1D
+5  p- AxCvS\Return\AxCvRet10.png
+3  p- AxCvS\Return\AxCvRet11.png
+5  p- AxCvS\Return\AxCvRet12.png
+C1D
+C06
+5  p- AxCvS\AxCvId.png
+C0D
+~~~
+//begin Mode 5
+5  p- AxCvS\AxCvId.png
+C01
+~~~
+//begin Mode 6
+5  p- AxCvS\AxCvId.png
+C01
+~~~
+//begin Mode 7
+C02
+1  p- AxCvS\AxCvId.png
+C0E
+3  p- AxCvS\Evade\AxCvEvd01.png
+1  p- AxCvS\Evade\AxCvEvd02.png
+C01
+3  p- AxCvS\Evade\AxCvEvd01.png
+1  p- AxCvS\AxCvId.png
+C0D
+~~~
+//begin Mode 8
+C02
+1  p- AxCvS\AxCvId.png
+C0E
+3  p- AxCvS\Evade\AxCvEvd01.png
+1  p- AxCvS\Evade\AxCvEvd02.png
+C01
+3  p- AxCvS\Evade\AxCvEvd01.png
+1  p- AxCvS\AxCvId.png
+C0D
+~~~
+//begin Mode 9
+1  p- AxCvS\AxCvId.png
+C01
+~~~
+//begin Mode 10
+1  p- AxCvS\AxCvId.png
+C01
+~~~
+//begin Mode 11
+1  p- AxCvS\AxCvId.png
+C01
+~~~
+//begin Mode 12
+C03
+C07
+5  p- AxCvS\AxCvId.png
+C1C
+3  p- AxCvS\Attack\AxCvAtk01.png
+20  p- AxCvS\Attack\AxCvAtk02.png
+C04
+3  p- AxCvS\Attack\AxCvAtk03.png
+2  p- AxCvS\Attack\AxCvAtk04.png
+2  p- AxCvS\Attack\AxCvAtk05.png
+C41
+1  p- AxCvS\Attack\AxCvAtk06.png
+C01
+2  p- AxCvS\Return\AxCvRet00.png
+C42
+3  p- AxCvS\Return\AxCvRet01.png
+C15
+2  p- AxCvS\Return\AxCvRet02.png
+5  p- AxCvS\Return\AxCvRet03.png
+C1E
+3  p- AxCvS\Return\AxCvRet04.png
+5  p- AxCvS\Return\AxCvRet05.png
+3  p- AxCvS\Return\AxCvRet06.png
+3  p- AxCvS\Return\AxCvRet07.png
+3  p- AxCvS\Return\AxCvRet08.png
+20  p- AxCvS\Return\AxCvRet09.png
+C1D
+5  p- AxCvS\Return\AxCvRet10.png
+3  p- AxCvS\Return\AxCvRet11.png
+5  p- AxCvS\Return\AxCvRet12.png
+C1D
+C06
+5  p- AxCvS\AxCvId.png
+C0D
+~~~
+//End of animation script

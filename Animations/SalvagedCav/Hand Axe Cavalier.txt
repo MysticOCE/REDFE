@@ -1,0 +1,209 @@
+//begin Mode 1
+C03
+C07
+10  p- HnAxCvS\HnAxId.png
+3  p- HnAxCvS\Attack\HnAx01.png
+C41
+3  p- HnAxCvS\Attack\HnAx02.png
+3  p- HnAxCvS\Attack\HnAx03.png
+10  p- HnAxCvS\Attack\HnAx04.png
+C42
+3  p- HnAxCvS\Attack\HnAx05.png
+C05
+3  p- HnAxCvS\Attack\HnAx06.png
+1  p- HnAxCvS\Attack\HnAx07.png
+C13
+3  p- HnAxCvS\Attack\HnAx08.png
+C41
+3  p- HnAxCvS\Attack\HnAx09.png
+3  p- HnAxCvS\Attack\HnAx10.png
+3  p- HnAxCvS\Attack\HnAx11.png
+3  p- HnAxCvS\Attack\HnAx12.png
+1  p- HnAxCvS\HnAxId.png
+C01
+C06
+C0D
+~~~
+//begin Mode 3
+C03
+C07
+20  p- HnAxCvS\HnAxId.png
+3  p- HnAxCvS\Critical\HnAxCrt01.png
+C41
+3  p- HnAxCvS\Critical\HnAxCrt02.png
+3  p- HnAxCvS\Critical\HnAxCrt03.png
+C22
+2  p- HnAxCvS\Critical\HnAxCrt04.png
+2  p- HnAxCvS\Critical\HnAxCrt05.png
+3  p- HnAxCvS\Critical\HnAxCrt06.png
+2  p- HnAxCvS\Critical\HnAxCrt07.png
+1  p- HnAxCvS\Critical\HnAxCrt08.png
+2  p- HnAxCvS\Critical\HnAxCrt09.png
+3  p- HnAxCvS\Critical\HnAxCrt10.png
+C22
+2  p- HnAxCvS\Critical\HnAxCrt11.png
+1  p- HnAxCvS\Critical\HnAxCrt12.png
+2  p- HnAxCvS\Critical\HnAxCrt13.png
+3  p- HnAxCvS\Critical\HnAxCrt14.png
+2  p- HnAxCvS\Critical\HnAxCrt15.png
+1  p- HnAxCvS\Critical\HnAxCrt16.png
+2  p- HnAxCvS\Critical\HnAxCrt17.png
+3  p- HnAxCvS\Critical\HnAxCrt18.png
+C22
+2  p- HnAxCvS\Critical\HnAxCrt19.png
+1  p- HnAxCvS\Critical\HnAxCrt20.png
+2  p- HnAxCvS\Critical\HnAxCrt21.png
+3  p- HnAxCvS\Critical\HnAxCrt22.png
+3  p- HnAxCvS\Critical\HnAxCrt23.png
+3  p- HnAxCvS\Attack\HnAx04.png
+C42
+3  p- HnAxCvS\Attack\HnAx05.png
+C05
+3  p- HnAxCvS\Attack\HnAx06.png
+1  p- HnAxCvS\Attack\HnAx07.png
+C13
+C41
+3  p- HnAxCvS\Attack\HnAx08.png
+3  p- HnAxCvS\Attack\HnAx09.png
+3  p- HnAxCvS\Attack\HnAx10.png
+3  p- HnAxCvS\Attack\HnAx11.png
+3  p- HnAxCvS\Attack\HnAx12.png
+1  p- HnAxCvS\HnAxId.png
+C01
+C06
+C0D
+~~~
+//begin Mode 5
+C03
+C07
+10  p- HnAxCvS\HnAxId.png
+3  p- HnAxCvS\Attack\HnAx01.png
+C41
+3  p- HnAxCvS\Attack\HnAx02.png
+3  p- HnAxCvS\Attack\HnAx03.png
+10  p- HnAxCvS\Attack\HnAx04.png
+C42
+3  p- HnAxCvS\Attack\HnAx05.png
+C05
+3  p- HnAxCvS\Attack\HnAx06.png
+1  p- HnAxCvS\Attack\HnAx07.png
+C13
+3  p- HnAxCvS\Attack\HnAx08.png
+3  p- HnAxCvS\Attack\HnAx09.png
+3  p- HnAxCvS\Attack\HnAx10.png
+3  p- HnAxCvS\Attack\HnAx11.png
+3  p- HnAxCvS\Attack\HnAx12.png
+1  p- HnAxCvS\HnAxId.png
+C01
+C06
+C0D
+~~~
+//begin Mode 6
+C03
+C07
+20  p- HnAxCvS\HnAxId.png
+3  p- HnAxCvS\Critical\HnAxCrt01.png
+C41
+3  p- HnAxCvS\Critical\HnAxCrt02.png
+3  p- HnAxCvS\Critical\HnAxCrt03.png
+C22
+2  p- HnAxCvS\Critical\HnAxCrt04.png
+2  p- HnAxCvS\Critical\HnAxCrt05.png
+3  p- HnAxCvS\Critical\HnAxCrt06.png
+2  p- HnAxCvS\Critical\HnAxCrt07.png
+1  p- HnAxCvS\Critical\HnAxCrt08.png
+2  p- HnAxCvS\Critical\HnAxCrt09.png
+3  p- HnAxCvS\Critical\HnAxCrt10.png
+C22
+2  p- HnAxCvS\Critical\HnAxCrt11.png
+1  p- HnAxCvS\Critical\HnAxCrt12.png
+2  p- HnAxCvS\Critical\HnAxCrt13.png
+3  p- HnAxCvS\Critical\HnAxCrt14.png
+2  p- HnAxCvS\Critical\HnAxCrt15.png
+1  p- HnAxCvS\Critical\HnAxCrt16.png
+2  p- HnAxCvS\Critical\HnAxCrt17.png
+3  p- HnAxCvS\Critical\HnAxCrt18.png
+C22
+2  p- HnAxCvS\Critical\HnAxCrt19.png
+1  p- HnAxCvS\Critical\HnAxCrt20.png
+2  p- HnAxCvS\Critical\HnAxCrt21.png
+3  p- HnAxCvS\Critical\HnAxCrt22.png
+3  p- HnAxCvS\Critical\HnAxCrt23.png
+3  p- HnAxCvS\Attack\HnAx04.png
+C42
+3  p- HnAxCvS\Attack\HnAx05.png
+C05
+3  p- HnAxCvS\Attack\HnAx06.png
+1  p- HnAxCvS\Attack\HnAx07.png
+C13
+C41
+3  p- HnAxCvS\Attack\HnAx08.png
+3  p- HnAxCvS\Attack\HnAx09.png
+3  p- HnAxCvS\Attack\HnAx10.png
+3  p- HnAxCvS\Attack\HnAx11.png
+3  p- HnAxCvS\Attack\HnAx12.png
+1  p- HnAxCvS\HnAxId.png
+C01
+C06
+C0D
+~~~
+//begin Mode 7
+C02
+1  p- HnAxCvS\HnAxId.png
+C0E
+3  p- HnAxCvS\Evade\HnAxCvEvd01.png
+1  p- HnAxCvS\Evade\HnAxCvEvd02.png
+C01
+3  p- HnAxCvS\Evade\HnAxCvEvd01.png
+1  p- HnAxCvS\HnAxId.png
+C0D
+~~~
+//begin Mode 8
+C02
+1  p- HnAxCvS\HnAxId.png
+C0E
+3  p- HnAxCvS\Evade\HnAxCvEvd01.png
+1  p- HnAxCvS\Evade\HnAxCvEvd02.png
+C01
+3  p- HnAxCvS\Evade\HnAxCvEvd01.png
+1  p- HnAxCvS\HnAxId.png
+C0D
+~~~
+//begin Mode 9
+1  p- HnAxCvS\HnAxId.png
+C01
+~~~
+//begin Mode 10
+1  p- HnAxCvS\HnAxId.png
+C01
+~~~
+//begin Mode 11
+1  p- HnAxCvS\HnAxId.png
+C01
+~~~
+//begin Mode 12
+C03
+C07
+10  p- HnAxCvS\HnAxId.png
+3  p- HnAxCvS\Attack\HnAx01.png
+C41
+3  p- HnAxCvS\Attack\HnAx02.png
+3  p- HnAxCvS\Attack\HnAx03.png
+10  p- HnAxCvS\Attack\HnAx04.png
+C42
+3  p- HnAxCvS\Attack\HnAx05.png
+C05
+3  p- HnAxCvS\Attack\HnAx06.png
+1  p- HnAxCvS\Attack\HnAx07.png
+C13
+3  p- HnAxCvS\Attack\HnAx08.png
+3  p- HnAxCvS\Attack\HnAx09.png
+3  p- HnAxCvS\Attack\HnAx10.png
+3  p- HnAxCvS\Attack\HnAx11.png
+3  p- HnAxCvS\Attack\HnAx12.png
+1  p- HnAxCvS\HnAxId.png
+C01
+C06
+C0D
+~~~
+//End of animation script

@@ -1,0 +1,213 @@
+//begin Mode 1
+C03
+C07
+5  p- SwCvS\Attack\SwCvAtk00.png
+C1C
+3  p- SwCvS\Attack\SwCvAtk01.png
+15  p- SwCvS\Attack\SwCvAtk02.png
+C04
+2  p- SwCvS\Attack\SwCvAtk03.png
+2  p- SwCvS\Attack\SwCvAtk04.png
+2  p- SwCvS\Attack\SwCvAtk05.png
+C1A
+C23
+C1F
+1  p- SwCvS\Attack\SwCvAtk06p.png
+C01
+C22
+2  p- SwCvS\Return\SwCvRet00.png
+2  p- SwCvS\Return\SwCvRet01.png
+5  p- SwCvS\Return\SwCvRet02.png
+C1E
+3  p- SwCvS\Return\SwCvRet03.png
+5  p- SwCvS\Return\SwCvRet04.png
+3  p- SwCvS\Return\SwCvRet05.png
+3  p- SwCvS\Return\SwCvRet06.png
+3  p- SwCvS\Return\SwCvRet07.png
+20  p- SwCvS\Return\SwCvRet08.png
+C1D
+5  p- SwCvS\Return\SwCvRet09.png
+3  p- SwCvS\Return\SwCvRet10.png
+5  p- SwCvS\Return\SwCvRet11.png
+C1D
+C06
+5  p- SwCvS\SwCvId.png
+C0D
+~~~
+//begin Mode 3
+C03
+C07
+5  p- SwCvS\SwCvId.png
+2  p- SwCvS\Critical\SwCvCrt01.png
+1  p- SwCvS\Critical\SwCvCrt02.png
+1  p- SwCvS\Critical\SwCvCrt03.png
+2  p- SwCvS\Critical\SwCvCrt04.png
+20  p- SwCvS\Critical\SwCvCrt05.png
+C23
+2  p- SwCvS\Critical\SwCvCrt06.png
+20  p- SwCvS\Critical\SwCvCrt07.png
+C22
+3  p- SwCvS\Critical\SwCvCrt08.png
+1  p- SwCvS\Critical\SwCvCrt09.png
+3  p- SwCvS\Critical\SwCvCrt10.png
+C22
+3  p- SwCvS\Critical\SwCvCrt11.png
+1  p- SwCvS\Critical\SwCvCrt12.png
+3  p- SwCvS\Critical\SwCvCrt13.png
+C22
+3  p- SwCvS\Critical\SwCvCrt14.png
+1  p- SwCvS\Critical\SwCvCrt15.png
+3  p- SwCvS\Critical\SwCvCrt16.png
+3  p- SwCvS\Critical\SwCvCrt17.png
+1  p- SwCvS\Critical\SwCvCrt18.png
+3  p- SwCvS\Critical\SwCvCrt19.png
+10  p- SwCvS\Critical\SwCvCrt20.png
+C23
+//2  p- SwCvS\Critical\SwCvCrt21.png
+//10 p- SwCvS\Attack\SwCvAtk00.png
+//3  p- SwCvS\Attack\SwCvAtk01.png
+//used to be 8, now 9 because cutting out frames to match the other two not resetting to base frame before charging up
+9  p- SwCvS\Attack\SwCvAtk02.png
+C04
+2  p- SwCvS\Attack\SwCvAtk03.png
+2  p- SwCvS\Attack\SwCvAtk04.png
+2  p- SwCvS\Attack\SwCvAtk05.png
+C23
+C08
+C1F
+1  p- SwCvS\Attack\SwCvAtk06p.png
+C01
+C22
+2  p- SwCvS\Return\SwCvRet00.png
+2  p- SwCvS\Return\SwCvRet01.png
+5  p- SwCvS\Return\SwCvRet02.png
+C1E
+3  p- SwCvS\Return\SwCvRet03.png
+5  p- SwCvS\Return\SwCvRet04.png
+3  p- SwCvS\Return\SwCvRet05.png
+3  p- SwCvS\Return\SwCvRet06.png
+3  p- SwCvS\Return\SwCvRet07.png
+20  p- SwCvS\Return\SwCvRet08.png
+C1D
+5  p- SwCvS\Return\SwCvRet09.png
+3  p- SwCvS\Return\SwCvRet10.png
+5  p- SwCvS\Return\SwCvRet11.png
+C1D
+C06
+5  p- SwCvS\SwCvId.png
+C0D
+~~~
+//begin Mode 5
+C03
+C07
+3  p- SwCvS\SwCvId.png
+2  p- SwCvS\Magic\SwCvMgS00.png
+1  p- SwCvS\Magic\SwCvMgS01.png
+1  p- SwCvS\Magic\SwCvMgS02.png
+2  p- SwCvS\Magic\SwCvMgS03.png
+20  p- SwCvS\Magic\SwCvMgS04.png
+2  p- SwCvS\Magic\SwCvMgS05.png
+10  p- SwCvS\Magic\SwCvMgS06.png
+C05
+C01
+3  p- SwCvS\Magic\SwCvMgS07.png
+3  p- SwCvS\SwCvId.png
+C06
+C0D
+~~~
+//begin Mode 6
+C03
+C07
+1  p- SwCvS\SwCvId.png
+3  p- SwCvS\Magic Critical\SwCvMSC00.png
+2  p- SwCvS\Magic Critical\SwCvMSC01.png
+1  p- SwCvS\Magic Critical\SwCvMSC02.png
+1  p- SwCvS\Magic Critical\SwCvMSC03.png
+20  p- SwCvS\Magic Critical\SwCvMSC04.png
+3  p- SwCvS\Magic Critical\SwCvMSC05.png
+3  p- SwCvS\Magic Critical\SwCvMSC06.png
+3  p- SwCvS\Magic Critical\SwCvMSC07.png
+3  p- SwCvS\Magic Critical\SwCvMSC08.png
+3  p- SwCvS\Magic Critical\SwCvMSC09.png
+3  p- SwCvS\Magic Critical\SwCvMSC10.png
+3  p- SwCvS\Magic Critical\SwCvMSC11.png
+C22
+2  p- SwCvS\Magic Critical\SwCvMSC12.png
+10  p- SwCvS\Magic Critical\SwCvMSC13.png
+C05
+C01
+C22
+2  p- SwCvS\Magic Critical\SwCvMSC14.png
+3  p- SwCvS\SwCvId.png
+C06
+C0D
+~~~
+//begin Mode 7
+C02
+//1  p- SwCvS\SwCvEvd00.png
+C0E
+3  p- SwCvS\Evade\SwCvEvd01.png
+1  p- SwCvS\Evade\SwCvEvd02.png
+C01
+3  p- SwCvS\Evade\SwCvEvd01.png
+1  p- SwCvS\SwCvId.png
+C0D
+~~~
+//begin Mode 8
+C02
+//1  p- SwCvS\SwCvEvd00.png
+C0E
+3  p- SwCvS\Evade\SwCvEvd01.png
+1  p- SwCvS\Evade\SwCvEvd02.png
+C01
+3  p- SwCvS\Evade\SwCvEvd01.png
+1  p- SwCvS\SwCvId.png
+C0D
+~~~
+//begin Mode 9
+1  p- SwCvS\SwCvId.png
+C01
+~~~
+//begin Mode 10
+1  p- SwCvS\SwCvId.png
+C01
+~~~
+//begin Mode 11
+1  p- SwCvS\SwCvId.png
+C01
+~~~
+//begin Mode 12
+C03
+C07
+5  p- SwCvS\Attack\SwCvAtk00.png
+C1C
+3  p- SwCvS\Attack\SwCvAtk01.png
+15  p- SwCvS\Attack\SwCvAtk02.png
+C04
+2  p- SwCvS\Attack\SwCvAtk03.png
+2  p- SwCvS\Attack\SwCvAtk04.png
+2  p- SwCvS\Attack\SwCvAtk05.png
+C23
+1  p- SwCvS\Attack\SwCvAtk06.png
+C01
+C22
+2  p- SwCvS\Return\SwCvRet00.png
+2  p- SwCvS\Return\SwCvRet01.png
+5  p- SwCvS\Return\SwCvRet02.png
+C1E
+3  p- SwCvS\Return\SwCvRet03.png
+5  p- SwCvS\Return\SwCvRet04.png
+3  p- SwCvS\Return\SwCvRet05.png
+3  p- SwCvS\Return\SwCvRet06.png
+3  p- SwCvS\Return\SwCvRet07.png
+20  p- SwCvS\Return\SwCvRet08.png
+C1D
+5  p- SwCvS\Return\SwCvRet09.png
+3  p- SwCvS\Return\SwCvRet10.png
+5  p- SwCvS\Return\SwCvRet11.png
+C1D
+C06
+5  p- SwCvS\SwCvId.png
+C0D
+~~~
+//End of animation script
