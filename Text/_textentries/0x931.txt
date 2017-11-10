@@ -1,6 +1,6 @@
 [OpenMidRight][LoadFace][0x02][0x01]
 [OpenMidLeft][LoadFace][0x0F][0x01]
-Hold, sire. This the exact area[NL]
+Hold, sire. This is the exact area[NL]
 that I was ambushed.[A][NL]
 Something's not right here.[NL]
 It's too quiet.[A]

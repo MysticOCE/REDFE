@@ -8,3 +8,4 @@
 #include "Event Text/C7Texts.txt"
 #include "Event Text/RenaisTexts.txt"
 #include "Event Text/GoalTexts.txt"
+#include "Event Text/WMIntro.txt"

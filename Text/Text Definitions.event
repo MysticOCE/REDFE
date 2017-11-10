@@ -260,5 +260,6 @@
 #define C8RavenSupport 0x959
 #define C8TiradoArrives 0x95a
 #define C8TiradoArrives2 0x95b
+#define C8EliwoodArrives 0x95c
 #define ElbertRoyChat1DorcasAlive 0xBFF
 #define RoyAlanAfterGettingHome1 0xC01

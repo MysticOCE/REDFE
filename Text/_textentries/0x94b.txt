@@ -1,5 +1,4 @@
 [OpenMidRight][LoadPortrait][0x3E][0x01]
-You're a persistant lot[NL]
-aren't you?[A][NL]
-Out of the way.[A]
+Wait[ToggleMouthMove][....]...[ToggleMouthMove][NL]
+You're not betray-[A]
 [X]

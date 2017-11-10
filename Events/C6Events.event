@@ -122,7 +122,7 @@ TEXTEND
 ClearBackground
 REMA
 StartBattle // SVAL rD 0x0 // scripted fight setup
-		NormalDamage(0, 0) // SVAL r1 0x20000; SAVETOQUEUE
+		MissedAttack(0, 0) // SVAL r1 0x20000; SAVETOQUEUE
 		MissedAttack(1, 0) // SVAL r1 0x1; SAVETOQUEUE
 EndAttack // SVAL r1 0xFFFFFFFF; SAVETOQUEUE
 FIG1 Lukas Beran 0x0 //execute fight

@@ -76,9 +76,9 @@ Huh?[A]
 
 ## C6OpeningText3
 [OpenMidRight][LoadPortrait][0x3E][0x01]
-Gyaargh! [MoveMidRight]
-I don't know what's gotten[NL]
-into him, but I'm out of here![A]
+That was close! [MoveMidRight]
+I don't know what's[NL]
+gotten into him, but I'm out of here![A]
 [X]
 
 ## C6OpeningText4
@@ -88,7 +88,7 @@ Lukas![A] We can't leave him in the middle[NL]
 of the enemy forces![A]
 [OpenFarLeft]
 Just give the word, sire![A]
-[OpenFarLeft]
+[OpenLeft]
 We're moving out![NL]
 Capture the enemy leader![A]
 [X]
@@ -178,9 +178,8 @@ Enough contemplation. I need to do this.[A]
 
 ## C6BeranBattleQuote
 [OpenMidRight][LoadPortrait][0x3E][0x01]
-You're a persistant lot[NL]
-aren't you?[A][NL]
-Out of the way.[A]
+Wait[ToggleMouthMove][....]...[ToggleMouthMove][NL]
+You're not betray-[A]
 [X]
 
 ## C6BeranDeathQuote

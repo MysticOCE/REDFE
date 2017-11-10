@@ -1,0 +1,266 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0x21,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0,T6Reinforce,6)
+TurnEventPlayer(0,LoadBackBrigand,5)
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+CharacterEvent(0x5,RoyRecruitsLukas,Roy,Lukas)
+END_MAIN
+
+LocationBasedEvents:
+Seize(2,1)
+Armory(ArmoryC2,4,11)
+Vendor(VendorC2,1,11)
+House(0x10,C5YellowVillage,10,11)
+Village(0x7, C5HeroCrest, 1,7)
+Village(0x8, C5Halberd, 3,7)
+House(0x9, C5XaneRecruitment, 10,6)
+//House(0x9, C5XaneRecruitment, 3,10)
+END_MAIN
+
+ArmoryC2:
+SHLI 0x01 0x03 0x14 0x16 0x1C 0x1F 0x28 0x2D
+
+VendorC2:
+SHLI 0x38 0x39 0x3F 0x45 0x4B 0x4C 0x50 0x56 0x6E 0x6C
+
+MiscBasedEvents:
+//AREA 0x6 EndingScene2 [0,9] [1,9]
+CauseGameOverIfLordDies
+END_MAIN
+
+C5XaneRecruitment:
+CHECK_ACTIVE //gets char id in slot C
+SETVAL 0x2 0x3//setting dorcas's id in slot 2
+IFEQ 0x0 0xC 0x2
+	TEXTSTART
+	SetBackground(HouseBG)
+	TEXTSHOW C5XaneVillageDorcas
+	TEXTEND
+	ClearBackground
+	REMA
+	LOAD1 0x1 XaneRecruit
+	ENUT 0x9
+	TILECHANGE 0x2
+ELSE 0x1
+ENIF 0x0
+	TEXTSTART
+	SetBackground(HouseBG)
+	TEXTSHOW C5XaneVillageNotDorcas
+	TEXTEND
+	ClearBackground
+	REMA
+	ENUF 0x9
+ENIF 0x1
+ENDA
+
+//MESSAGE Yo Xane village debug is up don't release this to public
+
+XaneRecruit:
+UNIT Xane Brigand 0x0 Level(4,Ally,0) [10,7] 0x00 0x0 0x0 0x0 [IronAxe, Vulnerary] NoAI
+UNIT
+
+TestingArcherFriend:
+UNIT 0x82 Ranger 00 Level(19,Ally,1) [9,2] 00 00 00 00 [SilverBow] NoAI
+UNIT
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+BLST [13,5] 0x35
+ENDTRAP
+
+ALIGN 4
+
+RoyRecruitsLukas:
+Text(RoyLukasWhatTheHell)
+TurnNPC(Lukas)
+//MOVE 0x10 Lukas [0,3]
+//ENUN
+DISA Lukas
+ENDA
+
+C5Halberd:
+VillageEventItem(C5HalberdVillage,HouseBG,Halberd)
+ENDA
+
+C5HeroCrest:
+VillageEventItem(C5HeroCrestVillage,HouseBG,HeroCrest)
+ENDA
+
+C5YellowVillage:
+HouseEvent(C5YellowVillageText,HouseBG)
+ENDA
+
+Units:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [7,16] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [6,16] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [5,16] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [8,16] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+UNIT Salem Monk 0x0 Level(2, Ally, 0) [9, 16] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
+UNIT Priscilla Troubadour 0x0 Level(2, Ally, 0) [7,17] 0x00 0x00 0x0 0x00 [Heal, Vulnerary] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [6,17] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Ewan Pupil_1 0x0 Level(1,Ally,0) [5,17] 0x00 0x00 0x0 0x00 [Fire, Vulnerary] NoAI
+UNIT Radd Myrmidon 0x0 Level(4,Ally,0) [8,17] 0x00 0x00 0x0 0x00 [SteelSword,PoisonSword] NoAI
+UNIT Cain Cavalier 0x0 Level(4,Ally,0) [9,17] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT
+
+/*HurrDurr:
+Text(0x950)
+ENUT 0x6
+ENDA*/
+
+LukasBoss:
+UNIT Lukas Knight 0x0 Level(8,Enemy,0) [2,2] DropItem 0x00 0x0 0x0 [SilverLance,Javelin] GuardTileAI
+UNIT Bernard General 0x0 Level(1,Enemy,0) [1,2] 0x0 0x0 0x0 0x0 [SilverAxe] NoAI
+UNIT
+
+LukasFriendly:
+UNIT Lukas Knight 0x0 Level(8,Ally,0) [3,2] 0x0 0x00 0x0 0x0 [SilverLance,Javelin,KnightCrest] NoAI
+UNIT
+
+RudeDudes:
+UNIT 0x80 Priest 0x0 Level(4,Enemy,1) [5,1] DropItem 0x0 0x0 0x0 [Physic] HealUnits
+UNIT 0x80 Soldier 0x0 Level(4, Enemy, 1) [5,6] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT 0x80 Soldier 0x0 Level(4, Enemy, 1) [7,6] 0x0 0x0 0x0 0x0 [IronLance] AttackInRangeAI
+UNIT 0x81 Knight_F 0x0 Level(6, Enemy, 1) [6,5] 0x0 0x0 0x0 0x0 [Javelin, RedGem] AttackInRangeAI
+UNIT 0x80 Mercenary 0x0 Level(5, Enemy, 1) [13,6] 0x0 0x0 0x0 0x0 [IronSword] DefaultAI
+UNIT 0x80 Fighter 0x0 Level(5, Enemy,1) [13,11] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
+UNIT 0x82 Archer 0x0 Level(4, Enemy,1) [13,5] 0x0 0x0 0x0 0x0 [IronBow] GuardTileAI
+UNIT 0x80 Soldier 0x0 Level(8,Enemy,1) [2,8] 0x0 0x0 0x0 0x0 [SilverLance] AttackInRangeAI
+UNIT 0x80 Myrmidon 0x0 Level(5,Enemy,1) [14,3] 0x0 0x0 0x0 0x0 [SteelSword] AttackInRangeAI
+UNIT 0x80 Fighter 0x0 Level(5,Enemy,1) [7,10] 0x0 0x0 0x0 0x0 [SteelAxe] AttackInRangeAI
+UNIT 0x80 Soldier 0x0 Level(6,Enemy,1) [13,1] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT
+
+CavalierReinforcements:
+UNIT 0x80 LanceCavalier 0x0 Level(4,Enemy,1) [5,0] 0x0 0x0 0x0 0x0 [SteelLance] DefaultAI
+UNIT 0x80 AxeCavalier 0x0 Level(7,Enemy,1) [6,0] DropItem 0x0 0x0 0x0 [SteelAxe] DefaultAI
+UNIT 0x80 Cavalier 0x0 Level(4,Enemy,1) [7,0] 0x0 0x0 0x0 0x0 [SteelSword] DefaultAI
+UNIT
+
+DebugLance:
+UNIT 0x20 LanceCavalier 0x0 Level(10,Ally,1) [10,10] 0x0 0x0 0x0 0x0 [SilverLance] NoAI
+UNIT
+
+T6Reinforce:
+CHECK_HARD
+SETVAL 0x3 0x1 //checking for hard
+IFEQ 0x2 0xC 0x3
+	//if hm
+	//ReinforcementEvent(CavalierBackHMReinforcements)
+ELSE 0x3
+	ENIF 0x2
+	//ReinforcementEvent(CavalierBackReinforcements)
+ENIF 0x3
+ENDA
+
+CavalierBackReinforcements:
+UNIT 0x80 AxeCavalier 0x0 Level(4,Enemy,1) [5,12] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
+UNIT 0x80 AxeCavalier 0x0 Level(4,Enemy,1) [3,12] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
+UNIT
+
+CavalierBackHMReinforcements:
+UNIT 0x80 AxeCavalier 0x0 Level(5,Enemy,1) [5,12] 0x0 0x0 0x0 0x0 [HandAxe] DefaultAI
+UNIT 0x80 LanceCavalier 0x0 Level(6,Enemy,1) [4,12] 0x0 0x0 0x0 0x0 [ShortSpear] DefaultAI
+UNIT 0x80 AxeCavalier 0x0 Level(5,Enemy,1) [3,12] 0x0 0x0 0x0 0x0 [HandAxe] DefaultAI
+UNIT
+
+LoadBackBrigand:
+ReinforcementEvent(BackBrigands)
+
+BackBrigands:
+UNIT 0x8E Brigand 0 Level(4,Enemy,1) [13,0] 0 0 0 0 [SteelAxe] BrigandAI
+UNIT 0x8E Brigand 0 Level(4,Enemy,1) [14,0] 0 0 0 0 [SteelAxe] BrigandAI
+UNIT 0x8E Brigand 0 Level(4,Enemy,1) [0,5] 0 0 0 0 [SteelAxe] BrigandAI
+UNIT
+
+BeginningScene:
+MUSC Advance
+LOAD2 0x1 Units
+ENUN
+LOAD2 0x1 RudeDudes
+ENUN
+LOAD2 0x1 CavalierReinforcements
+ENUN
+CAM1 [3,3]
+MUSI
+TEXTSTART
+TEXTSHOW Memes
+//TEXTSHOW C6OpeningTextDebug
+TEXTEND
+REMA
+MUSC 0x2E
+MUNO
+LOAD1 0x1 LukasBoss
+FADI 10
+TEXTSTART
+SetBackground(Town_Day)
+TEXTSHOW LukasBernardIsThisRight
+TEXTEND
+ClearBackground
+REMA
+//LOAD1 0x1 DebugLance
+FADU 10
+MOVE 0x10 Lukas [2,1]
+ENUN
+MOVE 0x10 Bernard [0,2]
+ENUN
+DISA Bernard
+CAM1 Roy
+//LOAD2 0x1 TestingArcherFriend
+//ENUN
+FlashCursor(Roy,30)
+GotoPrepScreen
+NoFade
+ENDA
+
+EndingScene2:
+LOAD1 0x1 XaneRecruit
+CALL EndingScene
+
+EndingScene:
+//CHECK_ALIVE Lukas
+//SETVAL 0x2 0x1
+//IFEQ 0x2 0xc 0x2
+MUSC Victory
+TEXTSTART
+SetBackground(Town_Day)
+TEXTSHOW C5LukasJoinsParty
+TEXTEND
+ClearBackground
+LOAD1 0x1 LukasFriendly
+TEXTSTART
+SetBackground(Fort_Ruins)
+TEXTSHOW C5RoyAlanTalkAboutLukas
+TEXTEND
+ClearBackground
+//ENIF 0x2
+MoveToChapter(Ch6)
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET

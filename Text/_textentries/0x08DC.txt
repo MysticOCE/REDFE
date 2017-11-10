@@ -1,0 +1,6 @@
+With the aid of mercenaries hired by  [.][NL]
+King Elbert, Roy makes his escape.[A][NL]
+[LoadOverworldFaces]While Roy had longed to return to [.][NL]
+Frelia, he could not have foreseen[.][A][NL]
+such a tumultous homecoming.[.][A][NL]
+[LoadOverworldFaces][X]

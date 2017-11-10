@@ -1,0 +1,7 @@
+Grado's grasp has pressed the life [.][NL]
+out of Renais.[.][A][NL]
+[LoadOverworldFaces]Brigands and bandits run amok,[.][NL]
+burning, thieving, plundering, pillaging.[.][A][0x02][NL]
+[LoadOverworldFaces]"This... this cannot stand."[A][NL]
+[LoadOverworldFaces]With these words, Roy swears to [NL]
+end this anarchy.[A][X]
