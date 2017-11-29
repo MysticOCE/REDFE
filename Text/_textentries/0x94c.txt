@@ -1,3 +1,4 @@
 [OpenMidRight][LoadPortrait][0x3E][0x01]
-No more[ToggleMouthMove][....]...[ToggleMouthMove][CloseEyes]running[.][ToggleMouthMove][....]...[A]
+Wait[ToggleMouthMove][....]...[ToggleMouthMove][NL]
+You're not betray-[A]
 [X]

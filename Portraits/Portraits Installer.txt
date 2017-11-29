@@ -72,3 +72,15 @@ setMugEntry(0x18, MiledyMug,3,5,3,3)
 XaneMug:
 #incext PortraitFormatter "BlueyXane.png"
 setMugEntry(0x1E, XaneMug, 2,4,3,2)
+
+SaizoMug:
+#incext PortraitFormatter "XigdarSaizo2.png"
+setMugEntry(0x2E, SaizoMug, 5,6, 5,4)
+
+CordyMug:
+#incext PortraitFormatter "TytyCordelia.png"
+setMugEntry(0x2D, CordyMug, 3, 6, 3, 4)
+
+NorrisMug:
+#incext PortraitFormatter "XigdarNorris2.png"
+setMugEntry(0x20, NorrisMug, 3,5,3,3)

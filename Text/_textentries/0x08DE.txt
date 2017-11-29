@@ -4,4 +4,12 @@ out of Renais.[.][A][NL]
 burning, thieving, plundering, pillaging.[.][A][0x02][NL]
 [LoadOverworldFaces]"This... this cannot stand."[A][NL]
 [LoadOverworldFaces]With these words, Roy swears to [NL]
-end this anarchy.[A][X]
+end this anarchy.[A][0x02][NL]
+
+
+[LoadOverworldFaces]Roy is not the only Frelian trying to  [.][NL]
+restore order, however. The Frelian [A][NL]
+spy Leila has been lurking in Renais.[.][A][NL]
+[LoadOverworldFaces]A chance meeting in Ide can  [NL]
+give Roy a valuable lead...[A][NL]
+[LoadOverworldFaces][X]

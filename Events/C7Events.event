@@ -20,7 +20,6 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 TurnEventPlayer(0,TiradoArrives,2)
 TurnEventPlayer(0,EliwoodArrives,5)
-TurnEventPlayer(0,TiradoForcesArriveHM,7)
 TurnEventPlayer(0,TiradoForcesArrive,8)
 TurnEventPlayer(0,ThiefReinforce,9)
 TurnEventPlayer(0,T10Reinforce,10)
@@ -35,6 +34,7 @@ CharacterEvent(0x9,RoyRecruitsEliwood,Roy,Eliwood)
 END_MAIN
 
 LocationBasedEvents:
+Door(9,5)
 Door(6,13)
 Seize(19,2)
 //Seize(12,27)
@@ -42,6 +42,7 @@ Chest(KillerAxe,5,20)
 Chest(Dragonshield,6,20)
 Chest(Elfire,5,23)
 Chest(BlueGem,6,23)
+Chest(GuidingRing,9,7)
 END_MAIN
 
 MiscBasedEvents:
@@ -83,16 +84,23 @@ UNIT 0x80 Fighter 0x0 Level(7,Enemy,1) [5,22] 0x0 0x0 0x0 0x0 [SteelAxe] Default
 UNIT Bernard General 0x0 Level(4, Enemy,0) [6,14] 0x0 0x0 0x0 0x0 [SilverAxe, Javelin, IronBlade,DoorKey] GuardTileAI
 UNIT 0x80 Knight 0x0 Level(7,Enemy,1) [5,15] 00 00 00 00 [SteelLance] AttackInRangeAI
 UNIT 0x80 Knight 0x0 Level(7,Enemy,1) [7,15] 00 00 00 00 [SteelLance] AttackInRangeAI
+UNIT 0x85 Fighter 0x0 Level(8,Enemy,1) [9,7] 00 00 00 00 [HandAxe] AttackInRangeAI
+UNIT 0x80 Mercenary 0x0 Level(8,Enemy,1) [8,6] DropItem 0 0 0 [IronSword,DoorKey] AttackInRangeAI
 UNIT
 
 EliwoodParty:
-UNIT Eliwood KnightLord 00 Level(1,NPC,0) [22,11] 00 00 00 00 [Rapier,SilverLance] DefaultAI
-UNIT Miledy WyvernRider_F  00 Level(6,NPC,0) [23,10] 00 00 00 00 [IronLance,Javelin] DefaultAI
-UNIT Kieran AxeCavalier 00 Level(6,NPC,0) [23,12] 00 00 00 00 [SteelAxe] DefaultAI
+UNIT Eliwood KnightLord 00 Level(1,NPC,0) [22,11] 00 00 00 00 [Rapier,SilverLance, Elixir] DefaultAI
+UNIT Miledy WyvernRider_F  00 Level(6,NPC,0) [23,10] 00 00 00 00 [IronLance,Javelin, Vulnerary] DefaultAI
+UNIT Kieran AxeCavalier 00 Level(6,NPC,0) [23,12] 00 00 00 00 [SteelAxe, Hammer] DefaultAI
 UNIT
 
 EliwoodArrives:
-ReinforcementEvent(EliwoodParty)
+LOAD1 0x1 EliwoodParty
+CAM1 [16,10]
+TEXTSTART
+TEXTSHOW C8EliwoodArrives
+TEXTEND
+REMA
 ENDA
 
 Enemies2:
@@ -101,13 +109,13 @@ UNIT 0x80 Myrmidon 0x0 Level(8,Enemy,1) [14,15] 00 00 00 00 [SteelSword] Default
 UNIT 0x80 Fighter 0x0 Level(8,Enemy,1) [10,17] 00 00 00 00 [SteelAxe] DefaultAI
 UNIT 0x80 Mercenary 0x0 Level(8,Enemy,1) [8,11] 00 00 00 00 [SteelSword] DefaultAI
 UNIT 0x80 Soldier 00 Level(8,Enemy,1) [0,1] 00 00 00 00 [Horseslayer] DefaultAI
-UNIT 0x81 LanceCavalier 00 Level(10,Enemy,1) [18,3] 00 00 00 00 [SteelLance] AttackInRangeAI
-UNIT 0x81 AxeCavalier 00 Level(10,Enemy,1) [20,3] 00 00 00 00 [SteelAxe] AttackInRangeAI
-UNIT 0x81 Fighter 00 Level(10,Enemy,1) [5,5] 00 00 00 00 [HandAxe] AttackInRangeAI
+UNIT 0x83 LanceCavalier 00 Level(10,Enemy,1) [18,3] 00 00 00 00 [SteelLance] AttackInRangeAI
+UNIT 0x83 AxeCavalier 00 Level(10,Enemy,1) [20,3] 00 00 00 00 [SteelAxe] AttackInRangeAI
+UNIT 0x81 Fighter 00 Level(10,Enemy,1) [4,5] 00 00 00 00 [HandAxe] AttackInRangeAI
 //UNIT 0x80 Knight 00 Level(20,Enemy,1) [10,25] 00 00 00 00 [IronLance] DefaultAI
-UNIT 0x82 Archer 00 Level(7,Enemy,1) [11,15] 00 00 00 00 [IronBow] DefaultAI
-UNIT 0x80 Mercenary 00 Level(8,Enemy,1) [4,4] 00 00 00 00 [SteelSword] DefaultAI
-UNIT 0x80 Mage 00 Level(7,Enemy,1) [4,6] 00 00 00 00 [Elfire] DefaultAI
+UNIT 0x81 Archer 00 Level(7,Enemy,1) [11,15] 00 00 00 00 [IronBow] DefaultAI
+UNIT 0x80 Mercenary 00 Level(8,Enemy,1) [3,5] 00 00 00 00 [SteelSword] DefaultAI
+UNIT 0x80 Mage 00 Level(7,Enemy,1) [3,6] 00 00 00 00 [Elfire] DefaultAI
 UNIT 0x80 Shaman 00 Level(8,Enemy,1) [11,21] 00 00 00 00 [Flux] DefaultAI
 UNIT 0x80 Mage 00 Level(8,Enemy,1) [3,11] 00 00 00 0 [Thunder] DefaultAI
 UNIT
@@ -128,32 +136,49 @@ UNIT
 TiradoMovements2:
 REDA [19,2] 0x10 0x0 0x0 0x0 0x0
 
-TiradoForcesArriveHM:
-CHECK_HARD
-SETVAL 0x3 0x1
-IFEQ 0x0 0xC 0x3
-	ReinforcementEvent(TiradoHMBackup)
-ENIF 0x0
-ENDA
+
 
 TiradoForcesArrive:
-CHECK_HARD
-SETVAL 0x3 0x1
-IFNE 0x1 0xC 0x3
-	ReinforcementEvent(TiradoBackup)
-ENIF 0x1
+CHECK_HARD //sets C to 1 for hard
+SETVAL 0x3 0x1 //sets r3 to 1
+CAM1 [16,10]
+BEQ 0x1 0xC 0x3 // if r3 = rC, goes to Label 0x1 and loads HM dudes
+	/*LOAD2 0x1 TiradoBackup
+	SETVAL 0xB 0x00110022
+	SETVAL 0x1 0x10
+	SET_HP 0xFFFE
+	SETVAL 0xB 0x00120022
+	SETVAL 0x1 0x10
+	SET_HP 0xFFFE*/
+	GOTO 0x0
+LABEL 0x1
+	LOAD2 0x1 TiradoHMBackup
+	/*Text(C8RavenSupport)
+	SETVAL 0xB 0x00110022
+	Text(C8RavenSupport)
+	SETVAL 0x1 0x10
+	Text(C8RavenSupport)
+	SET_HP 0xFFFE
+	Text(C8RavenSupport)
+	SETVAL 0xB 0x00120022
+	Text(C8RavenSupport)
+	SETVAL 0x1 0x10
+	Text(C8RavenSupport)
+	SET_HP 0xFFFE
+	Text(C8RavenSupport)*/
+LABEL 0x0
 ENDA
 
 TiradoBackup:
-UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [22,11] 00 00 00 00 [SteelAxe,SteelLance] DefaultAI
-UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [22,12] 00 00 00 00 [SteelLance,SteelAxe] DefaultAI
+UNIT 0x86 GreatKnight 00 Level(1,Enemy,1) [22,11] 00 00 00 00 [SteelAxe,SteelLance] DefaultAI
+UNIT 0x86 GreatKnight 00 Level(1,Enemy,1) [22,12] 00 00 00 00 [SteelLance,SteelAxe] DefaultAI
 UNIT
 
 TiradoHMBackup:
-UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [22,11] 00 00 00 00 [SteelAxe,SteelLance] DefaultAI
-UNIT 0x80 GreatKnight 00 Level(1,Enemy,1) [22,12] 00 00 00 00 [SteelLance,SteelAxe] DefaultAI
-UNIT 0x80 Ranger 00 Level(1,Enemy,1) [23,10] 00 00 00 00 [SteelBow] DefaultAI
-UNIT 0x80 Valkyrie 00 Level(1,Enemy,1) [23,13] 00 00 00 00 [Lightning, Heal] DefaultAI
+UNIT 0x86 GreatKnight 00 Level(1,Enemy,1) [22,11] 00 00 00 00 [SteelAxe,SteelLance] DefaultAI
+UNIT 0x86 GreatKnight 00 Level(1,Enemy,1) [22,12] 00 00 00 00 [SteelLance,SteelAxe] DefaultAI
+UNIT 0x86 Ranger 00 Level(1,Enemy,1) [23,10] 00 00 00 00 [SteelBow] DefaultAI
+UNIT 0x86 Valkyrie 00 Level(1,Enemy,1) [23,13] 00 00 00 00 [Lightning, Heal] DefaultAI
 UNIT
 
 ThiefReinforce:
@@ -237,15 +262,20 @@ T10Units:
 UNIT 0x80 Mercenary 00 Level(8,Enemy,1) [0,4] 00 00 00 00 [SteelSword] DefaultAI
 UNIT 0x80 Fighter 00 Level(8,Enemy,1) [0,5] 00 00 00 00 [SteelAxe] DefaultAI
 UNIT 0x80 Mage 00 Level(8,Enemy,1) [0,6] 00 00 00 00 [Elfire] DefaultAI
-UNIT 0x83 Shaman 00 Level(8,Enemy,1) [0,7] DropItem 00 00 00 [Luna] DefaultAI
-UNIT 0x82 Archer 00 Level(10,Enemy,1) [14,1] 00 00 00 00 [Longbow] DefaultAI
+UNIT 0x80 Shaman 00 Level(8,Enemy,1) [0,7] DropItem 00 00 00 [Luna] DefaultAI
+UNIT 0x83 Archer 00 Level(10,Enemy,1) [14,1] 00 00 00 00 [Longbow] DefaultAI
 UNIT
 
 T10Reinforce:
+SETVAL 0x1 0x00000000
+CHAI 0x83
+SETVAL 0x1 0x00000000
+CHAI Murray
 ReinforcementEvent(T10Units)
 ENDA
 
 BeginningScene:
+MUSC 0x25
 LOAD2 0x1 Units
 ENUN
 LOAD2 0x1 Enemies
@@ -255,30 +285,71 @@ ENUN
 TEXTSTART
 TEXTSHOW C8BeginningText
 TEXTEND
-TEXTSHOW2 C8DorcasAnnaSupport
-TEXTEND
-TEXTSHOW2 C8SalemPriscillaSupport
-TEXTEND
-TEXTSHOW2 C8RaddSupport
-TEXTEND
-TEXTSHOW2 C8CainSupport
-TEXTEND
-TEXTSHOW2 C8LeilaEwanSupport
-TEXTEND
-TEXTSHOW2 C8XaneSupport
-TEXTEND
-TEXTSHOW2 C8LukasSupport
-TEXTEND
-TEXTSHOW2 C8RavenSupport
-TEXTEND
+//dorcas/anna convo
+	CHECK_ALIVE Dorcas 
+	BEQ 0x7 0x0 0xC //if Dorcas dead, branches
+	CHECK_ALIVE Anna
+	BEQ 0x7 0x0 0xC //if Anna dead
+	TEXTSHOW2 C8DorcasAnnaSupport
+	TEXTEND
+	LABEL 0x7
+//salem/priscilla convo
+	CHECK_ALIVE Priscilla
+	BEQ 0x8 0x0 0xC
+	CHECK_ALIVE Salem
+	BEQ 0x8 0x0 0xC
+	TEXTSHOW2 C8SalemPriscillaSupport
+	TEXTEND
+	LABEL 0x8
+//radd convo
+	CHECK_ALIVE Radd
+	BEQ 0x9 0x0 0xC
+	TEXTSHOW2 C8RaddSupport
+	TEXTEND
+	LABEL 0x9
+//cain convo
+	CHECK_ALIVE Cain
+	BEQ 0xA 0x0 0xC
+	TEXTSHOW2 C8CainSupport
+	TEXTEND
+	LABEL 0xA
+//leila, ewan convo
+	CHECK_ALIVE Ewan
+	BEQ 0xB 0x0 0xC
+	CHECK_ALIVE Leila
+	BEQ 0xB 0x0 0xC
+	TEXTSHOW2 C8LeilaEwanSupport
+	TEXTEND
+	LABEL 0xB
+//xane
+	CHECK_ALIVE Xane
+	BEQ 0xC 0x0 0xC
+	TEXTSHOW2 C8XaneSupport
+	TEXTEND
+	LABEL 0xC
+//lukas
+	CHECK_ALIVE Lukas
+	BEQ 0xD 0x0 0xC
+	TEXTSHOW2 C8LukasSupport
+	TEXTEND
+	LABEL 0xD
+//raven
+	CHECK_ALIVE Raven
+	BEQ 0xE 0x0 0xC
+	TEXTSHOW2 C8RavenSupport
+	TEXTEND
+	LABEL 0xE
 REMA
-//LOAD2 0x1 EliwoodParty
-//ENUN
 GotoPrepScreen
 NoFade
 ENDA
 
 EndingScene:
+TEXTSTART
+SetBackground(Black)
+TEXTSHOW ThankYouForFinishingTheDemo
+TEXTEND
+ClearBackground
 ENUT 0x88
 MoveToChapter(0x38)
 ENDA

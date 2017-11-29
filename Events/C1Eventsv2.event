@@ -1,0 +1,174 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0xa,C1Events)
+
+C1Events:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+
+Units:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [12, 9] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [13,8] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI 
+UNIT Breguet Knight 0x0 Level(4, Enemy, 0) [2,2] 0x00 0x00 0x0 0x00 [SteelLance] GuardTileAI
+UNIT 0x80 Knight Breguet Level(5, Enemy, 0) [6,4] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x80 Shaman Breguet Level(2, Enemy, 0) [5,3] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI
+UNIT 0x80 Mercenary Breguet Level(3, Enemy, 0) [12,5] DropItem 0x00 0x0 0x00 [IronSword] DefaultAI
+UNIT 0x80 Fighter Breguet Level(3, Enemy, 0) [9,6] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 0) [3,3] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 0) [1,3] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI
+UNIT 0x80 Fighter Breguet Level(2, Enemy, 0) [7,2] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0x80 Mercenary Breguet Level(3, Enemy, 0) [1,5] 0x00 0x00 0x0 0x00 [IronSword] ChaseOnceApproachedAI
+UNIT
+
+UnitsHM:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [12, 9] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [13,8] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI 
+UNIT Breguet Knight 0x0 Level(4, Enemy, 0) [2,2] 0x00 0x00 0x0 0x00 [SteelLance] GuardTileAI
+UNIT 0x80 Knight Breguet Level(5, Enemy, 0) [6,4] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x80 Shaman Breguet Level(2, Enemy, 0) [5,3] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI
+UNIT 0x80 Mercenary Breguet Level(3, Enemy, 0) [12,5] DropItem 0x00 0x0 0x00 [IronSword] DefaultAI
+UNIT 0x80 Fighter Breguet Level(3, Enemy, 0) [9,6] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 0) [3,3] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 0) [1,3] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI
+UNIT 0x80 Fighter Breguet Level(2, Enemy, 0) [11,3] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0x80 Mercenary Breguet Level(3, Enemy, 0) [1,5] 0x00 0x00 0x0 0x00 [IronSword] ChaseOnceApproachedAI
+UNIT
+
+
+TurnBasedEvents:
+TurnEventPlayer(0,Recruitment,2)
+TurnEventPlayer(0,CavaliersArrive,4)
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+CharacterEventBothWays(0x7,AnnaRoyChat,Anna,Roy)
+CharacterEventBothWays(0x8,DorcasRoyChat,Dorcas,Roy)
+END_MAIN
+
+LocationBasedEvents:
+Seize(2,2)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+BeginningScene:
+MUSC Tension
+CHECK_HARD
+BNE 0x2 0x0 0xC //if C = 0 (not hard mode), branch to other group
+	LOAD1 0x1 Units
+	GOTO 0x3
+	LABEL 0x2
+	LOAD1 0x1 UnitsHM
+	LABEL 0x3
+ENUN
+CAM1 Roy
+TEXTSTART
+TEXTSHOW C1OpeningText
+TEXTEND
+REMA
+FlashCursor(Breguet,64)
+TEXTSTART
+TEXTSHOW BreguetWantsToKillRoy
+TEXTEND
+REMA
+FADU 30
+ENDA
+
+EndingScene:
+//LOAD1 0x1 PrisArtur
+MUSC Victory
+Text(Castle_Hall, C1EndingText)
+REMA
+MNCH Ch2
+ENDA
+
+Recruits:
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [16,4] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [16,3] 0x00 0x00 0x0 0x00 [SteelAxe, HandAxe, Vulnerary] NoAI
+UNIT
+
+PrisArtur:
+UNIT Priscilla Troubadour 0x0 Level(2, Ally,0) [1,1] 0x00 0x00 0x0 0x00 [Heal, Vulnerary] NoAI
+UNIT Salem Monk 0x0 Level(3, Ally, 0) [2,2] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
+UNIT
+
+CavaliersArrive: 
+Text(C1CavaliersArrive)
+CHECK_HARD
+SETVAL 0x3 0x1 //checking for hard
+IFEQ 0x0 0xC 0x3
+	//if hard mode
+	ReinforcementEvent(GradoCavsHM)
+ELSE 0x1
+ENIF 0x0
+	//if normal
+	ReinforcementEvent(GradoCavs)
+ENIF 0x1
+ENDA
+
+
+GradoCavs:
+UNIT 0x80 Fighter 0x0 Level(2,Enemy,0) [16,8] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
+UNIT 0x80 Mercenary 0x0 Level(2,Enemy,0) [15,9] 0 0 0 0 [IronSword] DefaultAI
+UNIT
+
+GradoCavsHM:
+UNIT 0x80 AxeCavalier 0x0 Level(2,Enemy,1) [16,8] 0x0 0x0 0x0 0x0 [IronAxe] DefaultAI
+UNIT 0x80 Cavalier 0x0 Level(2,Enemy,1) [15,9] 0x0 0x0 0x0 0x0 [IronSword] DefaultAI
+UNIT
+
+Recruitment:
+MUSC Comrades
+LOAD1 0x1 Recruits
+CAM1 Anna
+FlashCursor(Anna,64)
+ENUN
+TEXTSTART
+TEXTSHOW AnnaDorcasJoin
+TEXTEND 
+REMA
+ENDA
+
+AnnaRoyChat:
+TEXTSTART
+TEXTSHOW C1AnnaRoyChat
+TEXTEND
+REMA
+NoFade
+ENDA
+
+DorcasRoyChat:
+TEXTSTART
+TEXTSHOW C1DorcasRoyChat
+TEXTEND
+REMA
+NoFade
+ENDA
+
+MESSAGE C1Events end at offset CURRENTOFFSET

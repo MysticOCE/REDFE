@@ -73,6 +73,12 @@ Reckless[X]
 # 0x405
 Scary[.][X]
 
+# 0x406
+Lunge[X]
+
+# 0x407
+Injured[X]
+
 # 0x02DA
 Axe Cavalier[X]
 
@@ -153,3 +159,10 @@ fighting, poor at keeping quiet.[X]
 ##
 A disgruntled wyvern rider[NL]
 from Grado. Finding herself.[X]
+
+# 0x228
+Norris[X]
+
+# 0x284
+A travelling archer. Not fond[NL]
+of trickery or monsters.[X]

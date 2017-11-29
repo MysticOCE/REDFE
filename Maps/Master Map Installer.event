@@ -9,7 +9,7 @@
 #endif
 #define SetChapterData(ChapterID,ObjectType1,ObjectType2,PaletteID,TileConfig,MapID,MapPointer,Anims1,Anims2,MapChanges) "PUSH; ORG ChapterDataTable+(ChapterID*148)+4; BYTE ObjectType1 ObjectType2 PaletteID TileConfig MapID Anims1 Anims2 MapChanges; EventPointerTable(MapID,MapPointer); POP" 
 {
-#include "C1\ch1 replacement4.event"
+#include "C1\Ch1v2.event"
 }
 {
 #include "C2\ch2replacement2glaceofix.event"
@@ -18,7 +18,7 @@
 #include "C3\Ch3v3.event"
 }
 {
-#include "C4\undelet2.event"
+#include "C4\undelet3.event"
 }
 {
 #include "C5\C5v2.event"
@@ -27,5 +27,5 @@
 #include "C6\c6formglaceofix.event"
 }
 {
-#include "C7\C7v2.event"
+#include "C7\C7v3.event"
 }

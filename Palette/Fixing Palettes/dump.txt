@@ -1,0 +1,1 @@
+#incext Png2Dmp "AxeCavFixed.png" --palette-only

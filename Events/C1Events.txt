@@ -32,6 +32,21 @@ UNIT 0x80 Fighter Breguet Level(2, Enemy, 0) [10,5] 0x00 0x00 0x0 0x00 [IronAxe]
 UNIT 0x80 Mercenary Breguet Level(3, Enemy, 0) [2,7] 0x00 0x00 0x0 0x00 [IronSword] ChaseOnceApproachedAI
 UNIT
 
+UnitsHM:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [15, 12] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [16,11] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI 
+UNIT Breguet Knight 0x0 Level(4, Enemy, 0) [3,4] 0x00 0x00 0x0 0x00 [SteelLance] GuardTileAI
+UNIT 0x80 Knight Breguet Level(5, Enemy, 0) [9,7] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x80 Shaman Breguet Level(2, Enemy, 0) [8,6] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI
+UNIT 0x80 Mercenary Breguet Level(3, Enemy, 0) [15,8] DropItem 0x00 0x0 0x00 [IronSword] DefaultAI
+UNIT 0x80 Fighter Breguet Level(3, Enemy, 0) [12,9] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 0) [2,5] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI
+UNIT 0x80 Soldier Breguet Level(2, Enemy, 0) [4,5] 0x00 0x00 0x0 0x00 [IronLance] ChaseOnceApproachedAI
+UNIT 0x80 Fighter Breguet Level(2, Enemy, 0) [15,5] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0x80 Mercenary Breguet Level(3, Enemy, 0) [2,7] 0x00 0x00 0x0 0x00 [IronSword] ChaseOnceApproachedAI
+UNIT
+
+
 TurnBasedEvents:
 TurnEventPlayer(0,Recruitment,2)
 TurnEventPlayer(0,CavaliersArrive,4)
@@ -64,7 +79,13 @@ ALIGN 4
 
 BeginningScene:
 MUSC Tension
-LOAD1 0x1 Units
+CHECK_HARD
+BEQ 0x2 0x0 0xC //if C = 0 (not hard mode), branch to other group
+	LOAD1 0x1 Units
+	GOTO 0x3
+	LABEL 0x2
+	LOAD1 0x1 UnitsHM
+	LABEL 0x3
 ENUN
 CAM1 Roy
 TEXTSTART

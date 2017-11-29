@@ -17,7 +17,7 @@ EVBIT_MODIFY 0x1
 _0xC220
 //Spawns lord but doesn't actually display them
 WM_SPAWNLORD 0x0 0x0 0x1 0x0 0x0
-//idk what this centers on
+//idk what this centers on, lord ain't displayed
 WM_CENTERCAMONLORD
 //Quick transition to silence from the menu music before we start playing the actual song
 MUSCFAST 0x7FFF

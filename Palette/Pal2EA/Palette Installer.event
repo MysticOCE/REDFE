@@ -7,3 +7,42 @@ AlanPal:
 AlanCav:
 	#incbin "./_palettes/AlanCav.lzpal"
 
+AnnaPeg:
+	#incbin "./_palettes/AnnaPeg.lzpal"
+
+SalemShaman:
+	#incbin "./_palettes/SalemShaman.lzpal"
+
+LukasKnight:
+	#incbin "./_palettes/LukasKnight.lzpal"
+
+LeilaThief:
+	#incbin "./_palettes/LeilaThief.lzpal"
+
+BernardGeneral:
+	#incbin "./_palettes/BernardGeneral.lzpal"
+
+MiledyRider:
+	#incbin "./_palettes/MiledyRider.lzpal"
+
+KieranCav:
+	#incbin "./_palettes/KieranCav.lzpal"
+
+CainCav:
+	#incbin "./_palettes/CainCav.lzpal"
+
+RaddMyrm:
+	#incbin "./_palettes/RaddMyrm.lzpal"
+
+DorcasFighter:
+	#incbin "./_palettes/DorcasFighter.lzpal"
+
+PrisTroub:
+	#incbin "./_palettes/PrisTroub.lzpal"
+
+PrisValk:
+	#incbin "./_palettes/PrisValk.lzpal"
+
+RavenMerc:
+	#incbin "./_palettes/RavenMerc.lzpal"
+

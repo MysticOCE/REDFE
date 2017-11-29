@@ -1,5 +1,5 @@
-[OpenMidRight][LoadPortrait][0x1B][0x01]
-Grado, bandits, it matters not.[NL]
-You need me, you have me.[A]
+[OpenMidRight][LoadPortrait][0x11][0x01]
+I've made my decision.[NL]
+And I shall support you until the end.[A]
 [ClearFace]
 [X]

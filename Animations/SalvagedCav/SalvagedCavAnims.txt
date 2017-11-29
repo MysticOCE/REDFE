@@ -1,0 +1,5 @@
+#include "Packages\Axe Installer.event"
+#include "Packages\Sword Installer.event"
+#include "Packages\Lance Installer.event"
+#include "Packages\Unarmed Installer.event"
+#include "Packages\HandAxe Installer.event"

@@ -25,11 +25,10 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-//Village(0x8,Village1C4,7,2)
+Village(0x8,Village1C4,17,2)
 END_MAIN
 
-Village1C4:
-VillageEventItem(Ch4VillageText,Village,Talisman) 
+
 
 
 MiscBasedEvents:
@@ -79,7 +78,7 @@ UNIT Zonta Mercenary 0x0 Level(8,Enemy,0) [17,9] 0x00 0x00 0x0 0x00 [LightBrand]
 //UNIT 0x81 Knight_F 0x0 Level(4,Enemy,1) [25, 4] 0x00 0x00 0x0 0x00 [Javelin] GuardTileAI
 //UNIT 0x81 Fighter 0x0 Level(4,Enemy,1) [26, 3] 0x00 0x00 0x0 0x00 [HandAxe] GuardTileAI
 UNIT 0x80 Fighter 0x0 Level(4,Enemy,1) [9,7] 0x00 0x00 0x0 0x00 [HandAxe] AttackInRangeAI
-UNIT 0x80 Mercenary 0x0 Level(4,Enemy,1) [10,8] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
+UNIT 0x80 Mercenary 0x0 Level(4,Enemy,1) [11,7] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
 UNIT 0x80 Archer 0x0 Level(4,Enemy,1) [9,0] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI
 UNIT 0x80 Shaman 0x0 Level(4,Enemy,1) [8,9] 0x00 0x00 0x0 0x00 [Flux] AttackInRangeAI
 UNIT 0x84 Soldier 0x0 Level(5,Enemy,1) [16,9] DropItem 0x00 0x0 0x00 [KillerLance] AttackInRangeAI
@@ -87,18 +86,33 @@ UNIT
 
 
 Monsters:
-UNIT 0xAC Wight 0x0 Level(1,Enemy,1) [16,2] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI
+UNIT 0xAC Wight 0x0 Level(1,Enemy,1) [17,2] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI
 UNIT 0xAB Bonewalker 0x0 Level(2,Enemy,1) [8,2] 0x00 0x00 0x0 0x00 [IronSword] DefaultAI
 UNIT 0xAB Bonewalker 0x0 Level(2,Enemy,1) [7,3] 0x00 0x00 0x0 0x00 [IronLance] DefaultAI
-UNIT 0xAB Mogall 0x0 Level(2, Enemy,1) [9,10] 0x00 0x00 0x0 0x00 [EvilEye] AttackInRangeAI
-UNIT 0xAB Mogall 0x0 Level(2, Enemy,1) [11,10] 0x00 0x00 0x0 0x00 [EvilEye] AttackInRangeAI
-UNIT 0xAB Mogall 0x0 Level(2, Enemy,1) [10,9] 0x00 0x00 0x0 0x00 [EvilEye] AttackInRangeAI
-UNIT 0xAB Tarvos 0x0 Level(4, Enemy, 0) [18,2] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
+UNIT 0xAB Mogall 0x0 Level(2, Enemy,1) [9,9] 0x00 0x00 0x0 0x00 [EvilEye] AttackInRangeAI
+UNIT 0xAB Mogall 0x0 Level(2, Enemy,1) [11,9] 0x00 0x00 0x0 0x00 [EvilEye] AttackInRangeAI
+UNIT 0xAB Mogall 0x0 Level(2, Enemy,1) [10,8] 0x00 0x00 0x0 0x00 [EvilEye] AttackInRangeAI
+UNIT 0xAB Tarvos 0x0 Level(4, Enemy, 0) [18,4] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
 UNIT 0xAB Tarvos 0x0 Level(4, Enemy, 0) [18,3] 0x00 0x00 0x0 0x00 [IronAxe] DefaultAI
-UNIT 0xAB Gargoyle 0x0 Level(4,Enemy,0) [0,9] 00 00 00 00 [IronLance] DefaultAI
-UNIT 0xAB Gargoyle 0x0 Level(4,Enemy,0) [1,10] 00 00 00 00 [IronLance] DefaultAI
+UNIT 0xAB Gargoyle 0x0 Level(4,Enemy,0) [0,8] 00 00 00 00 [IronLance] DefaultAI
+UNIT 0xAB Gargoyle 0x0 Level(4,Enemy,0) [1,9] 00 00 00 00 [IronLance] DefaultAI
 UNIT
 
+NorrisRecruit:
+UNIT Norris Archer 0x0 Level(5,Ally,0) [17,3] 0 0 0 0 [SteelBow, Longbow, Vulnerary] NoAI
+UNIT
+
+Village1C4:
+MUSC Comrades
+TEXTSTART
+SetBackground(Village)
+TEXTSHOW C4NorrisJoinText
+TEXTEND
+ClearBackground
+REMA
+LOAD1 0x1 NorrisRecruit
+ENUT 0x8
+ENDA
 
 BeginningScene:
 MUSI
@@ -124,7 +138,7 @@ ENUN
 LOAD2 0x1 HumanEnemies
 ENUN
 FADU 60
-CAM1 [11,6]
+CAM1 [11,5]
 //FlashCursor(Zonta,30)
 FADU 10
 TEXTSTART
@@ -134,7 +148,7 @@ TEXTEND
 ClearBackground
 REMA
 //testing
-
+//LOAD1 0x1 NorrisRecruit
 MOVE 0x10 0x84 [15,8]
 ENUN
 LOAD2 0x1 Units

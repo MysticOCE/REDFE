@@ -76,8 +76,8 @@ BYTE 00 00
 ALIGN 4
 
 MercenarySkillList:
-BYTE 1 RallyStrID
-BYTE 10 SealSpdID
+BYTE 1 SlowBurnID
+BYTE 10 StrongRiposteID
 BYTE 00 00
 ALIGN 4
 
@@ -154,7 +154,7 @@ BYTE 00 00
 ALIGN 4
 
 MageSkillList:
-BYTE 1 QuickBurnID
+BYTE 2 QuickBurnID
 BYTE 10 LightWeightID
 BYTE 00 00
 ALIGN 4
@@ -183,7 +183,7 @@ BYTE 00 00
 ALIGN 4
 
 ShamanSkillList:
-BYTE 1 MaleficAuraID
+BYTE 2 MaleficAuraID
 BYTE 10 SpurDefID
 BYTE 00 00
 ALIGN 4
