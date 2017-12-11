@@ -133,7 +133,10 @@ UNIT 0x8E Brigand 0x0 Level(3,Enemy,1) [4,11] 0x00 0x00 0x0 0x00 [IronAxe] Defau
 UNIT 
 
 T6Reinforcements:
-ReinforcementEvent(BanditReinforcements)
+CHECK_HARD 
+BEQ 0x0 0x0 0xC
+	ReinforcementEvent(BanditReinforcements)
+LABEL 0x0
 ENDA
 
 EndOfMap:

@@ -48,7 +48,7 @@
    <tile gid="810"/>
    <tile gid="163"/>
    <tile gid="164"/>
-   <tile gid="100"/>
+   <tile gid="131"/>
    <tile gid="100"/>
    <tile gid="132"/>
    <tile gid="164"/>
@@ -65,8 +65,8 @@
    <tile gid="840"/>
    <tile gid="841"/>
    <tile gid="842"/>
-   <tile gid="132"/>
-   <tile gid="132"/>
+   <tile gid="131"/>
+   <tile gid="131"/>
    <tile gid="100"/>
    <tile gid="100"/>
    <tile gid="100"/>
@@ -86,8 +86,8 @@
    <tile gid="874"/>
    <tile gid="132"/>
    <tile gid="132"/>
-   <tile gid="100"/>
-   <tile gid="100"/>
+   <tile gid="131"/>
+   <tile gid="131"/>
    <tile gid="164"/>
    <tile gid="131"/>
    <tile gid="132"/>
@@ -155,10 +155,10 @@
    <tile gid="783"/>
    <tile gid="783"/>
    <tile gid="783"/>
-   <tile gid="783"/>
    <tile gid="685"/>
-   <tile gid="686"/>
-   <tile gid="653"/>
+   <tile gid="107"/>
+   <tile gid="46"/>
+   <tile gid="685"/>
    <tile gid="600"/>
    <tile gid="664"/>
    <tile gid="672"/>
@@ -173,10 +173,10 @@
    <tile gid="99"/>
    <tile gid="100"/>
    <tile gid="849"/>
-   <tile gid="849"/>
+   <tile gid="815"/>
    <tile gid="850"/>
-   <tile gid="882"/>
    <tile gid="685"/>
+   <tile gid="783"/>
    <tile gid="686"/>
    <tile gid="653"/>
    <tile gid="131"/>
@@ -194,10 +194,10 @@
    <tile gid="132"/>
    <tile gid="99"/>
    <tile gid="783"/>
-   <tile gid="945"/>
-   <tile gid="783"/>
-   <tile gid="100"/>
-   <tile gid="132"/>
+   <tile gid="786"/>
+   <tile gid="785"/>
+   <tile gid="784"/>
+   <tile gid="785"/>
    <tile gid="101"/>
    <tile gid="131"/>
    <tile gid="3"/>
@@ -214,9 +214,9 @@
    <tile gid="99"/>
    <tile gid="100"/>
    <tile gid="132"/>
-   <tile gid="132"/>
-   <tile gid="132"/>
-   <tile gid="133"/>
+   <tile gid="849"/>
+   <tile gid="946"/>
+   <tile gid="947"/>
   </data>
  </layer>
  <layer name="Village visited" width="19" height="10">
@@ -420,7 +420,7 @@
    <tile gid="0"/>
   </data>
  </layer>
- <layer name="Snag" width="19" height="10">
+ <layer name="Snag" width="19" height="10" visible="0">
   <properties>
    <property name="Height" value="3"/>
    <property name="ID" value="1"/>

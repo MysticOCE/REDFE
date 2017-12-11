@@ -1281,7 +1281,7 @@
    <tile gid="0"/>
   </data>
  </layer>
- <layer name="Right Village Done" width="16" height="18">
+ <layer name="Right Village Done" width="16" height="18" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="3"/>
@@ -1580,13 +1580,13 @@
    <tile gid="0"/>
   </data>
  </layer>
- <layer name="Left Village Dead" width="16" height="18">
+ <layer name="Left Village Done" width="16" height="18">
   <properties>
-   <property name="Height" value="2"/>
+   <property name="Height" value="1"/>
    <property name="ID" value="4"/>
-   <property name="Width" value="3"/>
-   <property name="X" value="0"/>
-   <property name="Y" value="2"/>
+   <property name="Width" value="1"/>
+   <property name="X" value="1"/>
+   <property name="Y" value="7"/>
   </properties>
   <data>
    <tile gid="0"/>
@@ -1642,9 +1642,6 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="390"/>
-   <tile gid="390"/>
-   <tile gid="390"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1685,9 +1682,6 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="801"/>
-   <tile gid="802"/>
-   <tile gid="803"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1701,9 +1695,15 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="833"/>
-   <tile gid="834"/>
-   <tile gid="835"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="0"/>
+   <tile gid="33"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1879,13 +1879,13 @@
    <tile gid="0"/>
   </data>
  </layer>
- <layer name="Left Village Done" width="16" height="18" visible="0">
+ <layer name="Left Village Dead" width="16" height="18" visible="0">
   <properties>
-   <property name="Height" value="1"/>
+   <property name="Height" value="2"/>
    <property name="ID" value="5"/>
-   <property name="Width" value="1"/>
-   <property name="X" value="1"/>
-   <property name="Y" value="7"/>
+   <property name="Width" value="3"/>
+   <property name="X" value="0"/>
+   <property name="Y" value="2"/>
   </properties>
   <data>
    <tile gid="0"/>
@@ -1941,6 +1941,9 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
+   <tile gid="390"/>
+   <tile gid="390"/>
+   <tile gid="390"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1981,6 +1984,9 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
+   <tile gid="801"/>
+   <tile gid="802"/>
+   <tile gid="803"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1994,15 +2000,9 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="0"/>
-   <tile gid="33"/>
-   <tile gid="0"/>
+   <tile gid="833"/>
+   <tile gid="834"/>
+   <tile gid="835"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>

@@ -18,6 +18,8 @@ POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0,GargoyleReinforcements,4)
+TurnEventPlayer(0,GargoyleReinforcements2,7)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
@@ -102,8 +104,34 @@ NorrisRecruit:
 UNIT Norris Archer 0x0 Level(5,Ally,0) [17,3] 0 0 0 0 [SteelBow, Longbow, Vulnerary] NoAI
 UNIT
 
+GargoyleSpawns:
+UNIT 0xAB Gargoyle 0x0 Level(4,Enemy,1) [0,8] 00 00 00 00 [IronLance] DefaultAI
+UNIT 0xAB Gargoyle 0x0 Level(4,Enemy,1) [1,9] 00 00 00 00 [IronLance] DefaultAI
+UNIT
+
+GargoyleSpawns2:
+UNIT 0xAB Gargoyle 0x0 Level(4,Enemy,1) [0,8] 00 00 00 00 [ShortSpear] DefaultAI
+UNIT 0xAB Gargoyle 0x0 Level(4,Enemy,1) [1,9] 00 00 00 00 [ShortSpear] DefaultAI
+UNIT
+
+GargoyleReinforcements:
+ReinforcementEvent(GargoyleSpawns)
+ENDA
+
+GargoyleReinforcements2:
+CHECK_HARD
+SETVAL 0x3 0x1
+BEQ 0x0 0x3 0xC
+	//
+	ReinforcementEvent(GargoyleSpawns)
+	GOTO 0x1
+LABEL 0x0
+	ReinforcementEvent(GargoyleSpawns2)
+LABEL 0x1
+ENDA
+
 Village1C4:
-MUSC Comrades
+MUSS Comrades
 TEXTSTART
 SetBackground(Village)
 TEXTSHOW C4NorrisJoinText
@@ -157,6 +185,7 @@ FADU 30
 ENDA
 
 EndingScene:
+MUSC 52
 TEXTSTART
 SetBackground(Plain_Fog)
 TEXTSHOW Ch4EndingText

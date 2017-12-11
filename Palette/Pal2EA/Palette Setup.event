@@ -16,6 +16,18 @@
 	setPalette(0x55,AnnaPeg)
 	setCBSP(0x55,Anna,0x1,PegasusKnight)
 
+// DorcasFighter
+	setPalette(0x03,DorcasFighter)
+	setCBSP(0x03,Dorcas,0x1,Fighter)
+
+// DorcasWarrior
+	setPalette(0x25,DorcasWarrior)
+	setCBSP(0x25,Dorcas,0x3,Warrior)
+
+// DorcasHero
+	setPalette(0x2A,DorcasHero)
+	setCBSP(0x2A,Dorcas,0x4,Hero)
+
 // SalemShaman
 	setPalette(0x40,SalemShaman)
 	setCBSP(0x40,Salem,0x1,Shaman)
@@ -47,10 +59,6 @@
 // RaddMyrm
 	setPalette(0x5E,RaddMyrm)
 	setCBSP(0x5E,Radd,0x1,Myrmidon)
-
-// DorcasFighter
-	setPalette(0x03,DorcasFighter)
-	setCBSP(0x03,Dorcas,0x1,Fighter)
 
 // PrisTroub
 	setPalette(0x45,PrisTroub)

@@ -30,6 +30,7 @@ POP
 PUSH
 {
 #include "wm/Prologue.txt"
+#include "wm/Ch2Intro.txt"
 }
 POP
 

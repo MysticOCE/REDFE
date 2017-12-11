@@ -10,6 +10,15 @@ AlanCav:
 AnnaPeg:
 	#incbin "./_palettes/AnnaPeg.lzpal"
 
+DorcasFighter:
+	#incbin "./_palettes/DorcasFighter.lzpal"
+
+DorcasWarrior:
+	#incbin "./_palettes/DorcasWarrior.lzpal"
+
+DorcasHero:
+	#incbin "./_palettes/DorcasHero.lzpal"
+
 SalemShaman:
 	#incbin "./_palettes/SalemShaman.lzpal"
 
@@ -33,9 +42,6 @@ CainCav:
 
 RaddMyrm:
 	#incbin "./_palettes/RaddMyrm.lzpal"
-
-DorcasFighter:
-	#incbin "./_palettes/DorcasFighter.lzpal"
 
 PrisTroub:
 	#incbin "./_palettes/PrisTroub.lzpal"

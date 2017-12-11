@@ -218,6 +218,15 @@ me, I'll take them all on![A]
 [OpenFarRight][ClearFace]
 [X]
 
+## C8NorrisSupport
+[OpenMidRight][LoadPortrait][0x20][0x01]
+I-I didn't think I'd ever up[NL]
+going against an empire.[A][NL]
+But[ToggleMouthMove][....]...[ToggleMouthMove] I said I was with you[NL]
+[ToggleSmile]
+and I'm not backing down![A]
+[X]
+
 ## C8XaneSupport
 [OpenMidRight][LoadPortrait][0x1E][0x01]
 Oh? We're going in?[NL]
@@ -357,6 +366,51 @@ we must stay cautious.[A]
 Yes, indeed. Now then, enough talk.[NL]
 Let's show them our might![A]
 [X]
+
+## MurrayBossQuote
+[OpenMidLeft][LoadFace][0x37][0x01]
+Grrr[ToggleMouthMove]... [ToggleMouthMove]I guess it's up to me![A][X]
+
+## C7EndingText
+[OpenMidRight][LoadFace][0x14][0x01]
+[OpenLeft][LoadFace][0x02][0x01]
+[OpenMidRight]
+Roy. Are you unharmed?[A]
+[OpenLeft]
+Father... I...
+[OpenMidRight]
+Listen, I was less worried about[NL]
+myself and more worried about you.[A][NL]
+What possessed you to take on Grado[NL]
+with a dozen soldiers?[A]
+[OpenLeft]
+But father, you-
+[OpenMidRight]
+[ToggleSmile]
+Are you talking back to me, young man?[A]
+[OpenLeft]
+No, father! I-
+[OpenMidRight]
+Ahaha... It's quite alright. I've never[NL]
+been prouder of you, Roy.[A][NL]
+You've done so well... You've become[NL]
+a fine example of a leader.[A]
+[OpenLeft]
+Father...[ToggleSmile] thank you. But we still[NL]
+have a lot to-
+[OpenMidRight][MoveRight]
+Hush, my boy. We can talk about things[NL]
+once we're home in Frelia.[A][NL]
+How does that sound?[A]
+[OpenLeft]
+Home... yes, that does sound[NL]
+nice, father.[A]
+[OpenRight]
+You've been through so much... I'll say[NL]
+it again. I'm proud of you.[A]
+[X]
+
+
 
 ## ThankYouForFinishingTheDemo
 [OpenMidRight][LoadFace][0x2E][0x01]

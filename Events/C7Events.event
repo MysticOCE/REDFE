@@ -94,6 +94,14 @@ UNIT Miledy WyvernRider_F  00 Level(6,NPC,0) [23,10] 00 00 00 00 [IronLance,Jave
 UNIT Kieran AxeCavalier 00 Level(6,NPC,0) [23,12] 00 00 00 00 [SteelAxe, Hammer] DefaultAI
 UNIT
 
+
+//fix for AI using door keys, will prevent antitoxin and keys from being used by AI in C7
+PUSH
+ORG 0xD8558
+BYTE 0x2
+POP
+
+
 EliwoodArrives:
 LOAD1 0x1 EliwoodParty
 CAM1 [16,10]
@@ -143,8 +151,8 @@ CHECK_HARD //sets C to 1 for hard
 SETVAL 0x3 0x1 //sets r3 to 1
 CAM1 [16,10]
 BEQ 0x1 0xC 0x3 // if r3 = rC, goes to Label 0x1 and loads HM dudes
-	/*LOAD2 0x1 TiradoBackup
-	SETVAL 0xB 0x00110022
+	LOAD2 0x1 TiradoBackup
+	/*SETVAL 0xB 0x00110022
 	SETVAL 0x1 0x10
 	SET_HP 0xFFFE
 	SETVAL 0xB 0x00120022
@@ -321,6 +329,12 @@ TEXTEND
 	TEXTSHOW2 C8LeilaEwanSupport
 	TEXTEND
 	LABEL 0xB
+//norris
+	CHECK_ALIVE Norris
+	BEQ 0xF 0x0 0xC
+	TEXTSHOW2 C8NorrisSupport
+	TEXTEND
+	LABEL 0xF
 //xane
 	CHECK_ALIVE Xane
 	BEQ 0xC 0x0 0xC
