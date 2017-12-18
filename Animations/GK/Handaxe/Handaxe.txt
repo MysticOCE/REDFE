@@ -1,0 +1,171 @@
+/// - Begin Mode 1 - Normal Attack (Layered in Front)
+C03
+C07
+1  p- 1.png
+C41
+3  p- 2.png
+2  p- 3.png
+2  p- 4.png
+12  p- 5.png
+2  p- 6.png
+C05
+2  p- 7.png
+1  p- 8.png
+C13
+2  p- 9.png
+3  p- 6.png
+C06
+2  p- 3.png
+3  p- 2.png
+1  p- 1.png
+C01
+C0D
+/// - End Mode 1
+~~~
+/// - Begin Mode 3 - Critical Attack (Layered in Front)
+C03
+C07
+1  p- 1.png
+C41
+3  p- 2.png
+2  p- 3.png
+2  p- 4.png
+C38
+2  p- c1.png
+2  p- c2.png
+2  p- c3.png
+2  p- c4.png
+2  p- 4.png
+2  p- 5.png
+10  p- 6.png
+2  p- 6.png
+C05
+2  p- 7.png
+1  p- 8.png
+C13
+2  p- 9.png
+3  p- 6.png
+C06
+2  p- 3.png
+3  p- 2.png
+1  p- 1.png
+C01
+C0D
+/// - End Mode 3
+~~~
+/// - Begin Mode 5 - Magic/Range Attack
+C03
+C07
+1  p- 1.png
+C41
+3  p- 2.png
+2  p- 3.png
+2  p- 4.png
+12  p- 5.png
+2  p- 6.png
+C05
+2  p- 7.png
+1  p- 8.png
+C13
+2  p- 9.png
+3  p- 6.png
+C06
+2  p- 3.png
+3  p- 2.png
+1  p- 1.png
+C01
+C0D
+/// - End Mode 5
+~~~
+/// - Begin Mode 6 - Magic/Range Attack Critical
+C03
+C07
+1  p- 1.png
+C41
+3  p- 2.png
+2  p- 3.png
+2  p- 4.png
+C38
+2  p- c1.png
+2  p- c2.png
+2  p- c3.png
+2  p- c4.png
+2  p- 4.png
+2  p- 5.png
+10  p- 6.png
+2  p- 6.png
+C05
+2  p- 7.png
+1  p- 8.png
+C13
+2  p- 9.png
+3  p- 6.png
+C06
+2  p- 3.png
+3  p- 2.png
+1  p- 1.png
+C01
+C0D
+/// - End Mode 6
+~~~
+/// - Begin Mode 7 - Close Range Dodge
+C02
+1  p- 1.png
+C0E
+2  p- a1.png
+2  p- a2.png
+C01
+3  p- a1.png
+3  p- 1.png
+C0D
+~~~
+/// - Begin Mode 8 - Ranged Dodge
+C02
+1  p- 1.png
+C0E
+2  p- a1.png
+2  p- a2.png
+C01
+3  p- a1.png
+3  p- 1.png
+C0D
+~~~
+/// - Begin Mode 9 - Standing Frames
+1  p- 1.png
+C01
+/// - End Mode 9
+~~~
+/// - Begin Mode 10 - Standing Frames 2
+1  p- 1.png
+C01
+/// - End Mode 10
+~~~
+/// - Begin Mode 11 - Ranged Standing Frames
+1  p- 1.png
+C01
+/// - End Mode 11
+~~~
+/// - Begin Mode 12 - Dodged attack
+C03
+C07
+1  p- 1.png
+C41
+3  p- 2.png
+2  p- 3.png
+2  p- 4.png
+12  p- 5.png
+2  p- 6.png
+C05
+2  p- 7.png
+1  p- 8.png
+C13
+3  p- 9.png
+6  p- 6.png
+C06
+2  p- 3.png
+3  p- 2.png
+1  p- 1.png
+C01
+C0D
+~~~
+/// - End Animation Data

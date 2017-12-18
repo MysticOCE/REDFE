@@ -1,0 +1,101 @@
+# 0x0C23 RoyDeathQuote
+[OpenMidRight][LoadFace][0x02][0x01]
+Everyone[ToggleMouthMove]...[....][ToggleMouthMove] I'm sorry[ToggleMouthMove]...[....][ToggleMouthMove][NL]
+I failed you all[ToggleMouthMove]...[ToggleMouthMove][CloseEyes][A]
+[X]
+
+## EliwoodDeathQuote
+[OpenMidRight][LoadFace][0x14][0x01]
+Forgive me, Roy.[.][A][OpenMidRight][CloseEyes][X]
+[X]
+
+## AlanDeathQuote
+[OpenMidRight][LoadFace][0x04][0x01]
+Why here[ToggleMouthMove]...?[....][ToggleMouthMove]NL]
+My liege[ToggleMouthMove]...[....][ToggleMouthMove] I must fall back[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]
+
+## AnnaDeathQuote
+[OpenMidRight][LoadFace][0x06][0x01]
+Sorry, everyone[ToggleMouthMove]...[....][ToggleMouthMove][NL][CloseEyes]
+I can't see you[ToggleMouthMove]...[....][ToggleMouthMove] any more[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]
+
+## DorcasDeathQuote
+[OpenMidRight][LoadFace][0x05][0x01]
+Natalie[ToggleMouthMove]...[....][ToggleMouthMove][NL][CloseEyes]
+I'm sorry[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]
+
+## PrisDeathQuote
+[OpenMidRight][LoadFace][0x07][0x01]
+Raymond[ToggleMouthMove]...[....][ToggleMouthMove][NL]
+Please stay safe...[ToggleMouthMove]...[....][ToggleMouthMove][CloseEyes][A]
+[X]
+
+## SalemDeathQuote
+[OpenMidRight][LoadFace][0x08][0x01]
+But I have not yet[ToggleMouthMove]...[....][ToggleMouthMove][NL]
+[CloseEyes]
+been absolved from my sins[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]
+
+## LeilaDeathQuote
+[OpenMidRight][LoadFace][0x0E][0x01]
+I can do no more[ToggleMouthMove]...[....][ToggleMouthMove][NL]
+I leave this to you[ToggleMouthMove]...[....][ToggleMouthMove][CloseEyes][A]
+[X]
+
+## RossDeathQuote
+this shouldn't appear[A]
+[X]
+
+## RaddDeathQuote
+[OpenMidRight][LoadFace][0x0C][0x01]
+In the end[ToggleMouthMove]...[....][ToggleMouthMove] I couldn't[NL]
+protect anyone[ToggleMouthMove]...[....][ToggleMouthMove]CloseEyes][A]
+[X]
+
+## ElbertDeathQuote
+[OpenMidRight][LoadFace][0x0A][0x01]
+My time is up[ToggleMouthMove]...[....][ToggleMouthMove] Eliwood, Roy[NL][CloseEyes]
+the future is in your hands[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]
+
+## BernardDeathQuote
+[OpenMidRight][LoadFace][0x1A][0x01]
+I have lived as a knight[ToggleMouthMove]...[....][ToggleMouthMove]NL]
+And I am proud to die as one.[CloseEyes][A]
+[X]
+
+## LuteDeathQuote
+yeah, this shouldn't be[NL]
+here either[A]
+[X]
+
+## LukasDeathQuote
+[OpenMidRight][LoadFace][0x11][0x01]
+So this[ToggleMouthMove]...[....][ToggleMouthMove] is the last[NL]
+place I'll see[ToggleMouthMove]...[....][ToggleMouthMove]A][NL]
+Still, I can die with[NL][CloseEyes]
+a clear conscience[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]
+
+## MiledyDeathQuote
+[OpenMidRight][LoadFace][0x18][0x01]
+[CloseEyes]
+Zeiss[ToggleMouthMove]...[....][ToggleMouthMove] I'll see you[NL]
+again soon[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]
+
+## KieranDeathQuote
+[OpenMidRight][LoadFace][0x16][0x01]
+Long live Frelia! May[NL][CloseEyes]
+fortune shine upon youToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]
+
+# 0x0C39 NorrisDeathQuote
+[OpenMidRight][LoadFace][0x20][0x01]
+I-I'm done for[ToggleMouthMove]...[....][ToggleMouthMove][CloseEyes] Take care[NL]
+of the rest for me...[A]
+[X]

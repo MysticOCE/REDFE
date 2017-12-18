@@ -3,7 +3,7 @@
 
 #include EAstdlib.event
 
-EventPointerTable(EventTableID,ThisChapter)
+EventPointerTable(0x2A,ThisChapter)
 
 
 ThisChapter:

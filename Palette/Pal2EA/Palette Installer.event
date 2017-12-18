@@ -7,8 +7,17 @@ AlanPal:
 AlanCav:
 	#incbin "./_palettes/AlanCav.lzpal"
 
+AlanRanger:
+	#incbin "./_palettes/AlanRanger.lzpal"
+
 AnnaPeg:
 	#incbin "./_palettes/AnnaPeg.lzpal"
+
+AnnaFalco:
+	#incbin "./_palettes/AnnaFalco.lzpal"
+
+AnnaWyv:
+	#incbin "./_palettes/AnnaWyv.lzpal"
 
 DorcasFighter:
 	#incbin "./_palettes/DorcasFighter.lzpal"
@@ -22,11 +31,26 @@ DorcasHero:
 SalemShaman:
 	#incbin "./_palettes/SalemShaman.lzpal"
 
+SalemDruid:
+	#incbin "./_palettes/SalemDruid.lzpal"
+
+SalemSummon:
+	#incbin "./_palettes/SalemSummon.lzpal"
+
 LukasKnight:
 	#incbin "./_palettes/LukasKnight.lzpal"
 
+LukasGen:
+	#incbin "./_palettes/LukasGen.lzpal"
+
+LukasGK:
+	#incbin "./_palettes/LukasGK.lzpal"
+
 LeilaThief:
 	#incbin "./_palettes/LeilaThief.lzpal"
+
+LeilaAssassin:
+	#incbin "./_palettes/LeilaAssassin.lzpal"
 
 BernardGeneral:
 	#incbin "./_palettes/BernardGeneral.lzpal"
@@ -34,21 +58,63 @@ BernardGeneral:
 MiledyRider:
 	#incbin "./_palettes/MiledyRider.lzpal"
 
+MiledyWyvKnight:
+	#incbin "./_palettes/MiledyWyvKnight.lzpal"
+
+MiledyWyvLord:
+	#incbin "./_palettes/MiledyWyvLord.lzpal"
+
 KieranCav:
 	#incbin "./_palettes/KieranCav.lzpal"
+
+KieranGK:
+	#incbin "./_palettes/KieranGK.lzpal"
+
+KieranBerk:
+	#incbin "./_palettes/KieranBerk.lzpal"
 
 CainCav:
 	#incbin "./_palettes/CainCav.lzpal"
 
+CainGK:
+	#incbin "./_palettes/CainGK.lzpal"
+
+CainPal:
+	#incbin "./_palettes/CainPal.lzpal"
+
 RaddMyrm:
 	#incbin "./_palettes/RaddMyrm.lzpal"
 
+RaddSM:
+	#incbin "./_palettes/RaddSM.lzpal"
+
+RaddHero:
+	#incbin "./_palettes/RaddHero.lzpal"
+
+NorrisArcher:
+	#incbin "./_palettes/NorrisArcher.lzpal"
+
+NorrisSniper:
+	#incbin "./_palettes/NorrisSniper.lzpal"
+
+NorrisRanger:
+	#incbin "./_palettes/NorrisRanger.lzpal"
+
 PrisTroub:
 	#incbin "./_palettes/PrisTroub.lzpal"
+
+PrisMK:
+	#incbin "./_palettes/PrisMK.lzpal"
 
 PrisValk:
 	#incbin "./_palettes/PrisValk.lzpal"
 
 RavenMerc:
 	#incbin "./_palettes/RavenMerc.lzpal"
+
+RavenHero:
+	#incbin "./_palettes/RavenHero.lzpal"
+
+RavenRanger:
+	#incbin "./_palettes/RavenRanger.lzpal"
 

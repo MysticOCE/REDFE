@@ -263,6 +263,9 @@
 #define C8TiradoArrives 0x95c
 #define C8TiradoArrives2 0x95d
 #define C8EliwoodArrives 0x95e
-#define ThankYouForFinishingTheDemo 0x95f
+#define MurrayBossQuote 0x95f
+#define C7EndingText 0x960
+#define ThankYouForFinishingTheDemo 0x961
 #define ElbertRoyChat1DorcasAlive 0xBFF
 #define RoyAlanAfterGettingHome1 0xC01
+#define RenaisReturnText1 0xc02

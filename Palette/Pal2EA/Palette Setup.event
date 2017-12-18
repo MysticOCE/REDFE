@@ -12,9 +12,21 @@
 	setPalette(0x6F,AlanCav)
 	setCBSP(0x6F,0x02,0x1,0x5)
 
+// AlanRanger
+	setPalette(0x70,AlanRanger)
+	setCBSP(0x70,Alan,0x4,Ranger)
+
 // AnnaPeg
 	setPalette(0x55,AnnaPeg)
 	setCBSP(0x55,Anna,0x1,PegasusKnight)
+
+// AnnaFalco
+	setPalette(0x3D,AnnaFalco)
+	setCBSP(0x3D,Anna,0x3,FalcoKnight)
+
+// AnnaWyv
+	setPalette(0x29,AnnaWyv)
+	setCBSP(0x29,Anna,0x4,WyvernKnight_F)
 
 // DorcasFighter
 	setPalette(0x03,DorcasFighter)
@@ -32,13 +44,33 @@
 	setPalette(0x40,SalemShaman)
 	setCBSP(0x40,Salem,0x1,Shaman)
 
+// SalemDruid
+	setPalette(0x1C,SalemDruid)
+	setCBSP(0x1C,Salem,0x3,Druid)
+
+// SalemSummon
+	setPalette(0x67,SalemSummon)
+	setCBSP(0x67,Salem,0x4,Summoner)
+
 // LukasKnight
 	setPalette(0x43,LukasKnight)
 	setCBSP(0x43,Lukas,0x1,Knight)
 
+// LukasGen
+	setPalette(0x0C,LukasGen)
+	setCBSP(0x0C,Lukas,0x3,General)
+
+// LukasGK
+	setPalette(0x61,LukasGK)
+	setCBSP(0x61,Lukas,0x4,GreatKnight)
+
 // LeilaThief
 	setPalette(0x1E,LeilaThief)
 	setCBSP(0x1E,Leila,0x1,Thief)
+
+// LeilaAssassin
+	setPalette(0x10,LeilaAssassin)
+	setCBSP(0x10,Leila,0x3,Assassin)
 
 // BernardGeneral
 	setPalette(0x0B,BernardGeneral)
@@ -48,26 +80,82 @@
 	setPalette(0x56,MiledyRider)
 	setCBSP(0x56,Miledy,0x1,WyvernRider_F)
 
+// MiledyWyvKnight
+	setPalette(0x2B,MiledyWyvKnight)
+	setCBSP(0x2B,Miledy,0x4,WyvernKnight_F)
+
+// MiledyWyvLord
+	setPalette(0x3E,MiledyWyvLord)
+	setCBSP(0x3E,Miledy,0x3,WyvernLord_F)
+
 // KieranCav
 	setPalette(0x57,KieranCav)
 	setCBSP(0x57,Kieran,0x1,AxeCavalier)
+
+// KieranGK
+	setPalette(0x28,KieranGK)
+	setCBSP(0x28,Kieran,0x3,GreatKnight)
+
+// KieranBerk
+	setPalette(0x3B,KieranBerk)
+	setCBSP(0x3B,Kieran,0x4,Berserker)
 
 // CainCav
 	setPalette(0x01,CainCav)
 	setCBSP(0x01,Cain,0x1,LanceCavalier)
 
+// CainGK
+	setPalette(0x22,CainGK)
+	setCBSP(0x22,Cain,0x3,GreatKnight)
+
+// CainPal
+	setPalette(0x53,CainPal)
+	setCBSP(0x53,Cain,0x4,Paladin)
+
 // RaddMyrm
 	setPalette(0x5E,RaddMyrm)
 	setCBSP(0x5E,Radd,0x1,Myrmidon)
+
+// RaddSM
+	setPalette(0x07,RaddSM)
+	setCBSP(0x07,Radd,0x3,Swordmaster)
+
+// RaddHero
+	setPalette(0x44,RaddHero)
+	setCBSP(0x44,Radd,0x4,Hero)
+
+// NorrisArcher
+	setPalette(0x71,NorrisArcher)
+	setCBSP(0x71,Norris,0x1,Archer)
+
+// NorrisSniper
+	setPalette(0x72,NorrisSniper)
+	setCBSP(0x72,Norris,0x3,Sniper)
+
+// NorrisRanger
+	setPalette(0x73,NorrisRanger)
+	setCBSP(0x73,Norris,0x4,Ranger)
 
 // PrisTroub
 	setPalette(0x45,PrisTroub)
 	setCBSP(0x45,Priscilla,0x1,Troubadour)
 
+// PrisMK
+	setPalette(0x4B,PrisMK)
+	setCBSP(0x4B,Priscilla,0x3,MageKnight_F)
+
 // PrisValk
 	setPalette(0x0D,PrisValk)
-	setCBSP(0x0D,Priscilla,0x3,Valkyrie)
+	setCBSP(0x0D,Priscilla,0x4,Valkyrie)
 
 // RavenMerc
 	setPalette(0x31,RavenMerc)
 	setCBSP(0x31,Raven,0x1,Mercenary)
+
+// RavenHero
+	setPalette(0x12,RavenHero)
+	setCBSP(0x12,Raven,0x3,Hero)
+
+// RavenRanger
+	setPalette(0x21,RavenRanger)
+	setCBSP(0x21,Raven,0x4,Ranger)

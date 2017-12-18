@@ -1,0 +1,237 @@
+//begin Mode 1
+C03
+C07
+1  p- 0.png
+4  p- 1.png
+3  p- 2.png
+2  p- 3.png
+2  p- 4.png
+C1C
+2  p- 5.png
+C1E
+2  p- 6.png
+2  p- 7.png
+2  p- 8.png
+2  p- 9.png
+2  p- 10.png
+4  p- 11.png
+5  p- 12.png
+5  p- 13.png
+5  p- 14.png
+2  p- 15.png
+C04
+1  p- 15.png
+C1A
+C24
+C21
+2  p- 16.1.png
+2  p- 17.1.png
+2  p- 18.1.png
+1  p- 19.1.png
+4  p- 19.1.png
+C01
+5  p- 20.png
+3  p- 21.png
+3  p- 22.png
+C1C
+5  p- 23.png
+C1E
+2  p- 24.png
+3  p- 25.png
+3  p- 26.png
+4  p- 27.png
+4  p- 28.png
+C06
+5  p- 29.png
+1  p- 0.png
+C0D
+~~~
+//begin Mode 3
+C03
+C07
+1  p- 0.png
+4  p- c1.png
+2  p- c2.png
+3  p- c3.png
+C43
+16  p- c4.png
+2  p- c5.png
+2  p- c6.png
+2  p- c7.png
+12  p- c8.png
+2  p- c9.png
+2  p- c10.png
+2  p- c11.png
+4  p- c12.png
+3  p- c13.png
+2  p- c14.png
+2  p- c15.png
+C1C
+2  p- c16.png
+C1E
+2  p- c17.png
+2  p- c18.png
+2  p- c19.png
+2  p- c20.png
+2  p- c21.png
+3  p- c22.png
+3  p- c23.png
+3  p- c24.png
+5  p- c25.png
+6  p- c26.png
+6  p- c27.png
+3  p- c28.png
+C04
+2  p- c29.png
+C0C
+C24
+C1F
+2  p- 16.1.png
+2  p- 17.1.png
+1  p- 18.1.png
+4  p- 19.1.png
+C01
+5  p- 20.png
+3  p- 21.png
+3  p- 22.png
+C1C
+5  p- 23.png
+C1E
+2  p- 24.png
+3  p- 25.png
+3  p- 26.png
+4  p- 27.png
+4  p- 28.png
+C06
+5  p- 29.png
+1  p- 0.png
+C0D
+~~~
+//begin Mode 5
+C03
+C07
+1  p- r0.png
+C22
+3  p- r1.png
+2  p- r2.png
+2  p- r3.png
+12  p- r4.png
+2  p- r5.png
+8  p- r6.png
+C25
+2  p- r7.png
+C05
+1  p- r8.png
+C01
+C06
+5  p- r9.png
+1  p- r0.png
+C0D
+~~~
+//begin Mode 6
+C03
+C07
+1  p- r0.png
+C22
+3  p- r1.png
+2  p- r2.png
+2  p- r3.png
+C38
+2  p- r3c1.png
+2  p- r3c2.png
+2  p- r3c3.png
+2  p- r3c4.png
+16  p- r4.png
+2  p- r5.png
+8  p- r6.png
+C25
+2  p- r7.png
+C05
+1  p- r8.png
+C01
+C06
+5  p- r9.png
+1  p- r0.png
+C0D
+~~~
+//begin Mode 7
+C02
+1  p- 0.png
+C0E
+2  p- d1.png
+1  p- d2.png
+C01
+3  p- d1.png
+1  p- 0.png
+C0D
+~~~
+//begin Mode 8
+C02
+1  p- r0.png
+C0E
+2  p- rd1.png
+1  p- rd2.png
+C01
+3  p- rd1.png
+1  p- r0.png
+C0D
+~~~
+//begin Mode 9
+1  p- 0.png
+C01
+~~~
+//begin Mode 10
+1  p- 0.png
+C01
+~~~
+//begin Mode 11
+1  p- r0.png
+C01
+~~~
+//begin Mode 12
+C03
+C07
+1  p- 0.png
+4  p- 1.png
+3  p- 2.png
+2  p- 3.png
+2  p- 4.png
+C1C
+2  p- 5.png
+C1E
+2  p- 6.png
+2  p- 7.png
+2  p- 8.png
+2  p- 9.png
+2  p- 10.png
+4  p- 11.png
+5  p- 12.png
+5  p- 13.png
+5  p- 14.png
+2  p- 15.png
+C04
+1  p- 15.png
+C24
+2  p- 16.png
+2  p- 17.png
+2  p- 18.png
+1  p- 19.png
+4  p- 19.png
+C01
+5  p- 20.png
+3  p- 21.png
+3  p- 22.png
+C1C
+5  p- 23.png
+C1E
+2  p- 24.png
+3  p- 25.png
+3  p- 26.png
+4  p- 27.png
+4  p- 28.png
+C06
+5  p- 29.png
+1  p- 0.png
+C0D
+~~~
+//End of animation script

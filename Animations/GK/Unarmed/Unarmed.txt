@@ -1,0 +1,80 @@
+/// - Begin Mode 1 - Normal Attack (Layered in Front)
+C03
+C07
+1  p- none.png
+C01
+C06
+C0D
+/// - End Mode 1
+~~~
+/// - Begin Mode 3 - Critical Attack (Layered in Front)
+C03
+C07
+1  p- none.png
+C01
+C06
+C0D
+/// - End Mode 3
+~~~
+/// - Begin Mode 5 - Magic/Range Attack
+C03
+C07
+1  p- none.png
+C01
+C06
+C0D
+/// - End Mode 5
+~~~
+/// - Begin Mode 6 - Magic/Range Attack Critical
+C03
+C07
+1  p- none.png
+C01
+C06
+C0D
+/// - End Mode 6
+~~~
+/// - Begin Mode 7 - Close Range Dodge
+C02
+1  p- none.png
+C0E
+3  p- n1.png
+1  p- n2.png
+C01
+3  p- n1.png
+C0D
+~~~
+/// - Begin Mode 8 - Ranged Dodge
+C02
+1  p- none.png
+C0E
+3  p- n1.png
+1  p- n2.png
+C01
+3  p- n1.png
+C0D
+~~~
+/// - Begin Mode 9 - Standing Frames
+1  p- none.png
+C01
+/// - End Mode 9
+~~~
+/// - Begin Mode 10 - Standing Frames 2
+1  p- none.png
+C01
+/// - End Mode 10
+~~~
+/// - Begin Mode 11 - Ranged Standing Frames
+1  p- none.png
+C01
+/// - End Mode 11
+~~~
+/// - Begin Mode 12 - Dodged attack
+C03
+C07
+1  p- none.png
+C01
+C06
+C0D
+~~~
+/// - End Animation Data

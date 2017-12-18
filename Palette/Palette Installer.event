@@ -5,6 +5,7 @@ ORG 0x59EE20
 #incbin "EPPalx.DMP" //red palettte for users
 ORG 0x59EE40
 #incbin "EPPal2b.DMP" //purple palette for enemy
+//#incbin "RedPurpleMapSpritePalettes.bin"
 ORG 0x59EEA0
 #incbin "EPPal2.DMP" //blue for Link Arena team 4
 ORG 0x802558

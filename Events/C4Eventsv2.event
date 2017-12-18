@@ -177,7 +177,7 @@ ClearBackground
 REMA
 //testing
 //LOAD1 0x1 NorrisRecruit
-MOVE 0x10 0x84 [15,8]
+MOVE 0x10 0x84 [15,7]
 ENUN
 LOAD2 0x1 Units
 FlashCursor(0xAC, 60)
