@@ -1,0 +1,4 @@
+[OpenMidRight][LoadFace][0x0C][0x01]
+In the end[ToggleMouthMove]...[....][ToggleMouthMove] I couldn't[NL]
+protect anyone[ToggleMouthMove]...[....][ToggleMouthMove][CloseEyes][A]
+[X]

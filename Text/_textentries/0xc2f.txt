@@ -1,0 +1,5 @@
+[OpenMidRight][LoadFace][0x18][0x01]
+[CloseEyes]
+Zeiss[ToggleMouthMove]...[....][ToggleMouthMove] I'll see you[NL]
+again soon[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]

@@ -1,0 +1,4 @@
+[OpenMidRight][LoadFace][0x20][0x01]
+I-I'm done for[ToggleMouthMove]...[....][ToggleMouthMove][CloseEyes] Take care[NL]
+of the rest for me...[A]
+[X]

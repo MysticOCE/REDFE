@@ -6,12 +6,12 @@ I failed you all[ToggleMouthMove]...[ToggleMouthMove][CloseEyes][A]
 
 ## EliwoodDeathQuote
 [OpenMidRight][LoadFace][0x14][0x01]
-Forgive me, Roy.[.][A][OpenMidRight][CloseEyes][X]
+Forgive me, Roy.[.][A][OpenMidRight][CloseEyes]
 [X]
 
 ## AlanDeathQuote
 [OpenMidRight][LoadFace][0x04][0x01]
-Why here[ToggleMouthMove]...?[....][ToggleMouthMove]NL]
+Why here[ToggleMouthMove]...?[....][ToggleMouthMove][NL]
 My liege[ToggleMouthMove]...[....][ToggleMouthMove] I must fall back[ToggleMouthMove]...[....][ToggleMouthMove][A]
 [X]
 
@@ -46,14 +46,10 @@ I can do no more[ToggleMouthMove]...[....][ToggleMouthMove][NL]
 I leave this to you[ToggleMouthMove]...[....][ToggleMouthMove][CloseEyes][A]
 [X]
 
-## RossDeathQuote
-this shouldn't appear[A]
-[X]
-
 ## RaddDeathQuote
 [OpenMidRight][LoadFace][0x0C][0x01]
 In the end[ToggleMouthMove]...[....][ToggleMouthMove] I couldn't[NL]
-protect anyone[ToggleMouthMove]...[....][ToggleMouthMove]CloseEyes][A]
+protect anyone[ToggleMouthMove]...[....][ToggleMouthMove][CloseEyes][A]
 [X]
 
 ## ElbertDeathQuote
@@ -66,11 +62,6 @@ the future is in your hands[ToggleMouthMove]...[....][ToggleMouthMove][A]
 [OpenMidRight][LoadFace][0x1A][0x01]
 I have lived as a knight[ToggleMouthMove]...[....][ToggleMouthMove]NL]
 And I am proud to die as one.[CloseEyes][A]
-[X]
-
-## LuteDeathQuote
-yeah, this shouldn't be[NL]
-here either[A]
 [X]
 
 ## LukasDeathQuote
@@ -94,8 +85,27 @@ Long live Frelia! May[NL][CloseEyes]
 fortune shine upon youToggleMouthMove]...[....][ToggleMouthMove][A]
 [X]
 
-# 0x0C39 NorrisDeathQuote
+## NorrisDeathQuote
 [OpenMidRight][LoadFace][0x20][0x01]
 I-I'm done for[ToggleMouthMove]...[....][ToggleMouthMove][CloseEyes] Take care[NL]
 of the rest for me...[A]
+[X]
+
+## RavenDeathQuote
+[OpenMidRight][LoadFace][0x1B][0x01]
+I'm done for.[.] Priscilla, the[NL]
+rest[ToggleMouthMove]...[....][ToggleMouthMove][CloseEyes] is up to you[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]
+
+## CainDeathQuote
+[OpenMidRight][LoadFace][0x0F][0x01]
+My apologies[ToggleMouthMove]...[....][ToggleMouthMove][CloseEyes] Luck be[NL]
+with you, sire...[A]
+[X]
+
+
+## XaneDeathQuote
+[OpenMidRight][LoadFace][0x1E][0x01]
+Hmm... It's been interesting[NL]
+but I think I'll slip out now.[A]
 [X]

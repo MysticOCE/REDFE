@@ -1,0 +1,4 @@
+[OpenMidRight][LoadFace][0x0E][0x01]
+I can do no more[ToggleMouthMove]...[....][ToggleMouthMove][NL]
+I leave this to you[ToggleMouthMove]...[....][ToggleMouthMove][CloseEyes][A]
+[X]

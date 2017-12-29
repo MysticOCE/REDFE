@@ -1,0 +1,4 @@
+[OpenMidRight][LoadFace][0x06][0x01]
+Sorry, everyone[ToggleMouthMove]...[....][ToggleMouthMove][NL][CloseEyes]
+I can't see you[ToggleMouthMove]...[....][ToggleMouthMove] any more[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]

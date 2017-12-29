@@ -1,0 +1,4 @@
+[OpenMidRight][LoadFace][0x04][0x01]
+Why here[ToggleMouthMove]...?[....][ToggleMouthMove]NL]
+My liege[ToggleMouthMove]...[....][ToggleMouthMove] I must fall back[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]

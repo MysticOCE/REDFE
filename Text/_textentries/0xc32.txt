@@ -1,0 +1,4 @@
+[OpenMidRight][LoadFace][0x1B][0x01]
+I'm done for.[.] Priscilla, the[NL]
+rest[ToggleMouthMove]...[....][ToggleMouthMove][CloseEyes] is up to you[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]

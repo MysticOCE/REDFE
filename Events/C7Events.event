@@ -84,7 +84,7 @@ UNIT 0x80 Fighter 0x0 Level(7,Enemy,1) [5,22] 0x0 0x0 0x0 0x0 [SteelAxe] Default
 UNIT Bernard General 0x0 Level(4, Enemy,0) [6,14] 0x0 0x0 0x0 0x0 [SilverAxe, Javelin, IronBlade,DoorKey] GuardTileAI
 UNIT 0x80 Knight 0x0 Level(7,Enemy,1) [5,15] 00 00 00 00 [SteelLance] AttackInRangeAI
 UNIT 0x80 Knight 0x0 Level(7,Enemy,1) [7,15] 00 00 00 00 [SteelLance] AttackInRangeAI
-UNIT 0x85 Fighter 0x0 Level(8,Enemy,1) [9,7] 00 00 00 00 [HandAxe] AttackInRangeAI
+UNIT 0x85 Fighter 0x0 Level(8,Enemy,1) [9,7] DropItem 00 00 00 [HandAxe, ChestKey] AttackInRangeAI
 UNIT 0x80 Mercenary 0x0 Level(8,Enemy,1) [8,6] DropItem 0 0 0 [IronSword,DoorKey] AttackInRangeAI
 UNIT
 

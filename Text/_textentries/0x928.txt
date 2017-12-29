@@ -1,7 +1,6 @@
 [OpenRight][LoadFace][0x0C][0x01]
 [CloseEyes]
-"Do as you're told by man[NL]
-with the gold..."[A][NL]
+"Follow the gold..."[A][NL]
 [OpenEyes]
 Sorry, mum. This still feels like[NL]
 the worst idea I've ever had.[A]

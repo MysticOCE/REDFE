@@ -162,7 +162,7 @@ but he couldn't finish him off.[A][NL]
 Beyond that, I can't say.[A]
 [OpenFarLeft]
 [CloseEyes]
-Father...
+Father...[A]
 [OpenLeft]
 I'll take him away then.[A]
 [MoveRight]

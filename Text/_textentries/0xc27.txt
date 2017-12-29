@@ -1,0 +1,4 @@
+[OpenMidRight][LoadFace][0x05][0x01]
+Natalie[ToggleMouthMove]...[....][ToggleMouthMove][NL][CloseEyes]
+I'm sorry[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]

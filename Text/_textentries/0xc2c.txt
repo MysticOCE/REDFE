@@ -1,0 +1,4 @@
+[OpenMidRight][LoadFace][0x0A][0x01]
+My time is up[ToggleMouthMove]...[....][ToggleMouthMove] Eliwood, Roy[NL][CloseEyes]
+the future is in your hands[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]

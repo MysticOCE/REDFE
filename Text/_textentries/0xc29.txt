@@ -1,0 +1,5 @@
+[OpenMidRight][LoadFace][0x08][0x01]
+But I have not yet[ToggleMouthMove]...[....][ToggleMouthMove][NL]
+[CloseEyes]
+been absolved from my sins[ToggleMouthMove]...[....][ToggleMouthMove][A]
+[X]

@@ -4,6 +4,24 @@
 #endif
 
 
+#define RoyDeathQuote 0x0C23
+#define EliwoodDeathQuote 0xc24
+#define AlanDeathQuote 0xc25
+#define AnnaDeathQuote 0xc26
+#define DorcasDeathQuote 0xc27
+#define PrisDeathQuote 0xc28
+#define SalemDeathQuote 0xc29
+#define LeilaDeathQuote 0xc2a
+#define RaddDeathQuote 0xc2b
+#define ElbertDeathQuote 0xc2c
+#define BernardDeathQuote 0xc2d
+#define LukasDeathQuote 0xc2e
+#define MiledyDeathQuote 0xc2f
+#define KieranDeathQuote 0xc30
+#define NorrisDeathQuote 0xc31
+#define RavenDeathQuote 0xc32
+#define CainDeathQuote 0xc33
+#define XaneDeathQuote 0xc34
 #define LearnedSkillText 0x3A
 #define SS_TalkText 0x3B
 #define SS_SkillsText 0x3c
