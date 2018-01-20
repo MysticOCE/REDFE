@@ -21,8 +21,9 @@ ORG 0x803590
 //leveluptesting
 //ORG 0x803B10
 //#incbin "testing3.dmp"
-ORG 0x5b6bb4
+//first pal at 0x5b6bb4
+ORG 0x5b6bd4
 #incbin "testing3.dmp"
-#incbin "testing2.dmp"
+//#incbin "testing2.dmp"
 POP
 #include "Pal2EA/Palette Setup.event"

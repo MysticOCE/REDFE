@@ -166,3 +166,58 @@ Norris[X]
 # 0x284
 A travelling archer. Not fond[NL]
 of trickery or monsters.[X]
+
+# 0x22A
+Maria[X]
+
+# 0x286
+She had personality[NL]
+in like one convo[X]
+
+# 0x22D
+Samson[X]
+
+# 0x288
+The 2nd axe fighter from[NL]
+TRS, not the FE1 guy[X]
+
+# 0x230
+Cordelia[X]
+
+# 0x28B
+She's from an obscure game[NL]
+called Awakening.[X]
+
+# 0x232
+Gazelle[X]
+
+# 0x28D
+A popular character from[NL]
+a popular video game.[X]
+
+# 0x36A
+Flyer Lance[X]
+
+# 0x40A
+Carcino[X]
+
+# 0x2d8
+Mercenaries hired by a[NL]
+Carcino merchant.[X]
+
+# 0x41A
+Lunge[X]
+
+# 0x41B
+Pass[X]
+
+# 0x41C
+Gazelle's[X]
+
+# 0x42A
+Unused.
+[X]
+
+# 0x2DA
+A mercenary working under[NL]
+Gazelle's command.[X]

@@ -84,3 +84,19 @@ setMugEntry(0x2D, CordyMug, 3, 6, 3, 4)
 NorrisMug:
 #incext PortraitFormatter "XigdarNorris2.png"
 setMugEntry(0x20, NorrisMug, 3,5,3,3)
+
+MariaMug:
+#incext PortraitFormatter "BladeMaria.png"
+setMugEntry(0x22, MariaMug, 3,7,3,5)
+
+CordeliaMug:
+#incext PortraitFormatter "TytyCordelia.png"
+setMugEntry(0x29, CordeliaMug, 3,6, 3,4)
+
+GazelleMug:
+#incext PortraitFormatter "XigdarGazelle2.png"
+setMugEntry(0x2B, GazelleMug, 3, 5, 3,3)
+
+ArvisMug:
+#incext PortraitFormatter "XigdarArvis.png"
+setMugEntry(0x53, ArvisMug, 4, 4, 4,2)

@@ -22,7 +22,7 @@ Artur,0x0
 Gerik,0x0
 Tethys,0x0
 Marisa,0x0
-Saleh,0x0
+Norris,QuickDrawID
 Ewan,ParagonID
 L'Arachel,0x0
 Dozla,0x0
@@ -145,9 +145,9 @@ Cutthroat,0x0
 Grado Remnant 2 (Cutscene and C16 only?),0x0
 Grado Remnant 3 (C16 only?),0x0
 Grado Remnant 4 (C16 only?),0x0
-Wraith (Sage),0x0
-Wraith (Swords),0x0
-Wraith (Axes),0x0
+CarcinoNormal,0x0
+CarcinoLunge,LungeID
+CarcinoPass,PassID
 +AC0-,0x0
 +AC0-,0x0
 +AC0-,0x0

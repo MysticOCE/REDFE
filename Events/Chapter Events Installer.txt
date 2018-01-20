@@ -26,6 +26,12 @@ PUSH
 {
 #include "C7Events.event"
 }
+{
+#include "LordsSplit.txt"
+}
+{
+#include "Roy1Events.event
+}
 POP
 PUSH
 {

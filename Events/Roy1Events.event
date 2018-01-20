@@ -1,0 +1,223 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0x2D,ThisChapter)
+
+NPCEscapePointPointerTable(0xA, Roy1EscapePoint)
+Roy1EscapePoint:
+EscapePoint(0, 0, MoveUp)
+EscapePointEnd
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0,CordeliaSamsonArrive,4)
+TurnEventPlayer(0, GazelleEnters,6)
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+CharacterEvent(0x7,RoyRecruitsMaria,Roy,Maria)
+CharacterEvent(0x8, MariaRecruitsSamson, Maria, Samson)
+CharacterEvent(0x9, MariaRecruitsCordelia, Maria, Cordelia)
+CharacterEvent(0x9, SamsonRecruitsCordelia, Samson, Cordelia)
+CharacterEvent(0x8, CordeliaRecruitsSamson, Cordelia, Samson)
+CharacterEvent(0xA, GazelleJoins, Roy, Gazelle)
+END_MAIN
+
+LocationBasedEvents:
+Village(0x7, R1LeftHouse, 1,9)
+Village(0x8, R1RightHouse, 2,9)
+END_MAIN
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [3,3] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [2,4] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [4,4] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [4,2] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [2,2] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+UNIT Salem Monk 0x0 Level(2, Ally, 0) [3,1] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
+UNIT Priscilla Troubadour 0x0 Level(2, Ally, 0) [1,3] 0x00 0x00 0x0 0x00 [Heal, Vulnerary] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [1,1] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [2,1] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [1,2] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT
+
+//0x92 is standard, 0x93 is lunge, 0x94 is Pass, 0x95 is for rush on Gazelle arrival, 0x96 is Gazelles
+
+Enemies:
+UNIT Binks WyvernLord 0x0 Level(1,Enemy,0) [15,16] 0 0 0 0 [SteelAxe, Javelin] GuardTileAI
+UNIT 0x93 WyvernRider 0x0 Level(10,Enemy,1) [11,2] 0 0 0 0 [SteelLance] DefaultAI	
+UNIT 0x94 PegasusKnight 0x0 Level(10,Enemy,1) [6,16] 0 0 0 0 [FlyerLance] DefaultAI
+UNIT 0x92 Mercenary 0x0 Level(8,Enemy,1) [12,13] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x92 Cavalier 0x0 Level(8, Enemy,1) [0,14] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x92 Cavalier 0x0 Level(8,Enemy,1) [0,15] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x92 Archer 0x0 Level(8,Enemy,1) [5,9] 0 0 0 0 [SteelBow] DefaultAI
+UNIT 0x95 Fighter 0x0 Level(8,Enemy,1) [2,10] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0x92 Mercenary 0x0 Level(8,Enemy,1) [5,12] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x94 PegasusKnight 0x0 Level(8,Enemy,1) [14,4] 0 0 0 0 [IronLance] DefaultAI
+UNIT 0x95 Mercenary 0x0 Level(8,Enemy,1) [14,2] 0 0 0 0 [SteelSword] AttackInRangeAI
+//UNIT 0x94 PegasusKnight 0x0 Level(8,Enemy,1) [15,5] 0 0 0 0 [IronLance] DefaultAI
+UNIT 
+
+MoreEnemies:
+UNIT 0x92 AxeCavalier 0x0 Level(8, Enemy, 1) [13, 16] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0x92 LanceCavalier 0x0 Level(8,Enemy,1) [14,15] 0 0 0 0 [SteelLance] DefaultAI
+UNIT
+
+Runaway:
+UNIT Maria Cleric 0x0 Level(2,NPC,0) [9,9] 0 0 0 0 [Mend] [0x6,0xC,0x0,0x0]
+UNIT
+
+Bodyguards:
+UNIT Cordelia PegasusKnight 0x0 Level(6,NPC, 0) [0,16] 0 0 0 0 [FlyerLance, Axereaver] DefaultAI
+UNIT Samson Fighter 0x0 Level(7,NPC, 0) [1,17] 0 0 0 0 [SteelAxe, DragonAxe] DefaultAI
+UNIT 0x92 Fighter 0x0 Level(8,Enemy,1) [3,10] 0 0 0 0 [IronAxe] DefaultAI
+UNIT 0x93 WyvernRider 0x0 Level(8,Enemy,1) [11,2] 0 0 0 0 [SteelLance] DefaultAI
+UNIT
+
+SoloGazelle:
+UNIT Gazelle Ranger 0x0 Level(1,Ally,0) [16,0] 0 0 0 0 [SteelBow, SteelSword] DefaultAI
+ENDA
+
+Mercenaries:
+UNIT Gazelle Ranger 0x0 Level(1,Enemy,0) [16,0] 0 0 0 0 [SteelBow, SteelSword] DefaultAI
+UNIT 0x96 Cavalier 0x0 Level(10, Enemy,1) [15,0] 0 0 0 0 [SteelSword, Lancereaver] DefaultAI
+UNIT 0x96 AxeCavalier 0x0 Level(10,Enemy,1) [16,1] 0 0 0 0 [SteelAxe, HandAxe] DefaultAI
+UNIT 
+
+RoyRecruitsMaria:
+Text(RoyRecruitsMariaText)
+TurnAlly(Maria)
+ENDA
+
+CordeliaSamsonArrive:
+CAM1 [4,13]
+LOAD1 0x1 Bodyguards
+Text(CordeliaSamsonEnterTheMap)
+ENDA
+
+MariaRecruitsSamson:
+Text(MariaRecruitsSamsonText)
+TurnAlly(Samson)
+ENDA
+
+MariaRecruitsCordelia:
+Text(MariaRecruitsCordeliaText)
+TurnAlly(Cordelia)
+ENDA
+
+SamsonRecruitsCordelia:
+TurnAlly(Cordelia)
+ENDA
+
+CordeliaRecruitsSamson:
+TurnAlly(Samson)
+ENDA
+
+GazelleEnters:
+SETVAL 0x1 0x00000000
+CHAI(0x95)
+ReinforcementEvent(Mercenaries)
+ENDA
+
+R1LeftHouse:
+VillageEventMoney(R1LeftHouseText,HouseBG,5000)
+ENDA
+
+R1RightHouse:
+VillageEventItem(R1RightHouseText,HouseBG,KillerBow)
+ENDA
+
+GazelleJoins:
+TEXTSTART
+TEXTSHOW RoyRecruitsGazelle
+TEXTEND
+SETVAL 0x4 4000
+CHECK_MONEY
+BGE 0x0 0xC 0x4
+	//if you don't have money
+	TEXTSHOW2 RoyGazelleBrokeBoi
+	TEXTEND
+	GOTO 0x1
+LABEL 0x0
+	//if you got cash
+	EVBIT_F 0x3
+	TEXTSHOW2 RoyGazelleGotMoney
+	TEXTEND
+	SETVAL 0x7 0x1
+	BEQ 0x2 0xC 0x7 //if yes, jumps to label 2
+		TEXTSHOW2 RoyGazelleBrokeBoi
+		TEXTEND		
+	GOTO 0x1
+	LABEL 0x2
+		SADD 0x32
+		SADD 0x43
+		GIVETOSLOT3
+		TEXTSHOW2 RoyGazelleNowBrokeBoi
+		TEXTEND
+		TurnAlly(Gazelle)
+		SETVAL 0xB 0x0000000F
+		TurnNPC(0xFFFE)
+		SETVAL 0xB 0x00010010
+		TurnNPC(0xFFFE)
+	LABEL 0x1
+REMA
+ENDA
+
+GazelleIsLate:
+Text(EarlyFinishGazelle)
+LOAD1 0x1 SoloGazelle
+ENDA
+
+BeginningScene:
+LOAD2 0x1 Units
+ENUN
+LOAD1 0x1 Enemies
+ENUN
+LOAD1 0x1 MoreEnemies
+ENUN
+LOAD1 0x1 Runaway
+ENUN
+GotoPrepScreen
+NoFade
+ENDA
+
+EndingScene:
+CHECK_TURNS
+SVAL 0x3 0x7
+BGE 0x3 0x3 0xC
+	CALL GazelleIsLate
+LABEL 0x3
+MoveToChapter(Ch10Eirika)
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET

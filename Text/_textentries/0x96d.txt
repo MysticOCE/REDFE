@@ -1,2 +1,5 @@
-Seal Resistance: Debuff opponent's Res[NL]
-by 6 after combat. (Recover 1/turn)[X]
+[OpenLeft][LoadPortrait][0xFF][0xFF]
+[OpenFarRight][LoadPortrait][0x5A][0x01]
+Er, hi. Can you take that bow away?[NL]
+Someone left it here and it scares me.[A][NL]
+[X]

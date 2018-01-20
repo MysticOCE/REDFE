@@ -1,2 +1,4 @@
-Seal Defense: Debuff opponent's Def[NL]
-by 6 after combat. (Recover 1/turn)[X]
+[OpenLeft][LoadPortrait][0xFF][0xFF]
+[OpenRight][LoadPortrait][0x59][0x01]
+Here, take all my money and get out.[A]
+[X]

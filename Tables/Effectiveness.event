@@ -33,7 +33,20 @@ ORG $59BABA
 BYTE 0xEC
 POP
 
-
+//Char Description fixes
+/*
+PUSH
+ORG 0x805ADB
+BYTE 0x2
+#define setDescToTwo(bonusIndex) "ORG 0x805ADB + 52*bonusIndex; BYTE 0x2"
+setDescToTwo(1)
+setDescToTwo(2)
+setDescToTwo(3)
+setDescToTwo(4)
+setDescToTwo(5)
+setDescToTwo(6)
+POP
+*/
 
 //Fixed, PFinder breaks on spaces in the URL
 //since boss quote editing doesn't work, i'm hardcoding it here

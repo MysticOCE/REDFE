@@ -23,14 +23,14 @@
 #define Xane 0x16
 #define Norris 0x17
 #define Ewan 0x18
-#define LArachel 0x19
+#define Maria 0x19
 #define Dozla 0x1A
-#define Rennac 0x1C
+#define Samson 0x1C
 #define Duessel 0x1D
 #define Myrrh 0x1E
-#define Knoll 0x1F
+#define Cordelia 0x1F
 #define Joshua 0x20
-#define Syrene 0x21
+#define Gazelle 0x21
 #define Tana 0x22
 #define LyonCC 0x23
 #define OrsonCC 0x24
@@ -251,7 +251,7 @@
 #define Lancereaver 0x12
 #define Longsword 0x13
 #define IronLance 0x14
-#define SlimLance 0x15
+#define FlyerLance 0x15
 #define SteelLance 0x16
 #define SilverLance 0x17
 #define PoisonLance 0x18

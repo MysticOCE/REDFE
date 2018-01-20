@@ -6,6 +6,7 @@
 #include "Event Text/C5Texts.txt"
 #include "Event Text/C6Texts.txt"
 #include "Event Text/C7Texts.txt"
+#include "Event Text/R1Texts.txt"
 #include "Event Text/RenaisTexts.txt"
 #include "Event Text/GoalTexts.txt"
 #include "Event Text/WMIntro.txt"

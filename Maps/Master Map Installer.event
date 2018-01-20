@@ -29,3 +29,6 @@
 {
 #include "C7\C7v3.event"
 }
+{
+#include "C8\RoyC1v5.event"
+}
