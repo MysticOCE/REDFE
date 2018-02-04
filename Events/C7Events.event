@@ -86,6 +86,7 @@ UNIT 0x80 Knight 0x0 Level(7,Enemy,1) [5,15] 00 00 00 00 [SteelLance] AttackInRa
 UNIT 0x80 Knight 0x0 Level(7,Enemy,1) [7,15] 00 00 00 00 [SteelLance] AttackInRangeAI
 UNIT 0x85 Fighter 0x0 Level(8,Enemy,1) [9,7] DropItem 00 00 00 [HandAxe, ChestKey] AttackInRangeAI
 UNIT 0x80 Mercenary 0x0 Level(8,Enemy,1) [8,6] DropItem 0 0 0 [IronSword,DoorKey] AttackInRangeAI
+UNIT 0x83 Shaman 0 Level(10, Enemy, 1) [13,3] 00 0 0 0 [Flux] AttackInRangeAI
 UNIT
 
 EliwoodParty:
@@ -94,6 +95,23 @@ UNIT Miledy WyvernRider_F  00 Level(6,NPC,0) [23,10] 00 00 00 00 [IronLance,Jave
 UNIT Kieran AxeCavalier 00 Level(6,NPC,0) [23,12] 00 00 00 00 [SteelAxe, Hammer] DefaultAI
 UNIT
 
+EliwoodParty2:
+UNIT Eliwood KnightLord 00 Level(1,Ally,0) [22,11] 00 00 00 00 [Rapier,SilverLance, Elixir] DefaultAI
+UNIT Miledy WyvernRider_F  00 Level(6,Ally,0) [23,10] 00 00 00 00 [IronLance,Javelin, Vulnerary] DefaultAI
+UNIT Kieran AxeCavalier 00 Level(6,Ally,0) [23,12] 00 00 00 00 [SteelAxe, Hammer] DefaultAI
+UNIT
+
+JustEliwood:
+UNIT Eliwood KnightLord 00 Level(1,Ally,0) [22,11] 00 00 00 00 [Rapier,SilverLance, Elixir] DefaultAI
+UNIT
+
+JustMiledy:
+UNIT Miledy WyvernRider_F  00 Level(6,Ally,0) [23,10] 00 00 00 00 [IronLance,Javelin, Vulnerary] DefaultAI
+UNIT
+
+JustKieran:
+UNIT Kieran AxeCavalier 00 Level(6,Ally,0) [23,12] 00 00 00 00 [SteelAxe, Hammer] DefaultAI
+UNIT
 
 //fix for AI using door keys, will prevent antitoxin and keys from being used by AI in C7
 PUSH
@@ -126,6 +144,7 @@ UNIT 0x80 Mercenary 00 Level(8,Enemy,1) [3,5] 00 00 00 00 [SteelSword] DefaultAI
 UNIT 0x80 Mage 00 Level(7,Enemy,1) [3,6] 00 00 00 00 [Elfire] DefaultAI
 UNIT 0x80 Shaman 00 Level(8,Enemy,1) [11,21] 00 00 00 00 [Flux] DefaultAI
 UNIT 0x80 Mage 00 Level(8,Enemy,1) [3,11] 00 00 00 0 [Thunder] DefaultAI
+
 UNIT
 
 MysteryBossMan:
@@ -359,6 +378,36 @@ NoFade
 ENDA
 
 EndingScene:
+CHECK_TURNS
+SVAL 0x3 0x4
+BLE 0x10 0x3 0xC //if you finished before eliwood spawned, skip ahead.
+	//took 5 or more turns to get here
+	CHECK_EVENTID 0x9
+	SVAL 0x3 0x1
+	//if the talk was triggered, jump to end since player has taken an action to recruit
+	BEQ 0x11 0x3 0xC
+	
+	//now for events if you didn't talk to them but they're on the map
+	LOAD1 0x1 JustEliwood
+	
+	CHECK_ALIVE Kieran
+	SVAL 0x3 0x1
+	BNE 0xF 0x3 0xC
+		LOAD1 0x1 JustKieran
+	LABEL 0xF
+	
+	CHECK_ALIVE Miledy
+	SVAL 0x3 0x1
+	BNE 0x12 0x3 0xC
+		LOAD1 0x1 JustMiledy
+	LABEL 0x12
+
+	GOTO 0x11
+LABEL 0x10
+	//gotta go really fast for this
+	LOAD1 0x1 EliwoodParty2
+	ENUN
+LABEL 0x11
 TEXTSTART
 SetBackground(Black)
 TEXTSHOW ThankYouForFinishingTheDemo

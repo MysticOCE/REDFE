@@ -25,6 +25,7 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 TurnEventPlayer(0,CordeliaSamsonArrive,4)
 TurnEventPlayer(0, GazelleEnters,6)
+TurnEventPlayer(0, BinksAggroes, 8)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
@@ -38,8 +39,8 @@ CharacterEvent(0xA, GazelleJoins, Roy, Gazelle)
 END_MAIN
 
 LocationBasedEvents:
-Village(0x7, R1LeftHouse, 1,9)
-Village(0x8, R1RightHouse, 2,9)
+Village(0xB, R1LeftHouse, 1,9)
+Village(0xC, R1RightHouse, 2,9)
 END_MAIN
 
 MiscBasedEvents:
@@ -71,7 +72,7 @@ UNIT Leila Thief 0x0 Level(2,Ally,0) [2,1] 0x00 0x00 0x0 0x00 [IronSword,Lockpic
 UNIT Leila Thief 0x0 Level(2,Ally,0) [1,2] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
 UNIT
 
-//0x92 is standard, 0x93 is lunge, 0x94 is Pass, 0x95 is for rush on Gazelle arrival, 0x96 is Gazelles
+//0x92 is standard, 0x93 is lunge, 0x94 is Pass, 0x95 is for rush on Gazelle arrival, 0x96 and 0x97 is Gazelles
 
 Enemies:
 UNIT Binks WyvernLord 0x0 Level(1,Enemy,0) [15,16] 0 0 0 0 [SteelAxe, Javelin] GuardTileAI
@@ -98,21 +99,38 @@ UNIT Maria Cleric 0x0 Level(2,NPC,0) [9,9] 0 0 0 0 [Mend] [0x6,0xC,0x0,0x0]
 UNIT
 
 Bodyguards:
-UNIT Cordelia PegasusKnight 0x0 Level(6,NPC, 0) [0,16] 0 0 0 0 [FlyerLance, Axereaver] DefaultAI
+UNIT Cordelia PegasusKnight 0x0 Level(6,NPC, 0) [0,16] 0 0 0 0 [FlyerLance, Axereaver, Vulnerary] DefaultAI
 UNIT Samson Fighter 0x0 Level(7,NPC, 0) [1,17] 0 0 0 0 [SteelAxe, DragonAxe] DefaultAI
 UNIT 0x92 Fighter 0x0 Level(8,Enemy,1) [3,10] 0 0 0 0 [IronAxe] DefaultAI
 UNIT 0x93 WyvernRider 0x0 Level(8,Enemy,1) [11,2] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x92 Cavalier 0x0 Level(8,Enemy,1) [15,17] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x92 AxeCavalier 0x0 Level(8, Enemy,1) [16,16] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT
+
+JustSamson:
+UNIT Samson Fighter 0x0 Level(7,NPC, 0) [1,17] 0 0 0 0 [SteelAxe, DragonAxe] DefaultAI
+UNIT
+
+JustCordelia:
+UNIT Cordelia PegasusKnight 0x0 Level(6,NPC, 0) [0,16] 0 0 0 0 [FlyerLance, Axereaver, Vulnerary] DefaultAI
 UNIT
 
 SoloGazelle:
 UNIT Gazelle Ranger 0x0 Level(1,Ally,0) [16,0] 0 0 0 0 [SteelBow, SteelSword] DefaultAI
-ENDA
+UNIT
 
 Mercenaries:
 UNIT Gazelle Ranger 0x0 Level(1,Enemy,0) [16,0] 0 0 0 0 [SteelBow, SteelSword] DefaultAI
 UNIT 0x96 Cavalier 0x0 Level(10, Enemy,1) [15,0] 0 0 0 0 [SteelSword, Lancereaver] DefaultAI
-UNIT 0x96 AxeCavalier 0x0 Level(10,Enemy,1) [16,1] 0 0 0 0 [SteelAxe, HandAxe] DefaultAI
+UNIT 0x97 AxeCavalier 0x0 Level(10,Enemy,1) [16,1] 0 0 0 0 [KillerAxe, HandAxe] DefaultAI
 UNIT 
+
+T8Reinforcements:
+UNIT 0x93 WyvernRider 0x0 Level(8,Enemy,1) [15,17] 0 0 0 0 [Javelin] DefaultAI
+UNIT 0x93 WyvernRider 0x0 Level(8,Enemy,1) [16,16] 0 0 0 0 [Javelin] DefaultAI
+UNIT 0x94 PegasusKnight 0x0 Level(8,Enemy,1) [6,16] 0 0 0 0 [FlyerLance] DefaultAI
+UNIT 0x92 Myrmidon 0x0 Level(12, Enemy,1) [0,17] 0 0 0 0 [SilverSword] DefaultAI
+UNIT
 
 RoyRecruitsMaria:
 Text(RoyRecruitsMariaText)
@@ -143,7 +161,15 @@ CordeliaRecruitsSamson:
 TurnAlly(Samson)
 ENDA
 
+BinksAggroes:
+Text(BinksIsNowAngryText)
+SVAL 0x1 0x00000000
+CHAI Binks
+ReinforcementEvent(T8Reinforcements)
+ENDA
+
 GazelleEnters:
+
 SETVAL 0x1 0x00000000
 CHAI(0x95)
 ReinforcementEvent(Mercenaries)
@@ -185,10 +211,16 @@ LABEL 0x0
 		TEXTSHOW2 RoyGazelleNowBrokeBoi
 		TEXTEND
 		TurnAlly(Gazelle)
-		SETVAL 0xB 0x0000000F
-		TurnNPC(0xFFFE)
-		SETVAL 0xB 0x00010010
-		TurnNPC(0xFFFE)
+		CHECK_ALIVE 0x96
+		SVAL 0x3 0x1
+		BNE 0x4 0x3 0xC
+			TurnNPC(0x96)
+		LABEL 0x4
+		CHECK_ALIVE 0x97
+		SVAL 0x3 0x1
+		BNE 0x5 0x3 0xC
+			TurnNPC(0x97)
+		LABEL 0x5
 	LABEL 0x1
 REMA
 ENDA
@@ -212,11 +244,32 @@ NoFade
 ENDA
 
 EndingScene:
+CHECK_EVENTID 0x8 //samson
+SVAL 0x3 0x1
+BEQ 0x6 0x3 0xC
+	CHECK_ALIVE Samson
+	SVAL 0x3 0x1
+	BNE 0x7 0x3 0xC
+	LOAD1 0x1 JustSamson
+	LABEL 0x7
+LABEL 0x6
+
+CHECK_EVENTID 0x9 //cordelia
+SVAL 0x3 0x1
+BEQ 0x8 0x3 0xC
+	CHECK_ALIVE Cordelia
+	SVAL 0x3 0x1
+	BNE 0x9 0x3 0xC
+	LOAD1 0x1 JustCordelia
+	LABEL 0x9
+LABEL 0x8
+
 CHECK_TURNS
-SVAL 0x3 0x7
+SVAL 0x3 0x5
 BGE 0x3 0x3 0xC
 	CALL GazelleIsLate
 LABEL 0x3
+
 MoveToChapter(Ch10Eirika)
 ENDA
 

@@ -296,6 +296,7 @@
 #define EarlyFinishGazelle 0x96b
 #define R1LeftHouseText 0x96c
 #define R1RightHouseText 0x96d
+#define BinksIsNowAngryText 0x96e
 #define ElbertRoyChat1DorcasAlive 0xBFF
 #define RoyAlanAfterGettingHome1 0xC01
 #define RenaisReturnText1 0xc02

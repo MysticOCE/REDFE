@@ -148,7 +148,11 @@ POP
 
 ALIGN 4
 
-
+  //Multiple S ranks
+  PUSH
+	ORG $2C150
+	BYTE 0x11 0xE0
+  POP
   //Repoint Unit Menu
   PUSH
     ORG $59D1F8

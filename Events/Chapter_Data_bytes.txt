@@ -1,0 +1,60 @@
+FE8 chapter data table (8B0890)
+0xoffset - byte amount - what it is
+00 - 4 - pointer to something (seems to be a series of tile ids that get copied to BG 0, but idk) (1C06E, 1C820)
+04 - 1 - object type
+05 - 1 - object type 2 (seems to be 0 usually, so it ends up being not used)
+06 - 1 - palette id
+07 - 1 - tile config id
+08 - 1 - map id
+09 - 1 - tile animation 1
+0A - 1 - tile animation 2
+0B - 1 - triggerable map changes id
+0C - 1 - fog of war vision range (0 for none) (BAC4)
+0D - 1 - battle preparations bool
+0E - 1 - chapter ID (I think) (89792)
+0F - 1 - 
+10 - 1 - initial camera x coordinate? (20BCA) (function is run at when starting the chapter, but changing the values doesn't seem to do anything)
+11 - 1 - initial camera y coordinate? (20BEA)
+12 - 1 - weather 
+13 - 1 - battle tileset id (574EE)
+14 - 1 - bottom 4 bits are easy mode level penalty, top 4 bits are hard mode bonus levels (F830)
+15 - 1 - lower 4 bits are normal mode level penalty, top bits aren't used? (F87A)
+16 - 2 - Player phase music
+18 - 2 - Enemy phase music
+1A - 2 - NPC phase music
+1C - 2 - Probably supposed to be hard mode music like in FE7, but isn't
+1E - 2 - ^
+20 - 2 - ^
+22 - 2 - Player (and NPC) phase music if event 0x4 is set (almost certainly a mistake; if 0x26 is the NPC phase music #3, change 16000 to 0x8)
+24 - 2 - Enemy phase music if event 0x4 is set
+26 - 2 - Probably should be NPC phase music if event 0x4 is set, but isn't
+28 - 2 - Chapter opening music/sfx
+2A - 2 - ^ ? (probably Eliwood vs Hector mode leftover)
+2C - 1 - maximum wall hp
+
+2D-6F probably relates to what used to be rankings data.
+70 - 2 - chapter name text id (doesn't seem to be used?) (346E0 doesn't dereference the text id... not sure what to make of this) (B66C4 and some others do, however)
+72 - 2 - ^ ? (probably Eliwood vs Hector mode leftover)
+74 - 1 - chapter event index
+75 - 1 - world map event index
+76 - 2 - unused (A09A8) (Probably leftover augury stuff from FE7)
+7A - 2 - bool, checked if not hard mode at A098C. Doesn't seem to be used. (954C0)
+7C - 2 - unused (A09C4)
+7E - 1 - unused (A09FC)
+7F - 1 - unused (A09E0)
+80 - 1 - On prep screen, top 7 bits are chapter number, bottom bit is set to display 'x' (ch15 = 0x1E, 15x = 0x1F)(96958) 
+81 - 1 - 
+82 - 1 - x coordinate if supply depot (probably leftover from fe7 merlinus) (123C2, 124B0)
+83 - 1 - 
+84 - 1 - y coordinate if supply depot (probably leftover from fe7 merlinus) (123D6, 124C0)
+85 - 1 - 
+86 - 1 - Number of enemies for Grasping at Victory if BD068 does not return 0x2 (if it does, # = 1) (song ID hardcoded at 160AC, can change if <=0xFF)
+87 - 1 - Chapter Title Display Fade-out bool (0 for map, 1 for black)
+88 - 2 - Status - Objective Text (8E53E)
+8A - 2 - Goal window text (8D2DE, 95A9A)
+8C - 1 - Goal window information
+8D - 1 - Turns to count down to +1
+8E - 1 - protect character marker
+8F - 1 - tile marker x coordinate
+90 - 1 - tile marker y coordinate
+91-93 are probably for padding

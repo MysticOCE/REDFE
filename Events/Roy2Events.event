@@ -1,0 +1,79 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0x33,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [12,3] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [11,4] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [13,4] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [14,3] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [10,3] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+UNIT Salem Monk 0x0 Level(2, Ally, 0) [9,2] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
+UNIT Priscilla Troubadour 0x0 Level(2, Ally, 0) [9,1] 0x00 0x00 0x0 0x00 [Heal, Vulnerary] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [8,3] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [7,1] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [7,2] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [9,4] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [7,4] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT
+
+EnemyUnit:
+UNIT 0x92 Mercenary 0x0 Level(8,Enemy,1) [12,13] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x92 Cavalier 0x0 Level(8, Enemy,1) [0,14] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x92 Cavalier 0x0 Level(8,Enemy,1) [0,15] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x92 Archer 0x0 Level(8,Enemy,1) [5,9] 0 0 0 0 [SteelBow] DefaultAI
+UNIT
+
+BeginningScene:
+LOAD2 0x1 Units
+ENUN
+LOAD1 0x1 EnemyUnit
+ENUN
+GotoPrepScreen
+ENDA
+
+EndingScene:
+MoveToChapter(Ch11Eirika)
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET

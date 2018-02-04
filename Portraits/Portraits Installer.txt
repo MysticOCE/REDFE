@@ -95,7 +95,7 @@ setMugEntry(0x29, CordeliaMug, 3,6, 3,4)
 
 GazelleMug:
 #incext PortraitFormatter "XigdarGazelle2.png"
-setMugEntry(0x2B, GazelleMug, 3, 5, 3,3)
+setMugEntry(0x2B, GazelleMug, 2, 5, 2,3)
 
 ArvisMug:
 #incext PortraitFormatter "XigdarArvis.png"

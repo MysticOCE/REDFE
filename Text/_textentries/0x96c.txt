@@ -1,4 +1,4 @@
 [OpenLeft][LoadPortrait][0xFF][0xFF]
 [OpenRight][LoadPortrait][0x59][0x01]
-Here, take all my money and get out.[A]
+Cordelia's in this game? Take my money![A]
 [X]

@@ -201,7 +201,7 @@ Flyer Lance[X]
 # 0x40A
 Carcino[X]
 
-# 0x2d8
+# 0x2d5
 Mercenaries hired by a[NL]
 Carcino merchant.[X]
 
@@ -218,6 +218,6 @@ Gazelle's[X]
 Unused.
 [X]
 
-# 0x2DA
+# 0x2D6
 A mercenary working under[NL]
 Gazelle's command.[X]

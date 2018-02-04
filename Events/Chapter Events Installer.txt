@@ -1,3 +1,4 @@
+#define Chapter_Data_Byte(chapter_id, offset_of_byte, value_to_write) "PUSH; ORG $8B0890+(0x94*chapter_id)+offset_of_byte; BYTE value_to_write; POP"
 
 ALIGN 4
 PUSH
@@ -30,7 +31,10 @@ PUSH
 #include "LordsSplit.txt"
 }
 {
-#include "Roy1Events.event
+#include "Roy1Events.event"
+}
+{
+#include "Roy2Events.event"
 }
 POP
 PUSH
@@ -45,6 +49,8 @@ PUSH
 ORG 0x5A90C0
 BYTE 0x15 0xD
 POP
+
+
 
 /*PUSH
 ORG 0xFFFFFE
