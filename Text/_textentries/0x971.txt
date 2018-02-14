@@ -1,2 +1,1 @@
-Quick Draw: +4 Damage[NL]
-when initiating battle.[X]
+Minerva[X]

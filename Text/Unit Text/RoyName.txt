@@ -221,3 +221,14 @@ Unused.
 # 0x2D6
 A mercenary working under[NL]
 Gazelle's command.[X]
+
+# 0x355
+Soldier Rapier[X]
+
+# 0x1F0
+A noble of Carcino.[NL]
+Bold and capable.[X]
+
+# 0x01F2
+A foreign agent.[NL]
+Curt and unsocialable.[X]

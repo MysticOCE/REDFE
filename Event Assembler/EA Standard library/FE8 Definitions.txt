@@ -42,6 +42,8 @@
 #define FadoCC 0x2A
 #define IsmaireCC 0x2B
 #define HaydenCC 0x2C
+#define Minerva 0x2D
+#define Saizo 0x2E
 #define LyonSummon 0x3B
 #define KnollSummon 0x3E
 #define EvanSummon 0x3F
@@ -232,7 +234,7 @@
 
 //Items
 #define IronSword 0x01
-#define SlimSword 0x02
+#define SoldiersRapier 0x02
 #define SteelSword 0x03
 #define SilverSword 0x04
 #define IronBlade 0x05

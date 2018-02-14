@@ -28,7 +28,7 @@
 	//Music
 	#include "Music/Music/Music Installer.event"
 	//More Graphics
-	//#include "MiscGraphic/Extra Graphics Installer.txt"
+	#include "MiscGraphic/Extra Graphics Installer.txt"
     MESSAGE Used free space ends at currentOffset
 
 #else

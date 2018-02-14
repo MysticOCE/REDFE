@@ -1,4 +1,4 @@
-PUSH
+/*PUSH
 
 ORG $c5830
 POIN NewTitleScroll
@@ -6,3 +6,10 @@ POIN NewTitleScroll
 POP
 NewTitleScroll:
 #incext Png2Dmp "insertscroll.png" --lz77
+*/
+
+//pure sword icon
+PUSH
+ORG 0x5926F4+(0x80*7)
+#incext Png2Dmp "PureSword2.png"
+POP

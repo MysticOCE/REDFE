@@ -134,7 +134,7 @@
 
 // NorrisRanger
 	setPalette(0x73,NorrisRanger)
-	setCBSP(0x73,Norris,0x4,Ranger)
+	setCBSP(0x72,Norris,0x4,Ranger)
 
 // PrisTroub
 	setPalette(0x45,PrisTroub)

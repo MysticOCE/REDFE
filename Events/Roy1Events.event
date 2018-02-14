@@ -95,7 +95,7 @@ UNIT 0x92 LanceCavalier 0x0 Level(8,Enemy,1) [14,15] 0 0 0 0 [SteelLance] Defaul
 UNIT
 
 Runaway:
-UNIT Maria Cleric 0x0 Level(2,NPC,0) [9,9] 0 0 0 0 [Mend] [0x6,0xC,0x0,0x0]
+UNIT Maria Cleric 0x0 Level(2,NPC,0) [9,9] 0 0 0 0 [Mend, Restore, Rescue] [0x6,0xC,0x0,0x0]
 UNIT
 
 Bodyguards:

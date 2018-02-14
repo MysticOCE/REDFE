@@ -1,2 +1,5 @@
-Strong Riposte: When under[NL]
-attack, damage +3. [X]
+[OpenLeft][LoadPortrait][0xFF][0xFF]
+[OpenMidRight][LoadPortrait][0x59][0x01]
+coldsteelcoldsteelcoldsteel[NL]
+coldsteeeeel
+[X]

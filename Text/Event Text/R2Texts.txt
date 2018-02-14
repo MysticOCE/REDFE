@@ -1,0 +1,39 @@
+## Roy2GoalWindowText
+Defend Klimt[X]
+
+## PabloDeathQuote
+[OpenMidLeft][LoadPortrait][0x3A][0x01][OpenMidLeft]Urrgh[.][ToggleMouthMove]... [ToggleMouthMove]N-no.[.][A][NL]
+I cannot die when there is[NL]
+such wealth to be had[.][ToggleMouthMove]...[.][ToggleMouthMove][A][NL]
+Re-retreat![.][NL]
+Mercenaries, to me![.][A][OpenMidLeft][ClearFace][X]
+
+## MinervaName
+Minerva[X]
+
+## SaizoName
+Saizo[X]
+
+## R2RightHouseText
+[OpenLeft][LoadPortrait][0xFF][0xFF]
+[OpenMidRight][LoadPortrait][0x59][0x01]
+coldsteelcoldsteelcoldsteel[NL]
+coldsteeeeel
+[X]
+
+## R2LeftHouseText
+[OpenLeft][LoadPortrait][0xFF][0xFF]
+[OpenMidRight][LoadPortrait][0x59][0x01]
+Well now, Pablo's going for Klimt?
+I don't think the world's ready for this[NL]
+level of idiocy...[CloseEyes][A][NL]
+At the very least, I'm not.[NL]
+Here you go, take care.[A]
+[X]
+
+## R2DownHouseText
+[OpenLeft][LoadPortrait][0xFF][0xFF]
+[OpenMidRight][LoadPortrait][0x59][0x01]
+it's 2am and I need to finish this[NL]
+good job and bye[A]
+[X]

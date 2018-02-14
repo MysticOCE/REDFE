@@ -18,6 +18,9 @@ POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0,T3Reinforcements,3)
+TurnEventPlayer(0,T5Reinforcements,5)
+TurnEventPlayer(0, EndingScene,7)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
@@ -25,10 +28,14 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Village(0x8, R2LeftHouse, 6,2)
+Village(0x9, R2RightHouse, 8,1)
+Village(0xA, R2DownHouse, 2,17)
 END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+AFEV 0x7 EndingScene 0x2
 END_MAIN
 
 Dunno:
@@ -38,6 +45,7 @@ Tutorial:
 END_MAIN
 
 TrapData:
+BLST [3,8] 0x36
 ENDTRAP
 
 ALIGN 4
@@ -57,22 +65,129 @@ UNIT Leila Thief 0x0 Level(2,Ally,0) [9,4] 0x00 0x00 0x0 0x00 [IronSword,Lockpic
 UNIT Leila Thief 0x0 Level(2,Ally,0) [7,4] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
 UNIT
 
+KlimtNPC:
+UNIT Klimt Bishop 0x0 Level(1,NPC,0) [12,2] 0 0 0 0 [Lightning] GuardTileAI
+UNIT 0x92 Knight 0 Level(10,NPC,1) [11,3] 0 0 0 0 [SteelLance] GuardTileAI
+UNIT 0x92 Knight 0 Level(10,NPC,1) [13,3] 0 0 0 0 [SteelLance] GuardTileAI
+UNIT
+
+Recruits:
+UNIT Minerva WyvernLord_F 0 Level(2,Ally,0) [17,7] 0 0 0 0 [SilverAxe, Javelin] DefaultAI
+UNIT Saizo Thief 0 Level(8,Ally,0) [17,8] 0 0 0 0 [KillingEdge, Lancereaver] DefaultAI
+UNIT
+
+MinervaArrives:
+UNIT Minerva WyvernLord_F 0 Level(2,NPC,0) [15,12] 0 0 0 0 [SilverAxe, Javelin] DefaultAI
+UNIT 0x80 WyvernLord 0 Level(1,NPC,0) [16,10] 0 0 0 0 [IronLance] DefaultAI
+UNIT 0x80 WyvernLord 0 Level(1,NPC,0) [16,11] 0 0 0 0 [IronLance] DefaultAI
+UNIT 0x80 WyvernLord 0 Level(1,NPC,0) [16,12] 0 0 0 0 [IronLance] DefaultAI
+UNIT 0x80 WyvernLord 0 Level(1,NPC,0) [17,10] 0 0 0 0 [IronLance] DefaultAI
+UNIT 0x80 WyvernLord 0 Level(1,NPC,0) [17,9] 0 0 0 0 [IronLance] DefaultAI
+UNIT 0x80 WyvernLord 0 Level(1,NPC,0) [17,11] 0 0 0 0 [IronLance] DefaultAI
+UNIT 0x80 WyvernLord 0 Level(1,NPC,0) [17,12] 0 0 0 0 [IronLance] DefaultAI
+UNIT 0x80 WyvernLord 0 Level(1,NPC,0) [17,13] 0 0 0 0 [IronLance] DefaultAI
+UNIT
+
 EnemyUnit:
+UNIT Pablo Sage 0x0 Level(1,Enemy,0) [13,21] 0 0 0 0 [Elfire, Silence] GuardTileAI
+UNIT 0x92 Hero 0x0 Level(1,Enemy,1) [1,19] DropItem 0 0 0 [SteelSword, SteelAxe, HeroCrest] AttackInRangeAI
+UNIT 0x92 Archer 0x0 Level(8,Enemy,1) [4,13] 0 0 0 0 [SteelBow] DefaultAI
+UNIT 0x92 Fighter 0x0 Level(12,Enemy,1) [0,18] 0 0 0 0 [IronAxe] AttackInRangeAI
+UNIT 0x92 Mercenary 0x0 Level(12,Enemy,1) [2,18] 0 0 0 0 [SteelSword] AttackInRangeAI
 UNIT 0x92 Mercenary 0x0 Level(8,Enemy,1) [12,13] 0 0 0 0 [SteelSword] DefaultAI
 UNIT 0x92 Cavalier 0x0 Level(8, Enemy,1) [0,14] 0 0 0 0 [SteelSword] DefaultAI
 UNIT 0x92 Cavalier 0x0 Level(8,Enemy,1) [0,15] 0 0 0 0 [SteelSword] DefaultAI
-UNIT 0x92 Archer 0x0 Level(8,Enemy,1) [5,9] 0 0 0 0 [SteelBow] DefaultAI
+UNIT 0x92 Mage 0x0 Level(8,Enemy,1) [5,9] 0 0 0 0 [Thunder] DefaultAI
+UNIT 0x92 Fighter 0x0 Level(8,Enemy,1) [16,12] 0 0 0 0 [Hammer] DefaultAI
+UNIT 0x92 Shaman 0x0 Level(10,Enemy,1) [4,20] 0 0 0 0 [Flux] AttackInRangeAI
+UNIT 0x93 WyvernRider 0 Level(8,Enemy,1) [0,20] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x93 WyvernRider 0 Level(8,Enemy,1) [1,21] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x92 Fighter 0 Level(8,Enemy,1) [6,11] 0 0 0 0 [SteelAxe] DefaultAI
 UNIT
+
+EnemyUnit2:
+UNIT 0x92 Mage 0 Level(8,Enemy,1) [6,16] 0 0 0 0 [Elfire] DefaultAI
+UNIT 0x92 Thief 0 Level(10,Enemy,1) [16,6] 0 0 0 0 [Armourslayer] DefaultAI
+UNIT 0x92 Mage 0 Level(8,Enemy,1) [12,21] 0 0 0 0 [Thunder] DefaultAI
+UNIT 0x92 Shaman 0 Level(8,Enemy,1) [14,21] 0 0 0 0 [Luna] DefaultAI
+UNIT 0x92 Mercenary 0 Level(8,Enemy,1) [16,17] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x92 Fighter 0 Level(8,Enemy,1) [10,17] 0 0 0 0 [Hammer] DefaultAI
+UNIT 0x92 Cavalier 0 Level(8,Enemy,1) [7,20] 0 0 0 0 [SteelBlade] DefaultAI
+UNIT 0x92 LanceCavalier 0 Level(8,Enemy,1) [7,21] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x92 Archer 0 Level(8,Enemy,1) [17,16] 0 0 0 0 [SteelBow] DefaultAI
+UNIT 0x92 Pirate 0 Level(8,Enemy,1) [17,15] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0x92 Knight 0 Level(15,Enemy,1) [13,19] 0 0 0 0 [SilverLance, Spear] GuardTileAI
+UNIT 0x92 Myrmidon 0 Level(12, Enemy,1) [10,20] 0 0 0 0 [SilverSword] AttackInRangeAI
+UNIT 0x92 Archer 0 Level(12,Enemy,1) [16,21] 0 0 0 0 [SilverBow] AttackInRangeAI
+UNIT
+
+T3Reinforcements:
+ReinforcementEvent(T3Units)
+ENDA
+
+T3Units:
+UNIT 0x93 WyvernRider 0 Level(8,Enemy,1) [0,20] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x93 WyvernRider 0 Level(8,Enemy,1) [1,21] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x92 Paladin 0 Level(1,Enemy,1) [17,11] DropItem 0 0 0 [SteelSword, KnightCrest] DefaultAI
+UNIT 0x92 Cavalier 0 Level(8,Enemy,1) [7,20] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x92 LanceCavalier 0 Level(8,Enemy,1) [7,21] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x92 Shaman 0 Level(8,Enemy,1) [17,15] 0 0 0 0 [Flux] DefaultAI
+UNIT 0x92 Mage 0 Level(8,Enemy,1) [17,16] 0 0 0 0 [Thunder] DefaultAI
+UNIT
+
+T5Reinforcements:
+ReinforcementEvent(T5Units)
+ENDA
+
+T5Units:
+UNIT 0x93 WyvernRider 0 Level(8,Enemy,1) [0,20] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x93 WyvernRider 0 Level(8,Enemy,1) [1,21] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x92 Paladin 0 Level(1,Enemy,1) [17,11] 0 0 0 0 [SilverLance] DefaultAI
+UNIT 0x92 Cavalier 0 Level(8,Enemy,1) [7,20] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x92 LanceCavalier 0 Level(8,Enemy,1) [7,21] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x92 Shaman 0 Level(8,Enemy,1) [17,16] 0 0 0 0 [Nosferatu] DefaultAI
+UNIT 0x92 Mage 0 Level(8,Enemy,1) [17,15] 0 0 0 0 [Elfire] DefaultAI
+UNIT
+
+R2LeftHouse:
+VillageEventItem(R2LeftHouseText,HouseBG,SoldiersRapier)
+ENDA
+
+R2RightHouse:
+VillageEventItem(R2RightHouseText,HouseBG,ElysianWhip)
+ENDA
+
+R2DownHouse:
+VillageEventItem(R2DownHouseText,HouseBG,MasterProof)
+ENDA
 
 BeginningScene:
 LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 EnemyUnit
 ENUN
+LOAD1 0x1 EnemyUnit2
+ENUN
+LOAD1 0x1 KlimtNPC
+ENUN
 GotoPrepScreen
 ENDA
 
 EndingScene:
+//If Pablo not dead, have scene where he moves in and gets defeated my Minerva, else just have them arrive
+/*
+CHECK_EVENTID 0x2
+SVAL 0x3 0x1
+BNE 0x0 0x2 0x3
+//
+CLEA 0x0
+CLEE 0x0
+
+
+LABEL 0x0
+*/
+LOAD1 0x1 Recruits
+ENUN
 MoveToChapter(Ch11Eirika)
 ENDA
 
