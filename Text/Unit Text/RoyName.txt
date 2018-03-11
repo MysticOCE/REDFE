@@ -225,10 +225,10 @@ Gazelle's command.[X]
 # 0x355
 Soldier Rapier[X]
 
-# 0x1F0
+# 0x42b
 A noble of Carcino.[NL]
 Bold and capable.[X]
 
-# 0x01F2
+# 0x42c
 A foreign agent.[NL]
 Curt and unsocialable.[X]

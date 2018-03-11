@@ -267,13 +267,13 @@ TxtData0x355:
 #incext ParseFile "_textentries\0x355.txt"
 setText(0x355,TxtData0x355)
 
-TxtData0x1F0:
-#incext ParseFile "_textentries\0x1F0.txt"
-setText(0x1F0,TxtData0x1F0)
+TxtData0x42b:
+#incext ParseFile "_textentries\0x42b.txt"
+setText(0x42b,TxtData0x42b)
 
-TxtData0x01F2:
-#incext ParseFile "_textentries\0x01F2.txt"
-setText(0x01F2,TxtData0x01F2)
+TxtData0x42c:
+#incext ParseFile "_textentries\0x42c.txt"
+setText(0x42c,TxtData0x42c)
 
 TxtData0x0C23:
 #incext ParseFile "_textentries\0x0C23.txt"

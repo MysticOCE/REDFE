@@ -101,7 +101,7 @@ UNIT 0xAB Gargoyle 0x0 Level(4,Enemy,0) [1,9] 00 00 00 00 [IronLance] DefaultAI
 UNIT
 
 NorrisRecruit:
-UNIT Norris Archer 0x0 Level(5,Ally,0) [17,3] 0 0 0 0 [SteelBow, Longbow, Vulnerary] NoAI
+UNIT Norris Archer 0x0 Level(5,Ally,0) [17,3] 0 0 0 0 [SteelBow, Longbow,SecretBook ,Vulnerary] NoAI
 UNIT
 
 GargoyleSpawns:

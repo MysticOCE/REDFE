@@ -31,6 +31,9 @@
 
 //SongTable(9,AllHailShadow,1)
 
+#include "boss06.event"
+SongTable(9,boss06,1)
+
 //#include "ggxky.event"
 //SongTable(16,Colin,1)
 //#include "Colin.event"

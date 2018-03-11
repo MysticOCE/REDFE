@@ -117,6 +117,8 @@ UNIT 0x92 LanceCavalier 0 Level(8,Enemy,1) [7,21] 0 0 0 0 [SteelLance] DefaultAI
 UNIT 0x92 Archer 0 Level(8,Enemy,1) [17,16] 0 0 0 0 [SteelBow] DefaultAI
 UNIT 0x92 Pirate 0 Level(8,Enemy,1) [17,15] 0 0 0 0 [SteelAxe] DefaultAI
 UNIT 0x92 Knight 0 Level(15,Enemy,1) [13,19] 0 0 0 0 [SilverLance, Spear] GuardTileAI
+UNIT 0x92 Knight 0 Level(15,Enemy,1) [12,19] 0 0 0 0 [SteelLance] GuardTileAI
+UNIT 0x92 Knight 0 Level(15,Enemy,1) [14,19] 0 0 0 0 [SteelLance] GuardTileAI
 UNIT 0x92 Myrmidon 0 Level(12, Enemy,1) [10,20] 0 0 0 0 [SilverSword] AttackInRangeAI
 UNIT 0x92 Archer 0 Level(12,Enemy,1) [16,21] 0 0 0 0 [SilverBow] AttackInRangeAI
 UNIT

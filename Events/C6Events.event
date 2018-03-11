@@ -48,7 +48,7 @@ ALIGN 4
 
 Units:
 UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [2,11] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
-UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [1,4] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [1,5] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
 UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [1,11] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
 UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [1,12] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
 UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [1,10] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
@@ -79,6 +79,10 @@ UNIT
 
 RavenUnit:
 UNIT Raven Mercenary 0x0 Level(6,NPC,0) [3,0] 0x0 0x0 0x0 0x0 [KillingEdge] DefaultAI
+UNIT
+
+RavenAlly:
+UNIT Raven Mercenary 0x0 Level(6,Ally,0) [3,0] 0x0 0x0 0x0 0x0 [KillingEdge] DefaultAI
 UNIT
 
 EnterRaven:
@@ -152,14 +156,15 @@ SetBackground(Woodland_Night)
 TEXTSHOW C6EndingText1
 TEXTEND
 REMA
+//end of beran text
 CHECK_TURNS
 SVAL 0x3 0x3
-BGE 0x1 0x3 0xC
+BLE 0x1 0x3 0xC
 	TEXTSTART
 	TEXTSHOW RavenLateJoin
 	TEXTEND
 	REMA
-	LOAD1 0x1 RavenUnit
+	LOAD1 0x1 RavenAlly
 LABEL 0x1
 ClearBackground
 
