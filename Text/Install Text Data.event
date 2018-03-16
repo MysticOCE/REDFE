@@ -1527,3 +1527,15 @@ TxtData0x08E4:
 #incext ParseFile "_textentries\0x08E4.txt"
 setText(0x08E4,TxtData0x08E4)
 
+TxtData0x8e5:
+#incext ParseFile "_textentries\0x8e5.txt"
+setText(0x8e5,TxtData0x8e5)
+
+TxtData0x8e6:
+#incext ParseFile "_textentries\0x8e6.txt"
+setText(0x8e6,TxtData0x8e6)
+
+TxtData0x8e7:
+#incext ParseFile "_textentries\0x8e7.txt"
+setText(0x8e7,TxtData0x8e7)
+

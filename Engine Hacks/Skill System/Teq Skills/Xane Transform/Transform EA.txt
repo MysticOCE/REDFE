@@ -1,0 +1,138 @@
+//Xane transformation EA thingy
+//by Tequila
+
+#define Xane_Char_ID 1 //Roy
+#define Chameleon_Class_ID 2 //Eirika lord
+#define Transform_Duration 5
+#define Save_Location 0x203F500 //where unit 0x80's debuffs would be, but since that never exists...
+PUSH
+
+//remove the write to where I plan to store the counter
+ORG $3C240
+SHORT 0
+
+//Fix Stone's map animation crashing no$ due to a bad decompression
+ORG $7E2B4
+BYTE 0x8
+
+//Decrement status effects + transform timer
+ORG $188EC
+callHack_r3(Decrement_Timers)
+SHORT 0x2F00 0xD00F 0xE005 //cmp r7,#0, beq getnextperson, b addtotargetlist
+
+//Play animation when xane detransforms
+ORG $361C4
+callHack_r3(Detransform_Animation)
+SHORT 0x2900 0xD002
+
+//Make sure that the proc involving ^ doesn't remove statuses when it shouldn't
+ORG $36242
+SHORT 0x2800 0xD01E 0x280B 0xD115
+
+//Forcefully detransform at the end of the chapter
+ORG $1912C
+callHack_r3(Chapter_End_Detransform)
+
+//Display on stat screen
+ORG $86F00
+callHack_r3(Display_Timer)
+
+//Stat boosters add to untransformed stats too
+ORG $2F888
+callHack_r3(Stat_Booster_Mod)
+SHORT 0
+
+POP
+
+ALIGN 4
+Transform_Usability:
+#incbin "Transform_Usability.dmp"
+POIN Get_Transform_Targets
+WORD Xane_Char_ID
+
+ALIGN 4
+Transform_Effect:
+#incbin "Transform_Effect.dmp"
+POIN Get_Transform_Targets Transform_Target_Selection_Table
+
+ALIGN 4
+Get_Transform_Targets:
+#incbin "Get_Transform_Targets.dmp"
+POIN Is_Valid_Transform_Target|1
+
+ALIGN 4
+Is_Valid_Transform_Target:
+#incbin "Is_Valid_Transform_Target.dmp"
+
+ALIGN 4
+Transform_Target_Selection_Table:		//using Rescue (59D478) and Trade (59D3D8)
+POIN Transform_Constructor|1			//Constructor
+POIN 0									//Destructor
+POIN 0									//Constructor part II
+POIN Transform_OnChange|1				//Target change + constructor, after both main ones
+POIN 0									//Target change
+POIN Transform_A|1						//A-button press
+POIN 0x22749							//B-button press
+POIN 0x228A1							//R-button press; just returns 0
+
+ALIGN 4
+Transform_Constructor:
+#incbin "Transform_Constructor.dmp"
+WORD Transform_Help_Text //defined in "Transform Text.txt"
+
+ALIGN 4
+Transform_OnChange:
+#incbin "Transform_OnChange.dmp"
+
+ALIGN 4
+Transform_A:
+#incbin "Transform_A.dmp"
+
+ALIGN 4
+Transform_Action: //UnitActionRework.event
+#incbin "Transform_Action.dmp"
+WORD Save_Location Transform_Duration
+POIN Stone_Animation_Proc
+
+ALIGN 4
+Stone_Animation_Proc:
+_6C_CALL_ROUTINE(Stone_Wrapper|1)
+SHORT 8 0
+POIN 0x9A3D54		//because _6C_WHILE_EXISTS is being a little bitch
+_6C_END
+
+ALIGN 4
+Stone_Wrapper:
+#incbin "Stone_Wrapper.dmp"
+
+ALIGN 4
+Decrement_Timers:
+#incbin "Decrement_Timers.dmp"
+WORD Xane_Char_ID
+POIN Change_Xane_Back
+
+ALIGN 4
+Detransform_Animation:
+#incbin "Detransform_Animation.dmp"
+WORD Xane_Char_ID
+
+ALIGN 4
+Change_Xane_Back:
+#incbin "Change_Xane_Back.dmp"
+WORD Chameleon_Class_ID Save_Location
+
+ALIGN 4
+Chapter_End_Detransform:
+#incbin "Chapter_End_Detransform.dmp"
+WORD Xane_Char_ID
+POIN Change_Xane_Back
+
+ALIGN 4
+Display_Timer:
+#incbin "Display_Timer.dmp"
+WORD Xane_Char_ID
+
+ALIGN 4
+Stat_Booster_Mod:
+#incbin "Stat_Booster_Mod.dmp"
+WORD Xane_Char_ID Save_Location
