@@ -211,6 +211,8 @@ ALIGN 4
   UM_Secret
   UM_Arena
   
+  //Xane's transform skill
+  MenuCommand(UM_Transform, UM_TransformDesc, NormalText, Transform_Usability, Transform_Effect)
   // Shove & cie
   MenuCommand(UM_Shove,      UM_ShoveDesc,      NormalText, prShoveCommand_Usability,      prShoveCommand_Effect)
   MenuCommand(UM_Smite,      UM_SmiteDesc,      NormalText, prSmiteCommand_Usability,      prSmiteCommand_Effect)

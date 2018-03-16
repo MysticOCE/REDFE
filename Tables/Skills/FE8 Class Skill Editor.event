@@ -1,6 +1,6 @@
 #define csvmacro181(arg000) "BYTE arg000 "
 
-#inctext PFinder "C:\Users\Nabil\Emulation\VBA\Hacking\REDFE\REDFE\FE8_clean.gba" 0xe47180 ClassSkillTable
+#inctext PFinder "C:\Users\Lou\Documents\GitHub\REDFE\FE8_clean.gba" 0xe47180 ClassSkillTable
 
 ALIGN 4
 ClassSkillTable:
