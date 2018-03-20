@@ -50,7 +50,22 @@ mov		r0,r4
 add		r0,#0x46
 ldr		r1,Transform_Duration
 strb	r1,[r0]				@is probably 5
-@add stone stuff later
+ldr		r0,=#0x203E884
+ldr		r1,[r5]
+ldrb	r1,[r1,#0x4]
+lsl		r1,#4
+add		r1,r0				@r1=target's skills
+ldr		r2,[r4]
+ldrb	r2,[r2,#0x4]
+lsl		r2,#4
+add		r0,r2				@r0=xane's skills
+mov		r2,#1
+SkillsLoopCopy:
+ldrb	r3,[r1,r2]
+strb	r3,[r0,r2]
+add		r2,#1
+cmp		r2,#5
+blt		SkillsLoopCopy
 ldr		r0,Stone_Animation_Proc
 mov		r1,r6
 ldr		r2,=#0x8002CE0		@6CBlocking

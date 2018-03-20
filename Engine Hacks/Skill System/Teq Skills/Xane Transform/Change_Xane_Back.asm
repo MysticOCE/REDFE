@@ -29,6 +29,15 @@ mov		r0,r4
 ldr		r1,=#0x80181C8		@make sure stats are under caps
 mov		r14,r1
 .short	0xF800
+ldr		r0,[r4]
+ldrb	r0,[r0,#0x4]
+lsl		r0,#4
+ldr		r1,=#0x203E884
+add		r0,r1
+mov		r1,#0
+strb	r1,[r0,#1]			@zero out learned skills
+strh	r1,[r0,#2]
+strb	r1,[r0,#4]
 pop		{r4}
 pop		{r0}
 bx		r0
