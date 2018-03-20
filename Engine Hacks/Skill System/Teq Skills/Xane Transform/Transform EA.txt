@@ -1,8 +1,8 @@
 //Xane transformation EA thingy
 //by Tequila
 
-#define Xane_Char_ID 1 //Roy
-#define Chameleon_Class_ID 2 //Eirika lord
+#define Xane_Char_ID Xane //Roy
+#define Chameleon_Class_ID 0xC //Eirika lord
 #define Transform_Duration 5
 #define Save_Location 0x203F500 //where unit 0x80's debuffs would be, but since that never exists...
 PUSH

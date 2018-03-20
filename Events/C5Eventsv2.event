@@ -77,7 +77,7 @@ ENDA
 //MESSAGE Yo Xane village debug is up don't release this to public
 
 XaneRecruit:
-UNIT Xane Brigand 0x0 Level(4,Ally,0) [10,7] 0x00 0x0 0x0 0x0 [IronAxe, Vulnerary] NoAI
+UNIT Xane 0xC 0x0 Level(4,Ally,0) [10,7] 0x00 0x0 0x0 0x0 [Vulnerary] NoAI
 UNIT
 
 TestingArcherFriend:
