@@ -16,15 +16,19 @@ mov		r0,#0
 str		r0,[r4,#0x28]
 str		r0,[r4,#0x2C]		@zero out weapon ranks
 mov		r0,r4
-add		r0,#0x14
+add		r0,#0x13
 ldr		r1,Save_Location
-mov		r2,#0
+mov		r2,#1
 StatRestoreLoop:
 ldrb	r3,[r1,r2]
 strb	r3,[r0,r2]
 add		r2,#1
-cmp		r2,#6
+cmp		r2,#8
 blt		StatRestoreLoop
+ldrb	r3,[r1]
+strb	r3,[r4,#0x12]		@max hp
+ldrb	r3,[r1,#0x8]
+strb	r3,[r4,#0x1D]		@mov bonus
 mov		r0,r4
 ldr		r1,=#0x80181C8		@make sure stats are under caps
 mov		r14,r1
