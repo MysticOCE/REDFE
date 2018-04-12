@@ -41,10 +41,20 @@ END_MAIN
 LocationBasedEvents:
 Village(0xB, R1LeftHouse, 1,9)
 Village(0xC, R1RightHouse, 2,9)
+Armory(ArmoryR1,13,2)
+Vendor(ShopR1,12,3)
 END_MAIN
 
+ArmoryR1:
+SHLI IronSword SteelSword IronBlade Armourslayer IronLance SteelLance Javelin IronAxe SteelAxe HandAxe Hammer IronBow SteelBow Longbow
+
+ShopR1:
+SHLI Fire Thunder Elfire Lightning Shine Flux Luna Nosferatu Heal Mend Unlock Barrier Vulnerary
+
+ALIGN 4
+
 MiscBasedEvents:
-DefeatBoss(EndingScene)
+//DefeatBoss(EndingScene)
 CauseGameOverIfLordDies
 END_MAIN
 
