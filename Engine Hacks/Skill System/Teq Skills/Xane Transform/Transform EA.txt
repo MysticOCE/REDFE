@@ -4,7 +4,7 @@
 #define Xane_Char_ID Xane //Roy
 #define Chameleon_Class_ID 0xC //Eirika lord
 #define Transform_Duration 5
-#define Save_Location 0x203F500 //where unit 0x80's debuffs would be, but since that never exists...
+#define Save_Location 0x203F4F8 //just before where unit 0x80's debuffs would be, but since that never exists...
 PUSH
 
 //remove the write to where I plan to store the counter

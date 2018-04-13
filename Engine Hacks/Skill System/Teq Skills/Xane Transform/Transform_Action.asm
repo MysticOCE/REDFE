@@ -21,22 +21,37 @@ mov		r14,r1
 mov		r5,r0
 @Save old stats
 ldr		r0,SaveLocation		@in the debuff table, just before enemy debuffs
-mov		r1,#0
+ldrb	r3,[r4,#0x12]
+strb	r3,[r0]				@save max hp
+mov		r1,#1
 mov		r2,r4
-add		r2,#0x14
-StatSaveLoop:				@save str, skl, spd, def, res, luk
-ldrb	r3,[r2,r1]
+add		r2,#0x13
+StatSaveLoop:				@save str, skl, spd, def, res, luk, and con
+ldsb	r3,[r2,r1]
 strb	r3,[r0,r1]
 add		r1,#1
-cmp		r1,#6
+cmp		r1,#8
 blt		StatSaveLoop
+mov		r1,#0x1D
+ldsb	r3,[r4,r1]
+strb	r3,[r0,#0x8]		@save mov bonus
 mov		r1,#0x14
 StatCopyLoop:				@copy target's stats to xane
-ldrb	r0,[r5,r1]
+ldsb	r0,[r5,r1]
 strb	r0,[r4,r1]
 add		r1,#1
 cmp		r1,#0x1A
-blt		StatCopyLoop
+ble		StatCopyLoop
+mov		r1,#0x1D
+ldsb	r0,[r5,r1]
+strb	r0,[r4,r1]			@mov bonus
+ldrb	r0,[r5,#0x12]
+strb	r0,[r4,#0x12]		@max hp
+ldrb	r1,[r4,#0x13]		@current hp
+cmp		r1,r0
+ble		Label1
+strb	r0,[r4,#0x13]
+Label1:
 mov		r1,#0x28
 RanksCopyLoop:				@copy target's weapon ranks to xane
 ldrb	r0,[r5,r1]
