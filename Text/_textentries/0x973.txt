@@ -1,5 +1,1 @@
-[OpenLeft][LoadPortrait][0xFF][0xFF]
-[OpenMidRight][LoadPortrait][0x59][0x01]
-coldsteelcoldsteelcoldsteel[NL]
-coldsteeeeel
-[X]
+Chameleon[X]

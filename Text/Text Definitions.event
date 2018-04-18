@@ -301,9 +301,11 @@
 #define PabloDeathQuote 0x970
 #define MinervaName 0x971
 #define SaizoName 0x972
-#define R2RightHouseText 0x973
-#define R2LeftHouseText 0x974
-#define R2DownHouseText 0x975
+#define XaneClassName 0x973
+#define XaneClassDesc 0x974
+#define R2RightHouseText 0x975
+#define R2LeftHouseText 0x976
+#define R2DownHouseText 0x977
 #define ElbertRoyChat1DorcasAlive 0xBFF
 #define RoyAlanAfterGettingHome1 0xC01
 #define RenaisReturnText1 0xc02
