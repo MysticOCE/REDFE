@@ -25,7 +25,7 @@ INLINE LevelUpSkillTable,Skill Pointer
 0x17 Assassin,AssassinSkillList|IsPointer
 0x18 Assassin (F),AssassinSkillList|IsPointer
 0x19 Archer,ArcherSkillList|IsPointer
-0x1A Archer (F),ArcherSkillList|IsPointer
+0x1A Archer (F),ThiefSkillList|IsPointer
 0x1B Sniper,SniperSkillList|IsPointer
 0x1C Sniper (F),SniperSkillList|IsPointer
 0x1D Ranger,RangerSkillList|IsPointer

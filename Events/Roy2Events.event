@@ -20,7 +20,7 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 TurnEventPlayer(0,T3Reinforcements,3)
 TurnEventPlayer(0,T5Reinforcements,5)
-TurnEventPlayer(0, EndingScene,7)
+TurnEventPlayer(0, EndingScene,8)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
@@ -73,7 +73,7 @@ UNIT
 
 Recruits:
 UNIT Minerva WyvernLord_F 0 Level(2,Ally,0) [17,7] 0 0 0 0 [SilverAxe, Javelin] DefaultAI
-UNIT Saizo Thief 0 Level(8,Ally,0) [17,8] 0 0 0 0 [KillingEdge, Lancereaver] DefaultAI
+UNIT Saizo SaizoThief 0 Level(8,Ally,0) [17,8] 0 0 0 0 [KillingEdge, Lancereaver] DefaultAI
 UNIT
 
 MinervaArrives:
@@ -92,8 +92,8 @@ EnemyUnit:
 UNIT Pablo Sage 0x0 Level(1,Enemy,0) [13,21] 0 0 0 0 [Elfire, Silence] GuardTileAI
 UNIT 0x92 Hero 0x0 Level(1,Enemy,1) [1,19] DropItem 0 0 0 [SteelSword, SteelAxe, HeroCrest] AttackInRangeAI
 UNIT 0x92 Archer 0x0 Level(8,Enemy,1) [4,13] 0 0 0 0 [SteelBow] DefaultAI
-UNIT 0x92 Fighter 0x0 Level(12,Enemy,1) [0,18] 0 0 0 0 [IronAxe] AttackInRangeAI
-UNIT 0x92 Mercenary 0x0 Level(12,Enemy,1) [2,18] 0 0 0 0 [SteelSword] AttackInRangeAI
+//UNIT 0x92 Fighter 0x0 Level(12,Enemy,1) [0,18] 0 0 0 0 [IronAxe] AttackInRangeAI
+UNIT 0x92 Mercenary 0x0 Level(12,Enemy,1) [0,18] 0 0 0 0 [SteelSword] AttackInRangeAI
 UNIT 0x92 Mercenary 0x0 Level(8,Enemy,1) [12,13] 0 0 0 0 [SteelSword] DefaultAI
 UNIT 0x92 Cavalier 0x0 Level(8, Enemy,1) [0,14] 0 0 0 0 [SteelSword] DefaultAI
 UNIT 0x92 Cavalier 0x0 Level(8,Enemy,1) [0,15] 0 0 0 0 [SteelSword] DefaultAI
@@ -142,9 +142,9 @@ ReinforcementEvent(T5Units)
 ENDA
 
 T5Units:
-UNIT 0x93 WyvernRider 0 Level(8,Enemy,1) [0,20] 0 0 0 0 [SteelLance] DefaultAI
-UNIT 0x93 WyvernRider 0 Level(8,Enemy,1) [1,21] 0 0 0 0 [SteelLance] DefaultAI
-UNIT 0x92 Paladin 0 Level(1,Enemy,1) [17,11] 0 0 0 0 [SilverLance] DefaultAI
+//UNIT 0x93 WyvernRider 0 Level(8,Enemy,1) [0,20] 0 0 0 0 [SteelLance] DefaultAI
+//UNIT 0x93 WyvernRider 0 Level(8,Enemy,1) [1,21] 0 0 0 0 [SteelLance] DefaultAI
+//UNIT 0x92 Paladin 0 Level(1,Enemy,1) [17,11] 0 0 0 0 [SilverLance] DefaultAI
 UNIT 0x92 Cavalier 0 Level(8,Enemy,1) [7,20] 0 0 0 0 [SteelSword] DefaultAI
 UNIT 0x92 LanceCavalier 0 Level(8,Enemy,1) [7,21] 0 0 0 0 [SteelLance] DefaultAI
 UNIT 0x92 Shaman 0 Level(8,Enemy,1) [17,16] 0 0 0 0 [Nosferatu] DefaultAI
@@ -172,6 +172,8 @@ LOAD1 0x1 EnemyUnit2
 ENUN
 LOAD1 0x1 KlimtNPC
 ENUN
+//LOAD1 0x1 Recruits
+//ENUN
 GotoPrepScreen
 ENDA
 

@@ -128,7 +128,7 @@
 #define Assassin 0x17
 #define Assassin_F 0x18
 #define Archer 0x19
-#define Archer_F 0x1A
+#define SaizoThief 0x1A
 #define Sniper 0x1B
 #define Sniper_F 0x1C
 #define Ranger 0x1D

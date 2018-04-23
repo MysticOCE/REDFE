@@ -409,10 +409,17 @@ LABEL 0x10
 	ENUN
 LABEL 0x11
 TEXTSTART
+SetBackground(Castle_Hall_3)
+TEXTSHOW C7EndingText
+TEXTEND
+ClearBackground
+/*
+TEXTSTART
 SetBackground(Black)
 TEXTSHOW ThankYouForFinishingTheDemo
 TEXTEND
 ClearBackground
+*/
 ENUT 0x88
 MoveToChapter(0x38)
 ENDA

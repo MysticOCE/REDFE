@@ -42,6 +42,18 @@ ORG $8ADF5A
 BYTE 0x19
 POP
 
+//Kills skirmish spawns
+PUSH
+ORG $B9D5A
+SHORT 0xE01A
+ORG $206948 
+BYTE 0x7F 0x7F 0x7F 0x7F 0x7F 0x7F 0x7F 0x7F 0x7F
+ORG $206A48 
+BYTE 0 0 0 0 0 0 0 0 0
+ORG $206AAB
+BYTE 0 0 0 0 0 0 0 0 0
+POP
+
 //Char Description fixes
 /*
 PUSH

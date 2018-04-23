@@ -102,6 +102,6 @@ ArvisMug:
 setMugEntry(0x53, ArvisMug, 4, 4, 4,2)
 
 MinervaMug:
-#incext PortraitFormatter "XigdarMinerva2.png"
+#incext PortraitFormatter "SquidMinerva2.png"
 setMugEntry(0x1F, MinervaMug, 4,5, 4,3)
 
