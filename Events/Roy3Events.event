@@ -5,6 +5,8 @@
 
 EventPointerTable(0xD1,ThisChapter)
 
+PUSH
+ORG 0x1000000
 ThisChapter:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
@@ -24,11 +26,15 @@ ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 CharacterBasedEvents:
 END_MAIN
 
+ALIGN 4
 LocationBasedEvents:
 END_MAIN
 
+ALIGN 4
+
 MiscBasedEvents:
 CauseGameOverIfLordDies
+DefeatAll(EndingScene)
 END_MAIN
 
 Dunno:
@@ -56,13 +62,15 @@ UNIT Leila Thief 0x0 Level(2,Ally,0) [19,0] 0x00 0x00 0x0 0x00 [IronSword,Lockpi
 UNIT Leila Thief 0x0 Level(2,Ally,0) [20,0] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
 UNIT
 
+ALIGN 4
 Enemies:
 UNIT 0xAB Wight 0 Level(4,Enemy,1) [4,1] 0 0 0 0 [Runesword] AttackInRangeAI
 UNIT 0xAB Wight 0 Level(4,Enemy,1) [4,2] 0 0 0 0 [Runesword] AttackInRangeAI
 UNIT 0xAB Wight 0 Level(4,Enemy,1) [4,3] 0 0 0 0 [Runesword] AttackInRangeAI
 UNIT 0xAB Wight 0 Level(4,Enemy,1) [4,4] 0 0 0 0 [Runesword] AttackInRangeAI
-
 UNIT
+
+ALIGN 4
 
 BeginningScene:
 LOAD2 0x1 Units
@@ -72,8 +80,10 @@ ENUN
 GotoPrepScreen
 ENDA
 
+ALIGN 4
+
 EndingScene:
 MoveToChapter(Ch13Eirika)
 ENDA
-
 MESSAGE Events end at offset CURRENTOFFSET
+POP
