@@ -143,6 +143,7 @@ AcrobatCheck:
 POIN SkillTester
 WORD AcrobatID
 
+MESSAGE Pass put at CURRENTOFFSET
 PassCheck:
 #incbin "Teq Skills/Pass.dmp"
 POIN SkillTester

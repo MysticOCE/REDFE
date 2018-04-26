@@ -35,6 +35,8 @@ blt		StatSaveLoop
 mov		r1,#0x1D
 ldsb	r3,[r4,r1]
 strb	r3,[r0,#0x8]		@save mov bonus
+ldrb	r3,[r5,#0xB]		@deployment id, for con calculations later
+strb	r3,[r0,#0x9]
 mov		r1,#0x14
 StatCopyLoop:				@copy target's stats to xane
 ldsb	r0,[r5,r1]
