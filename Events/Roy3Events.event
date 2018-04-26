@@ -1,0 +1,89 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0xD1,ThisChapter)
+
+PUSH
+ORG 0x1000000
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+ALIGN 4
+LocationBasedEvents:
+END_MAIN
+
+ALIGN 4
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatAll(EndingScene)
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [22,1] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [21,0] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [23,0] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [21,2] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [20,1] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+UNIT Salem Monk 0x0 Level(2, Ally, 0) [23,2] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
+UNIT Priscilla Troubadour 0x0 Level(2, Ally, 0) [22,3] 0x00 0x00 0x0 0x00 [Heal, Vulnerary] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [22,0] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [21,1] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [19,0] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT Leila Thief 0x0 Level(2,Ally,0) [20,0] 0x00 0x00 0x0 0x00 [IronSword,Lockpick] NoAI
+UNIT
+
+ALIGN 4
+Enemies:
+UNIT 0xAB Wight 0 Level(4,Enemy,1) [4,1] 0 0 0 0 [Runesword] AttackInRangeAI
+UNIT 0xAB Wight 0 Level(4,Enemy,1) [4,2] 0 0 0 0 [Runesword] AttackInRangeAI
+UNIT 0xAB Wight 0 Level(4,Enemy,1) [4,3] 0 0 0 0 [Runesword] AttackInRangeAI
+UNIT 0xAB Wight 0 Level(4,Enemy,1) [4,4] 0 0 0 0 [Runesword] AttackInRangeAI
+UNIT
+
+ALIGN 4
+
+BeginningScene:
+LOAD2 0x1 Units
+ENUN
+LOAD2 0x1 Enemies
+ENUN
+GotoPrepScreen
+ENDA
+
+ALIGN 4
+
+EndingScene:
+MoveToChapter(Ch13Eirika)
+ENDA
+MESSAGE Events end at offset CURRENTOFFSET
+POP

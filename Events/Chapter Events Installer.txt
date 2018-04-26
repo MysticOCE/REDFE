@@ -2,6 +2,8 @@
 
 ALIGN 4
 PUSH
+//ORG 0xC00000
+MESSAGE We have jumped to CURRENTOFFSET
 {
 #include "PrologueEvents.txt"
 }
@@ -35,6 +37,11 @@ PUSH
 }
 {
 #include "Roy2Events.event"
+}
+ALIGN 4
+{
+MESSAGE R3 events going in at CURRENTOFFSET
+#include "Roy3Events.event"
 }
 POP
 PUSH
