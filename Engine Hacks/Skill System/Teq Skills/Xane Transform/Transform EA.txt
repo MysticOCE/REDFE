@@ -1,8 +1,10 @@
 //Xane transformation EA thingy
 //by Tequila
 
+//Note that Xane_Char_ID and Save_Location need to be updated in /../../../../MSS/mss_defs.s, line 42 or thereabouts, and mss_page1_skills.s needs to be reassembled
 #define Xane_Char_ID Xane //Roy
 #define Chameleon_Class_ID 0xC //Eirika lord
+
 #define Transform_Duration 5
 #define Save_Location 0x203F4F8 //just before where unit 0x80's debuffs would be, but since that never exists...
 PUSH
@@ -31,7 +33,9 @@ SHORT 0x2800 0xD01E 0x280B 0xD115
 
 //Forcefully detransform at the end of the chapter
 ORG $1912C
-callHack_r3(Chapter_End_Detransform)
+callHack_r3(Chapter_End_Detransform) //actually this is only if event id 0x3 (Seize) was set. Oops.
+ORG $312CC
+callHack_r3(Chapter_End_Detransform2) //this is the "real" one
 
 //Display on stat screen
 ORG $86F00
@@ -124,6 +128,12 @@ WORD Chameleon_Class_ID Save_Location
 ALIGN 4
 Chapter_End_Detransform:
 #incbin "Chapter_End_Detransform.dmp"
+WORD Xane_Char_ID
+POIN Change_Xane_Back
+
+ALIGN 4
+Chapter_End_Detransform2:
+#incbin "Chapter_End_Detransform2.dmp"
 WORD Xane_Char_ID
 POIN Change_Xane_Back
 
