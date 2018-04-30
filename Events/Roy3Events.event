@@ -28,6 +28,8 @@ END_MAIN
 
 ALIGN 4
 LocationBasedEvents:
+Door(16,10)
+Chest(GuidingRing, 16,12)
 END_MAIN
 
 ALIGN 4
@@ -64,18 +66,33 @@ UNIT
 
 ALIGN 4
 Enemies:
-UNIT 0xAB Wight 0 Level(4,Enemy,1) [4,1] 0 0 0 0 [Runesword] AttackInRangeAI
-UNIT 0xAB Wight 0 Level(4,Enemy,1) [4,2] 0 0 0 0 [Runesword] AttackInRangeAI
-UNIT 0xAB Wight 0 Level(4,Enemy,1) [4,3] 0 0 0 0 [Runesword] AttackInRangeAI
-UNIT 0xAB Wight 0 Level(4,Enemy,1) [4,4] 0 0 0 0 [Runesword] AttackInRangeAI
+UNIT Macdaire Wight 0 Level(8,Enemy,1) [4,1] 0 0 0 0 [Runesword] AttackInRangeAI
+UNIT 0xAB Bonewalker 0 Level(10,Enemy,1) [14,4] 0 0 0 0 [SteelSword] AttackInRangeAI
+UNIT 0xAB Bonewalker 0 Level(10,Enemy,1) [13,6] 0 0 0 0 [SteelLance] AttackInRangeAI
+UNIT 0xAB Bonewalker_Bow 0 Level(10,Enemy,1) [10,7] 0 0 0 0 [SteelBow] AttackInRangeAI
+UNIT 0xAB Mogall 0 Level(12,Enemy,1) [9,6] 0 0 0 0 [EvilEye] AttackInRangeAI
+UNIT 0xAB Mogall 0 Level(10,Enemy,1) [22,12] 0 0 0 0 [EvilEye] DefaultAI
+UNIT 0xAB Bonewalker 0 Level(10,Enemy,1) [20,11] 0 0 0 0 [Lancereaver] DefaultAI
+UNIT 0xAB Tarvos 0 Level(10,Enemy,1) [13,13] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0xAB Mauthedoog 0 Level(10,Enemy,1) [0,13] 0 0 0 0 [FireFang] DefaultAI
+UNIT 0xAB Mauthedoog 0 Level(10,Enemy,1) [1,13] 0 0 0 0 [FireFang] DefaultAI
+
 UNIT
 
+Villagers:
+UNIT 0xC0 Mage 0 Level(12,NPC,1) [6,10] 0 0 0 0 [Thunder,Vulnerary] GuardTileAI
+UNIT 0xC1 Shaman 0 Level(12,NPC,1) [6,11] 0 0 0 0 [Nosferatu] GuardTileAI
+UNIT RiverFolkChild_F Civilian_F 0 Level(1,NPC,1) [3,11] 0 0 0 0 [0x0] GuardTileAI
+UNIT Dara Druid_F 0 Level(1,NPC,1) [4,11] 0 0 0 0 [Flux] GuardTileAI
+UNIT
 ALIGN 4
 
 BeginningScene:
 LOAD2 0x1 Units
 ENUN
 LOAD2 0x1 Enemies
+ENUN
+LOAD2 0x1 Villagers
 ENUN
 GotoPrepScreen
 ENDA
