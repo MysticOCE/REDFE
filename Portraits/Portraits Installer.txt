@@ -105,3 +105,6 @@ MinervaMug:
 #incext PortraitFormatter "SquidMinerva2.png"
 setMugEntry(0x1F, MinervaMug, 4,5, 4,3)
 
+SaiasMug:
+#incext PortraitFormatter "BlueySaias.png"
+setMugEntry(0x2C, SaiasMug, 2,5,2,3)

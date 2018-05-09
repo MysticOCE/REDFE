@@ -38,12 +38,13 @@
 #define SelenaCC 0x26
 #define ValterCC 0x27
 #define RievCC 0x28
-#define CaellachCC 0x29
+#define Caellach 0x29
 #define FadoCC 0x2A
 #define IsmaireCC 0x2B
 #define HaydenCC 0x2C
 #define Minerva 0x2D
 #define Saizo 0x2E
+#define Saias 0x2F
 #define LyonSummon 0x3B
 #define KnollSummon 0x3E
 #define EvanSummon 0x3F
@@ -66,7 +67,7 @@
 #define Macdaire 0x50
 #define Aias 0x51
 #define Carlyle 0x52
-#define Caellach 0x53
+#define CaellachBoss 0x53
 #define Pablo_2 0x54
 #define Gorgon_boss 0x56
 #define Riev 0x57

@@ -232,3 +232,7 @@ Bold and capable.[X]
 # 0x42c
 A foreign agent.[NL]
 Curt and unsocialable.[X]
+
+# 0x0763
+The devout and tactically minded[NL]
+crown prince of Rausten.[X]

@@ -306,6 +306,8 @@
 #define R2RightHouseText 0x975
 #define R2LeftHouseText 0x976
 #define R2DownHouseText 0x977
+#define SaiasName 0x978
+#define CaellachDescription 0x979
 #define ElbertRoyChat1DorcasAlive 0xBFF
 #define RoyAlanAfterGettingHome1 0xC01
 #define RenaisReturnText1 0xc02
