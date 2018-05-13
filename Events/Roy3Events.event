@@ -97,9 +97,9 @@ UNIT
 ALIGN 4
 
 SaiasReinforcements:
-UNIT Saias Monk 0 Level(10,NPC,0) [23,11] 0 0 0 0 [Divine, GuidingRing] DefaultAI
-UNIT Caellach Hero 0 Level(4,NPC,0) [23,12] 0 0 0 0 [SilverAxe,IronBlade] DefaultAI
-UNIT Joshua Myrmidon 0 Level(12,NPC,0) [22,11] 0 0 0 0 [KillingEdge, LightBrand] DefaultAI
+UNIT Saias Monk 0 Level(10,Ally,0) [23,11] 0 0 0 0 [Divine, GuidingRing] DefaultAI
+UNIT Caellach Hero 0 Level(4,Ally,0) [23,12] 0 0 0 0 [SilverAxe,IronBlade] DefaultAI
+UNIT Joshua Myrmidon 0 Level(12,Ally,0) [22,11] 0 0 0 0 [KillingEdge, LightBrand] DefaultAI
 UNIT
 
 BeginningScene:
