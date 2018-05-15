@@ -1,2 +1,2 @@
-Luna: Negates enemy defenses.[NL]
+Luna: Negates enemy defenses.[N]
 (Skill % activation)[X]

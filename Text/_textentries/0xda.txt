@@ -1,2 +1,2 @@
-Rally Skill: +4 Skill[NL]
-to allies within 2 tiles.[X]
+Even Rhythm: +10 Hit and Avoid[N]
+on even numbered turns.[X]

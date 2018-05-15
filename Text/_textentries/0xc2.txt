@@ -1,2 +1,2 @@
-Gamble: A reckless attack with[NL]
+Gamble: A reckless attack with[N]
 halved hit but doubled crit.[X]

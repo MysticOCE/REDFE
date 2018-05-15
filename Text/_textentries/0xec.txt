@@ -1,2 +1,2 @@
-Foreign Princess: Foreign army units[NL]
-take -2/+2 damage dealt/taken.[X]
+Life and Death: Grants[N]
++5 Atk/Mag/Spd, -5 Def/Res.[X]

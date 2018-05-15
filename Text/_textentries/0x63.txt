@@ -1,2 +1,2 @@
-Lethality: Instantly kill opponent.[NL]
+Lethality: Instantly kill opponent.[N]
 (Skill/2 % activation)[X]

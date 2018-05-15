@@ -1,2 +1,2 @@
-Acrobat: All traversable[NL]
+Acrobat: All traversable[N]
 terrain costs 1 movement.[X]

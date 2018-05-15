@@ -1,2 +1,2 @@
-Life and Death: +10 to[NL]
-damage dealt and taken.[X]
+Supply: This unit has[N]
+access to the convoy.[X]

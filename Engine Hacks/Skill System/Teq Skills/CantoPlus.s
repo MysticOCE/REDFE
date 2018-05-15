@@ -31,13 +31,10 @@ b   RetTrue
 
 Mounted:
 ldrb  r0,[r5,#0x11]
-cmp		r0,#0x27	@Xane transforming
-beq		CheckCantoPlus
 cmp   r0,#0x3
 bgt   RetTrue
 cmp   r0,#0x0
 beq   RetTrue
-CheckCantoPlus:
 ldr   r0,SkillTester
 mov   r14,r0
 mov   r0,r3

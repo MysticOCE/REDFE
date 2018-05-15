@@ -1,2 +1,2 @@
-Savage Blow: After attacking, enemies[NL]
-within 2 tiles take 20% damage.[X]
+Catch 'Em All: Grants[N]
+the user every skill.[X]

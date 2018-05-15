@@ -1,2 +1,2 @@
-Patience: When under[NL]
+Patience: When under[N]
 attack, avoid +10. [X]

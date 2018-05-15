@@ -11,12 +11,26 @@
 PUSH
   //Include essential fixes and autopatches
   #include "_FE8EssentialFixes.event"
+  
+  // Debug Startup Screen
+  #ifdef __DEBUG__
+    ORG 0x000AD8   // this is somewhere in the startup routine
+      BL(0x01C090) // Call the debug startup menu
+  #endif
 POP
-PUSH
+
+//Multiple S ranks
+  PUSH
+	ORG $2C150
+	BYTE 0x11 0xE0
+  POP
+  
+  PUSH
 	//Staff XP doubled
 	ORG 0x02C676
 	BYTE 0x1A
 POP
+
 
 ////////////////////////////////FREE SPACE WITHIN BL RANGE
 PUSH
@@ -59,12 +73,6 @@ POP
 ////////////////////////////////FREE SPACE OUT OF BL RANGE
 //start of Free space
 
-  //Easy mode killer
-  #include "NoEasyMode.event"
-  
-  //Arms Scrolls
-  //#include "EA Installer.txt"
-	
   //HP Bars (and effective weapon warning)
   #include "HPbars.txt"
 
@@ -144,15 +152,16 @@ POP
   #include "MSG/InstallCore.event"
   #include "MSG/InstallHelpers.event"
   
+  ALIGN 4
   #include "StatGetters/_InstallStatGetters.event"
+  
+  ALIGN 4
+  #include "IconRework/IconRework.event"   // Allows using standard Icon routines to draw skill icons
+  // #include "PopupRework/PopupRework.event" // Allows to expand on vanilla popups by adding components
 
 ALIGN 4
 
-  //Multiple S ranks
-  PUSH
-	ORG $2C150
-	BYTE 0x11 0xE0
-  POP
+
   //Repoint Unit Menu
   PUSH
     ORG $59D1F8
@@ -211,8 +220,6 @@ ALIGN 4
   UM_Secret
   UM_Arena
   
-  //Xane's transform skill
-  MenuCommand(UM_Transform, UM_TransformDesc, NormalText, Transform_Usability, Transform_Effect)
   // Shove & cie
   MenuCommand(UM_Shove,      UM_ShoveDesc,      NormalText, prShoveCommand_Usability,      prShoveCommand_Effect)
   MenuCommand(UM_Smite,      UM_SmiteDesc,      NormalText, prSmiteCommand_Usability,      prSmiteCommand_Effect)
