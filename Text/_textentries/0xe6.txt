@@ -1,2 +1,2 @@
-Locktouch: Can open locks[NL]
-without keys or picks.[X]
+Quantum Visage: Face changes[N]
+every time it's looked at.[X]

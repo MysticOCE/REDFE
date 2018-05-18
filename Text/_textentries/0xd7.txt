@@ -1,2 +1,2 @@
-Colossus: Triples Strength.[NL]
-(Skill % activation)[X]
+Rightful God: +30% to[N]
+Skill activation rate.[X]

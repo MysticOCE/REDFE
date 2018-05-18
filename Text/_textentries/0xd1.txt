@@ -1,2 +1,2 @@
-Spur Defense: Adjacent allies[NL]
-take -4 physical damage.[X]
+Shove: Allows unit to push[N]
+other units one tile away.[X]

@@ -1,2 +1,2 @@
-Bow Range +1: Maximum range[NL]
-of equipped bows is increased.[X]
+Breath of Life: After attacking,[N]
+allies in 2 tiles heal of 20% max HP.[X]

@@ -1,2 +1,2 @@
-Slayer: Deal effective damage[NL]
+Slayer: Deal effective damage[N]
 to monster units.[X]

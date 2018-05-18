@@ -16,6 +16,14 @@
 @r7 loop table pointer
 push	{r0-r7}
 
+@reload current unit data to avoid weird staff on reload
+ldr	r5, =CurrentUnit
+ldr	r6, [r5]
+ldr	r0, [r5]
+ldr	r1, =#0x801a3cc
+mov	lr, r1
+.short 0xf800
+
 @giving the registers useful values
 PrepareLoop:
 ldr	r4, =CurrentUnit
@@ -58,7 +66,9 @@ add	r7, #0x04	@prepare next pointer
 b	Loop
 
 End:
-
+ldr	r0,=#0x203A4D4
+mov	r1,#0
+strb	r1,[r0]
 pop	{r0-r7}
 push	{r4}
 cmp	r0, #0x00

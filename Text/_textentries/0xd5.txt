@@ -1,2 +1,2 @@
-Paragon: Experience gain[NL]
-is doubled.[X]
+Rightful Arch: Sets Skill[N]
+activation rate to 100%.[X]

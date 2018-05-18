@@ -1,5 +1,7 @@
 //Skill System replacing favouritism stat
 #include repointbuffer.event
+#include "FE8-Weapon Rank on Levelup/FE8-Weapon Rank on Levelup EA.txt"
+
 PUSH //let 203e884 + charnum*10 = skill area (bytes 1,2,3,4 NOT 0 tho)
 
 //This was done through trial and error.... 
@@ -22,8 +24,8 @@ ORG $a478c
 BYTE $70 $47
 ORG $a4a34
 BYTE $70 $47
-ORG $a4cfc
-BYTE $70 $47
+// ORG $a4cfc //breaks at credits
+// BYTE $70 $47
 
 ORG $a464c //only save 1 byte when dying (as opposed to 3)
 BYTE 1
@@ -34,8 +36,9 @@ SHORT 0 //nop the 0x200000
 ORG $76018
 jumpToHack(SkillLearner)
 
-ORG $3730
-jumpToHack(AlternateIconPopup)
+// now managed by Icon Rework (see Engine Hacks/IconRework) -Stan
+// ORG $3730
+// jumpToHack(AlternateIconPopup)
 
 ORG $75d64
 jumpToHack(AnimsOnPopupHack)
@@ -53,6 +56,8 @@ ORG $18680
 jumpToHack(Unset_Attack_Flag_2)
 POP
 
+MESSAGE CURRENTOFFSET
+
 Skill_Getter: //gets a list of skills
 #incbin skillGetter.dmp
 POIN PersonalSkillTable
@@ -64,12 +69,13 @@ SkillTesterOriginal: //does unit have X skill?
 POIN Skill_Getter
 
 SkillTester: //does enemy have Nihil? if so, does Nihil negate X skill?
-// MESSAGE nihilTester currentoffset
 #incbin nihilTester.dmp
 POIN SkillTesterOriginal
 WORD NihilID
 POIN Skill_Getter
 POIN NegatedSkills
+POIN SkillTester
+WORD CatchEmAllID
 
 NegatedSkills: //comment or uncomment skills to your liking, this should come with an updated list of skills that work with nihil and are meant to
 //Confirmed working and grouped by type for easier adding/removing from the NegatedSkills list
@@ -121,14 +127,16 @@ WORD SS_SkillsDefaultRText
 SkillAdder: //given chardata in r0, skill in r1, add skill if possible
 #incbin addSkill.dmp
 
+ALIGN 4
 SkillLearner:
 #incbin learnskill.dmp
 POIN LevelUpSkillTable
 POIN SkillAdder
 
-AlternateIconPopup:
-#incbin alternateicon_3732.dmp
-POIN SkillIcons
+// now managed by Icon Rework (see Engine Hacks/IconRework) -Stan
+// AlternateIconPopup:
+// #incbin alternateicon_3732.dmp
+// POIN SkillIcons
 
 AnimsOnPopupHack:
 #incbin "animsonhack_75ca8.dmp"
@@ -139,6 +147,7 @@ AddSkillsOnLoad:
 POIN LevelUpSkillTable
 POIN SkillAdder
 POIN ChargeupTable
+POIN Skill_Getter
 
 RTextLoop:
 #incbin "rtextloop.dmp"
