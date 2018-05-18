@@ -324,3 +324,6 @@
 #define ElbertRoyChat1DorcasAlive 0xBFF
 #define RoyAlanAfterGettingHome1 0xC01
 #define RenaisReturnText1 0xc02
+#define UM_Transform 0x8e5
+#define UM_TransformDesc 0x8e6
+#define Transform_Help_Text 0x8e7

@@ -1,0 +1,32 @@
+TODO:
+
+Menu
+	Text for Transform + R-button examine
+	Usability
+	Effect
+		Add a new parameter to the action struct jump table
+		Actually do the transformation
+
+Save
+	Save old stats in spare space in debuff table? (enemies start at 203F500)
+	Save transformation gauge (byte 0x47, if it's saved on suspend; otherwise, I can use something else)
+	0x47 is not saved, but 0x46 is
+	0x46 is written to at 3C240
+	
+Edit growths routine to level up Xane's original stats when transformed
+Stat boosters should increase transformed and untransformed stats
+Detransform (normal and when chapter ends)
+Figure out where to display transformation timer on stat screen (maybe next to the portrait, like MoD's current fatigue counter?)
+
+#############
+
+Unit menu option added in _MasterHackInstaller.event
+/Text/textbuildfile.txt is the actual text buildfile, #included my text in that
+UnitActionRework.event in Stan's folder updated; Transform uses action byte 0x23
+Added #include for the folder in Master Skill Installer.event
+Display inserted where the Exp number is written
+Edited con getter so Xane's transformation will use the copied unit's base char con
+Edited canto+ check to make sure Xane cannot canto after transforming
+
+For Stone effect
+call 2CE0 with r1=parent, r0=stone_proc... or call 7E1E4 with r0 = xane data ptr?

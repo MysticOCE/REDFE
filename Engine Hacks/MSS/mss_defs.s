@@ -39,6 +39,9 @@
 .equ Grey, 1
 .equ White, 0
 
+.equ Xane_Char_ID, 0x16 //Change this to Xane's actual character ID and reassemble
+.equ Xane_Stats_Save_Location, 0x203F4F8
+
 .macro blh to, reg=r3
   ldr \reg, =\to
   mov lr, \reg
@@ -346,14 +349,29 @@
 .macro draw_con_bar_with_getter_at, bar_x, bar_y
 @base in r3, final in sp, cap in sp+4, call getter
   mov r1, r8
+  ldr	r0,[r1]
+  ldrb	r2,[r0,#0x4]
+  cmp	r2,#Xane_Char_ID
+  bne	UseCurrentChar
+  mov	r2,#0x46
+  ldrb	r2,[r1,r2]
+  cmp	r2,#0
+  beq	UseCurrentChar
+  ldr	r0,=#Xane_Stats_Save_Location
+  ldrb	r0,[r0,#0x9]
+  ldr	r1,=#0x8019430
+  mov	r14,r1
+  .short 0xF800
+  ldr	r0,[r0]
+  mov	r1,r8
+  UseCurrentChar:
+  mov	r2,#0x13
+  ldsb	r2,[r0,r2]	@char con
+  
   ldr     r0,[r1,#0x4] @class
   mov     r3,#0x11     @con
-  ldsb    r3,[r0,r3]   
-  ldr     r0,[r1]      
-  ldrb    r0,[r0,#0x13]@bonus
-  lsl     r0,r0,#0x18  
-  asr     r0,r0,#0x18  
-  add     r3,r3,r0     
+  ldsb    r3,[r0,r3]  
+  add     r3,r3,r2     
 
   push {r1-r3}
   mov r0, r8
@@ -827,36 +845,14 @@
 
 @requires alternateicondraw
 .macro draw_skill_icon_at, tile_x, tile_y, number=0
-	.if NoAltIconDraw
-		.if \number
-			mov r0, #\number
-		.endif
-		
-		@ r1 = 0x0100
-		mov r1, #1
-		lsl r1, #8
-		
-		@ r1 = [0x01][SkillIndex]
-		orr r1, r0
-		
-		@ r2 = 0x4000 (aka tiles have palette #4)
-		mov r2, #0x40
-		lsl r2, #8
-		
-		ldr r0, =(tile_origin+(0x20*2*\tile_y)+(2*\tile_x))
-		
-		blh DrawIcon
-	.else
-		@assumes icon number in r0 or else in number
-		.if \number
-			mov r0, #\number
-		.endif
-		
-		ldr r4, =(tile_origin+(0x20*2*\tile_y)+(2*\tile_x))
-		mov     r1,r0      
-		mov     r2,#0x80
-		lsl     r2,r2,#0x7      
-		mov     r0,r4    
-		bl      DrawSkillIcon 
-	.endif
+  @assumes icon number in r0 or else in number
+  .if \number
+    mov r0, #\number
+  .endif
+  ldr r4, =(tile_origin+(0x20*2*\tile_y)+(2*\tile_x))
+  mov     r1,r0      
+  mov     r2,#0x80
+  lsl     r2,r2,#0x7      
+  mov     r0,r4    
+  bl      DrawSkillIcon 
 .endm

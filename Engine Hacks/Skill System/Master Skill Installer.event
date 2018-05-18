@@ -388,5 +388,5 @@ POIN Skill_Getter
 
 #include "Stan Skills/HeroesMovement/HeroesMovement.event"
 #include "Post Combat Skills/Post Combat Skills Installer.event"
-
+#include "Teq Skills/Xane Transform/Transform EA.txt"
 #include "Skill Removal Menu/RemoveSkillMenu.event"
