@@ -91,7 +91,7 @@ ALIGN 4
 
 MyrmidonSkillList:
 BYTE 1 DuelistsBlowID
-BYTE 10 VantageID
+BYTE 10 DesperationID
 BYTE 00 00
 ALIGN 4
 

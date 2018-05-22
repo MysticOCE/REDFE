@@ -20,6 +20,8 @@ POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0, SaiasArrives, 4)
+TurnEventPlayer(0, T5Reinforcements, 5)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
@@ -67,7 +69,7 @@ UNIT
 ALIGN 4
 Enemies:
 UNIT Macdaire Cyclops 0 Level(8,Enemy,1) [4,1] 0 0 0 0 [SilverAxe] AttackInRangeAI
-UNIT 0xAB Wight 0 Level(3,Enemy,1) [4,2] 0 0 0 0 [Runesword] AttackInRangeAI
+UNIT 0xAB Wight 0 Level(3,Enemy,1) [4,3] 0 0 0 0 [SilverSword] AttackInRangeAI
 UNIT 0xAB Bonewalker 0 Level(10,Enemy,1) [14,4] 0 0 0 0 [SteelSword] AttackInRangeAI
 UNIT 0xAB Bonewalker 0 Level(10,Enemy,1) [13,6] 0 0 0 0 [FlyerLance] AttackInRangeAI
 UNIT 0xAB Bonewalker_Bow 0 Level(10,Enemy,1) [10,7] 0 0 0 0 [SteelBow] AttackInRangeAI
@@ -86,6 +88,7 @@ UNIT 0xAB Bonewalker 0 Level(10,Enemy,1) [19,11] 0 0 0 0 [Lancereaver] DefaultAI
 UNIT 0xAB Bonewalker 0 Level(12,Enemy,1) [17,9] 0 0 0 0 [SteelLance] DefaultAI
 UNIT 0xAB Mogall 0 Level(10,Enemy,1) [19,7] 0 0 0 0 [EvilEye] DefaultAI
 UNIT 0xAB Bonewalker_Bow 0 Level(10,Enemy,1) [9,1] 0 0 0 0 [SteelBow] DefaultAI
+UNIT 0xAB Wight 0 Level(2,Enemy,1) [3,2] 0 0 0 0 [SilverLance] AttackInRangeAI
 UNIT
 
 Villagers:
@@ -97,23 +100,40 @@ UNIT
 ALIGN 4
 
 SaiasReinforcements:
-UNIT Saias Monk 0 Level(10,Ally,0) [23,11] 0 0 0 0 [Divine, GuidingRing] DefaultAI
-UNIT Caellach Hero 0 Level(4,Ally,0) [23,12] 0 0 0 0 [SilverAxe,IronBlade] DefaultAI
-UNIT Joshua Myrmidon 0 Level(12,Ally,0) [22,11] 0 0 0 0 [KillingEdge, LightBrand] DefaultAI
+UNIT Saias Monk 0 Level(10,NPC,0) [23,11] 0 0 0 0 [Divine, GuidingRing] DefaultAI
+UNIT Caellach Hero 0 Level(4,NPC,0) [23,12] 0 0 0 0 [SilverAxe,IronBlade] DefaultAI
+UNIT Joshua Myrmidon 0 Level(12,NPC,0) [22,11] 0 0 0 0 [KillingEdge, LightBrand] DefaultAI
+UNIT
+
+T5Units:
+UNIT 0xAB ArchMogall 0 Level(2,Enemy,1) [12,13] 0 0 0 0 [EvilEye] DefaultAI
+UNIT 0xAB Tarvos 0 Level(8,Enemy,1) [11,13] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0xAB Tarvos 0 Level(8,Enemy,1) [13,13] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0xAB Mauthedoog 0 Level(10,Enemy,1) [0,6] 0 0 0 0 [FireFang] DefaultAI
+UNIT 0xAB Mauthedoog 0 Level(10,Enemy,1) [0,7] 0 0 0 0 [FireFang] DefaultAI
 UNIT
 
 BeginningScene:
 LOAD2 0x1 Units
 ENUN
-//LOAD2 0x1 Enemies
-//ENUN
+LOAD2 0x1 Enemies
+ENUN
 LOAD1 0x1 Enemies2
 ENUN
 LOAD2 0x1 Villagers
 ENUN
+//Text(udroppedurleadershipstars)
+GotoPrepScreen
+ENDA
+
+SaiasArrives:
+Text(SaiasArrivesText)
 LOAD1 0x1 SaiasReinforcements
 ENUN
-GotoPrepScreen
+ENDA
+
+T5Reinforcements:
+ReinforcementEvent(T5Units)
 ENDA
 
 ALIGN 4

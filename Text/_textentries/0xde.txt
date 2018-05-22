@@ -1,2 +1,2 @@
-Pivot: Allows unit to move to the[N]
-opposite side of an adjacent ally.[X]
+Rally Resistance: +4 Res[N]
+to allies within 2 tiles.[X]

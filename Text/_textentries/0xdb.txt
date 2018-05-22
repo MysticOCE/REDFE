@@ -1,2 +1,2 @@
-Quick Burn: +15 Hit and Avoid.[N]
-This bonus decreases each turn.[X]
+Rally Speed: +4 Spd to[N]
+allies within 2 tiles.[X]

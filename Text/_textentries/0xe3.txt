@@ -1,2 +1,2 @@
-Dazzle: Opponents cannot[N]
-counterattack this unit.[X]
+Live to Serve: When healing[N]
+an ally, also heals self.[X]

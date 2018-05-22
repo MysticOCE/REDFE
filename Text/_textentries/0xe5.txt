@@ -1,2 +1,2 @@
-Supply: This unit has[N]
-access to the convoy.[X]
+Life and Death: +10 to[N]
+damage dealt and taken.[X]
