@@ -53,10 +53,10 @@
   weaponTypeAnim(animLance,0x8)
   weaponTypeAnim(animSword,0x7)
   weaponTypeAnim(animNone,0x1)
-  #include "GK\Processed\Axe Installer.event"
-#include "GK\Processed\Handaxe Installer.event"
-#include "GK\Processed\Lance Installer.event"
-#include "GK\Processed\Unarmed Installer.event"
+  //#include "GK\Processed\GKAxe Installer.event"
+//#include "GK\Processed\GKHandaxe Installer.event"
+//#include "GK\Processed\GKLance Installer.event"
+//#include "GK\Processed\GKUnarmed Installer.event"
   //SetAnimationPointers(Fighter, HandAxeTest)
   //HandAxeTest:
   //weaponAnim(SteelAxe,0xB4)

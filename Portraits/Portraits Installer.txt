@@ -38,8 +38,9 @@ ElbertMug:
 setMugEntry(0x0A, ElbertMug, 2,5,3,3)
 
 CainMug:
-#incext PortraitFormatter "ZmrCain.png"
-setMugEntry(0x0F, CainMug, 3, 5, 2,3)
+#incext PortraitFormatter "ZenithCain2.png"
+//#incext PortraitFormatter "ZmrCain.png"
+setMugEntry(0x0F, CainMug, 3, 5, 3,3)
 
 RaddMug:
 #incext PortraitFormatter "BlueyRadd3.png"

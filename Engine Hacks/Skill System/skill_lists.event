@@ -141,6 +141,7 @@ ALIGN 4
 
 WyvernLordSkillList:
 BYTE 255 TantivyID
+BYTE 255 ReliefID
 BYTE 5 SavageBlowID
 BYTE 15 SwordbreakerID
 BYTE 00 00
@@ -148,13 +149,14 @@ ALIGN 4
 
 WyvernKnightSkillList:
 BYTE 255 TantivyID
+BYTE 255 ReliefID
 BYTE 5 RallyMovID
 BYTE 15 LancefaireID
 BYTE 00 00
 ALIGN 4
 
 MageSkillList:
-BYTE 2 QuickBurnID
+BYTE 2 ShoveID
 BYTE 10 LightWeightID
 BYTE 00 00
 ALIGN 4
