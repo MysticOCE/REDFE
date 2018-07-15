@@ -5,6 +5,10 @@
 
 EventPointerTable(0xD1,ThisChapter)
 
+//For Normal Mode - Make the map go slower. Remove the Beal, push back some of the 7 moves to turn 2
+
+//Most enemies dealt with by T3/4 on fast play
+
 PUSH
 ORG 0x1000000
 ThisChapter:
@@ -26,6 +30,7 @@ END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
 CharacterBasedEvents:
+CharacterEvent(0x7,RoyRecruitsSaias,Roy,Saias)
 END_MAIN
 
 ALIGN 4
@@ -34,10 +39,11 @@ Door(16,10)
 Chest(GuidingRing, 16,12)
 END_MAIN
 
+
 ALIGN 4
 
 MiscBasedEvents:
-CharacterEvent(0x7,RoyRecruitsSaias,Roy,Saias)
+//AREA 0x7 NorrisComesHome [17,0] [18,0]
 CauseGameOverIfLordDies
 DefeatAll(EndingScene)
 END_MAIN
@@ -92,6 +98,7 @@ UNIT 0xAB Bonewalker_Bow 0 Level(10,Enemy,1) [9,1] 0 0 0 0 [SteelBow] DefaultAI
 UNIT 0xAB Wight 0 Level(2,Enemy,1) [3,2] 0 0 0 0 [SilverLance] AttackInRangeAI
 UNIT 0xAB Wight_Bow 0 Level(2,Enemy,1) [5,2] 0 0 0 0 [SilverBow] AttackInRangeAI
 UNIT 0xAB Bael 0 Level(12,Enemy,1) [0,6] 0 0 0 0 [SharpClaw] DefaultAI
+UNIT 0xAB Bonewalker 0 Level(10,Enemy,1) [7,1] 0 0 0 0 [SteelSword] DefaultAI
 UNIT
 
 Villagers:
@@ -102,18 +109,23 @@ UNIT Dara Druid_F 0 Level(1,NPC,1) [4,11] 0 0 0 0 [Flux] GuardTileAI
 UNIT
 ALIGN 4
 
+
 SaiasReinforcements:
 UNIT Saias Monk 0 Level(10,NPC,0) [23,11] 0 0 0 0 [Divine, GuidingRing] DefaultAI
 UNIT Caellach Hero 0 Level(4,NPC,0) [23,12] 0 0 0 0 [SilverAxe,IronBlade] DefaultAI
 UNIT Joshua Myrmidon 0 Level(12,NPC,0) [22,11] 0 0 0 0 [KillingEdge, LightBrand] DefaultAI
 UNIT
 
+
 T5Units:
-UNIT 0xAB ArchMogall 0 Level(2,Enemy,1) [12,13] 0 0 0 0 [EvilEye] DefaultAI
+UNIT 0xAB Mogall 0 Level(2,Enemy,1) [12,13] 0 0 0 0 [BloodyEye] DefaultAI
 UNIT 0xAB Tarvos 0 Level(8,Enemy,1) [11,13] 0 0 0 0 [SteelAxe] DefaultAI
 UNIT 0xAB Tarvos 0 Level(8,Enemy,1) [13,13] 0 0 0 0 [SteelAxe] DefaultAI
 UNIT 0xAB Mauthedoog 0 Level(10,Enemy,1) [0,6] 0 0 0 0 [FireFang] DefaultAI
 UNIT 0xAB Mauthedoog 0 Level(10,Enemy,1) [0,7] 0 0 0 0 [FireFang] DefaultAI
+UNIT 0xAB Gargoyle 0 Level(12,Enemy,1) [9,0] 0 0 0 0 [IronLance] DefaultAI
+UNIT 0xAB Gargoyle 0 Level(12,Enemy,1) [10,0] 0 0 0 0 [IronLance] DefaultAI
+UNIT 0xAB Bonewalker 0 Level(10,Enemy,1) [7,1] 0 0 0 0 [SteelSword] DefaultAI
 UNIT
 
 BeginningScene:
@@ -157,7 +169,18 @@ ENDA
 
 ALIGN 4
 
+NorrisComesHome:
+CHECK_ALIVE Norris
+BEQ 0x2 0x0 0xC
+	Text(NorrisComesHomeText)
+	SVAL 0x3 Talisman
+	GIVEITEMTO Norris
+LABEL 0x2
+Text(udroppedurleadershipstars)
+ENDA
+
 EndingScene:
+CALL NorrisComesHome
 MoveToChapter(Ch13Eirika)
 ENDA
 MESSAGE Events end at offset CURRENTOFFSET

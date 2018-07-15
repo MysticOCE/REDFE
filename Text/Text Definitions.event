@@ -322,7 +322,8 @@
 #define SaiasName 0x978
 #define CaellachDescription 0x979
 #define SaiasArrivesText 0x97a
-#define udroppedurleadershipstars 0x97b
+#define NorrisComesHomeText 0x97b
+#define udroppedurleadershipstars 0x97c
 #define ElbertRoyChat1DorcasAlive 0xBFF
 #define RoyAlanAfterGettingHome1 0xC01
 #define RenaisReturnText1 0xc02

@@ -82,8 +82,8 @@ BYTE 00 00
 ALIGN 4
 
 HeroSkillList:
-BYTE 255 RallyStrID
-BYTE 255 SealSpdID
+BYTE 255 SlowBurnID
+BYTE 255 StrongRiposteID
 BYTE 5 SolID
 BYTE 15 AxebreakerID
 BYTE 00 00
