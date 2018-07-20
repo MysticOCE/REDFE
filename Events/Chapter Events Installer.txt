@@ -40,8 +40,12 @@ MESSAGE We have jumped to CURRENTOFFSET
 }
 ALIGN 4
 {
+PUSH
 MESSAGE R3 events going in at CURRENTOFFSET
+
+ORG 0x1000000
 #include "Roy3Events.event"
+POP
 }
 POP
 PUSH

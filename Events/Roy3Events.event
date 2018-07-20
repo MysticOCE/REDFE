@@ -9,8 +9,6 @@ EventPointerTable(0xD1,ThisChapter)
 
 //Most enemies dealt with by T3/4 on fast play
 
-PUSH
-ORG 0x1000000
 ThisChapter:
 POIN TurnBasedEvents
 POIN CharacterBasedEvents
@@ -184,4 +182,3 @@ CALL NorrisComesHome
 MoveToChapter(Ch13Eirika)
 ENDA
 MESSAGE Events end at offset CURRENTOFFSET
-POP
