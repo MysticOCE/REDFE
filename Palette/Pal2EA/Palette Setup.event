@@ -5,16 +5,16 @@
 #include "Palette Installer.event"
 
 // AlanPal
-	setPalette(0x6E,AlanPal)
-	setCBSP(0x6E,0x02,0x3,0x7)
+	setPalette(0x01,AlanPal)
+	setCBSP(0x01,0x02,0x3,0x7)
 
 // AlanCav
 	setPalette(0x6F,AlanCav)
 	setCBSP(0x6F,0x02,0x1,0x5)
 
 // AlanRanger
-	setPalette(0x70,AlanRanger)
-	setCBSP(0x70,Alan,0x4,Ranger)
+	setPalette(0x42,AlanRanger)
+	setCBSP(0x42,Alan,0x4,Ranger)
 
 // AnnaPeg
 	setPalette(0x55,AnnaPeg)
@@ -133,8 +133,8 @@
 	setCBSP(0x72,Norris,0x3,Sniper)
 
 // NorrisRanger
-	setPalette(0x73,NorrisRanger)
-	setCBSP(0x72,Norris,0x4,Ranger)
+	setPalette(0x05,NorrisRanger)
+	setCBSP(0x05,Norris,0x4,Ranger)
 
 // PrisTroub
 	setPalette(0x45,PrisTroub)

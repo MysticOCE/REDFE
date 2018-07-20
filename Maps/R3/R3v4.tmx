@@ -370,7 +370,7 @@
    <property name="ID" value="0"/>
    <property name="Width" value="1"/>
    <property name="X" value="16"/>
-   <property name="Y" value="11"/>
+   <property name="Y" value="10"/>
   </properties>
   <data>
    <tile gid="0"/>
@@ -717,7 +717,7 @@
    <property name="ID" value="1"/>
    <property name="Width" value="1"/>
    <property name="X" value="16"/>
-   <property name="Y" value="13"/>
+   <property name="Y" value="12"/>
   </properties>
   <data>
    <tile gid="0"/>
