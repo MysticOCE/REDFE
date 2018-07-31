@@ -1,0 +1,83 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0x3B,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [9,3] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [10,4] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [8,4] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [8,2] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [10,2] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+UNIT Salem Monk 0x0 Level(2, Ally, 0) [12,1] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
+UNIT Priscilla Troubadour 0x0 Level(2, Ally, 0) [13,1] 0x00 0x00 0x0 0x00 [Heal, Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [14,2] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+UNIT Salem Monk 0x0 Level(2, Ally, 0) [15,1] 0x00 0x00 0x0 0x00 [Lightning, Shine] NoAI
+UNIT Priscilla Troubadour 0x0 Level(2, Ally, 0) [16,2] 0x00 0x00 0x0 0x00 [Heal, Vulnerary] NoAI
+UNIT
+
+StaticEnemies:
+UNIT Aias Fighter 0 Level(20,Enemy,1) [7,25] 0 0 0 0 [IronAxe] AttackInRangeAI
+UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [2,10] 0 0 0 0 [SilverSword] AttackInRangeAI
+UNIT
+
+MovingEnemies:
+UNIT 0x80 Cavalier 0 Level(12,Enemy,1) [17,14] 0 0 0 0 [SteelSword] DefaultAI 
+UNIT 0x80 Cavalier 0 Level(12,Enemy,1) [17,15] 0 0 0 0 [ShortSpear] DefaultAI
+UNIT 0x80 WyvernRider 0 Level(12,Enemy,1) [0,25] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x80 WyvernRider 0 Level(12,Enemy,1) [1,26] 0 0 0 0 [SteelLance] DefaultAI
+UNIT
+
+BeginningScene:
+LOAD2 0x1 Units
+ENUN
+LOAD1 0x1 StaticEnemies
+ENUN
+LOAD1 0x1 MovingEnemies
+ENUN
+ENDA
+
+EndingScene:
+MoveToChapter(Ch14Eirika)
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET
