@@ -1,0 +1,245 @@
+#######################################################
+#33 Rogue Sword
+#
+#When importing to FEEditorAdv delete # and after each line.
+#######################################################
+/// - Mode 1               #Melee Animation
+C03
+C07
+1  p- Normal attack1.png
+3  p- Normal attack2.png
+2  p- Normal attack3.png
+2  p- Normal attack4.png
+2  p- Normal attack5.png
+3  p- Normal attack6.png
+3  p- Normal attack7.png
+2  p- Normal attack8.png
+8  p- Normal attack9.png
+2  p- Normal attack10.png
+2  p- Normal attack11.png
+C04   
+2  p- Normal attack12.png
+C22
+3  p- Normal attack13.png
+C20                               #Play hit SFE (sounds like Knight Lord with Durandal's hit)
+C04
+15  p- Normal attack14.png
+C01  
+3  p- Normal attack15.png
+3  p- Normal attack16.png
+3  p- Normal attack17.png
+C38                               #Play heavy spear spinning SFE
+3  p- Normal attack18.png
+3  p- Normal attack19.png
+C34                               #Play heavy stepping SFE
+4  p- Normal attack20.png
+3  p- Normal attack21.png
+7  p- Normal attack22.png
+3  p- Normal attack23.png
+3  p- Normal attack24.png
+C38                               #Play heavy spear spinning SFE
+3  p- Normal attack25.png
+3  p- Normal attack26.png
+3  p- Normal attack27.png
+C34                               #Play heavy stepping SFE
+C06                               #Begin opponent's turn after hit.next code 0D.
+2  p- Normal attack28.png
+3  p- Normal attack29.png
+C0D
+~~~
+/// - Mode 3               #Melee Critical Animation
+C03
+C07
+1  p- Normal attack1.png
+3  p- Normal attack critical2.png
+3  p- Normal attack critical3.png
+3  p- Normal attack critical4.png
+2  p- Normal attack critical5.png
+8  p- Normal attack critical6.png
+3  p- Normal attack critical7.png
+2  p- Normal attack critical8.png
+3  p- Normal attack critical9.png
+3  p- Normal attack critical10.png
+2  p- Normal attack critical11.png
+2  p- Normal attack critical12.png
+3  p- Normal attack critical13.png
+C04 
+C23
+7  p- Normal attack critical14.png
+C20
+C08
+2  p- Normal attack critical15.png
+20  p- Normal attack critical16.png
+C01
+2  p- Normal attack critical17.png
+2  p- Normal attack critical18.png
+C38
+2  p- Normal attack critical19.png
+2  p- Normal attack critical20.png
+C34                               #Play heavy stepping SFE
+4  p- Normal attack20.png
+3  p- Normal attack21.png
+7  p- Normal attack22.png
+3  p- Normal attack23.png
+3  p- Normal attack24.png
+C38                               #Play heavy spear spinning SFE
+3  p- Normal attack25.png
+3  p- Normal attack26.png
+3  p- Normal attack27.png
+C34                               #Play heavy stepping SFE
+C06                               #Begin opponent's turn after hit.next code 0D.
+2  p- Normal attack28.png
+3  p- Normal attack29.png
+C0D
+~~~
+/// - Mode 5               #Ranged Animation 
+C03
+C07
+1  p- Normal attack1.png
+2  p- Normal attack critical2.png
+3  p- Normal attack critical3.png
+3  p- Normal attack critical4.png
+2  p- Normal attack critical5.png
+2  p- Normal attack critical6.png
+1  p- Magic Sword6.png 
+C37
+C05
+2  p- Magic Sword7.png 
+C01
+1  p- Magic Sword6.png
+2  p- Normal attack critical6.png 
+2  p- Normal attack critical5.png
+3  p- Normal attack critical4.png
+3  p- Normal attack critical3.png
+C06
+2  p- Normal attack critical2.png
+1  p- Normal attack1.png
+C0D
+~~~
+/// - Mode 6               #Ranged Critical Animation
+C03
+C07
+1  p- Normal attack1.png
+2  p- Normal attack critical2.png
+3  p- Normal attack critical3.png
+3  p- Normal attack critical4.png
+2  p- Critical magic sword5.png
+3  p- Critical magic sword7.png
+3  p- Critical magic sword8.png
+3  p- Critical magic sword9.png
+3  p- Critical magic sword10.png
+3  p- Critical magic sword11.png
+3  p- Critical magic sword12.png
+3  p- Critical magic sword13.png
+3  p- Critical magic sword14.png
+5  p- Critical magic sword15.png
+2  p- Critical magic sword16.png
+6  p- Critical magic sword17.png
+2  p- Critical magic sword18.png
+2  p- Critical magic sword19.png
+2  p- Critical magic sword20.png
+2  p- Critical magic sword21.png
+C05
+2  p- Critical magic sword22.png
+2  p- Magic Sword7.png 
+C01
+1  p- Magic Sword6.png
+2  p- Normal attack critical6.png 
+2  p- Normal attack critical5.png
+3  p- Normal attack critical4.png
+3  p- Normal attack critical3.png
+C06
+2  p- Normal attack critical2.png
+1  p- Normal attack1.png
+C0D
+~~~
+/// - Mode 7               #Dodge Melee Attack
+C02
+1  p- Normal attack1.png
+C0E
+1  p- Ninja dodge 2.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 4.png
+3  p- Ninja dodge 5.png
+2  p- Ninja dodge 6.png
+C01
+3  p- Ninja dodge 5.png
+1  p- Ninja dodge 4.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 2.png
+1  p- Normal attack1.png
+C0D
+~~~
+/// - Mode 8               #Dodge Ranged Attack
+C02
+1  p- Normal attack1.png
+C0E
+1  p- Ninja dodge 2.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 4.png
+3  p- Ninja dodge 5.png
+2  p- Ninja dodge 6.png
+C01
+3  p- Ninja dodge 5.png
+1  p- Ninja dodge 4.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 2.png
+1  p- Normal attack1.png
+C0D
+~~~
+/// - Mode 9               #Equiped with Melee Weapon
+1  p- Normal attack1.png
+C01
+~~~
+/// - Mode 10               #standing motions?
+1  p- Normal attack1.png
+C01
+~~~
+/// - Mode 11               #Equiped with Ranged weapon
+1  p- Normal attack1.png
+C01
+~~~
+/// - Mode 12               #Attack Missed Animation
+C03
+C07
+1  p- Normal attack1.png
+3  p- Normal attack2.png
+2  p- Normal attack3.png
+2  p- Normal attack4.png
+2  p- Normal attack5.png
+3  p- Normal attack6.png
+3  p- Normal attack7.png
+2  p- Normal attack8.png
+8  p- Normal attack9.png
+2  p- Normal attack10.png
+2  p- Normal attack11.png
+C04   
+2  p- Normal attack12.png
+C22
+3  p- Normal attack13.png                            
+C1A  
+15  p- Normal attack14.png
+C01  
+3  p- Normal attack15.png
+3  p- Normal attack16.png
+3  p- Normal attack17.png
+C38                               #Play heavy spear spinning SFE
+3  p- Normal attack18.png
+3  p- Normal attack19.png
+C34                               #Play heavy stepping SFE
+4  p- Normal attack20.png
+3  p- Normal attack21.png
+7  p- Normal attack22.png
+3  p- Normal attack23.png
+3  p- Normal attack24.png
+C38                               #Play heavy spear spinning SFE
+3  p- Normal attack25.png
+3  p- Normal attack26.png
+3  p- Normal attack27.png
+C34                               #Play heavy stepping SFE
+C06                               #Begin opponent's turn after hit.next code 0D.
+2  p- Normal attack28.png
+3  p- Normal attack29.png
+C0D
+~~~
+/// - End of animation

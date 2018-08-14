@@ -1,0 +1,137 @@
+#######################################################
+#33 Rogue Item
+#
+#When importing to FEEditorAdv delete # and after each line.
+#######################################################
+/// - Mode 1               #Melee Animation
+C02
+1  p- Normal attack1.png
+C0E
+1  p- Ninja dodge 2.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 4.png
+3  p- Ninja dodge 5.png
+2  p- Ninja dodge 6.png
+C01
+3  p- Ninja dodge 5.png
+1  p- Ninja dodge 4.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 2.png
+1  p- Normal attack1.png
+C0D
+~~~
+/// - Mode 3               #Melee Critical Animation
+C02
+1  p- Normal attack1.png
+C0E
+1  p- Ninja dodge 2.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 4.png
+3  p- Ninja dodge 5.png
+2  p- Ninja dodge 6.png
+C01
+3  p- Ninja dodge 5.png
+1  p- Ninja dodge 4.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 2.png
+1  p- Normal attack1.png
+C0D
+~~~
+/// - Mode 5               #Ranged Animation 
+C02
+1  p- Normal attack1.png
+C0E
+1  p- Ninja dodge 2.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 4.png
+3  p- Ninja dodge 5.png
+2  p- Ninja dodge 6.png
+C01
+3  p- Ninja dodge 5.png
+1  p- Ninja dodge 4.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 2.png
+1  p- Normal attack1.png
+C0D
+~~~
+/// - Mode 6               #Ranged Critical Animation
+C02
+1  p- Normal attack1.png
+C0E
+1  p- Ninja dodge 2.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 4.png
+3  p- Ninja dodge 5.png
+2  p- Ninja dodge 6.png
+C01
+3  p- Ninja dodge 5.png
+1  p- Ninja dodge 4.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 2.png
+1  p- Normal attack1.png
+C0D
+~~~
+/// - Mode 7               #Dodge Melee Attack
+C02
+1  p- Normal attack1.png
+C0E
+1  p- Ninja dodge 2.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 4.png
+3  p- Ninja dodge 5.png
+2  p- Ninja dodge 6.png
+C01
+3  p- Ninja dodge 5.png
+1  p- Ninja dodge 4.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 2.png
+1  p- Normal attack1.png
+C0D
+~~~
+/// - Mode 8               #Dodge Ranged Attack
+C02
+1  p- Normal attack1.png
+C0E
+1  p- Ninja dodge 2.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 4.png
+3  p- Ninja dodge 5.png
+2  p- Ninja dodge 6.png
+C01
+3  p- Ninja dodge 5.png
+1  p- Ninja dodge 4.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 2.png
+1  p- Normal attack1.png
+C0D
+~~~
+/// - Mode 9               #Equiped with Melee Weapon
+1  p- Normal attack1.png
+C01                               #NOP
+~~~
+/// - Mode 10               #standing motions?
+1  p- Normal attack1.png
+C01                               #NOP
+~~~
+/// - Mode 11               #Equiped with Ranged weapon
+1  p- Normal attack1.png
+C01                               #NOP
+~~~
+/// - Mode 12               #Attack Missed Animation
+C02
+1  p- Normal attack1.png
+C0E
+1  p- Ninja dodge 2.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 4.png
+3  p- Ninja dodge 5.png
+2  p- Ninja dodge 6.png
+C01
+3  p- Ninja dodge 5.png
+1  p- Ninja dodge 4.png
+1  p- Ninja dodge 3.png
+1  p- Ninja dodge 2.png
+1  p- Normal attack1.png
+C0D                               #End of dodge animation. preceeded by 0x06
+~~~
+/// - End of animation

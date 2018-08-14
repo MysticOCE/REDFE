@@ -25,7 +25,6 @@
 
 //////////////Installed animations go here:
 
-  //#include "Eliwood/elwiood Installer.event"
   #include "Map Sprites/Map Sprite Installer.txt"
   #include "RoyLord/RoyLordDisarm Installer.event"
   #include "RoyLord/RoyLordSword Installer.event"
@@ -53,10 +52,17 @@
   weaponTypeAnim(animLance,0x8)
   weaponTypeAnim(animSword,0x7)
   weaponTypeAnim(animNone,0x1)
+  weaponAnimEnd
+  #include "Ninja pack\redump\SaizoSword Installer.event"
+  SetAnimationPointers(Thief, SaizoThiefAnims)
+  SaizoThiefAnims:
+  weaponTypeAnim(animSword, 0x99)
+  weaponAnimEnd
   //#include "GK\Processed\GKAxe Installer.event"
 //#include "GK\Processed\GKHandaxe Installer.event"
 //#include "GK\Processed\GKLance Installer.event"
 //#include "GK\Processed\GKUnarmed Installer.event"
+
   //SetAnimationPointers(Fighter, HandAxeTest)
   //HandAxeTest:
   //weaponAnim(SteelAxe,0xB4)
