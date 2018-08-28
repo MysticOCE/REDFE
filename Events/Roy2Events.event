@@ -73,7 +73,7 @@ UNIT
 
 Recruits:
 UNIT Minerva WyvernLord_F 0 Level(2,Ally,0) [17,7] 0 0 0 0 [SilverAxe, Javelin] DefaultAI
-UNIT Saizo SaizoThief 0 Level(8,Ally,0) [17,8] 0 0 0 0 [KillingEdge, Lancereaver] DefaultAI
+UNIT Saizo SaizoThief 0 Level(8,Ally,0) [17,8] 0 0 0 0 [KillingEdge, Lancereaver, Lockpick] DefaultAI
 UNIT
 
 MinervaArrives:
