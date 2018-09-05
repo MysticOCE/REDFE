@@ -9,6 +9,7 @@
 #include "Event Text/R1Texts.txt"
 #include "Event Text/R2Texts.txt"
 #include "Event Text/R3Texts.txt"
+#include "Event Text/R4Texts.txt"
 #include "Event Text/RenaisTexts.txt"
 #include "Event Text/GoalTexts.txt"
 #include "Event Text/WMIntro.txt"

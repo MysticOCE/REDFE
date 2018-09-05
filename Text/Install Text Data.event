@@ -1567,6 +1567,14 @@ TxtData0x97c:
 #incext ParseFile "_textentries\0x97c.txt"
 setText(0x97c,TxtData0x97c)
 
+TxtData0x97d:
+#incext ParseFile "_textentries\0x97d.txt"
+setText(0x97d,TxtData0x97d)
+
+TxtData0x97e:
+#incext ParseFile "_textentries\0x97e.txt"
+setText(0x97e,TxtData0x97e)
+
 TxtData0xBFF:
 #incext ParseFile "_textentries\0xBFF.txt"
 setText(0xBFF,TxtData0xBFF)

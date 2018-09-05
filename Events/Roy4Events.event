@@ -25,6 +25,8 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+Village(0x7, R4Swordreaver, 14,13)
+Village(0x8, R4GoldVillage, 1,9)
 END_MAIN
 
 MiscBasedEvents:
@@ -87,7 +89,13 @@ UNIT 0x80 Myrmidon 0 Level(12,Enemy,1) [16,11] 0 0 0 0 [SteelSword] DefaultAI
 UNIT 0x80 Thief 0 Level(12,Enemy,1) [6,26] 0 0 0 0 [SteelSword] DefaultAI
 UNIT
 
+R4Swordreaver:
+VillageEventItem(R4SwordreaverText,HouseBG,Swordreaver)
+ENDA
 
+R4GoldVillage:
+VillageEventMoney(R4GoldVillageText, HouseBG, 5000)
+ENDA
 
 BeginningScene:
 LOAD2 0x1 Units
