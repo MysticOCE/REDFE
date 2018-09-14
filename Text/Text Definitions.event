@@ -326,6 +326,8 @@
 #define udroppedurleadershipstars 0x97c
 #define R4SwordreaverText 0x97d
 #define R4GoldVillageText 0x97e
+#define R4GoalWindowText 0x97f
+#define R4ObjectiveText 0x980
 #define ElbertRoyChat1DorcasAlive 0xBFF
 #define RoyAlanAfterGettingHome1 0xC01
 #define RenaisReturnText1 0xc02

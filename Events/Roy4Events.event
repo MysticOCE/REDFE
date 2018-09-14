@@ -18,6 +18,9 @@ POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0, T3FlyersMoveOut, 3)
+TurnEventPlayer(0, T4Reinforcements, 4)
+TurnEventPlayer(0, T6Reinforcements, 6)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
@@ -31,6 +34,7 @@ END_MAIN
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
 END_MAIN
 
 Dunno:
@@ -67,8 +71,8 @@ UNIT 0x80 Fighter 0 Level(15,Enemy,1) [15,15] 0 0 0 0 [IronAxe] AttackInRangeAI
 UNIT 0x80 Monk 0 Level(15,Enemy,1) [13,14] 0 0 0 0 [Shine] AttackInRangeAI
 UNIT 0x80 Knight 0 Level(15,Enemy,1) [8,19] 0 0 0 0 [Spear] AttackInRangeAI
 UNIT 0x80 Archer 0 Level(15,Enemy,1) [13,17] 0 0 0 0 [SteelBow] AttackInRangeAI
-UNIT 0x82 PegasusKnight 0 Level(15,Enemy,1) [5,17] 0 0 0 0 [FlyerLance] AttackInRangeAI
-UNIT 0x82 WyvernRider 0 Level(15,Enemy,1) [13,24] 0 0 0 0 [SteelLance] AttackInRangeAI
+UNIT 0x84 PegasusKnight 0 Level(15,Enemy,1) [5,17] 0 0 0 0 [FlyerLance] AttackInRangeAI
+UNIT 0x84 WyvernRider 0 Level(15,Enemy,1) [13,24] 0 0 0 0 [SteelLance] AttackInRangeAI
 UNIT 0x80 Sage 0 Level(2,Enemy,1) [4,22] 0 0 0 0 [Elfire] AttackInRangeAI
 UNIT
 
@@ -86,8 +90,32 @@ UNIT 0x80 Paladin 0 Level(1,Enemy,1) [6,25] 0 0 0 0 [SteelLance] DefaultAI
 UNIT 0x80 Mercenary 0 Level(12, Enemy,1) [9,12] 0 0 0 0 [SteelSword] DefaultAI
 UNIT 0x80 Mage 0 Level(12, Enemy,1) [10,13] 0 0 0 0 [Thunder] DefaultAI
 UNIT 0x80 Myrmidon 0 Level(12,Enemy,1) [16,11] 0 0 0 0 [SteelSword] DefaultAI
-UNIT 0x80 Thief 0 Level(12,Enemy,1) [6,26] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x80 Thief 0 Level(12,Enemy,1) [6,26] 0 0 0 0 [SteelSword] BrigandAI
 UNIT
+
+T4ReinforcementUnits:
+UNIT 0x84 PegasusKnight 0 Level(12,Enemy,1) [5,17] 0 0 0 0 [FlyerLance] DefaultAI
+UNIT 0x84 WyvernRider 0 Level(12,Enemy,1) [13,24] 0 0 0 0 [SteelLance] DefaultAI
+UNIT
+
+T6ReinforcementUnits:
+UNIT 0x80 Fighter 0 Level(12,Enemy,1) [8,26] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0x80 Shaman 0 Level(12,Enemy,1) [6,26] 0 0 0 0 [Flux] DefaultAI
+UNIT 0x80 Ranger 0 Level(1,Enemy,1) [17,22] 0 0 0 0 [SteelBow, SteelSword] DefaultAI
+UNIT 0x80 Warrior 0 Level(1,Enemy,1) [17,14] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0x80 Mercenary 0 Level(12,Enemy,1) [17,15] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x80 LanceCavalier 0 Level(12,Enemy,1) [0,10] 0 0 0 0 [Javelin] DefaultAI
+UNIT 0x80 LanceCavalier 0 Level(12,Enemy,1) [0,11] 0 0 0 0 [SteelLance] DefaultAI
+UNIT
+
+T6Reinforcements:
+ReinforcementEvent(T6ReinforcementUnits)
+ENDA
+
+T4Reinforcements:
+ReinforcementEvent(T4ReinforcementUnits)
+ENDA
+
 
 R4Swordreaver:
 VillageEventItem(R4SwordreaverText,HouseBG,Swordreaver)
@@ -95,6 +123,11 @@ ENDA
 
 R4GoldVillage:
 VillageEventMoney(R4GoldVillageText, HouseBG, 5000)
+ENDA
+
+T3FlyersMoveOut:
+SVAL 0x1 0x00000000
+CHAI 0x82
 ENDA
 
 BeginningScene:

@@ -1,3 +1,1 @@
-Up with Arch: Adjacent ally units gain[NL]
-might equal to half this unit's might.[NL]
-(Only if name starts with "Arch")[X]
+Defeat Aias.[X]

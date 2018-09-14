@@ -1,6 +1,6 @@
 #define csvmacro136(arg000) "WORD arg000 "
 
-#inctext PFinder "C:\Users\Mysti\Documents\GitHub\REDFE\FE8_clean.gba" 0xe47180 LevelUpSkillTable
+#inctext PFinder "C:\Users\Nabil\Emulation\VBA\Hacking\REDFE\REDFE\FE8_clean.gba" 0xe47180 LevelUpSkillTable
 
 ALIGN 4
 LevelUpSkillTable:

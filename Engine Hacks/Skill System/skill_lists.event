@@ -157,7 +157,7 @@ ALIGN 4
 
 MageSkillList:
 BYTE 2 ShoveID
-BYTE 10 LightWeightID
+BYTE 10 RenewalID
 BYTE 00 00
 ALIGN 4
 
@@ -264,7 +264,7 @@ BYTE 00 00
 ALIGN 4
 
 MonkSkillList:
-BYTE 1 SpurSpdID
+BYTE 1 MiracleID
 BYTE 10 SealResID
 BYTE 00 00
 ALIGN 4

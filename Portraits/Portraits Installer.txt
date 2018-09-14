@@ -94,6 +94,10 @@ CordeliaMug:
 #incext PortraitFormatter "TytyCordelia.png"
 setMugEntry(0x29, CordeliaMug, 3,6, 3,4)
 
+SamsonMug:
+#incext PortraitFormatter "XigdarSamson2.png"
+setMugEntry(0x24, SamsonMug, 3,4,3,2)
+
 GazelleMug:
 #incext PortraitFormatter "XigdarGazelle2.png"
 setMugEntry(0x2B, GazelleMug, 2, 5, 2,3)

@@ -16,3 +16,9 @@ Good luck out there.[A]
 [OpenRight][LoadPortrait][0x5A][0x01]
 text is a placeholder[A]
 [X]
+
+## R4GoalWindowText
+Defeat Aias[X]
+
+## R4ObjectiveText
+Defeat Aias.[X]
