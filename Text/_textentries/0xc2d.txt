@@ -1,4 +1,4 @@
 [OpenMidRight][LoadFace][0x1A][0x01]
-I have lived as a knight[ToggleMouthMove]...[....][ToggleMouthMove]NL]
+I have lived as a knight[ToggleMouthMove]...[....][ToggleMouthMove][NL]
 And I am proud to die as one.[CloseEyes][A]
 [X]
