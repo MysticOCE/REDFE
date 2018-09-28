@@ -60,6 +60,7 @@ PUSH
 }
 POP
 
+//Coords for Beran's AI in C6
 PUSH
 ORG 0x5A90C0
 BYTE 0x15 0xD

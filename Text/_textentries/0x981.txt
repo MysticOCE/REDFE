@@ -1,2 +1,1 @@
-Rightful Arch: Sets Skill[NL]
-activation rate to 100%.[X]
+Defeat Aias.[X]

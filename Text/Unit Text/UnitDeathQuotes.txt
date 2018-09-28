@@ -60,7 +60,7 @@ the future is in your hands[ToggleMouthMove]...[....][ToggleMouthMove][A]
 
 ## BernardDeathQuote
 [OpenMidRight][LoadFace][0x1A][0x01]
-I have lived as a knight[ToggleMouthMove]...[....][ToggleMouthMove]NL]
+I have lived as a knight[ToggleMouthMove]...[....][ToggleMouthMove][NL]
 And I am proud to die as one.[CloseEyes][A]
 [X]
 
@@ -82,7 +82,7 @@ again soon[ToggleMouthMove]...[....][ToggleMouthMove][A]
 ## KieranDeathQuote
 [OpenMidRight][LoadFace][0x16][0x01]
 Long live Frelia! May[NL][CloseEyes]
-fortune shine upon youToggleMouthMove]...[....][ToggleMouthMove][A]
+fortune shine upon you[ToggleMouthMove]...[....][ToggleMouthMove][A]
 [X]
 
 ## NorrisDeathQuote
