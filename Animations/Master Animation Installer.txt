@@ -54,7 +54,7 @@
   weaponTypeAnim(animNone,0x1)
   weaponAnimEnd
   #include "Ninja pack\redump\SaizoSword Installer.event"
-  SetAnimationPointers(Thief, SaizoThiefAnims)
+  SetAnimationPointers(SaizoThief, SaizoThiefAnims)
   SaizoThiefAnims:
   weaponTypeAnim(animSword, 0x99)
   weaponAnimEnd

@@ -96,6 +96,9 @@ POP
 
   //Dragon Veins
   #include "DragonVeins.event"
+  
+  //Modular Stat Box
+  #include "MMB 2018/MMB Installer.event"
 
   //Modular Stat Screen
   #include "ModularStatScreen.event"
