@@ -64,7 +64,7 @@ UNIT Priscilla Troubadour 0x0 Level(2, Ally, 0) [9,1] 0x00 0x00 0x0 0x00 [Heal, 
 UNIT
 
 StaticEnemies:
-UNIT Aias GreatKnight 0 Level(8,Enemy,0) [8,26] 0 0 0 0 [Tomahawk, SilverLance] AttackInRangeAI
+UNIT Aias GreatKnight 0 Level(4,Enemy,0) [8,26] 0 0 0 0 [Tomahawk, SilverLance] AttackInRangeAI
 UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [2,10] 0 0 0 0 [SteelSword] AttackInRangeAI
 UNIT 0x80 Archer 0 Level(15,Enemy,1) [5,10] 0 0 0 0 [SteelBow] AttackInRangeAI
 UNIT 0x80 Fighter 0 Level(15,Enemy,1) [15,15] 0 0 0 0 [IronAxe] AttackInRangeAI
