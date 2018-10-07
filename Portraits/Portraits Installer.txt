@@ -78,10 +78,6 @@ SaizoMug:
 #incext PortraitFormatter "XigdarSaizo2.png"
 setMugEntry(0x2E, SaizoMug, 5,6, 5,4)
 
-CordyMug:
-#incext PortraitFormatter "TytyCordelia.png"
-setMugEntry(0x2D, CordyMug, 3, 6, 3, 4)
-
 NorrisMug:
 #incext PortraitFormatter "XigdarNorris2.png"
 setMugEntry(0x20, NorrisMug, 3,5,3,3)
@@ -91,7 +87,7 @@ MariaMug:
 setMugEntry(0x22, MariaMug, 3,7,3,5)
 
 CordeliaMug:
-#incext PortraitFormatter "TytyCordelia.png"
+#incext PortraitFormatter "TytyBMCordelia.png"
 setMugEntry(0x29, CordeliaMug, 3,6, 3,4)
 
 SamsonMug:

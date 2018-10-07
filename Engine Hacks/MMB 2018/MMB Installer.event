@@ -116,6 +116,43 @@
 			#endif // MMBInventoryObjs
 		#endif // MMBInventory
 
+		#ifdef MMBEquippedWeapon
+			#inctevent lyn "Modules/MMBDrawEquippedWeapon.elf" "Internal/Definitions.elf"
+			WORD MMBInventoryTileIndex
+			#ifndef MMBIconPrep
+				#define MMBIconPrep
+			#endif // MMBIconPrep
+			#ifndef MMBInventoryObjs
+				#define MMBInventoryObjs
+			#endif // MMBInventoryObjs
+		#endif // MMBEquippedWeapon
+
+		#ifdef MMBEquippedWeaponName
+			#inctevent lyn "Modules/MMBDrawEquippedWeaponName.elf" "Internal/Definitions.elf"
+			SHORT MMBInventoryTileIndex
+			SHORT MMBTextAltColor
+			WORD (2 * ((32 * (MMBInventoryY/8)) + (MMBInventoryX/8))) + 4
+			#ifndef MMBIconPrep
+				#define MMBIconPrep
+			#endif // MMBIconPrep
+			#ifndef MMBInventoryObjs
+				#define MMBInventoryObjs
+			#endif // MMBInventoryObjs
+		#endif // MMBEquippedWeaponName
+
+		#ifdef MMBInventoryOrEquippedWeaponName
+			#inctevent lyn "Modules/MMBDrawInventoryOrEquippedWeaponName.elf" "Internal/Definitions.elf"
+			SHORT MMBInventoryTileIndex
+			SHORT MMBTextAltColor
+			WORD (2 * ((32 * (MMBInventoryY/8)) + (MMBInventoryX/8))) + 4
+			#ifndef MMBIconPrep
+				#define MMBIconPrep
+			#endif // MMBIconPrep
+			#ifndef MMBInventoryObjs
+				#define MMBInventoryObjs
+			#endif // MMBInventoryObjs
+		#endif // MMBInventoryOrEquippedWeaponName
+
 	// Minimug modules
 
 		#ifdef MMBMinimug
@@ -223,6 +260,9 @@
 			WORD MMBHeight
 			SHORT (4 << 12) | MMBSkillTile
 			BYTE MMBSkillsX MMBSkillsY
+			#ifndef MMBIconPrep
+				#define MMBIconPrep
+			#endif // MMBIconPrep
 		#endif // MMBSkillsAlternate
 
 	// Label modules
@@ -657,6 +697,18 @@
 	#ifdef MMBInventory
 		POIN MMBDrawInventory
 	#endif // MMBInventory
+
+	#ifdef MMBEquippedWeapon
+		POIN MMBDrawEquippedWeapon
+	#endif // MMBEquippedWeapon
+
+	#ifdef MMBEquippedWeaponName
+		POIN MMBDrawEquippedWeaponName
+	#endif // MMBEquippedWeaponName
+
+	#ifdef MMBInventoryOrEquippedWeaponName
+		POIN MMBDrawInventoryOrEquippedWeaponName
+	#endif // MMBInventoryOrEquippedWeaponName
 
 	#ifdef MMBHPBar
 		POIN MMBDrawHPBar
