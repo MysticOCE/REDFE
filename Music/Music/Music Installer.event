@@ -28,8 +28,8 @@
 //#include "decisive2.event"
 //#include "AllHailShadow.event"
 //Example song
-#include "FF3Sea.event"
-SongTable(9,FF3Sea,1)
+//#include "FF3Sea.event"
+//SongTable(9,FF3Sea,1)
 //SongTable(9,AllHailShadow,1)
 
 //#include "boss06.event"

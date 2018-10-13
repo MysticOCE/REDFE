@@ -1,1 +1,4 @@
-Undergo the ultimate makeover![X]
+Roy begins his journey to Jehanna.[A][NL]
+Travelling via Carcino, he[NL]
+runs into trouble.[A]
+[X]

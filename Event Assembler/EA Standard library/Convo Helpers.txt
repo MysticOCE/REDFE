@@ -21,6 +21,7 @@
 #define CenterTutorialTextBox "_SETVAL 0xB 0xFFFFFFFF"
 #define FlashWhite "FAWI 0x20; STAL 0x10; FAWU 0x20"
 #define FlashBlack "FADI 0x20; STAL 0x10; FADU 0x20"
+#define BackgroundTransition(background,speed) "_0x2141 background 0x1 speed; REMOVEPORTRAITS"
 #endif
 
 

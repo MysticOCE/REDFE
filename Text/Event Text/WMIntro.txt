@@ -89,3 +89,13 @@ castle.[.][A][NL]
 Roy's perilous journey is at an end...[A][NL]
 One way or another.[A][NL]
 [X]
+
+## ValniOpenText
+The Tower of Valni is now available.[A]
+[X]
+
+## R1WMText
+Roy begins his journey to Jehanna.[A][NL]
+Travelling via Carcino, he[NL]
+runs into trouble.[A]
+[X]

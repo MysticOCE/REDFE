@@ -244,6 +244,7 @@ ENDA
 
 RoyRecruitsBernard:
 TurnAlly(Bernard)
+NoFade
 ENDA
 
 LossEdits:
@@ -378,6 +379,7 @@ NoFade
 ENDA
 
 EndingScene:
+MUSC Victory
 CHECK_TURNS
 SVAL 0x3 0x4
 BLE 0x10 0x3 0xC //if you finished before eliwood spawned, skip ahead.
