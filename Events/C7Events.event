@@ -30,6 +30,8 @@ CharacterBasedEvents:
 //CharacterEvent(0x7,RoyRecruitsBernard,Roy,Bernard)
 CharacterEvent(0x8,LukasRecruitsBernard,Lukas,Bernard)
 CharacterEvent(0x9,RoyRecruitsEliwood,Roy,Eliwood)
+CharacterEvent(0xA, EliwoodRecruitsBernard, Eliwood, Bernard)
+CharacterEvent(0xB, MiledyRecruitsBernard, Miledy, Bernard)
 //CharacterEvent(0xA,LossEdits,Dorcas,Roy)
 END_MAIN
 
@@ -262,7 +264,42 @@ MUSC Comrades
 TEXTCONT
 TEXTEND
 TurnAlly(Bernard)
+ENUT 0xA
+ENUT 0xB
 ENDA
+
+EliwoodRecruitsBernard:
+MUSI
+TEXTSTART
+TEXTSHOW BernardEliwoodRecruitText
+TEXTEND
+MUNO
+STAL 16
+MUSC Comrades
+TEXTCONT
+TEXTEND
+REMA
+TurnAlly(Bernard)
+ENUT 0x9
+ENUT 0xB
+ENDA
+
+MiledyRecruitsBernard:
+MUSI
+TEXTSTART
+TEXTSHOW MiledyBernardRecruitText
+TEXTEND
+MUNO
+STAL 16
+MUSC Comrades
+TEXTCONT
+TEXTEND
+REMA
+TurnAlly(Bernard)
+ENUT 0x9
+ENUT 0xA
+ENDA
+
 
 RoyRecruitsEliwood:
 CHECK_ALIVE Cain

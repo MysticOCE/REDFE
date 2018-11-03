@@ -1,6 +1,1 @@
-[OpenMidRight][LoadFace][0x2C][0x01]
-[OpenMidLeft][LoadFace][0x22][0x01]
-[ToggleSmile]
-**********[NL]
-I found your lost leadership stars![A]
-[X]
+Saias[X]

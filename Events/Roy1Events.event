@@ -243,7 +243,7 @@ REMA
 ENDA
 
 GazelleIsLate:
-Text(EarlyFinishGazelle)
+Text(Plain_2, EarlyFinishGazelle)
 LOAD1 0x1 SoloGazelle
 ENDA
 
@@ -261,7 +261,7 @@ NoFade
 ENDA
 
 EndingScene:
-
+MUSC Victory
 //If finish before Cordelia and Samson spawn
 SVAL 0x3 0x3
 CHECK_TURNS
@@ -296,7 +296,17 @@ SVAL 0x3 0x5
 BLE 0x3 0x3 0xC
 	CALL GazelleIsLate
 LABEL 0x3
-
+//Text( Plain_2,Roy1EndingText)
+TEXTSTART
+SetBackground(Plain_2)
+TEXTSHOW Roy1EndingText
+TEXTEND
+REMA
+TEXTSTART
+TEXTSHOW Roy1EndingText2
+TEXTEND
+ClearBackground
+REMA
 MoveToChapter(Ch10Eirika)
 ENDA
 
