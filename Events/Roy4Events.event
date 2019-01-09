@@ -13,7 +13,8 @@ POIN MiscBasedEvents
 POIN Dunno Dunno Dunno
 POIN Tutorial
 POIN TrapData TrapData
-POIN Units Units
+POIN Units Units 
+
 POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
@@ -25,9 +26,11 @@ END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
 CharacterBasedEvents:
+CharacterEvent(0xA,SkipChapter,Roy,Maria)
 END_MAIN
 
 LocationBasedEvents:
+//AREA 0x6 EndingScene [8,0] [9,0]
 Village(0x7, R4Swordreaver, 14,13)
 Village(0x8, R4GoldVillage, 1,9)
 END_MAIN
@@ -119,7 +122,18 @@ ENDA
 
 R4Swordreaver:
 VillageEventItem(R4SwordreaverText,HouseBG,Swordreaver)
-ENDA
+/*
+CHECK_ACTIVEID Minerva
+SVAL 0x3 0x1
+BNE 0x1 0x3 0xC
+	Text(2,C5XaneVillageNotDorcas)
+GOTO 0x2
+LABEL 0x1
+	Text(LukasRecruitsBernardText)
+LABEL 0x2
+ENUT 0x7
+
+ENDA*/
 
 R4GoldVillage:
 VillageEventMoney(R4GoldVillageText, HouseBG, 5000)
@@ -128,6 +142,10 @@ ENDA
 T3FlyersMoveOut:
 SVAL 0x1 0x00000000
 CHAI 0x82
+ENDA
+
+SkipChapter:
+CALL EndingScene
 ENDA
 
 BeginningScene:

@@ -151,6 +151,15 @@ UNIT 0x92 Shaman 0 Level(8,Enemy,1) [17,16] 0 0 0 0 [Nosferatu] DefaultAI
 UNIT 0x92 Mage 0 Level(8,Enemy,1) [17,15] 0 0 0 0 [Elfire] DefaultAI
 UNIT
 
+RoyMariaEventUnits:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [12,4] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Maria Cleric 0x0 Level(4,Ally,0) [11,4] 0 0 0 0 [Heal] NoAI
+UNIT
+
+KlimtEventSpawn:
+UNIT Klimt Bishop 0x0 Level(1,NPC,0) [12,2] 0 0 0 0 [Lightning] GuardTileAI
+UNIT
+
 R2LeftHouse:
 VillageEventItem(R2LeftHouseText,HouseBG,SoldiersRapier)
 ENDA
@@ -164,8 +173,41 @@ VillageEventItem(R2DownHouseText,HouseBG,MasterProof)
 ENDA
 
 BeginningScene:
+FADU 16
 MUSC Reunion
-//Text(Roy2OpeningText)
+CAM1 [10,6]
+LOAD1 0x1 RoyMariaEventUnits
+ENUN
+STAL 32
+TEXTSTART
+TEXTSHOW R2OpeningText
+TEXTEND
+MOVE 0x10 Roy [12,3]
+ENUN
+LOAD1 0x1 KlimtEventSpawn
+ENUN
+STAL 32
+MOVE 0x10 Roy [12,4]
+ENUN
+MOVE 0x10 Klimt [12,3]
+ENUN
+TEXTCONT
+TEXTEND
+FADI 16
+CLEA 0x0
+CLEN 0x0
+SetBackground(HouseBG)
+TEXTSTART
+TEXTSHOW R2OpeningText2
+TEXTEND
+MUSC 0x0
+TEXTCONT
+TEXTEND
+MUSC Tension
+TEXTCONT
+TEXTEND
+ClearBackground
+//gameplay stuff
 LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 EnemyUnit
