@@ -20,7 +20,8 @@ POIN BeginningScene EndingScene
 TurnBasedEvents:
 TurnEventPlayer(0,T3Reinforcements,3)
 TurnEventPlayer(0,T5Reinforcements,5)
-TurnEventPlayer(0, EndingScene,8)
+//TurnEventPlayer(0, EndingScene,8)
+TurnEventPlayer(0,EndingScene,2)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
@@ -221,19 +222,44 @@ ENUN
 GotoPrepScreen
 ENDA
 
+PabloAlone:
+UNIT Pablo Sage 0x0 Level(1,Enemy,0) [13,21] 0 0 0 0 [Elfire, Silence] GuardTileAI
+UNIT
+
+SaizoAlone:
+UNIT Saizo SaizoThief 0 Level(8,NPC,0) [12,21] 0 0 0 0 [KillingEdge, Lancereaver, Lockpick] DefaultAI
+UNIT
+
 EndingScene:
 //If Pablo not dead, have scene where he moves in and gets defeated my Minerva, else just have them arrive
-/*
+
+//pablo alive check
 CHECK_EVENTID 0x2
 SVAL 0x3 0x1
-BNE 0x0 0x2 0x3
-//
-CLEA 0x0
-CLEE 0x0
-
+BEQ 0x0 0x2 0x3
+	CAM1 [10,17]
+	FADI 16
+	CLEA 0x0
+	CLEE 0x0
+	ENUT 0x1
+	SetBackground(Plain_3)
+	Text(R2EndingPableAlive)
+	REMA
+	ClearBackground
+	FADU 16
+	LOAD1 0x1 PabloAlone
+	ENUN
+	LOAD1 0x1 SaizoAlone
+	ENUN
+	
+	StartBattle
+		CriticalHit(0,0)
+		EndAttack
+	FIG1 Saizo Pablo 0x0 
+	DISA Pablo
 
 LABEL 0x0
-*/
+
 LOAD1 0x1 Recruits
 ENUN
 MoveToChapter(Ch11Eirika)
