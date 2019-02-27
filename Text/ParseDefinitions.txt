@@ -58,6 +58,6 @@
 [LoadElbert] = [LoadPortrait][0x0A][0x01]
 [LoadCain] = [LoadPortrait][0x0F][0x01]
 [LoadRadd] = [LoadPortrait][0x0C][0x01]
-
+[LoadSaias] = [LoadPortrait][0x2C][0x01]
 [LoadSaizo] = [LoadPortrait][0x2E][0x01]
 [LoadPablo] = [LoadPortrait][0x3A][0x01]

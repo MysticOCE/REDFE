@@ -132,8 +132,8 @@ LABEL 0x1
 	Text(LukasRecruitsBernardText)
 LABEL 0x2
 ENUT 0x7
-
-ENDA*/
+*/
+ENDA
 
 R4GoldVillage:
 VillageEventMoney(R4GoldVillageText, HouseBG, 5000)
