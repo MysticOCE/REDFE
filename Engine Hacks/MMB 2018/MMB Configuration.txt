@@ -108,8 +108,8 @@ After each set of module options are definitions that you can use to adjust the 
 // Combination modules
 
 	#define MMBHPStatus
-	#define MMBDEFRES
-	#define MMBAVODOD
+	//#define MMBDEFRES
+	//#define MMBAVODOD
 
 // Combination options
 
@@ -176,12 +176,12 @@ After each set of module options are definitions that you can use to adjust the 
 	//#define MMBAVONumber
 	//#define MMBCHRNumber // Useless without skill system
 	//#define MMBCRTNumber
-	//#define MMBDEFNumber
+	#define MMBDEFNumber
 	//#define MMBDODNumber
 	#define MMBEXPNumber
 	//#define MMBHITNumber
 	#define MMBLevelNumber
-	//#define MMBRESNumber
+	#define MMBRESNumber
 	//#define MMBRTGNumber
 
 // Number options
@@ -198,8 +198,8 @@ After each set of module options are definitions that you can use to adjust the 
 	#define MMBATKY 8
 
 	// AVO Number
-	#define MMBAVOX 96
-	#define MMBAVOY 8
+	#define MMBAVOX 128
+	#define MMBAVOY 32
 
 	// CHR Number
 	#define MMBCHRX 96
@@ -211,7 +211,7 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// DEF Number
 	#define MMBDEFX 128
-	#define MMBDEFY 16
+	#define MMBDEFY 24
 
 	// DOD Number
 	#define MMBDODX 128
@@ -230,8 +230,8 @@ After each set of module options are definitions that you can use to adjust the 
 	#define MMBLevelY 16
 
 	// RES number
-	#define MMBRESX 96
-	#define MMBRESY 40
+	#define MMBRESX 128
+	#define MMBRESY 32
 
 	// RTG number
 	#define MMBRTGX 103
@@ -244,12 +244,12 @@ After each set of module options are definitions that you can use to adjust the 
 	//#define MMBAVOLabel
 	//#define MMBCHRLabel
 	//#define MMBCRTLabel
-	//#define MMBDEFLabel
+	#define MMBDEFLabel
 	//#define MMBDODLabel
 	#define MMBEXPLabel
 	//#define MMBHITLabel
 	#define MMBLevelLabel
-	//#define MMBRESLabel
+	#define MMBRESLabel
 	//#define MMBRTGLabel
 
 // Label options
@@ -271,8 +271,8 @@ After each set of module options are definitions that you can use to adjust the 
 	#define MMBATKLabelTileCount 2
 
 	// AVO label
-	#define MMBAVOLabelX 9
-	#define MMBAVOLabelY 1
+	#define MMBAVOLabelX 13
+	#define MMBAVOLabelY 4
 	#define MMBAVOLabelVRAMTile 0x104
 	#define MMBAVOLabelPaletteIndex 2
 	#define MMBAVOLabelTileCount 2
@@ -293,7 +293,7 @@ After each set of module options are definitions that you can use to adjust the 
 
 	// DEF label
 	#define MMBDEFLabelX 13
-	#define MMBDEFLabelY 2
+	#define MMBDEFLabelY 3
 	#define MMBDEFLabelVRAMTile 0x10A
 	#define MMBDEFLabelPaletteIndex 2
 	#define MMBDEFLabelTileCount 2
@@ -327,8 +327,8 @@ After each set of module options are definitions that you can use to adjust the 
 	#define MMBLevelLabelTileCount 2
 
 	// RES label
-	#define MMBRESLabelX 9
-	#define MMBRESLabelY 5
+	#define MMBRESLabelX 13
+	#define MMBRESLabelY 4
 	#define MMBRESLabelVRAMTile 0x164
 	#define MMBRESLabelPaletteIndex 2
 	#define MMBRESLabelTileCount 2
