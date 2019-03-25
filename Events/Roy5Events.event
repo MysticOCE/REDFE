@@ -46,20 +46,44 @@ Units:
 UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [9,3] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
 UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [10,4] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
 UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [8,4] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
-UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [8,2] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [6,2] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
 UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [10,2] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [11,3] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [12,2] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [9,5] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [7,3] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [7,5] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [5,3] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+
+UNIT Roy RoyLord 0 Level(1,Ally,0) [6,4] 0 0 0 0 [0x0] NoAI
 UNIT
 
 StaticEnemies:
-UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [2,10] 0 0 0 0 [SteelSword] AttackInRangeAI
+UNIT Valter_Ch15_ WyvernKnight 0 Level(8,Enemy,0) [12,20] 0 0 0 0 [SilverLance, Spear] AttackInRangeAI
+
 UNIT 0x80 Archer 0 Level(15,Enemy,1) [5,10] 0 0 0 0 [SteelBow] AttackInRangeAI
 UNIT 0x80 Fighter 0 Level(15,Enemy,1) [15,15] 0 0 0 0 [IronAxe] AttackInRangeAI
+UNIT 0x80 GreatKnight 0 Level(4,Enemy,1) [4,18] 0 0 0 0 [SteelAxe, SteelLance] AttackInRangeAI
+UNIT 0x80 Paladin 0 Level(1,Enemy,1) [5,18] 0 0 0 0 [SteelSword, SteelLance] AttackInRangeAI
+UNIT 0x80 MageKnight 0 Level(1,Enemy,1) [3,18] 0 0 0 0 [Elfire] AttackInRangeAI
+UNIT
+
+MobileStartingEnemies:
+UNIT 0x80 Warrior 0 Level(1,Enemy,1) [19,11] 0 0 0 0 [SteelAxe, SteelBow] DefaultAI
+UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [18,12] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [20,10] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x80 Mage 0 Level(15,Enemy,1) [20,11] 0 0 0 0 [Elfire] DefaultAI
+UNIT 0x80 Thief 0 Level(12,Enemy,1) [16,11] 0 0 0 0 [SteelSword, Lockpick] DefaultAI
 UNIT
 
 BeginningScene:
 LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 StaticEnemies
+ENUN
+LOAD1 0x1 MobileStartingEnemies
 ENUN
 GotoPrepScreen
 ENDA
