@@ -1,4 +1,1 @@
-[OpenLeft][LoadPortrait][0xFF][0xFF]
-[OpenRight][LoadPortrait][0x5A][0x01]
-text is a placeholder[A]
 [X]

@@ -174,7 +174,7 @@ BEQ 0x2 0x0 0xC
 	SVAL 0x3 Talisman
 	GIVEITEMTO Norris
 LABEL 0x2
-Text(udroppedurleadershipstars)
+//Text(udroppedurleadershipstars)
 ENDA
 
 EndingScene:

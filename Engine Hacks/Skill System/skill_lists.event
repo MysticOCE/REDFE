@@ -97,7 +97,7 @@ ALIGN 4
 
 SwordmasterSkillList:
 BYTE 255 DuelistsBlowID
-BYTE 255 VantageID
+BYTE 255 DesperationID
 BYTE 5 AstraID
 BYTE 15 SwordfaireID
 BYTE 00 00
@@ -162,16 +162,16 @@ BYTE 00 00
 ALIGN 4
 
 SageSkillList:
-BYTE 255 QuickBurnID
-BYTE 255 LightWeightID
+BYTE 255 ShoveID
+BYTE 255 RenewalID
 BYTE 5 TomefaireID
 BYTE 15 IgnisID
 BYTE 00 00
 ALIGN 4
 
 MageKnightSkillList:
-BYTE 255 QuickBurnID
-BYTE 255 LightWeightID
+BYTE 255 ShoveID
+BYTE 255 RenewalID
 BYTE 5 RallyResID
 BYTE 15 QuickBurnID
 BYTE 00 00
@@ -215,8 +215,8 @@ BYTE 00 00
 ALIGN 4
 
 GreatKnightSkillList:
-BYTE 255 ProvokeID
-BYTE 255 NaturalCoverID
+BYTE 255 SwapID
+BYTE 255 DisciplineID
 BYTE 5 LunaID
 BYTE 15 ArmoredBlowID
 BYTE 00 00
@@ -250,14 +250,14 @@ BYTE 00 00
 ALIGN 4
 
 PirateSkillList:
-BYTE 1 CamaraderieID
-BYTE 10 SealSklID
+BYTE 1 FieryBloodID
+BYTE 10 CamaraderieID
 BYTE 00 00
 ALIGN 4
 
 BerserkerSkillList:
-BYTE 255 CamaraderieID
-BYTE 255 SealSklID
+BYTE 255 FieryBloodID
+BYTE 255 IntimidateID
 BYTE 5 WrathID
 BYTE 15 AxefaireID
 BYTE 00 00
@@ -265,7 +265,7 @@ ALIGN 4
 
 MonkSkillList:
 BYTE 1 MiracleID
-BYTE 10 SealResID
+BYTE 10 LiveToServeID
 BYTE 00 00
 ALIGN 4
 
@@ -319,7 +319,6 @@ ALIGN 4
 SoldierSkillList:
 BYTE 255 RepositionID
 BYTE 1 CamaraderieID
-BYTE 10 RallyStrID
 BYTE 00 00
 ALIGN 4
 

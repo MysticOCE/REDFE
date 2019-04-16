@@ -61,3 +61,8 @@
 [LoadSaias] = [LoadPortrait][0x2C][0x01]
 [LoadSaizo] = [LoadPortrait][0x2E][0x01]
 [LoadPablo] = [LoadPortrait][0x3A][0x01]
+[LoadJoshua] = [LoadPortrait][0x2A][0x01]
+[LoadCarlyle] = [LoadPortrait][0x3C][0x01]
+[LoadValter] = [LoadPortrait][0x42][0x01]
+[LoadArvis] = [LoadPortrait][0x53][0x01]
+[LoadNorris] = [LoadPortrait][0x20][0x01]

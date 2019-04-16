@@ -68,6 +68,7 @@ UNIT
 
 StaticEnemies:
 UNIT Aias GreatKnight 0 Level(4,Enemy,0) [8,26] 0 0 0 0 [Tomahawk, SilverLance] AttackInRangeAI
+//UNIT Aias GreatKnight 0 Level(4,Enemy,0) [9,4] 0 0 0 0 [Tomahawk, SilverLance] AttackInRangeAI
 UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [2,10] 0 0 0 0 [SteelSword] AttackInRangeAI
 UNIT 0x80 Archer 0 Level(15,Enemy,1) [5,10] 0 0 0 0 [SteelBow] AttackInRangeAI
 UNIT 0x80 Fighter 0 Level(15,Enemy,1) [15,15] 0 0 0 0 [IronAxe] AttackInRangeAI
@@ -149,6 +150,10 @@ CALL EndingScene
 ENDA
 
 BeginningScene:
+TEXTSTART
+TEXTSHOW R4OpeningText1
+TEXTEND
+REMA
 LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 StaticEnemies
