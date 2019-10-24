@@ -26,7 +26,9 @@
 
 //look at all these great examples
 
-#include "leon3.event"
+#include "ally1.event"
+SongTable(9,ally1,1)
+//#include "leon3.event"
 //SongTable(9,leon3,1)
 //#include "decisive2.event"
 //#include "AllHailShadow.event"
