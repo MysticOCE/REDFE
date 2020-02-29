@@ -1,7 +1,7 @@
 
 #include "Skill System Options.event"
 #include "Internals/SkillSystem.event"
-#include "skill_lists.event" //who learns what skills when
+#include "skill_lists_new.event" //who learns what skills when
 #include "Battle Calculations.event" //battle calcs
 #include "charge_table.event"
 SkillIcons:

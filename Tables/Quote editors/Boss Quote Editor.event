@@ -1,7 +1,9 @@
 #define csvmacro097(arg000,arg001,arg002,arg003,arg004,arg005,arg006,arg007,arg008,arg009) "BYTE arg000 arg001 arg002 arg003 arg004 arg005 arg006 arg007 ;SHORT arg008 ;BYTE arg009 "
 
-#inctext PFinder "C:\Users\Nabil\Emulation\VBA\Hacking\REDFE\REDFE\FE8_clean.gba" 0x9ec6bc BQTableOffset
-
+PUSH
+ORG $846AC
+POIN BQTableOffset
+POP
 ALIGN 4
 BQTableOffset:
 csvmacro097(0x45,0x0,0x2,0x0,0x40,0x0,0x0,0x0,PrologueValterBoss,0x0 0x0 0x0 0x0 0x0 0x0)

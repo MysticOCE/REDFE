@@ -1,15 +1,15 @@
 EphraimLordSkillList:
 // BYTE 1 OddRhythmID
-BYTE 10 BondID
-BYTE 20 AetherID
+BYTE 1 BondID
+BYTE 10 AetherID
 BYTE 00 00
 ALIGN 4
 
 EirikaLordSkillList:
 BYTE 255 ShoveID
 // BYTE 10 EvenRhythmID
-BYTE 10 RightfulKingID
-BYTE 20 BondID
+//BYTE 10 RightfulKingID
+BYTE 1 BondID
 BYTE 00 00
 ALIGN 4
 
@@ -158,13 +158,13 @@ ALIGN 4
 
 DruidSkillList:
 BYTE 255 MaleficAuraID
-BYTE 5 FrenzyID
+BYTE 1 FrenzyID
 BYTE 00 00
 ALIGN 4
 
 SummonerSkillList:
 BYTE 255 MaleficAuraID
-BYTE 5 AnathemaID
+BYTE 1 AnathemaID
 BYTE 00 00
 ALIGN 4
 
@@ -194,7 +194,7 @@ ALIGN 4
 
 WarriorSkillList:
 BYTE 255 FieryBloodID
-BYTE 5 ElbowRoomID
+BYTE 1 ElbowRoomID
 BYTE 00 00
 ALIGN 4
 
@@ -236,7 +236,7 @@ BYTE 00 00
 ALIGN 4
 
 ClericSkillList:
-BYTE 10 LiveToServeID
+BYTE 1 LiveToServeID
 BYTE 00 00
 ALIGN 4
 
