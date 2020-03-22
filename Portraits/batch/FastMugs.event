@@ -1,0 +1,5 @@
+AlanMug:
+#incbin "Alan7_mug.dmp"
+#incbin "Alan7_frames.dmp"
+#incbin "Alan7_palette.dmp"
+#incbin "Alan7_minimug.dmp"

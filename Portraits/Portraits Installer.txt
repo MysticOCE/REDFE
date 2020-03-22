@@ -1,12 +1,15 @@
 
 ALIGN 4
 #include "../Event Assembler/Tools/Tool Helpers.txt"
+
+#include "batch/FastMugs.event"
+
 RoyMug:
 #incext PortraitFormatter "Roy6.png"
 setMugEntry(0x02, RoyMug, 3, 6, 3, 4)
 
-AlanMug:
-#incext PortraitFormatter "Alan7.png"
+//AlanMug:
+//#incext PortraitFormatter "Alan7.png"
 setMugEntry(0x04, AlanMug, 3, 5, 3, 3)
 
 AltAlan:
