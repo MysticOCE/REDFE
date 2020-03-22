@@ -1,13 +1,42 @@
 // Palette Definitions.txt
 // Character & Gereric Class Palette Definitions File
 PUSH
-ORG 0x59EE20
-#incbin "EPPalx.DMP" //red palettte for users
-ORG 0x59EE40
-#incbin "EPPal2b.DMP" //purple palette for enemy
+ORG $59EE20
+
+//1st slot: Player palette
+//Red color
+BYTE $90 $42 $2D $31 $B8 $5E $9C $73 $8E $31 $56 $2E $FF $6B $AC $10 $D5 $14 $5C $08 $5F $25 $47 $1B $FF $23 $30 $3A $FF $7F $E8 $1C
+
+//2nd slot: Enemy palette
+//Purple color
+BYTE $90 $42 $0B $35 $B5 $76 $9C $7F $8F $29 $38 $26 $FF $67 $0B $31 $90 $49 $77 $72 $1A $7F $5D $0C $FF $17 $30 $3A $FF $7F $A9 $20
+
+//3rd slot: NPC palette
+//Green color
+BYTE $90 $42 $47 $1D $33 $43 $FB $5F $6B $29 $34 $22 $FF $63 $44 $09 $41 $02 $43 $0B $EA $1F $E0 $65 $FC $17 $30 $3A $FF $7F $07 $1D
+
+//4th slot: Waited/"Tapped" palette
+//Grey color
+BYTE $90 $42 $08 $21 $EF $3D $F7 $5E $4A $29 $10 $42 $39 $67 $29 $25 $6B $2D $73 $4E $F7 $5E $CE $39 $39 $67 $30 $3A $5A $6B $E8 $1C
+
+//5th slot: Arena Team 4 palette
+//Blue color
+BYTE $90 $42 $2B $3D $F2 $76 $BB $7B $8E $31 $56 $2E $FF $6B $E7 $48 $47 $71 $85 $7E $C3 $7F $5D $0C $FF $23 $30 $3A $FF $7F $E8 $1C
+
+//6th slot: Light Rune palette
+//Light rune color (6th group)
+BYTE $55 $53 $FF $7F $53 $7F $8C $7E $E4 $65 $22 $51 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00 $00
+
+//7th slot: Event Sepia Palette
+//Sepia color
+BYTE $90 $42 $AE $2D $96 $32 $3C $47 $8E $31 $56 $2E $FF $6B $8F $29 $F4 $1D $99 $32 $7E $4F $D4 $01 $FF $23 $30 $3A $FF $7F $E8 $1C
+//ORG 0x59EE20
+//#incbin "EPPalx.DMP" //red palettte for users
+//ORG 0x59EE40
+//#incbin "EPPal2b.DMP" //purple palette for enemy
 //#incbin "RedPurpleMapSpritePalettes.bin"
-ORG 0x59EEA0
-#incbin "EPPal2.DMP" //blue for Link Arena team 4
+//ORG 0x59EEA0
+//#incbin "EPPal2.DMP" //blue for Link Arena team 4
 ORG 0x802558
 #incbin "RedBattleMenuPal.DMP"
 ORG 0x802578
