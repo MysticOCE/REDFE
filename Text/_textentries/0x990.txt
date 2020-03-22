@@ -1,11 +1,2 @@
-[OpenMidLeft][LoadAlan]
-You[Beat]! I've trained[NL]
-for this day![A][ClearFace]
-[OpenMidRight][LoadValter][OpenMidLeft]
-Ho? You have some meat on you.[A][NL]
-Have we met, pup?[A][NL]
-[ClearFace]
-[ToggleMouthMove]Wha-?[ToggleMouthMove][CloseEyes] No, no, it doesn't matter.[OpenEyes][A][NL]
-I won't let you harm Lord Roy![A]
-[ClearFace]
+
 [X]

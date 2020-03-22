@@ -1,2 +1,11 @@
-
+[OpenLeft][LoadPortrait][0xFF][0xFF]
+[OpenRight][LoadPortrait][0x59][0x01]
+Hey there, pal. Heard a group helped[NL]
+the folks in Carcino a while ago.[A][NL]
+They say they were an odd[NL]
+bunch of folks.[A][NL]
+You look pretty odd to me, pal.[A][NL]
+Take this. You may be strange folk[NL]
+but you seem like nice folk.[A][NL]
+Good luck out there.[A]
 [X]

@@ -1,7 +1,7 @@
 [OpenLeft][LoadPortrait][0xFF][0xFF]
 [OpenMidRight][LoadPortrait][0x59][0x01]
 Honestly don't think you guys stand[NL]
-a stinkin' chance.[A]
+a stinkin' chance.[A][NL]
 But if you wanna get blown up,[NL]
 might get blown up with style, right?[A]
 [X]
