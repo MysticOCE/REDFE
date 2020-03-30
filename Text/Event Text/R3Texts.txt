@@ -165,3 +165,7 @@ Ugh[Beat] I should've expected that by now.[A]
 **********[NL]
 I found your lost leadership stars![A]
 [X]
+
+## R3OpeningScene
+
+[X]

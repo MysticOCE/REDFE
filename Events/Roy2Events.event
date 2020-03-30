@@ -279,9 +279,9 @@ BEQ 0x0 0x2 0x3
 CALL PabloAliveEnd
 
 LABEL 0x0
-/*
+
 LOAD1 0x1 Recruits
-*/
+
 ENUN
 MoveToChapter(Ch11Eirika)
 ENDA
