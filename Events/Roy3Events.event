@@ -97,6 +97,9 @@ UNIT 0xAB Wight 0 Level(2,Enemy,1) [3,2] 0 0 0 0 [SilverLance] AttackInRangeAI
 UNIT 0xAB Wight_Bow 0 Level(2,Enemy,1) [5,2] 0 0 0 0 [SilverBow] AttackInRangeAI
 UNIT 0xAB Bael 0 Level(12,Enemy,1) [0,6] 0 0 0 0 [SharpClaw] DefaultAI
 UNIT 0xAB Bonewalker 0 Level(10,Enemy,1) [7,1] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0xAB Bonewalker 0 Level(12,Enemy,1) [2,4] 0 0 0 0 [SteelSword] AttackInRangeAI
+UNIT 0xAB Bonewalker 0 Level(12,Enemy,1) [5,4] 0 0 0 0 [SteelSword] AttackInRangeAI
+UNIT 0xAB Entombed 0 Level(1,Enemy,1) [12,11] 0 0 0 0 [FetidClaw] AttackInRangeAI
 UNIT
 
 Villagers:
