@@ -1,0 +1,174 @@
+Alan7Mug:
+#incbin "Alan7_mug.dmp"
+#incbin "Alan7_frames.dmp"
+#incbin "Alan7_palette.dmp"
+#incbin "Alan7_minimug.dmp"
+
+Anna2Mug:
+#incbin "Anna2_mug.dmp"
+#incbin "Anna2_frames.dmp"
+#incbin "Anna2_palette.dmp"
+#incbin "Anna2_minimug.dmp"
+
+Bernard2Mug:
+#incbin "Bernard2_mug.dmp"
+#incbin "Bernard2_frames.dmp"
+#incbin "Bernard2_palette.dmp"
+#incbin "Bernard2_minimug.dmp"
+
+BladeLena3Mug:
+#incbin "BladeLena3_mug.dmp"
+#incbin "BladeLena3_frames.dmp"
+#incbin "BladeLena3_palette.dmp"
+#incbin "BladeLena3_minimug.dmp"
+
+BladeLukasMug:
+#incbin "BladeLukas_mug.dmp"
+#incbin "BladeLukas_frames.dmp"
+#incbin "BladeLukas_palette.dmp"
+#incbin "BladeLukas_minimug.dmp"
+
+BladeMariaMug:
+#incbin "BladeMaria_mug.dmp"
+#incbin "BladeMaria_frames.dmp"
+#incbin "BladeMaria_palette.dmp"
+#incbin "BladeMaria_minimug.dmp"
+
+BlueyAndTBAEtzelMug:
+#incbin "BlueyAndTBAEtzel_mug.dmp"
+#incbin "BlueyAndTBAEtzel_frames.dmp"
+#incbin "BlueyAndTBAEtzel_palette.dmp"
+#incbin "BlueyAndTBAEtzel_minimug.dmp"
+
+BlueyLexouSalem2Mug:
+#incbin "BlueyLexouSalem2_mug.dmp"
+#incbin "BlueyLexouSalem2_frames.dmp"
+#incbin "BlueyLexouSalem2_palette.dmp"
+#incbin "BlueyLexouSalem2_minimug.dmp"
+
+BlueyRadd3Mug:
+#incbin "BlueyRadd3_mug.dmp"
+#incbin "BlueyRadd3_frames.dmp"
+#incbin "BlueyRadd3_palette.dmp"
+#incbin "BlueyRadd3_minimug.dmp"
+
+BlueySaiasMug:
+#incbin "BlueySaias_mug.dmp"
+#incbin "BlueySaias_frames.dmp"
+#incbin "BlueySaias_palette.dmp"
+#incbin "BlueySaias_minimug.dmp"
+
+BlueyXaneMug:
+#incbin "BlueyXane_mug.dmp"
+#incbin "BlueyXane_frames.dmp"
+#incbin "BlueyXane_palette.dmp"
+#incbin "BlueyXane_minimug.dmp"
+
+Dorcas3Mug:
+#incbin "Dorcas3_mug.dmp"
+#incbin "Dorcas3_frames.dmp"
+#incbin "Dorcas3_palette.dmp"
+#incbin "Dorcas3_minimug.dmp"
+
+Elbert4Mug:
+#incbin "Elbert4_mug.dmp"
+#incbin "Elbert4_frames.dmp"
+#incbin "Elbert4_palette.dmp"
+#incbin "Elbert4_minimug.dmp"
+
+Eliwood3Mug:
+#incbin "Eliwood3_mug.dmp"
+#incbin "Eliwood3_frames.dmp"
+#incbin "Eliwood3_palette.dmp"
+#incbin "Eliwood3_minimug.dmp"
+
+Miledy2Mug:
+#incbin "Miledy2_mug.dmp"
+#incbin "Miledy2_frames.dmp"
+#incbin "Miledy2_palette.dmp"
+#incbin "Miledy2_minimug.dmp"
+
+NicktKieran2Mug:
+#incbin "NicktKieran2_mug.dmp"
+#incbin "NicktKieran2_frames.dmp"
+#incbin "NicktKieran2_palette.dmp"
+#incbin "NicktKieran2_minimug.dmp"
+
+Priscilla2Mug:
+#incbin "Priscilla2_mug.dmp"
+#incbin "Priscilla2_frames.dmp"
+#incbin "Priscilla2_palette.dmp"
+#incbin "Priscilla2_minimug.dmp"
+
+Raven2Mug:
+#incbin "Raven2_mug.dmp"
+#incbin "Raven2_frames.dmp"
+#incbin "Raven2_palette.dmp"
+#incbin "Raven2_minimug.dmp"
+
+Roy6Mug:
+#incbin "Roy6_mug.dmp"
+#incbin "Roy6_frames.dmp"
+#incbin "Roy6_palette.dmp"
+#incbin "Roy6_minimug.dmp"
+
+SquidMinerva2Mug:
+#incbin "SquidMinerva2_mug.dmp"
+#incbin "SquidMinerva2_frames.dmp"
+#incbin "SquidMinerva2_palette.dmp"
+#incbin "SquidMinerva2_minimug.dmp"
+
+TytyBMCordeliaMug:
+#incbin "TytyBMCordelia_mug.dmp"
+#incbin "TytyBMCordelia_frames.dmp"
+#incbin "TytyBMCordelia_palette.dmp"
+#incbin "TytyBMCordelia_minimug.dmp"
+
+XigdarArvisMug:
+#incbin "XigdarArvis_mug.dmp"
+#incbin "XigdarArvis_frames.dmp"
+#incbin "XigdarArvis_palette.dmp"
+#incbin "XigdarArvis_minimug.dmp"
+
+XigdarGazelle2Mug:
+#incbin "XigdarGazelle2_mug.dmp"
+#incbin "XigdarGazelle2_frames.dmp"
+#incbin "XigdarGazelle2_palette.dmp"
+#incbin "XigdarGazelle2_minimug.dmp"
+
+XigdarLawsonMug:
+#incbin "XigdarLawson_mug.dmp"
+#incbin "XigdarLawson_frames.dmp"
+#incbin "XigdarLawson_palette.dmp"
+#incbin "XigdarLawson_minimug.dmp"
+
+XigdarMoneySaizo2Mug:
+#incbin "XigdarMoneySaizo2_mug.dmp"
+#incbin "XigdarMoneySaizo2_frames.dmp"
+#incbin "XigdarMoneySaizo2_palette.dmp"
+#incbin "XigdarMoneySaizo2_minimug.dmp"
+
+XigdarNorris2Mug:
+#incbin "XigdarNorris2_mug.dmp"
+#incbin "XigdarNorris2_frames.dmp"
+#incbin "XigdarNorris2_palette.dmp"
+#incbin "XigdarNorris2_minimug.dmp"
+
+XigdarSamson2Mug:
+#incbin "XigdarSamson2_mug.dmp"
+#incbin "XigdarSamson2_frames.dmp"
+#incbin "XigdarSamson2_palette.dmp"
+#incbin "XigdarSamson2_minimug.dmp"
+
+XigdarSelenaMug:
+#incbin "XigdarSelena_mug.dmp"
+#incbin "XigdarSelena_frames.dmp"
+#incbin "XigdarSelena_palette.dmp"
+#incbin "XigdarSelena_minimug.dmp"
+
+ZenithCain2Mug:
+#incbin "ZenithCain2_mug.dmp"
+#incbin "ZenithCain2_frames.dmp"
+#incbin "ZenithCain2_palette.dmp"
+#incbin "ZenithCain2_minimug.dmp"
+
