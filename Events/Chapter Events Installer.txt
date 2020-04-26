@@ -46,7 +46,7 @@ ORG 0x1000000
 #include "Roy3Events.event"
 }
 {
-#include "Roy4Events.event"
+#include "Roy4Eventsv2.event"
 }
 {
 #include "Roy5Events.event"
