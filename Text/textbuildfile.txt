@@ -5,4 +5,4 @@
 #include "unitmenu_text.txt"
 #include "skilldesc_text.txt"
 #include "ChapterTexts.txt"
-#include "../Engine Hacks/Skill System/Teq Skills/Xane Transform/Transform_Text.txt"
+#include "../Engine Hacks/SkillSystem/Skills/StandaloneSkills/Xane Transform/Transform_Text.txt"

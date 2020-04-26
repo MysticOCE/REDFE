@@ -15,4 +15,4 @@
 #define LunarBrace MoonBracelet
 #define SolarBrace SunBracelet
 
-#include "Engine Hacks/Skill System/skill_definitions.event"
+#include "Engine Hacks/SkillSystem/skill_definitions.event"

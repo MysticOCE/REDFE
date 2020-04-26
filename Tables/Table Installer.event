@@ -2,6 +2,8 @@
 
 #include "Table Definitions.txt"
 
+#include "AdvWeaponLocks\WeaponLockArray.event"
+
 #include "Animation\Custom Battle Animation Editor.event"
 
 #include "Animation\FE8 Battle Palette Reference.event"
@@ -19,6 +21,8 @@
 #include "Battle screen editor\battle screen editor4.event"
 
 #include "Battle screen editor\battle screen editor5.event"
+
+#include "Biorhythm\Biorhythm Editor.event"
 
 #include "Chapter data editor\Chapter Data Editor.event"
 
@@ -164,6 +168,8 @@
 
 #include "Character Forcer\Character Forcer FE8.event"
 
+#include "Class & Character editors\Class Level Cap Table.event"
+
 #include "Class & Character editors\FE8 Character Editor.event"
 
 #include "Class & Character editors\FE8 Class Editor.event"
@@ -181,6 +187,8 @@
 #include "Item editors\FE8 Item Usability Pointer Editor.event"
 
 #include "Item editors\FE8 Spell Association Editor.event"
+
+#include "Item editors\FE8 Staff AI Table.event"
 
 #include "Item editors\Ocean Seal Promotion Editor.event"
 
@@ -202,9 +210,15 @@
 
 #include "Random editors\Crit bonus editorFE8.event"
 
+#include "Random editors\Escape Quote Editor.event"
+
 #include "Random editors\FE8 Level Cap Editor.event"
 
 #include "Random editors\FE8 Promotion level editor.event"
+
+#include "Random editors\Modular EXP Class Table.event"
+
+#include "Random editors\Personal Data Editor.event"
 
 #include "Randomized Class&Inventory editors\FE8 Class Changer.event"
 
