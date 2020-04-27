@@ -1,1 +1,1 @@
- Gamble[X]
+Neutral[X]

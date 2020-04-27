@@ -1,2 +1,2 @@
-Nullify: Unit is protected[N]
-from all effective attacks.[X]
+Seal Speed: Debuff opponent's Spd[N]
+by 6 after combat. (Recover 1/turn)[X]

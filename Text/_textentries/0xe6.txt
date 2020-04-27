@@ -1,2 +1,2 @@
-Locktouch: Can open locks[N]
-without keys or picks.[X]
+Armsthrift: Luck % chance to not[N]
+consume weapon durability.[X]

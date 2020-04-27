@@ -1,2 +1,1 @@
-Move to opposite side of[NL]
-an adjacent ally.[X]
+This character's current age.[X]

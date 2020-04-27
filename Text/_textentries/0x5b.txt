@@ -1,2 +1,1 @@
-Canto+: Can move again after[N]
-attacking and other actions.[X]
+2x crit rate, 0.5x hit rate.[X]

@@ -1,8 +1,8 @@
-#define csvmacro147(arg000,arg001) "BYTE arg000 arg001 "
+#define csvmacro146(arg000,arg001) "BYTE arg000 arg001 "
 
 PUSH
 ORG 0x95f5a4
-csvmacro147(0x18,0x3f)
-csvmacro147(Salem,0x3e)
-csvmacro147(0x23,0x3b)
+csvmacro146(0x18,0x3f)
+csvmacro146(Salem,0x3e)
+csvmacro146(0x23,0x3b)
 POP

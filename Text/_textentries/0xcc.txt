@@ -1,2 +1,2 @@
-Critical Force: Base critical is[N]
-Skl * 1.5.[X]
+Lily's Poise: Adjacent allies gain[N]
++1/-3 damage dealt/received.[X]

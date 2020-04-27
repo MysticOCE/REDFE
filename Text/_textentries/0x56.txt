@@ -1,2 +1,1 @@
-Swap positions with adjacent[NL]
-ally.[X]
+ Lunge[X]

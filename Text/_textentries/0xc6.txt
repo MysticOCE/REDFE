@@ -1,2 +1,2 @@
-Wind Disciple: +10 Hit and[N]
-Avoid when HP is not at max.[X]
+Savage Blow: After attacking, enemies[N]
+within 2 tiles take 20% damage.[X]

@@ -1,2 +1,2 @@
-Expertise: Reduce bonus damage[N]
-from critical hits by 50%.[X]
+Rally Resistance: +4 Res[N]
+to allies within 2 tiles.[X]

@@ -1,2 +1,2 @@
-Spur Strength: Adjacent allies[N]
-deal +4 physical damage.[X]
+Countermagic: Reflect magic damage[N]
+when attacked at 1-2 range.[X]

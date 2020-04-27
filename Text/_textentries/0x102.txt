@@ -1,2 +1,2 @@
-Quick Draw: +4 Damage[N]
+Death Blow: +6 Attack[N]
 when initiating battle.[X]

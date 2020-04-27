@@ -1,2 +1,2 @@
-Dazzle: Opponents cannot[N]
-counterattack this unit.[X]
+Shadowgift: Allows the user to use[N]
+Dark Magic. (Uses highest Magic Rank)[X]

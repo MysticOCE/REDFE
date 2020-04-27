@@ -1,2 +1,2 @@
-Rally Strength: +4 Str[N]
-to allies within 2 tiles.[X]
+Dance: Refresh an ally unit[N]
+to let them act again.[X]

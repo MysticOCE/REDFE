@@ -1,2 +1,3 @@
-Moonbow: Enemy Def/Res is[N]
-reduced by 25%. Charge: 2[X]
+Ready Stance: +4 speed[N]
+and defense when foe[N]
+initiates battle.[X]

@@ -1,2 +1,2 @@
-Seal Attack: Debuff opponent's Str/Mag[N]
-by 6 after combat. (Recover 1/turn)[X]
+Fury: +2 Atk/Spd/Def/Res. Unit[N]
+takes 6 damage after combat.[X]

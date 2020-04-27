@@ -1,1 +1,2 @@
- Pivot[X]
+A list of things this[N]
+character does not enjoy.[X]

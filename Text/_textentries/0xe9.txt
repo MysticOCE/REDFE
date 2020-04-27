@@ -1,2 +1,2 @@
-Opportunist: +4 damage[N]
-if the foe cannot counter.[X]
+Smite: Allows unit to push[N]
+other units two tiles away.[X]

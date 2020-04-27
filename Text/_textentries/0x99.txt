@@ -1,2 +1,2 @@
-Impale: Deal 4x damage.[N]
-(Skill % activation)[X]
+Slayer: Deal effective damage[N]
+to monster units.[X]

@@ -1,2 +1,2 @@
-Rally Strength: +4 Str[N]
-to allies within 2 tiles.[X]
+Seal Magic: Debuff opponent's Mag[N]
+by 6 after combat. (Recover 1/turn)[X]

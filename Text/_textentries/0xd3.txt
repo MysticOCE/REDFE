@@ -1,2 +1,2 @@
-Nihil: Cancels the opponent's[N]
-skills in combat.[X]
+Seal Skill: Debuff opponent's Skl[N]
+by 6 after combat. (Recover 1/turn)[X]

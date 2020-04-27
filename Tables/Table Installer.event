@@ -188,8 +188,6 @@
 
 #include "Item editors\FE8 Spell Association Editor.event"
 
-#include "Item editors\FE8 Staff AI Table.event"
-
 #include "Item editors\Ocean Seal Promotion Editor.event"
 
 #include "Item editors\Promotion Item Editor.event"

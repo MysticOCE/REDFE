@@ -1,3 +1,2 @@
-Despoil: Obtain a Red Gem after[N]
-attacking and defeating an enemy.[N]
-(Luck % activation)[X]
+Axefaith: Axes can't lose durability, and[N]
+grants +Luck*1.5 Hit when wielding axes.[X]

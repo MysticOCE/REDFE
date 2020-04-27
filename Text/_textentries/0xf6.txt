@@ -1,2 +1,2 @@
-Fiery Blood: +4 damage[N]
-when HP is not at max.[X]
+Reposition: Allows unit to pull an[N]
+adjacent ally to its opposite side.[X]

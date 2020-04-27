@@ -1,2 +1,2 @@
-Elbow Room: +3 damage dealt[N]
-when on open terrain.[X]
+Swap: Allows unit to swap positions[N]
+with an adjacent ally.[X]

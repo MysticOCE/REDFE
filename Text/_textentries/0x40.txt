@@ -1,2 +1,2 @@
-Press Select to toggle[NL]
+Press Select to toggle[N]
 between stats and growths.[X]

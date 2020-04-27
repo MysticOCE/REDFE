@@ -1,2 +1,2 @@
-Life and Death: +10 to[N]
-damage dealt and taken.[X]
+Spur Magic: Adjacent allies[N]
+deal +4 magical damage.[X]

@@ -1,2 +1,2 @@
-Quick Draw: +4 Damage[N]
-when initiating battle.[X]
+Foreign Princess: Foreign army units[N]
+take -2/+2 damage dealt/taken.[X]

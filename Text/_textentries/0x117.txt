@@ -1,2 +1,2 @@
-Even Rhythm: +10 Hit and Avoid[N]
-on even numbered turns.[X]
+Fortress Defense:[N]
++5 Def, -3 Str/Mag[X]

@@ -1,2 +1,2 @@
-Death Blow: +6 Attack[N]
-when initiating battle.[X]
+Barricade: Damage taken is[N]
+halved after first being struck.[X]

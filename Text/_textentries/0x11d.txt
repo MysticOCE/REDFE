@@ -1,2 +1,2 @@
-Swap: Allows unit to swap positions[N]
-with an adjacent ally.[X]
+Forager: Recover 20% HP each turn[N]
+if on a Plain, Forest or Mountain.[X]

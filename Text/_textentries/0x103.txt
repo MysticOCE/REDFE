@@ -1,2 +1,2 @@
-Wind Disciple: +10 Hit and[N]
-Avoid when HP is not at max.[X]
+Life and Death: Grants[N]
++5 Atk/Mag/Spd, -5 Def/Res.[X]

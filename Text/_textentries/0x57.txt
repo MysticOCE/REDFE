@@ -1,2 +1,2 @@
-Savior: Can rescue[N]
-without penalties.[X]
+Switch places with opponent[N]
+after combat.[X]

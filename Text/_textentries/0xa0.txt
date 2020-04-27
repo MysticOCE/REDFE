@@ -1,2 +1,2 @@
-Rally Defense: +4 Def to[N]
-allies within 2 tiles.[X]
+Demoiselle: Male allies within[N]
+2 tiles receive -2 damage.[X]

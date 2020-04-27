@@ -1,2 +1,1 @@
-Switch places with opponent[NL]
-after combat.[X]
+donorbox.org/donate-to-circles[X]

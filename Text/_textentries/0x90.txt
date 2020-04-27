@@ -1,2 +1,2 @@
-Amaterasu: Allies within 2 tiles[N]
-recover 20% HP each turn.[X]
+Counter: Reflect physical damage[N]
+when attacked at 1-2 range.[X]

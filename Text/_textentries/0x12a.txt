@@ -1,2 +1,2 @@
-Catch 'Em All: Grants[N]
-the user every skill.[X]
+Point Blank: Minimum range of[N]
+equipped bows is set to 1.[X]

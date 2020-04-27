@@ -8,14 +8,14 @@ Buff nearby allies.[X]
  Lunge[X]
 
 ## UM_LungeDesc
-Switch places with opponent[NL]
+Switch places with opponent[N]
 after combat.[X]
 
 ## UM_Mercy
  Mercy[X]
 
 ## UM_MercyDesc
-Leave opponent with[NL]
+Leave opponent with[N]
 at least 1 HP.[X]
 
 ## UM_Gamble
@@ -34,33 +34,46 @@ Use the power of dragons.[X]
  Shove[X]
 
 ## UM_ShoveDesc
-Push an adjacent unit one[NL]
+Push an adjacent unit one[N]
 tile away.[X]
 
 ## UM_Smite
  Smite[X]
 
 ## UM_SmiteDesc
-Push an adjacent unit two[NL]
+Push an adjacent unit two[N]
 tiles away.[X]
 
 ## UM_Pivot
  Pivot[X]
 
 ## UM_PivotDesc
-Move to opposite side of[NL]
+Move to opposite side of[N]
 an adjacent ally.[X]
 
 ## UM_Reposition
  Reposition[X]
 
 ## UM_RepositionDesc
-Move adjacent ally to this[NL]
+Move adjacent ally to this[N]
 unit's opposite side.[X]
 
 ## UM_Swap
  Swap[X]
 
 ## UM_SwapDesc
-Swap positions with adjacent[NL]
+Swap positions with adjacent[N]
 ally.[X]
+
+## UM_Capture
+ Capture[X]
+
+## UM_CaptureDesc
+Strike a fatal blow with reduced[N]
+stats to capture an enemy.[X]
+
+## UM_EditSkill
+ Edit Skills[X]
+
+## UM_EditSkillDesc
+DEBUG: Edit this unit's skill set.[X]

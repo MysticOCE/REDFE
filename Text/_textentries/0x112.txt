@@ -1,2 +1,3 @@
-Rightful Arch: Sets Skill[N]
-activation rate to 100%.[X]
+Spectrum Stance: +2 attack,[N]
+speed, defense, and resistance[N]
+when foe initiates battle.[X]

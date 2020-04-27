@@ -1,2 +1,2 @@
-Rally Skill: +4 Skill[N]
-to allies within 2 tiles.[X]
+Dragon's Blood: Unit is able[N]
+to activate Dragon Veins.[X]

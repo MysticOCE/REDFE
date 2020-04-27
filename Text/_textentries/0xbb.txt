@@ -1,2 +1,2 @@
-Natural Cover: -3 damage taken[N]
-when on terrain with effects.[X]
+Staff Savant: Maximum range[N]
+of staves is increased by 1.[X]

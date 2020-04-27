@@ -1,2 +1,3 @@
-Miracle: Survive a lethal[N]
-attack if HP > 50%.[X]
+Aether: First strike absorbs HP,[N]
+second strike negates defenses.[N]
+(Skill/2 % activation)[X]

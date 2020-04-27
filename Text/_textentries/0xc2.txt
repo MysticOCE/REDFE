@@ -1,2 +1,2 @@
-Gamble: A reckless attack with[N]
-halved hit but doubled crit.[X]
+Opportunist: +4 damage[N]
+if the foe cannot counter.[X]

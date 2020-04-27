@@ -1,2 +1,2 @@
-Fury: +2 Atk/Spd/Def/Res. Unit[N]
-takes 6 damage after combat.[X]
+Liquid Ooze: Attackers trying to gain HP[N]
+from attacking this unit lose it instead.[X]

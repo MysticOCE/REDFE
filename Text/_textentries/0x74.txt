@@ -1,2 +1,2 @@
-Warding Blow: +20 Res[N]
-when initiating battle.[X]
+Mercy: Enemies are left[N]
+with at least 1 HP.[X]

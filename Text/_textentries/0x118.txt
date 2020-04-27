@@ -1,2 +1,2 @@
-Quick Burn: +15 Hit and Avoid.[N]
-This bonus decreases each turn.[X]
+Fortress Resistance:[N]
++5 Res, -3 Str/Mag[X]

@@ -1,2 +1,2 @@
-Anathema: -10 Avoid/Dodge to all[N]
-enemies within 3 tiles.[X]
+Quick Burn: +15 Hit and Avoid.[N]
+This bonus decreases each turn.[X]

@@ -1,2 +1,2 @@
-Light Weight: When holding three[N]
-or less items, attack speed +3.[X]
+Solidarity: Critical and Critical[N]
+Avoid +10 to adjacent allies.[X]

@@ -1,2 +1,2 @@
-Spur Speed: Adjacent allies[N]
-gain +4 Attack Speed.[X]
+Swordfaire: +4 damage[N]
+when equipping a sword.[X]

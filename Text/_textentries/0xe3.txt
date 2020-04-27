@@ -1,2 +1,2 @@
-Live to Serve: When healing[N]
-an ally, also heals self.[X]
+Critical Force: Base critical is[N]
+Skl * 1.5.[X]

@@ -1,2 +1,2 @@
-Bow Range +1: Maximum range[N]
-of equipped bows is increased.[X]
+Light Weight: When holding three[N]
+or less items, attack speed +3.[X]
