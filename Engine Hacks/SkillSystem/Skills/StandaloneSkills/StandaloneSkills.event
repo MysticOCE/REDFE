@@ -145,3 +145,5 @@ WORD TriangleAttackID
 #include "Paragon/ParagonMisc.lyn.event"
 ParagonIDLink:
 BYTE ParagonID
+
+#include "Xane Transform/Transform EA.txt"

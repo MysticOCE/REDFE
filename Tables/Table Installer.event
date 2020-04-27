@@ -284,6 +284,8 @@
 
 #include "Shop Editor\Map - Taizel Shop.event"
 
+#include "Skills\FE8 Character Level Up Skill Editor.event"
+
 #include "Skills\FE8 Class Skill Editor.event"
 
 #include "Skills\FE8 Level Up Skill Editor.event"
