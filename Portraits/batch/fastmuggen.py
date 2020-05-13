@@ -1,3 +1,5 @@
+#Built with python 3.8. I can only confirm it works on that.
+
 #setting up files
 mugs = open("png.txt","r")
 installer = open("Mug Installer.event","w")
