@@ -1,0 +1,145 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0x41,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+CharacterEvent(0x7, JoshuaCarlyleReunite, Joshua, Carlyle)
+END_MAIN
+
+LocationBasedEvents:
+Door(8,10)
+Door(19,3)
+Chest(MasterProof,18,1)
+Chest(AngelicRobe, 19,1)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+JoshuaCarlyleReunite:
+MUSI
+TEXTSTART
+TEXTSHOW CarlyleJoshuaReuniteText
+TEXTEND
+REMA
+MUNO
+SVAL 0x3 WindSword
+GIVEITEMTO Joshua
+ENDA
+
+Units:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [9,3] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [10,4] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [8,4] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [6,2] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [10,2] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [11,3] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [12,2] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [9,5] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+
+UNIT Alan Cavalier 0x0 Level(4, Ally, 0) [7,3] 0x00 0x00 0x0 0x00 [SteelSword, IronLance, Vulnerary] NoAI
+UNIT Dorcas Fighter 0x0 Level(4, Ally, 0) [7,5] 0x00 0x00 0x0 0x00 [SteelAxe,HandAxe,Vulnerary] NoAI
+UNIT Anna PegasusKnight 0x0 Level(3, Ally, 0) [5,3] 0x00 0x00 0x0 0x00 [IronLance, GoddessIcon] NoAI
+
+UNIT Roy RoyLord 0 Level(1,Ally,0) [6,4] 0 0 0 0 [0x0] NoAI
+UNIT
+
+CarlyleNPC:
+UNIT Carlyle Swordmaster 0 Level(5,NPC,0) [2,5] 0 0 0 0 [SilverSword,LightBrand] GuardTileAI
+UNIT
+
+StaticEnemies:
+UNIT Valter_Ch15_ WyvernKnight 0 Level(8,Enemy,0) [12,20] 0 0 0 0 [SilverLance, Spear] [0x03,0x03,0x0,0x20]
+UNIT 0x80 Knight 0 Level(15,Enemy,1) [5,10] 0 0 0 0 [ShortSpear] AttackInRangeAI
+UNIT 0x80 Knight 0 Level(15,Enemy,1) [3,10] 0 0 0 0 [SteelLance] AttackInRangeAI
+UNIT 0x80 Archer 0 Level(15,Enemy,1) [5,12] 0 0 0 0 [SteelBow] AttackInRangeAI
+UNIT 0x80 Shaman 0 Level(15,Enemy,1) [3,12] 0 0 0 0 [Flux] AttackInRangeAI
+UNIT 0x80 Fighter 0 Level(15,Enemy,1) [15,15] 0 0 0 0 [IronAxe] AttackInRangeAI
+UNIT 0x80 GreatKnight 0 Level(4,Enemy,1) [4,20] 0 0 0 0 [SteelAxe, SteelLance] AttackInRangeAI
+UNIT 0x80 Paladin 0 Level(1,Enemy,1) [5,20] 0 0 0 0 [SteelSword, SteelLance] AttackInRangeAI
+UNIT 0x80 MageKnight 0 Level(1,Enemy,1) [3,20] 0 0 0 0 [Elfire] AttackInRangeAI
+UNIT 0x80 Berserker 0 Level(1,Enemy,1) [10,18] 0 0 0 0 [SteelAxe] AttackInRangeAI
+UNIT 0x80 Druid 0 Level(1,Enemy,1) [16,13] 0 0 0 0 [Flux, Physic] HealUnits
+UNIT 0x80 Sage 0 Level(1,Enemy,1) [14,18] 0 0 0 0 [Elfire] AttackInRangeAI 
+UNIT
+
+MobileStartingEnemies:
+UNIT 0x80 WyvernRider 0 Level(15,Enemy,1) [11,20] 0 0 0 0 [SilverLance] DefaultAI
+UNIT 0x80 WyvernRider 0 Level(15,Enemy,1) [13,20] 0 0 0 0 [SilverLance] DefaultAI
+UNIT 0x80 WyvernRider 0 Level(15,Enemy,1) [12,19] 0 0 0 0 [SilverLance] DefaultAI
+UNIT 0x80 Warrior 0 Level(1,Enemy,1) [19,11] 0 0 0 0 [SteelAxe, SteelBow] DefaultAI
+UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [18,12] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [20,10] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x80 Mage 0 Level(15,Enemy,1) [20,11] 0 0 0 0 [Elfire] DefaultAI
+UNIT 0x80 Thief 0 Level(12,Enemy,1) [16,11] 0 0 0 0 [SteelSword, Lockpick] DefaultAI
+UNIT 0x80 Ranger 0 Level(1,Enemy,1) [21,18] 0 0 0 0 [SteelSword, SteelBow] DefaultAI
+UNIT 0x80 Ranger 0 Level(1,Enemy,1) [21,19] 0 0 0 0 [SteelSword, SteelBow] DefaultAI
+UNIT 0x80 Hero 0 Level(1,Enemy,1) [10,12] 0 0 0 0 [SteelSword, IronAxe] DefaultAI
+UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [11,13] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [12,14] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x80 Sniper 0 Level(1,Enemy,1) [10,13] 0 0 0 0 [SteelBow] DefaultAI
+UNIT 0x80 Soldier 0 Level(15,Enemy,1) [19,6] 0 0 0 0 [SteelLance] DefaultAI
+UNIT
+
+Mobile2:
+UNIT 0x80 Soldier 0 Level(15,Enemy,1) [12,10] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x80 Soldier 0 Level(15,Enemy,1) [13,10] 0 0 0 0 [SteelLance] DefaultAI
+UNIT
+
+BeginningScene:
+
+LOAD2 0x1 Units
+ENUN
+LOAD1 0x1 StaticEnemies
+ENUN
+LOAD1 0x1 MobileStartingEnemies
+ENUN
+LOAD1 0x1 Mobile2
+ENUN
+LOAD1 0x1 CarlyleNPC
+ENUN
+GotoPrepScreen
+ENDA
+
+EndingScene:
+SetBackground(Black)
+TEXTSTART
+TEXTSHOW V2EndText
+TEXTEND
+//MoveToChapter(Ch15Eirika)
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET

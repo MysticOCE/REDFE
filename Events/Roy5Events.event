@@ -18,6 +18,9 @@ POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0, T3Reinforcements, 3)
+TurnEventPlayer(0, T5Reinforcements, 5)
+TurnEventPlayer(0, T7Reinforcements, 7)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
@@ -87,47 +90,67 @@ UNIT 0x80 Knight 0 Level(15,Enemy,1) [5,10] 0 0 0 0 [ShortSpear] AttackInRangeAI
 UNIT 0x80 Knight 0 Level(15,Enemy,1) [3,10] 0 0 0 0 [SteelLance] AttackInRangeAI
 UNIT 0x80 Archer 0 Level(15,Enemy,1) [5,12] 0 0 0 0 [SteelBow] AttackInRangeAI
 UNIT 0x80 Shaman 0 Level(15,Enemy,1) [3,12] 0 0 0 0 [Flux] AttackInRangeAI
-UNIT 0x80 Fighter 0 Level(15,Enemy,1) [15,15] 0 0 0 0 [IronAxe] AttackInRangeAI
-UNIT 0x80 GreatKnight 0 Level(4,Enemy,1) [4,20] 0 0 0 0 [SteelAxe, SteelLance] AttackInRangeAI
-UNIT 0x80 Paladin 0 Level(1,Enemy,1) [5,20] 0 0 0 0 [SteelSword, SteelLance] AttackInRangeAI
-UNIT 0x80 MageKnight 0 Level(1,Enemy,1) [3,20] 0 0 0 0 [Elfire] AttackInRangeAI
-UNIT 0x80 Berserker 0 Level(1,Enemy,1) [10,18] 0 0 0 0 [SteelAxe] AttackInRangeAI
-UNIT 0x80 Druid 0 Level(1,Enemy,1) [16,13] 0 0 0 0 [Flux, Physic] HealUnits
-UNIT 0x80 Sage 0 Level(1,Enemy,1) [14,18] 0 0 0 0 [Elfire] AttackInRangeAI
+UNIT 0x80 Warrior 0 Level(1,Enemy,1) [19,11] 0 0 0 0 [SteelAxe, SteelBow] AttackInRangeAI
+UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [18,12] 0 0 0 0 [SteelSword] AttackInRangeAI
+UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [20,10] 0 0 0 0 [SteelSword] AttackInRangeAI
+UNIT 0x80 Hero 0 Level(1,Enemy,1) [10,16] 0 0 0 0 [SteelSword] AttackInRangeAI
+UNIT 0x80 Hero 0 Level(1,Enemy,1) [12,16] 0 0 0 0 [SteelSword] AttackInRangeAI
+UNIT 0x80 Cleric 0 Level(15,Enemy,1) [20,12] DropItem 0 0 0 [Physic] HealUnits
+UNIT 0x80 WyvernRider 0 Level(15,Enemy,1) [11,19] 0 0 0 0 [SteelLance] AttackInRangeAI
+UNIT 0x80 WyvernRider 0 Level(15,Enemy,1) [10,20] 0 0 0 0 [SteelLance] AttackInRangeAI
 UNIT
 
 MobileStartingEnemies:
-UNIT 0x80 WyvernRider 0 Level(15,Enemy,1) [11,20] 0 0 0 0 [SilverLance] DefaultAI
-UNIT 0x80 WyvernRider 0 Level(15,Enemy,1) [13,20] 0 0 0 0 [SilverLance] DefaultAI
-UNIT 0x80 WyvernRider 0 Level(15,Enemy,1) [12,19] 0 0 0 0 [SilverLance] DefaultAI
-UNIT 0x80 Warrior 0 Level(1,Enemy,1) [19,11] 0 0 0 0 [SteelAxe, SteelBow] DefaultAI
-UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [18,12] 0 0 0 0 [SteelSword] DefaultAI
-UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [20,10] 0 0 0 0 [SteelSword] DefaultAI
-UNIT 0x80 Mage 0 Level(15,Enemy,1) [20,11] 0 0 0 0 [Elfire] DefaultAI
-UNIT 0x80 Thief 0 Level(12,Enemy,1) [16,11] 0 0 0 0 [SteelSword, Lockpick] DefaultAI
-UNIT 0x80 Ranger 0 Level(1,Enemy,1) [21,18] 0 0 0 0 [SteelSword, SteelBow] DefaultAI
-UNIT 0x80 Ranger 0 Level(1,Enemy,1) [21,19] 0 0 0 0 [SteelSword, SteelBow] DefaultAI
-UNIT 0x80 Hero 0 Level(1,Enemy,1) [10,12] 0 0 0 0 [SteelSword, IronAxe] DefaultAI
-UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [11,13] 0 0 0 0 [SteelSword] DefaultAI
-UNIT 0x80 Mercenary 0 Level(15,Enemy,1) [12,14] 0 0 0 0 [SteelSword] DefaultAI
-UNIT 0x80 Sniper 0 Level(1,Enemy,1) [10,13] 0 0 0 0 [SteelBow] DefaultAI
-UNIT 0x80 Soldier 0 Level(15,Enemy,1) [19,6] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x80 Thief 0 Level(12,Enemy,1) [15,12] 0 0 0 0 [SteelSword, Lockpick] LootingThiefAI
+UNIT 0x80 Fighter 0 Level(12,Enemy,1) [16,11] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0x80 LanceCavalier 0 Level(12,Enemy,1) [3,19] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x80 LanceCavalier 0 Level(12,Enemy,1) [5,19] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x80 GreatKnight 0 Level(1,Enemy,1) [4,20] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0x80 Knight 0 Level(12,Enemy,1) [2,20] 0 0 0 0 [ShortSpear] DefaultAI
+UNIT 0x80 Knight 0 Level(12,Enemy,1) [6,20] 0 0 0 0 [ShortSpear] DefaultAI
+UNIT 0x80 AxeCavalier 0 Level(12,Enemy,1) [21,18] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0x80 AxeCavalier 0 Level(12,Enemy,1) [21,19] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0x80 Mercenary 0 Level(12,Enemy,1) [12,13] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x80 Mercenary 0 Level(12,Enemy,1) [11,12] 0 0 0 0 [SteelSword] DefaultAI
 UNIT
 
-Mobile2:
-UNIT 0x80 Soldier 0 Level(15,Enemy,1) [12,10] 0 0 0 0 [SteelLance] DefaultAI
-UNIT 0x80 Soldier 0 Level(15,Enemy,1) [13,10] 0 0 0 0 [SteelLance] DefaultAI
+
+T3Reinforcements:
+ReinforcementEvent(T3ReinforcementsUnits)
+ENDA
+
+T5Reinforcements:
+ReinforcementEvent(T5ReinforcementsUnits)
+ENDA
+
+T7Reinforcements:
+ReinforcementEvent(T7ReinforcementsUnits)
+ENDA
+
+T3ReinforcementsUnits:
+UNIT 0x80 Paladin 0 Level(1, Enemy, 1) [4,20] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x80 LanceCavalier 0 Level(12, Enemy,1) [3,20] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x80 LanceCavalier 0 Level(12, Enemy,1) [5,20] 0 0 0 0 [SteelLance] DefaultAI
+UNIT
+
+T5ReinforcementsUnits:
+UNIT 0x80 LanceCavalier 0 Level(12,Enemy,1) [7,20] 0 0 0 0 [SteelLance] DefaultAI
+UNIT 0x80 AxeCavalier 0 Level(12, Enemy,1) [8,20] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0x80 WyvernRider 0 Level(12,Enemy,1) [20,20] 0 0 0 0 [Javelin] DefaultAI
+UNIT 0x80 WyvernRider 0 Level(12,Enemy,1) [21,19] 0 0 0 0 [Javelin] DefaultAI
+UNIT
+
+T7ReinforcementsUnits:
+UNIT 0x80 Paladin 0 Level(1,Enemy,1) [21,18] 0 0 0 0 [SteelSword] DefaultAI
+UNIT 0x80 Paladin 0 Level(1,Enemy,1) [21,19] 0 0 0 0 [ShortSpear] DefaultAI
 UNIT
 
 BeginningScene:
-
 LOAD2 0x1 Units
 ENUN
 LOAD1 0x1 StaticEnemies
 ENUN
 LOAD1 0x1 MobileStartingEnemies
-ENUN
-LOAD1 0x1 Mobile2
 ENUN
 LOAD1 0x1 CarlyleNPC
 ENUN

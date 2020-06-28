@@ -349,6 +349,8 @@
 #define V2EndText 0x993
 #define ValterBossText 0x994
 #define ValterAlanBossText 0x995
+#define R5ObjectiveText 0x996
+#define R5GoalWindowText 0x997
 #define ElbertRoyChat1DorcasAlive 0xBFF
 #define RoyAlanAfterGettingHome1 0xC01
 #define LordReturnTextBox 0xc02

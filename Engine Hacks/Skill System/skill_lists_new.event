@@ -14,8 +14,7 @@ BYTE 00 00
 ALIGN 4
 
 EphraimGreatLordSkillList:
-BYTE 255 BondID
-BYTE 255 AetherID //255 means "automatically given to prepromotes"
+BYTE 255 BondID //255 means "automatically given to prepromotes"
 // BYTE 255 SmiteID
 BYTE 5 RallySpectrumID
 BYTE 15 AxebreakerID
@@ -33,19 +32,24 @@ ALIGN 4
 CavalierSkillList:
 BYTE 1 PivotID
 BYTE 00 00
+ALIGN 4
+
 
 LanceCavalierSkillList:
 BYTE 1 RepositionID
 BYTE 00 00
+ALIGN 4
+
 
 AxeCavalierSkillList:
 BYTE 1 SwapID
 BYTE 00 00
+ALIGN 4
+
 
 PaladinSkillList:
 BYTE 255 DisciplineID //learned if spawning
-BYTE 255 ElbowRoomID
-BYTE 1 DisciplineID
+BYTE 5 SaviorID
 BYTE 00 00
 ALIGN 4
 
@@ -57,7 +61,7 @@ ALIGN 4
 
 GeneralSkillList:
 BYTE 255 ProvokeID
-BYTE 1 WaryFighterID
+BYTE 5 WaryFighterID
 BYTE 00 00
 ALIGN 4
 
@@ -67,13 +71,13 @@ BYTE 00 00
 ALIGN 4
 
 MercenarySkillList:
-BYTE 1 SlowBurnID
+BYTE 1 ShoveID
 BYTE 00 00
 ALIGN 4
 
 HeroSkillList:
-BYTE 255 SlowBurnID
-BYTE 1 StrongRiposteID
+BYTE 255 ShoveID
+BYTE 5 StrongRiposteID
 BYTE 00 00
 ALIGN 4
 
@@ -84,13 +88,13 @@ ALIGN 4
 
 SwordmasterSkillList:
 BYTE 255 DesperationID
-BYTE 1 SwordfaireID
+BYTE 5 SwordfaireID
 BYTE 00 00
 ALIGN 4
 
 AssassinSkillList:
 BYTE 255 DespoilID
-BYTE 1 LifetakerID
+BYTE 5 LifetakerID
 BYTE 00 00
 ALIGN 4
 
@@ -101,13 +105,13 @@ ALIGN 4
 
 SniperSkillList:
 BYTE 255 CertainBlowID
-BYTE 1 BowfaireID
+BYTE 5 BowfaireID
 BYTE 00 00
 ALIGN 4
 
 RangerSkillList:
 BYTE 255 CertainBlowID
-BYTE 1 CantoPlusID
+BYTE 5 CantoPlusID
 BYTE 00 00
 ALIGN 4
 
@@ -118,13 +122,13 @@ ALIGN 4
 
 WyvernLordSkillList:
 BYTE 255 ReliefID
-BYTE 1 SavageBlowID
+BYTE 5 SavageBlowID
 BYTE 00 00
 ALIGN 4
 
 WyvernKnightSkillList:
 BYTE 255 ReliefID
-BYTE 1 RallyMovID
+BYTE 5 NullifyID
 BYTE 00 00
 ALIGN 4
 
@@ -135,19 +139,19 @@ ALIGN 4
 
 SageSkillList:
 BYTE 255 RenewalID
-BYTE 1 TomefaireID
+BYTE 5 TomefaireID
 BYTE 00 00
 ALIGN 4
 
 MageKnightSkillList:
 BYTE 255 RenewalID
-BYTE 1 QuickBurnID
+BYTE 5 SaviorID
 BYTE 00 00
 ALIGN 4
 
 BishopSkillList:
 BYTE 255 LiveToServeID
-BYTE 1 CounterMagicID
+BYTE 5 CounterMagicID
 BYTE 00 00
 ALIGN 4
 
@@ -158,25 +162,25 @@ ALIGN 4
 
 DruidSkillList:
 BYTE 255 MaleficAuraID
-BYTE 1 FrenzyID
+BYTE 5 FrenzyID
 BYTE 00 00
 ALIGN 4
 
 SummonerSkillList:
 BYTE 255 MaleficAuraID
-BYTE 1 AnathemaID
+BYTE 5 AnathemaID
 BYTE 00 00
 ALIGN 4
 
 RogueSkillList:
 BYTE 255 DespoilID
-BYTE 1 CelerityID
+BYTE 5 CelerityID
 BYTE 00 00
 ALIGN 4
 
 GreatKnightSkillList:
 BYTE 255 SwapID
-BYTE 1 ArmoredBlowID
+BYTE 5 ExpertiseID
 BYTE 00 00
 ALIGN 4
 
@@ -194,7 +198,7 @@ ALIGN 4
 
 WarriorSkillList:
 BYTE 255 FieryBloodID
-BYTE 1 ElbowRoomID
+BYTE 5 ElbowRoomID
 BYTE 00 00
 ALIGN 4
 
@@ -210,7 +214,7 @@ ALIGN 4
 
 BerserkerSkillList:
 BYTE 255 FieryBloodID
-BYTE 1 AxefaireID
+BYTE 5 AxefaireID
 BYTE 00 00
 ALIGN 4
 
@@ -231,7 +235,7 @@ ALIGN 4
 
 FalcoknightSkillList:
 BYTE 255 DartingBlowID
-BYTE 1 SaviorID
+BYTE 5 SaviorID
 BYTE 00 00
 ALIGN 4
 
@@ -247,7 +251,7 @@ ALIGN 4
 
 ValkyrieSkillList:
 BYTE 255 DemoiselleID
-BYTE 1 CharmID
+BYTE 5 CharmID
 BYTE 00 00
 ALIGN 4
 
