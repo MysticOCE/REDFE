@@ -13,3 +13,19 @@ PUSH
 ORG 0x5926F4+(0x80*7)
 #incext Png2Dmp "PureSword2.png"
 POP
+
+ALIGN 4
+DesertObjects:
+#incext Png2Dmp "GammaDesert/DesertObjects.png" --lz77
+
+ALIGN 4
+DesertPalette:
+#incbin "GammaDesert/DesertPalette.pal.bin"
+
+ALIGN 4 
+DesertTiles:
+#incext compress "GammaDesert/DesertTiles.mapchip_config"
+
+EventPointerTable(0x42, DesertObjects)
+EventPointerTable(0x43, DesertPalette)
+EventPointerTable(0x44, DesertTiles)

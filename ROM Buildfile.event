@@ -27,6 +27,7 @@
 	#include "Animations/Master Animation Installer.txt"
 	//Music
 	#include "Music/Music/Music Installer.event"
+	MESSAGE At Offset currentOffset
 	//More Graphics
 	#include "MiscGraphic/Extra Graphics Installer.txt"
     MESSAGE Used free space ends at currentOffset
