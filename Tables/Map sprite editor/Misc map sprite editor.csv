@@ -1,8 +1,8 @@
 0x9a2e00,Animation pointer,Another pointer
 Ephraim Lord,0x81c33cc,0x81c3d7c
 Eirika Lord,MapRoyLordMove|IsPointer,0x81c46cc
-Ephraim Master Lord,0x81c4824,0x81c52b4
-Eirika Master Lord,MapKnightLordMove|IsPointer,0x81c5e84
+Ephraim Master Lord,MapKnightLordMove|IsPointer,0x81c52b4
+Eirika Master Lord,MapRoyLordMove|IsPointer,0x81c5e84
 Socialknight,MapSwordCavMove|IsPointer,0x81c692c
 Socialknight (F),0x81c5fe4,0x81c692c
 Paladin,0x81c6a84,0x81c7428

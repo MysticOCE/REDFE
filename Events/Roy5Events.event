@@ -26,6 +26,7 @@ ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
 CharacterBasedEvents:
 CharacterEvent(0x7, JoshuaCarlyleReunite, Joshua, Carlyle)
+CharacterEvent(0x0, Skippo, Roy, Alan)
 END_MAIN
 
 LocationBasedEvents:
@@ -50,6 +51,10 @@ TrapData:
 ENDTRAP
 
 ALIGN 4
+
+Skippo:
+CALL EndingScene
+ENDA
 
 JoshuaCarlyleReunite:
 MUSI
@@ -159,10 +164,11 @@ ENDA
 
 EndingScene:
 SetBackground(Black)
-TEXTSTART
+/*TEXTSTART
 TEXTSHOW V2EndText
-TEXTEND
-//MoveToChapter(Ch15Eirika)
-ENDA
+TEXTEND*/
+PROM Roy 0x4 IronSword
+MoveToChapter(Ch15Eirika)
+ENDB
 
 MESSAGE Events end at offset CURRENTOFFSET

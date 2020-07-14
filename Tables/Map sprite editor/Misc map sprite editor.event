@@ -4,8 +4,8 @@ PUSH
 ORG 0x9a2e00
 csvmacro093(0x81c33cc,0x81c3d7c)
 csvmacro093(MapRoyLordMove|IsPointer,0x81c46cc)
-csvmacro093(0x81c4824,0x81c52b4)
-csvmacro093(MapKnightLordMove|IsPointer,0x81c5e84)
+csvmacro093(MapKnightLordMove|IsPointer,0x81c52b4)
+csvmacro093(MapRoyLordMove|IsPointer,0x81c5e84)
 csvmacro093(MapSwordCavMove|IsPointer,0x81c692c)
 csvmacro093(0x81c5fe4,0x81c692c)
 csvmacro093(0x81c6a84,0x81c7428)

@@ -44,3 +44,6 @@
 {
 #include "R5/R5v4.event"
 }
+{
+#include "R6/R6.event"
+}
