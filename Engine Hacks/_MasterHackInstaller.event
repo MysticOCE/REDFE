@@ -12,6 +12,7 @@ PUSH
   //Include essential fixes and autopatches
   #include "_FE8EssentialFixes.event"
   
+  #include "ASM/FillAIDangerMap.event"
   // Debug Startup Screen
   #ifdef __DEBUG__
     ORG 0x000AD8   // this is somewhere in the startup routine
