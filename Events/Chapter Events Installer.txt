@@ -51,6 +51,9 @@ ORG 0x1000000
 {
 #include "Roy5Events.event"
 }
+{
+#include "Roy6Events.event"
+}
 POP //end of pushing events aside
 
 POP //end of events section
