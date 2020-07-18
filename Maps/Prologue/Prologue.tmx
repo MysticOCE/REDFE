@@ -4,6 +4,16 @@
   <image source="../../../../../Tools/FEMapCreator/Tilesets/FE8 - Castle - 1800481a.png" width="512" height="512"/>
  </tileset>
  <layer id="1" name="Tile Layer 1" width="15" height="10">
+  <properties>
+   <property name="Anims1" value="0x1c"/>
+   <property name="Anims2" value="0x0"/>
+   <property name="ChapterID" value="0x0"/>
+   <property name="Main" value=""/>
+   <property name="MapID" value="0x4"/>
+   <property name="ObjectType" value="0x18"/>
+   <property name="PaletteID" value="0x48"/>
+   <property name="TileConfig" value="0x1a"/>
+  </properties>
   <data>
    <tile gid="99"/>
    <tile gid="36"/>
@@ -115,7 +125,7 @@
    <tile gid="453"/>
    <tile gid="454"/>
    <tile gid="491"/>
-   <tile gid="99"/>
+   <tile gid="35"/>
    <tile gid="553"/>
    <tile gid="428"/>
    <tile gid="428"/>
@@ -126,20 +136,20 @@
    <tile gid="427"/>
    <tile gid="427"/>
    <tile gid="99"/>
-   <tile gid="99"/>
+   <tile gid="4"/>
    <tile gid="205"/>
    <tile gid="206"/>
+   <tile gid="4"/>
    <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="132"/>
-   <tile gid="132"/>
-   <tile gid="101"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="99"/>
-   <tile gid="101"/>
-   <tile gid="101"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
+   <tile gid="4"/>
    <tile gid="99"/>
    <tile gid="203"/>
    <tile gid="201"/>

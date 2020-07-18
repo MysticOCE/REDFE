@@ -1,0 +1,87 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0x07,ThisChapter)
+
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0, ONeillAggro, 3)
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Roy RoyLord 0 Level(1,Ally,0) [14,4] 0 0 0 0 [Rapier, Vulnerary] NoAI
+UNIT Alan Cavalier 0 Level(4,Ally,0) [14,3] 0 0 0 0 [SteelSword, Vulnerary] NoAI 
+UNIT
+
+Enemies:
+UNIT 0x80 Fighter 0 Level(1,Enemy,0) [7,3] 0 0 0 0 [IronAxe] DefaultAI
+UNIT 0x80 Fighter 0 Level(1,Enemy,0) [5,4] 0 0 0 0 [IronAxe] DefaultAI
+UNIT 0x80 Knight 0 Level(1,Enemy,0) [3,6] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x68 Fighter 0 Level(4,Enemy,0) [2,9] 0 0 0 0 [IronAxe] AttackInRangeAI
+UNIT
+
+ONeillAggro:
+SVAL 0x1 0x00000000
+CHAI 0x68
+ENDA
+
+BeginningScene:
+LOAD1 0x1 Units
+ENUN
+LOAD2 0x1 Enemies
+ENUN
+ENDA
+
+EndingScene:
+ENUT 0xE0
+ENUT 0xE1
+ENUT 0xB7
+ENUT 0xB4
+ENUT 0xB5
+ENUT 0xDC
+ENUT 0xB9
+ENUT 0xC2
+ENUT 0xC3
+ENUT 0xE7
+ENUT 0xC9
+MoveToChapter(0x1)
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET

@@ -5,10 +5,12 @@
 ALIGN 4
 PUSH
 //ORG 0xC00000
+ORG 0x1000000
+
 MESSAGE We have jumped to CURRENTOFFSET
 {
 
-#include "PrologueEvents.txt"
+#include "PrologueEvents.event"
 
 }
 {
@@ -41,8 +43,6 @@ MESSAGE We have jumped to CURRENTOFFSET
 #include "Roy2Events.event"
 }
 ALIGN 4
-PUSH //pushing events elsewhere
-ORG 0x1000000
 {
 #include "Roy3Events.event"
 }
@@ -55,7 +55,6 @@ ORG 0x1000000
 {
 #include "Roy6Events.event"
 }
-POP //end of pushing events aside
 
 POP //end of events section
 
