@@ -1,5 +1,6 @@
 #ifdef _FE8_
     #include "EAstdlib.event"
+	#include "EA Standard Library/Backward Compatibility.txt"
     #include "Custom Definitions.event"
 
     ORG FreeSpace

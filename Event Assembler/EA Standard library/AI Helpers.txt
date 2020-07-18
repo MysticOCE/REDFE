@@ -42,13 +42,21 @@
 #define NoAI1						0x06
 #define DoNotAttackNino				0x07 //default Nino
 #define DoNotAttack_firstTarget		0x07
+#ifndef _FE7J_
 #define defineFirstTarget(characterID) "PUSH; ORG 0xB979E8; WORD characterID; POP"
+#endif
 #define DoNotAttack_secondTarget	0x08
+#ifndef _FE7J_
 #define defineSecondTarget(characterID) "PUSH; ORG 0xB97A58; WORD characterID; POP"
+#endif
 #define DoNotAttack_thirdTarget		0x09
+#ifndef _FE7J_
 #define defineThirdTarget(characterID) "PUSH; ORG 0xB970F6; WORD characterID; POP"
+#endif
 #define OnlyAttackOneCharacter 		0x0A
+#ifndef _FE7J_
 #define defineOnlyAttackOneCharacterTarget(characterID) "PUSH; ORG 0xB97AC0; WORD characterID; POP"
+#endif
 //0xB is an empty AI slot
 #define AttackIfClose				0x0C
 #define MoveWithLeader				0x0D
@@ -195,7 +203,7 @@
 //#define DelayedBrigandAI			[0x06,0x1F] //Commented out because not confirmed in FE8 yet.
 //#define AttackWallAI				[0x00,0x1B]
 #define MoveWithLeaderAI			[0x0D,0x03]
-
+#define NeverMoveAI         [0x03,0x03,0x04,0x20]
 #define DemonKingAI					[0x14,0x03]
 #endif
 
