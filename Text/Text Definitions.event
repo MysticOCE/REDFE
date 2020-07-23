@@ -351,6 +351,8 @@
 #define ValterAlanBossText 0x995
 #define R5ObjectiveText 0x996
 #define R5GoalWindowText 0x997
+#define R6GoalWindowText 0x998
+#define R6ObjectiveText 0x999
 #define ElbertRoyChat1DorcasAlive 0xBFF
 #define RoyAlanAfterGettingHome1 0xC01
 #define LordReturnTextBox 0xc02

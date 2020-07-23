@@ -18,11 +18,12 @@ POIN $0 $0 $0 $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0, SummonCallCheck, 3, 50)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
 CharacterBasedEvents:
-CharacterEvent(0x0, MogallSummon, Roy, Alan)
+//CharacterEvent(0x0, SummonCheck, Roy, Alan)
 END_MAIN
 
 LocationBasedEvents:
@@ -30,7 +31,10 @@ END_MAIN
 
 MiscBasedEvents:
 AREA 0x7 RightSkeletonTreasure [12,8] [12,8]
-AREA 0x8 LeftSkeletonTreasure [0,7] [0,7] 
+AREA 0x8 LeftSkeletonTreasure [0,7] [0,7]
+AFEV 0 BossKillCheck 0x9
+AFEV 0 BossKillCheck 0xA
+AFEV 0 BossKillCheck 0xB
 CauseGameOverIfLordDies
 END_MAIN
 
@@ -63,36 +67,18 @@ UNIT
 Bosses: 
 UNIT 0x87 Summoner 0x0 Level(2,Enemy,0) [2,15] 0x0 0x0 0x0 0x0 [Nosferatu] [0x3,0x3,0x0,0x20]
 UNIT 0x88 Summoner 0x0 Level(2,Enemy,0) [13,12] 0 0 0 0 [Nosferatu]  [0x3,0x3,0x0,0x20]
-UNIT 0x89 Summoner 0x0 Level(5,Enemy,0) [11,20] 0 0 0 0 [Fenrir] [0x3,0x3,0x0,0x20]
+UNIT 0x89 Summoner 0x0 Level(5,Enemy,0) [11,20] 0 0 0 0 [Fenrir, Speedwings] [0x3,0x3,0x0,0x20]
 UNIT
 
-MogallWarp1:
-UNIT 0xAB Mogall 0x0 Level(15,Enemy,1) [1,5] 0 0 0 0 [EvilEye] DefaultAI
-UNIT
 
-MogallWarp2:
-UNIT 0xAB Mogall 0x0 Level(15,Enemy,1) [2,14] 0 0 0 0 [EvilEye] DefaultAI
-UNIT
-
-MogallWarp3:
-UNIT 0xAB Mogall 0x0 Level(15,Enemy,1) [3,15] 0 0 0 0 [EvilEye] DefaultAI
-UNIT
-
-MogallSummon:
-SVAL 0xB Coords(1,15)
-WARP_IN 
-LOAD2 0x1 MogallWarp1
-ENDA
 
 StartingSummons:
 UNIT 0xAB Mogall 0x0 Level(15,Enemy,1) [1,15] 0 0 0 0 [EvilEye] DefaultAI
 UNIT 0xAB Mogall 0x0 Level(15,Enemy,1) [2,14] 0 0 0 0 [EvilEye] DefaultAI
 UNIT 0xAB Mogall 0x0 Level(15,Enemy,1) [3,15] 0 0 0 0 [EvilEye] DefaultAI
-
-UNIT 0xAB Cyclops 0x0 Level(1,Enemy,1) [14,12] 0 0 0 0 [DragonAxe] DefaultAI
-UNIT 0xAB Cyclops 0x0 Level(1,Enemy,1) [13,11] 0 0 0 0 [SteelAxe] DefaultAI
-UNIT 0xAB Cyclops 0x0 Level(1,Enemy,1) [13,13] 0 0 0 0 [SteelAxe] DefaultAI
-
+UNIT 0xAC Cyclops 0x0 Level(1,Enemy,1) [14,12] 0 0 0 0 [DragonAxe] DefaultAI
+UNIT 0xAC Cyclops 0x0 Level(1,Enemy,1) [13,11] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT 0xAC Cyclops 0x0 Level(1,Enemy,1) [13,13] 0 0 0 0 [SteelAxe] DefaultAI
 UNIT 0xAB Wight 0x0 Level(1,Enemy,1) [10,20] 0 0 0 0 [SteelLance] DefaultAI
 UNIT 0xAB Wight 0x0 Level(1,Enemy,1) [11,19] 0 0 0 0 [SteelLance] DefaultAI
 UNIT 0xAB Wight 0x0 Level(1,Enemy,1) [12,20] 0 0 0 0 [SteelLance] DefaultAI
@@ -105,6 +91,9 @@ UNIT 0xAB Wight_Bow 0x0 Level(1,Enemy,1) [1,8] 0 0 0 0 [SteelBow] AttackInRangeA
 UNIT 0xAB Wight 0x0 Level(1,Enemy,1) [13,8] 0 0 0 0 [SteelSword] AttackInRangeAI
 UNIT 0xAB Bael 0x0 Level(15,Enemy,1) [8,11] 0 0 0 0 [FetidClaw] DefaultAI
 UNIT 0xAB Bael 0x0 Level(15,Enemy,1) [9,13] 0 0 0 0 [FetidClaw] DefaultAI
+UNIT 0xAB Wight 0x0 Level(3,Enemy,1) [11,17] 0 0 0 0 [Spear] AttackInRangeAI
+UNIT 0xAB Wight 0x0 Level(1,Enemy,1) [2,10] 0 0 0 0 [SteelLance] AttackInRangeAI
+UNIT 0xAB Wight 0x0 Level(1,Enemy,1) [3,11] 0 0 0 0 [SteelLance] AttackInRangeAI
 UNIT
 
 LeftSkeletonTreasure:
@@ -125,8 +114,8 @@ LOAD2 0x1 Units
 ENUN
 LOAD2 0x1 Bosses
 ENUN
-//LOAD2 0x1 StartingSummons
-//ENUN
+LOAD2 0x1 StartingSummons
+ENUN
 LOAD2 0x1 StartingEnemies
 ENUN
 GotoPrepScreen
@@ -138,6 +127,145 @@ TEXTSTART
 TEXTSHOW V2EndText
 TEXTEND
 //MoveToChapter(Ch16Eirika)
+ENDB
+
+#define WarpIn(xcoord,ycoord) "SCOORD sB [xcoord,ycoord]; WARP_IN"
+
+
+MogallWarp1:
+UNIT 0xAB Mogall 0x0 Level(15,Enemy,1) [1,15] 0 0 0 0 [EvilEye] DefaultAI
+UNIT
+
+MogallWarp2:
+UNIT 0xAB Mogall 0x0 Level(15,Enemy,1) [2,14] 0 0 0 0 [EvilEye] DefaultAI
+UNIT
+
+MogallWarp3:
+UNIT 0xAB Mogall 0x0 Level(15,Enemy,1) [3,15] 0 0 0 0 [EvilEye] DefaultAI
+UNIT
+
+MogallSummon:
+CAMERA [2,15]
+WarpIn(1,15)
+LOAD2 0 MogallWarp1
+ENUN
+STAL 60
+ENDWARP
+WarpIn(2,14)
+LOAD2 0 MogallWarp2
+ENUN
+STAL 60
+ENDWARP
+//STAL 60
+WarpIn(3,15)
+LOAD 0 MogallWarp3
+ENUN
+STAL 60
+ENDWARP
+
+ENDA
+
+CyclopsWarp1:
+UNIT 0xAC Cyclops 0x0 Level(1,Enemy,1) [14,12] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT
+
+CyclopsWarp2:
+UNIT 0xAC Cyclops 0x0 Level(1,Enemy,1) [13,11] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT
+
+CyclopsWarp3:
+UNIT 0xAC Cyclops 0x0 Level(1,Enemy,1) [13,13] 0 0 0 0 [SteelAxe] DefaultAI
+UNIT
+
+
+DebugCyclopsSummon:
+CAMERA [13,12]
+WarpIn(14,12)
+LOAD2 0 CyclopsWarp1
+ENUN
+STAL 60
+ENDWARP
+WarpIn(13,11)
+LOAD2 0 CyclopsWarp2
+ENUN
+STAL 60
+ENDWARP
+WarpIn(13,13)
+LOAD2 0 CyclopsWarp3
+ENUN
+STAL 60
+ENDWARP
+ENDA
+
+WightSummon1:
+UNIT 0xAB Wight 0x0 Level(1,Enemy,1) [10,20] 0 0 0 0 [SteelLance] DefaultAI
+UNIT
+
+WightSummon2:
+UNIT 0xAB Wight 0x0 Level(1,Enemy,1) [12,20] 0 0 0 0 [SteelLance] DefaultAI
+UNIT
+
+WightSummon3:
+UNIT 0xAB Wight 0x0 Level(1,Enemy,1) [11,19] 0 0 0 0 [SteelLance] DefaultAI
+UNIT
+
+WightSummon:
+CAMERA [11,20]
+WarpIn(10,20)
+LOAD1 1 WightSummon1
+ENUN
+STAL 60
+ENDWARP
+WarpIn(12,20)
+LOAD1 1 WightSummon2
+ENUN
+STAL 60
+ENDWARP
+STAL 16
+WarpIn(11,19)
+LOAD1 1 WightSummon3
+ENUN
+STAL 60
+ENDWARP
+ENDA
+
+SummonCheck:
+//87 is mogalls, 88 is cyclops, 89 is wights
+CHECK_ALIVE 0x87 
+BEQ 1 0 0xC
+CALL MogallSummon
+LABEL 1
+CHECK_ALIVE 0x88
+BEQ 2 0 0xC
+CALL DebugCyclopsSummon
+LABEL 2
+CHECK_ALIVE 0x89
+BEQ 3 0 0xC
+CALL WightSummon
+LABEL 3
+NoFade
+ENDA
+
+SummonCallCheck:
+SVAL s3 0x3
+CHECK_TURNS
+SMOD s4 sC s3
+BNE 4 s0 s4
+CALL SummonCheck
+LABEL 4
+NoFade
+ENDA
+
+BossKillCheck:
+CHECK_EVENTID 0x9
+BEQ 5 sC s0
+CHECK_EVENTID 0xA
+BEQ 5 sC s0
+CHECK_EVENTID 0xB
+BEQ 5 sC s0
+CALL EndingScene
+LABEL 5
+NoFade
 ENDA
 
 MESSAGE Events end at offset CURRENTOFFSET

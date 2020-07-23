@@ -53,7 +53,7 @@ UNIT
 Enemies:
 UNIT 0x80 Fighter 0 Level(1,Enemy,0) [7,3] 0 0 0 0 [IronAxe] DefaultAI
 UNIT 0x80 Fighter 0 Level(1,Enemy,0) [5,4] 0 0 0 0 [IronAxe] DefaultAI
-UNIT 0x80 Knight 0 Level(1,Enemy,0) [3,6] 0 0 0 0 [IronLance] AttackInRangeAI
+UNIT 0x80 Knight 0 Level(2,Enemy,0) [3,6] 0 0 0 0 [IronLance] AttackInRangeAI
 UNIT 0x68 Fighter 0 Level(4,Enemy,0) [2,9] 0 0 0 0 [IronAxe] AttackInRangeAI
 UNIT
 

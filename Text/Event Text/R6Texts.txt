@@ -1,0 +1,5 @@
+## R6GoalWindowText
+Defeat bosses[X]
+
+## R6ObjectiveText
+Defeat Summoners[X]
