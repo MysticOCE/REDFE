@@ -236,3 +236,6 @@ Curt and unsocialable.[X]
 # 0x0763
 The devout and tactically minded[NL]
 crown prince of Rausten.[X]
+
+# 0x3a4
+Holy Sword[X]

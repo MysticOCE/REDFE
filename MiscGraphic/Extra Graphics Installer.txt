@@ -12,6 +12,8 @@ NewTitleScroll:
 PUSH
 ORG 0x5926F4+(0x80*7)
 #incext Png2Dmp "PureSword2.png"
+//ORG 0x5926F4+(0x80*93)
+//#incext Png2Dmp "holysword.png"
 POP
 
 ALIGN 4
