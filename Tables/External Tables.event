@@ -5,3 +5,11 @@ defWeaponDebuffs(0,2,0,0,0,3,3) //0x2: Iron Shuriken debuff.
 defWeaponDebuffs(3,0,0,0,0,4,4) //0x3: Steel Shuriken debuff.
 defWeaponDebuffs(0,0,0,4,0,4,4) //0x4: Silver Shuriken debuff.
 defWeaponDebuffs(4,0,0,4,0,4,4) //0x5: Pebble debuff.
+
+#define ArmorType	0x01
+#define HorseType	0x02
+#define FlierType	0x04
+#define DragonType	0x08
+#define MonsterType	0x10
+#define SwordType	0x20
+#define MageType	0x40
