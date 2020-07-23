@@ -167,7 +167,9 @@ SetBackground(Black)
 /*TEXTSTART
 TEXTSHOW V2EndText
 TEXTEND*/
-PROM Roy 0x4 IronSword
+PROM Roy 0x4 Shadowkiller
+SVAL s3 Shadowkiller
+GIVEITEMTO Roy
 MoveToChapter(Ch15Eirika)
 ENDB
 

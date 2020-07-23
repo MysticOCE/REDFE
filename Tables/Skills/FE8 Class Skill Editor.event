@@ -6,9 +6,9 @@ ALIGN 4
 ClassSkillTable:
 csvmacro135(0x0)
 csvmacro135(0x0)
-csvmacro135(BondID)
+csvmacro135(0x0)
 csvmacro135(CantoID)
-csvmacro135(SlayerID)
+csvmacro135(0x0)
 csvmacro135(CantoID)
 csvmacro135(CantoID)
 csvmacro135(CantoID)
