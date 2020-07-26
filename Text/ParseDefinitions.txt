@@ -69,4 +69,5 @@
 [LoadSaizo] = [LoadPortrait][0x2E][0x01]
 [LoadMinerva] = [LoadPortrait][0x1F][0x01]
 [LoadMaria] = [LoadPortrait][0x22][0x01]
+[LoadSaias] = [LoadPortrait][0x2C][0x01]
 

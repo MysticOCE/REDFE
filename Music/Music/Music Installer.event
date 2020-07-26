@@ -26,28 +26,21 @@
 
 //look at all these great examples
 
-#include "ally1.event"
-SongTable(9,ally1,1)
+#include "FF3Sea.event"
+SongTable(9,FF3Sea,1)
+#include "c2bloodytears.event"
+SongTable(8,song17,1)
+
+//#include "ally1.event"
+//SongTable(9,ally1,1)
 //#include "leon3.event"
 //SongTable(9,leon3,1)
 //#include "decisive2.event"
 //#include "AllHailShadow.event"
 //Example song
-//#include "FF3Sea.event"
-//SongTable(9,FF3Sea,1)
-//SongTable(9,AllHailShadow,1)
 
-//#include "boss06.event"
-//SongTable(9,boss06,1)
 
-//#include "ggxky.event"
-//SongTable(16,Colin,1)
-//#include "Colin.event"
 
-//#include "CloudBuster.event"
-//SongTable(9,CloudBuster,1)
-//#include "knightprideedit.event"
-//SongTable(9,knightprideedit,1)
 
 FE8SoundMixer:
 #incbin "FE8_Improved_Sound_Mixer.bin"

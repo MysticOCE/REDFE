@@ -19,6 +19,7 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0, SummonCallCheck, 3, 50)
+OpeningTurnEvent(R6MapExplanation)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
@@ -68,6 +69,9 @@ Bosses:
 UNIT 0x87 Summoner 0x0 Level(2,Enemy,0) [2,15] 0x0 0x0 0x0 0x0 [Nosferatu] [0x3,0x3,0x0,0x20]
 UNIT 0x88 Summoner 0x0 Level(2,Enemy,0) [13,12] 0 0 0 0 [Nosferatu]  [0x3,0x3,0x0,0x20]
 UNIT 0x89 Summoner 0x0 Level(5,Enemy,0) [11,20] 0 0 0 0 [Fenrir, Speedwings] [0x3,0x3,0x0,0x20]
+//UNIT 0x87 Summoner 0x0 Level(2,Enemy,0) [9,5] 0x0 0x0 0x0 0x0 [Nosferatu] [0x3,0x3,0x0,0x20]
+//UNIT 0x88 Summoner 0x0 Level(2,Enemy,0) [13,2] 0 0 0 0 [Nosferatu]  [0x3,0x3,0x0,0x20]
+//UNIT 0x89 Summoner 0x0 Level(5,Enemy,0) [5,0] 0 0 0 0 [Fenrir, Speedwings] [0x3,0x3,0x0,0x20]
 UNIT
 
 
@@ -265,6 +269,20 @@ CHECK_EVENTID 0xB
 BEQ 5 sC s0
 CALL EndingScene
 LABEL 5
+NoFade
+ENDA
+
+#define CursorDisplay(xcoord,ycoord) "CAMERA [xcoord,ycoord]; CURSOR [xcoord,ycoord]; STAL 16; REMOVE_CURSORS"
+
+R6MapExplanation:
+MUSCFAST 10
+MUSI
+Text(R6OpeningText)
+CursorDisplay(2,15)
+CursorDisplay(13,12)
+CursorDisplay(11,20)
+Text(R6OpeningText2)
+MUNO
 NoFade
 ENDA
 
