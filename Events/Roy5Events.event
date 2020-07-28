@@ -170,8 +170,8 @@ SetBackground(Black)
 TEXTSHOW V2EndText
 TEXTEND*/
 PROM Roy 0x4 Shadowkiller
-//SVAL s3 Shadowkiller
-//GIVEITEMTO Roy
+SVAL s3 Shadowkiller
+GIVEITEMTO Roy
 MoveToChapter(Ch15Eirika)
 ENDB
 
