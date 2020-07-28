@@ -250,7 +250,7 @@ DISA Bernard
 CAM1 Roy
 //LOAD2 0x1 TestingArcherFriend
 //ENUN
-FlashCursor(Roy,30)
+CursorDisplay(7,16,30)
 GotoPrepScreen
 NoFade
 ENDA

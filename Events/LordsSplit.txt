@@ -25,11 +25,11 @@ ENDA
 //The next line is for re-assembling purposes. Do not delete!
 MESSAGE Original ending offset is $591F64 and the new ending offset is CURRENTOFFSET
 
-ORG $592104
+/*ORG $592104
 label15:
 EVBIT_MODIFY 0x4
 ASMC 0x85375
-ENDA
+ENDA*/
 
 //The next line is for re-assembling purposes. Do not delete!
 MESSAGE Original ending offset is $592114 and the new ending offset is CURRENTOFFSET
@@ -107,7 +107,7 @@ LOCA 0x3 [7,4] 0x11
 END_MAIN
 
 MiscBasedEventsX:
-AFEV 0x0 label15 0x65
+CauseGameOverIfLordDies
 END_MAIN
 
 Dunno1X:
@@ -244,7 +244,9 @@ REMA
 ClearBackground
 FADI 16
 MNCH 0xA
-ASMC 0x8659D
+//Text(preASMCtext)
+//ASMC 0x8659D
+//Text(postASMCtext)
 REMU 0xF
 REMU Bernard
 REMU Kieran

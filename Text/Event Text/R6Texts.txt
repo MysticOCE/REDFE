@@ -39,3 +39,10 @@ It's just a rumor but I thought you[NL]
 may want to be aware of that.[A]
 [X]
 
+## preASMCtext
+[OpenMidLeft][LoadRadd]
+Pre ASMC[X]
+
+## postASMCtext
+[OpenMidLeft][LoadRadd]
+[X]

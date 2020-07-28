@@ -272,7 +272,6 @@ LABEL 5
 NoFade
 ENDA
 
-#define CursorDisplay(xcoord,ycoord) "CAMERA [xcoord,ycoord]; CURSOR [xcoord,ycoord]; STAL 16; REMOVE_CURSORS"
 
 R6MapExplanation:
 MUSCFAST 10

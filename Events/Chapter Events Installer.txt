@@ -1,6 +1,8 @@
 #define Chapter_Data_Byte(chapter_id, offset_of_byte, value_to_write) "PUSH; ORG $8B0890+(0x94*chapter_id)+offset_of_byte; BYTE value_to_write; POP"
 #define END_EVENT "EVBIT_T 0x7;ENDA"
 #define Coords(xcoord,ycoord) "(ycoord<<16)|xcoord"
+#define CursorDisplay(xcoord,ycoord) "CAMERA [xcoord,ycoord]; CURSOR [xcoord,ycoord]; STAL 16; REMOVE_CURSORS"
+#define CursorDisplay(xcoord,ycoord, stall) "CAMERA [xcoord,ycoord]; CURSOR [xcoord,ycoord]; STAL stall; REMOVE_CURSORS"
 
 ALIGN 4
 PUSH

@@ -3,6 +3,7 @@
 	#include "EA Standard Library/Backward Compatibility.txt"
     #include "Custom Definitions.event"
 
+	//PROTECT 0x592108 0x59210A
     ORG FreeSpace
     //Text first for Text ID definitions
     #include "Text/Install Text Data.event"

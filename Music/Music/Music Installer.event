@@ -26,10 +26,12 @@
 
 //look at all these great examples
 
-#include "FF3Sea.event"
-SongTable(9,FF3Sea,1)
-#include "c2bloodytears.event"
-SongTable(8,song17,1)
+
+//MESSAGE Including music, remember to remove for release
+//#include "FF3Sea.event"
+//SongTable(9,FF3Sea,1)
+//#include "c2bloodytears.event"
+//SongTable(8,song17,1)
 
 //#include "ally1.event"
 //SongTable(9,ally1,1)

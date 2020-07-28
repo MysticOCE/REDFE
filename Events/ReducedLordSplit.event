@@ -1,0 +1,50 @@
+PUSH
+ORG $8B43D0
+
+MoulderVan:
+UNIT Salem Shaman 0x0 Level(5,Ally,0) [0,0] 0b 0x0 0x0 0x0 [Flux,Nosferatu,0x0,0x0] [0x0,0x0,0x0,0x0]
+UNIT Priscilla Troubadour 0x0 Level(1,Ally,0) [0,0] 0b 0x0 0x0 0x0 [Heal,Vulnerary,0x0,0x0] [0x0,0x0,0x0,0x0]
+UNIT
+
+ORG $9F33D0
+EphEirReturn:
+MUSC 0x31
+SetBackground(Black)
+TUTORIALTEXTBOXSTART
+SVAL 0xB 0xFFFFFFFF
+TEXTSHOW LordReturnTextBox
+TEXTEND
+REMA
+_0x2141 Castle_Room 0x1 0x4
+REMOVEPORTRAITS
+MUSC 0x24
+TEXTSTART
+TEXTSHOW RenaisReturnText1
+TEXTEND
+MUSC Tension
+REMA
+TEXTSTART
+TEXTSHOW RenaisReturnText2
+TEXTEND
+REMA
+MUSC Main_Theme_Reprise 
+TEXTSTART
+TEXTSHOW RenaisReturnText3
+TEXTEND
+REMA
+FADU 32
+FADI 32
+TEXTSTART
+TEXTSHOW RenaisReturnText4
+TEXTEND
+REMA
+ClearBackground
+FADI 16
+MNCH 0xA
+ASMC 0x8659D
+REMU 0xF
+REMU Bernard
+REMU Kieran
+REMU Miledy
+ENDB
+POP

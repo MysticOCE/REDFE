@@ -53,6 +53,7 @@ ENDTRAP
 ALIGN 4
 
 Skippo:
+//GameOver
 CALL EndingScene
 ENDA
 
@@ -164,6 +165,7 @@ ENDA
 
 EndingScene:
 SetBackground(Black)
+//ENUT 0x65
 /*TEXTSTART
 TEXTSHOW V2EndText
 TEXTEND*/
