@@ -367,6 +367,8 @@
 #define RenaisReturnText4 0xc06
 #define ValniOpenText 0x8e5
 #define R1WMText 0x8e6
-#define UM_Transform 0x8e7
-#define UM_TransformDesc 0x8e8
-#define Transform_Help_Text 0x8e9
+#define RoyAlanC 0x8e7
+#define RaddNorrisC 0x8e8
+#define UM_Transform 0x8e9
+#define UM_TransformDesc 0x8ea
+#define Transform_Help_Text 0x8eb

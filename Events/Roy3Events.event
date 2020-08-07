@@ -29,6 +29,8 @@ ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
 CharacterBasedEvents:
 CharacterEvent(0x7,RoyRecruitsSaias,Roy,Saias)
+CharacterEventBothWays(0x0,TestTalk1, Roy, Alan)
+CharacterEventBothWays(0x0,TestTalk2, Radd, Norris) 
 END_MAIN
 
 ALIGN 4
@@ -137,6 +139,14 @@ UNIT 0xAB Gargoyle 0 Level(12,Enemy,1) [9,0] 0 0 0 0 [IronLance] DefaultAI
 UNIT 0xAB Gargoyle 0 Level(12,Enemy,1) [10,0] 0 0 0 0 [IronLance] DefaultAI
 UNIT 0xAB Bonewalker 0 Level(10,Enemy,1) [7,1] 0 0 0 0 [SteelSword] DefaultAI
 UNIT
+
+TestTalk1:
+Text(RoyAlanC)
+ENDA
+
+TestTalk2:
+Text(RaddNorrisC)
+ENDA
 
 BeginningScene:
 MUSC 6
