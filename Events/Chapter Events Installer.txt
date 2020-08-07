@@ -10,6 +10,7 @@ PUSH
 ORG 0x1000000
 
 MESSAGE We have jumped to CURRENTOFFSET
+#include "REDAs.event"
 {
 
 #include "PrologueEvents.event"

@@ -57,6 +57,12 @@ ENDTRAP
 
 ALIGN 4
 
+OPEventCrew:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [22,1] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Maria Cleric 0 Level(1, Ally, 0) [21,1] 0 0 0 0 [0x0] NoAI
+UNIT Minerva WyvernLord 0 Level(1,Ally,0) [22,0] 0 0 0 0 [0x0] NoAI
+UNIT
+
 Units:
 UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [22,1] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
 UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [21,0] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
@@ -73,7 +79,7 @@ UNIT
 
 ALIGN 4
 Enemies:
-UNIT Macdaire Cyclops 0 Level(8,Enemy,1) [4,1] 0 0 0 0 [SilverAxe] AttackInRangeAI
+UNIT Macdaire Cyclops 0 Level(8,Enemy,1) [4,1] DropItem 0 0 0 [SilverAxe, HeroCrest] AttackInRangeAI
 UNIT 0xAB Wight 0 Level(3,Enemy,1) [4,3] 0 0 0 0 [SilverSword] AttackInRangeAI
 UNIT 0xAB Bonewalker 0 Level(10,Enemy,1) [14,4] 0 0 0 0 [SteelSword] AttackInRangeAI
 UNIT 0xAB Bonewalker 0 Level(10,Enemy,1) [13,6] 0 0 0 0 [FlyerLance] AttackInRangeAI
@@ -130,6 +136,15 @@ UNIT 0xAB Bonewalker 0 Level(10,Enemy,1) [7,1] 0 0 0 0 [SteelSword] DefaultAI
 UNIT
 
 BeginningScene:
+MUSC 6
+MUSI
+Text(Fort_Ruins_Outside, R3OpeningScene1)
+MUNO
+STAL 16
+MUSC Tension
+MUSI
+Text(Fort_Ruins_Outside, R3OpeningScene2)
+MUNO
 LOAD2 0x1 Units
 ENUN
 LOAD2 0x1 Enemies

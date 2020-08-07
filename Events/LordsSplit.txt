@@ -205,8 +205,9 @@ TEXTSTART
 TEXTSHOW RenaisReturnText3
 TEXTEND
 REMA
-FADU 32
-FADI 32
+FADU 64
+STAL 16
+FADI 64
 TEXTSTART
 TEXTSHOW RenaisReturnText4
 TEXTEND
@@ -242,8 +243,7 @@ LABEL 0x3
 REMA
 */
 ClearBackground
-FADI 16
-MNCH 0xA
+FADI 64
 //Text(preASMCtext)
 //ASMC 0x8659D
 //Text(postASMCtext)
@@ -251,6 +251,7 @@ REMU 0xF
 REMU Bernard
 REMU Kieran
 REMU Miledy
+MNCH 0xA
 ENDB
 
 //The next line is for re-assembling purposes. Do not delete!

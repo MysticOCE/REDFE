@@ -21,7 +21,7 @@ TurnBasedEvents:
 TurnEventPlayer(0,T3Reinforcements,3)
 TurnEventPlayer(0,T5Reinforcements,5)
 TurnEventPlayer(0, EndingScene,8)
-TurnEventPlayer(0,EndingScene,2)
+//TurnEventPlayer(0,EndingScene,2)
 END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 

@@ -100,6 +100,12 @@ Priscilla2Mug:
 #incbin "Priscilla2_palette.dmp"
 #incbin "Priscilla2_minimug.dmp"
 
+RagnaMug:
+#incbin "Ragna_mug.dmp"
+#incbin "Ragna_frames.dmp"
+#incbin "Ragna_palette.dmp"
+#incbin "Ragna_minimug.dmp"
+
 Raven2Mug:
 #incbin "Raven2_mug.dmp"
 #incbin "Raven2_frames.dmp"
@@ -142,11 +148,11 @@ XigdarLawsonMug:
 #incbin "XigdarLawson_palette.dmp"
 #incbin "XigdarLawson_minimug.dmp"
 
-XigdarMoneySaizo2Mug:
-#incbin "XigdarMoneySaizo2_mug.dmp"
-#incbin "XigdarMoneySaizo2_frames.dmp"
-#incbin "XigdarMoneySaizo2_palette.dmp"
-#incbin "XigdarMoneySaizo2_minimug.dmp"
+XigdarMoneySaizo3Mug:
+#incbin "XigdarMoneySaizo3_mug.dmp"
+#incbin "XigdarMoneySaizo3_frames.dmp"
+#incbin "XigdarMoneySaizo3_palette.dmp"
+#incbin "XigdarMoneySaizo3_minimug.dmp"
 
 XigdarNorris2Mug:
 #incbin "XigdarNorris2_mug.dmp"

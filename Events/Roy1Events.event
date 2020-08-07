@@ -36,6 +36,7 @@ CharacterEvent(0x9, MariaRecruitsCordelia, Maria, Cordelia)
 CharacterEvent(0x9, SamsonRecruitsCordelia, Samson, Cordelia)
 CharacterEvent(0x8, CordeliaRecruitsSamson, Cordelia, Samson)
 CharacterEvent(0xA, GazelleJoins, Roy, Gazelle)
+//CharacterEvent(0x0, Skippo, Roy, Alan)
 END_MAIN
 
 LocationBasedEvents:
@@ -260,12 +261,23 @@ GotoPrepScreen
 NoFade
 ENDA
 
+Skippo:
+CALL EndingScene
+ENDA
+
 EndingScene:
 MUSC Victory
 //If finish before Cordelia and Samson spawn
-SVAL 0x3 0x3
+/*SVAL 0x3 0x3
 CHECK_TURNS
 BLE 0xA 0x3 0xC
+	LOAD1 0x1 LateBodyguards
+	GOTO 0x8
+LABEL 0xA*/
+
+SVAL s3 4
+CHECK_TURNS
+BGE 0xA sC s3
 	LOAD1 0x1 LateBodyguards
 	GOTO 0x8
 LABEL 0xA
@@ -308,6 +320,6 @@ TEXTEND
 ClearBackground
 REMA
 MoveToChapter(Ch10Eirika)
-ENDA
+ENDB
 
 MESSAGE Events end at offset CURRENTOFFSET

@@ -15,6 +15,7 @@ Eliwood3.png
 Miledy2.png
 NicktKieran2.png
 Priscilla2.png
+Ragna.png
 Raven2.png
 Roy6.png
 SquidMinerva2.png
@@ -22,7 +23,7 @@ TytyBMCordelia.png
 XigdarArvis.png
 XigdarGazelle2.png
 XigdarLawson.png
-XigdarMoneySaizo2.png
+XigdarMoneySaizo3.png
 XigdarNorris2.png
 XigdarSamson2.png
 XigdarSelena.png
