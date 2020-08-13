@@ -76,7 +76,13 @@ POP
 
 //Skip Intro cutscene
   ORG $C6714
-  SHORT 0
+  BYTE 0xC0 0x46
+//Skip IS logo
+  ORG $CBDF6 
+  BYTE 0xc0 0x46
+//Skip Nintendo logo
+  ORG $CBDE2
+  BYTE 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
 
 //Skip New Game text
   ORG $C4928
