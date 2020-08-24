@@ -1,12 +1,24 @@
-/*PUSH
+/*NewTitleScroll:
+#incext Png2Dmp "newscroll5.png" --lz77
+
+
+
+
+PUSH
 
 ORG $c5830
-POIN NewTitleScroll
+//POIN NewTitleScroll
 
+ORG $AADBC8
+//#incbin "titlescreen3pal.bin"
+//#incext Png2Dmp "newscroll5.png" --palette-only
+
+ORG $C5486
+//BYTE 0x59
 POP
-NewTitleScroll:
-#incext Png2Dmp "insertscroll.png" --lz77
 */
+#include "LeoCG/titlebackgroundinstaller.event"
+
 
 //pure sword icon
 PUSH

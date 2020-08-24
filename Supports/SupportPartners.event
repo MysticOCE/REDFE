@@ -1,0 +1,112 @@
+#define CharacterSupport(Char1, Char2, Char3, Char4, Char5, Char6, Char7) "BYTE Char1 Char2 Char3 Char4 Char5 Char6 Char7"
+#define SupportBases(Char1, Char2, Char3, Char4, Char5, Char6, Char7) "BYTE Char1 Char2 Char3 Char4 Char5 Char6 Char7"
+#define SupportGrowths(Char1, Char2, Char3, Char4, Char5, Char6, Char7) "BYTE Char1 Char2 Char3 Char4 Char5 Char6 Char7"
+
+RoySupport:
+CharacterSupport(Alan, Maria, Saias, Eliwood,0,0,0)
+SupportBases(60,40,20,60,0,0,0)
+SupportGrowths(4,5,3,2,0,0,0)
+BYTE 4
+BYTE 0 0
+
+AlanSupport:
+CharacterSupport(Roy, Cain, Kieran,0,0,0,0)
+SupportBases(60,20,50,0,0,0,0)
+SupportGrowths(4,3,3,0,0,0,0)
+BYTE 3
+BYTE 0 0
+
+AnnaSupport:
+CharacterSupport(Dorcas,Gazelle,Joshua,0,0,0,0)
+SupportBases(25,25,25,0,0,0,0)
+SupportGrowths(3,3,3,0,0,0,0)
+BYTE 3
+BYTE 0 0 
+
+DorcasSupport:
+CharacterSupport(Anna,Radd,0,0,0,0,0)
+SupportBases(25,40,0,0,0,0,0)
+SupportGrowths(3,3,0,0,0,0,0)
+BYTE 2
+BYTE 0 0 
+
+SalemSupport:
+CharacterSupport(Priscilla,Ewan,0,0,0,0,0)
+SupportBases(30,5,0,0,0,0,0)
+SupportGrowths(3,3,0,0,0,0,0)
+BYTE 2
+BYTE 0 0 
+
+PriscillaSupport:
+CharacterSupport(Salem,Raven,0,0,0,0,0)
+SupportBases(30,60,0,0,0,0,0)
+SupportGrowths(3,4,0,0,0,0,0)
+BYTE 2
+BYTE 0 0 
+
+EwanSupport:
+CharacterSupport(Salem,0,0,0,0,0,0)
+SupportBases(5,0,0,0,0,0,0)
+SupportGrowths(3,0,0,0,0,0,0)
+BYTE 1
+BYTE 0 0 
+
+RaddSupport:
+CharacterSupport(Dorcas,Norris,0,0,0,0,0)
+SupportBases(40,60,0,0,0,0,0)
+SupportGrowths(3,3,0,0,0,0,0)
+BYTE 2
+BYTE 0 0 
+
+CainSupport:
+CharacterSupport(Alan,Eliwood,Kieran,0,0,0,0)
+SupportBases(20,40,40,0,0,0,0)
+SupportGrowths(3,3,3,0,0,0,0)
+BYTE 3
+BYTE 0 0 
+
+NorrisSupport:
+CharacterSupport(Radd,Gazelle,0,0,0,0,0)
+SupportBases(60,40,0,0,0,0,0)
+SupportGrowths(3,4,0,0,0,0,0)
+BYTE 2
+BYTE 0 0 
+
+LukasSupport:
+CharacterSupport(Miledy,Bernard,0,0,0,0,0)
+SupportBases(20,60,0,0,0,0,0)
+SupportGrowths(3,4,0,0,0,0,0)
+BYTE 2
+BYTE 0 0
+
+EliwoodSupport:
+CharacterSupport(Roy,Cain,Miledy,Kieran,0,0,0)
+SupportBases(60,40,40,40,0,0,0)
+SupportGrowths(2,3,4,3,0,0,0)
+BYTE 4
+BYTE 0 0 
+
+MiledySupport:
+CharacterSupport(Eliwood,Lukas,Kieran,0,0,0,0)
+SupportBases(40,20,20,0,0,0,0)
+SupportGrowths(4,3,3,3,0,0,0,0)
+BYTE 3
+BYTE 0 0
+
+KieranSupport:
+CharacterSupport(Alan,Cain,Eliwood,Miledy,0,0,0)
+SupportBases(50,40,40,20,0,0,0)
+SupportGrowths(3,3,3,3,0,0,0)
+BYTE 3
+BYTE 0 0
+
+BernardSupport:
+CharacterSupport(Lukas,0,0,0,0,0,0)
+SupportBases(60,0,0,0,0,0,0)
+SupportGrowths(4,0,0,0,0,0,0)
+BYTE 1
+BYTE 0 0
+
+MariaSupport:
+CharacterSupport(Roy,Samson,Cordelia,Minerva,0,0,0)
+

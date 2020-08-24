@@ -286,17 +286,10 @@
 
 #include "Summon editors\Summon class editor.event"
 
-#include "Support editors\Custom Support Pointer Editor.event"
-
 #include "Support editors\EndingsEditor.event"
 
 #include "Support editors\Support bonus editor.event"
 
-#include "Support editors\Support Pointer Editor.event"
-
-#include "Support editors\SupportCompatibilityEditor.event"
-
-#include "Support editors\SupportConvoAvailabilityEditor.event"
 
 #include "Terrain Editors\FE8 Movement Cost Editor.event"
 
