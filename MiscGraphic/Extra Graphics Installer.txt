@@ -1,5 +1,5 @@
-/*NewTitleScroll:
-#incext Png2Dmp "newscroll5.png" --lz77
+NewTitleScroll:
+#incext Png2Dmp "empty.png" --lz77
 
 
 
@@ -7,16 +7,17 @@
 PUSH
 
 ORG $c5830
-//POIN NewTitleScroll
-
-ORG $AADBC8
+POIN NewTitleScroll
+/*
+//ORG $AADBC8
 //#incbin "titlescreen3pal.bin"
 //#incext Png2Dmp "newscroll5.png" --palette-only
 
-ORG $C5486
+//ORG $C5486
 //BYTE 0x59
-POP
 */
+POP
+
 #include "LeoCG/titlebackgroundinstaller.event"
 
 

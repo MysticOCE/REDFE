@@ -41,18 +41,18 @@ ORG 0x802558
 #incbin "RedBattleMenuPal.DMP"
 ORG 0x802578
 #incbin "GrayBattleMenuPal.DMP"
-ORG 0xAAB3F4 //for title screen background color
-#incbin "testing2.dmp"
-ORG 0xAAC58C
-#incbin "testing3.dmp"
-ORG 0x803590
-#incbin "EXPPal.DMP"
+//ORG 0xAAB3F4 //for title screen background color
+//#incbin "testing2.dmp"
+//ORG 0xAAC58C
+//#incbin "testing3.dmp"
+//ORG 0x803590
+//#incbin "EXPPal.DMP"
 //leveluptesting
 //ORG 0x803B10
 //#incbin "testing3.dmp"
 //first pal at 0x5b6bb4
-ORG 0x5b6bd4
-#incbin "testing3.dmp"
+//ORG 0x5b6bd4
+//#incbin "testing3.dmp"
 //#incbin "testing2.dmp"
 POP
 #include "Pal2EA/Palette Setup.event"
