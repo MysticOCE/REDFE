@@ -32,7 +32,8 @@
 //SongTable(9,FF3Sea,1)
 //#include "c2bloodytears.event"
 //SongTable(8,song17,1)
-
+//#include "cloudbustermidi.event"
+//SongTable(9, cloudbustermidi,1)
 //#include "ally1.event"
 //SongTable(9,ally1,1)
 //#include "leon3.event"

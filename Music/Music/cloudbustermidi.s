@@ -1,27 +1,27 @@
 	.include "MPlayDef.s"
 
-	.equ	CloudBuster_grp, voicegroup000
-	.equ	CloudBuster_pri, 0
-	.equ	CloudBuster_rev, 0
-	.equ	CloudBuster_mvl, 127
-	.equ	CloudBuster_key, 0
-	.equ	CloudBuster_tbs, 1
-	.equ	CloudBuster_exg, 0
-	.equ	CloudBuster_cmp, 1
+	.equ	cloudbustermidi_grp, voicegroup000
+	.equ	cloudbustermidi_pri, 0
+	.equ	cloudbustermidi_rev, 0
+	.equ	cloudbustermidi_mvl, 127
+	.equ	cloudbustermidi_key, 0
+	.equ	cloudbustermidi_tbs, 1
+	.equ	cloudbustermidi_exg, 0
+	.equ	cloudbustermidi_cmp, 1
 
 	.section .rodata
-	.global	CloudBuster
+	.global	cloudbustermidi
 	.align	2
 
 @**************** Track 1 (Midi-Chn.1) ****************@
 
-CloudBuster_1:
-	.byte	KEYSH , CloudBuster_key+0
+cloudbustermidi_1:
+	.byte	KEYSH , cloudbustermidi_key+0
 @ 000   ----------------------------------------
-	.byte	TEMPO , 200*CloudBuster_tbs/2
-	.byte		VOICE , 34
+	.byte	TEMPO , 200*cloudbustermidi_tbs/2
+	.byte		VOICE , 33
+	.byte		VOL   , 75*cloudbustermidi_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 127*CloudBuster_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte		N12   , Fn0 , v120
@@ -41,7 +41,7 @@ CloudBuster_1:
 	.byte		N12   
 	.byte	W12
 @ 001   ----------------------------------------
-CloudBuster_1_001:
+cloudbustermidi_1_001:
 	.byte		N12   , Fn0 , v120
 	.byte	W12
 	.byte		N12   
@@ -61,7 +61,7 @@ CloudBuster_1_001:
 	.byte	PEND
 @ 002   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_001
+	 .word	cloudbustermidi_1_001
 @ 003   ----------------------------------------
 	.byte		N12   , Fn0 , v120
 	.byte	W12
@@ -81,13 +81,13 @@ CloudBuster_1_001:
 	.byte	W12
 @ 004   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_001
+	 .word	cloudbustermidi_1_001
 @ 005   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_001
+	 .word	cloudbustermidi_1_001
 @ 006   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_001
+	 .word	cloudbustermidi_1_001
 @ 007   ----------------------------------------
 	.byte		N12   , Fn0 , v120
 	.byte	W48
@@ -100,7 +100,7 @@ CloudBuster_1_001:
 	.byte		        Fn0 
 	.byte	W12
 @ 008   ----------------------------------------
-CloudBuster_1_008:
+cloudbustermidi_1_008:
 	.byte		N12   , As0 , v120
 	.byte	W12
 	.byte		N12   
@@ -120,9 +120,9 @@ CloudBuster_1_008:
 	.byte	PEND
 @ 009   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_008
+	 .word	cloudbustermidi_1_008
 @ 010   ----------------------------------------
-CloudBuster_1_010:
+cloudbustermidi_1_010:
 	.byte		N12   , As0 , v120
 	.byte	W12
 	.byte		N12   
@@ -141,7 +141,7 @@ CloudBuster_1_010:
 	.byte	W12
 	.byte	PEND
 @ 011   ----------------------------------------
-CloudBuster_1_011:
+cloudbustermidi_1_011:
 	.byte		N12   , Gs0 , v120
 	.byte	W12
 	.byte		N12   
@@ -161,9 +161,9 @@ CloudBuster_1_011:
 	.byte	PEND
 @ 012   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_008
+	 .word	cloudbustermidi_1_008
 @ 013   ----------------------------------------
-CloudBuster_1_013:
+cloudbustermidi_1_013:
 	.byte		N12   , Gs0 , v120
 	.byte	W12
 	.byte		N12   
@@ -182,7 +182,7 @@ CloudBuster_1_013:
 	.byte	W12
 	.byte	PEND
 @ 014   ----------------------------------------
-CloudBuster_1_014:
+cloudbustermidi_1_014:
 	.byte		N12   , Cs1 , v120
 	.byte	W12
 	.byte		N12   
@@ -202,9 +202,10 @@ CloudBuster_1_014:
 	.byte	PEND
 @ 015   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_011
+	 .word	cloudbustermidi_1_011
+cloudbustermidi_1_B1:
 @ 016   ----------------------------------------
-CloudBuster_1_016:
+cloudbustermidi_1_016:
 	.byte		N12   , Fs0 , v120
 	.byte	W12
 	.byte		N12   
@@ -223,7 +224,7 @@ CloudBuster_1_016:
 	.byte	W12
 	.byte	PEND
 @ 017   ----------------------------------------
-CloudBuster_1_017:
+cloudbustermidi_1_017:
 	.byte		N12   , Gs0 , v120
 	.byte	W12
 	.byte		N12   
@@ -310,7 +311,7 @@ CloudBuster_1_017:
 	.byte		        Cn1 
 	.byte	W12
 @ 022   ----------------------------------------
-CloudBuster_1_022:
+cloudbustermidi_1_022:
 	.byte		N12   , Fn0 , v120
 	.byte	W12
 	.byte		N12   
@@ -329,7 +330,7 @@ CloudBuster_1_022:
 	.byte	W12
 	.byte	PEND
 @ 023   ----------------------------------------
-CloudBuster_1_023:
+cloudbustermidi_1_023:
 	.byte		N12   , Fn0 , v120
 	.byte	W12
 	.byte		N12   
@@ -349,34 +350,34 @@ CloudBuster_1_023:
 	.byte	PEND
 @ 024   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_008
+	 .word	cloudbustermidi_1_008
 @ 025   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_008
+	 .word	cloudbustermidi_1_008
 @ 026   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_010
+	 .word	cloudbustermidi_1_010
 @ 027   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_011
+	 .word	cloudbustermidi_1_011
 @ 028   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_008
+	 .word	cloudbustermidi_1_008
 @ 029   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_013
+	 .word	cloudbustermidi_1_013
 @ 030   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_014
+	 .word	cloudbustermidi_1_014
 @ 031   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_011
+	 .word	cloudbustermidi_1_011
 @ 032   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_016
+	 .word	cloudbustermidi_1_016
 @ 033   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_017
+	 .word	cloudbustermidi_1_017
 @ 034   ----------------------------------------
 	.byte		N12   , Fn0 , v120
 	.byte	W12
@@ -413,10 +414,10 @@ CloudBuster_1_023:
 	.byte	W12
 @ 036   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_016
+	 .word	cloudbustermidi_1_016
 @ 037   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_017
+	 .word	cloudbustermidi_1_017
 @ 038   ----------------------------------------
 	.byte		N12   , As0 , v120
 	.byte	W12
@@ -452,7 +453,7 @@ CloudBuster_1_023:
 	.byte		        As0 
 	.byte	W12
 @ 040   ----------------------------------------
-CloudBuster_1_040:
+cloudbustermidi_1_040:
 	.byte		N12   , Fs0 , v120
 	.byte	W12
 	.byte		N12   
@@ -472,10 +473,10 @@ CloudBuster_1_040:
 	.byte	PEND
 @ 041   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_013
+	 .word	cloudbustermidi_1_013
 @ 042   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_010
+	 .word	cloudbustermidi_1_010
 @ 043   ----------------------------------------
 	.byte		N12   , Gs0 , v120
 	.byte	W12
@@ -495,7 +496,7 @@ CloudBuster_1_040:
 	.byte	W12
 @ 044   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_040
+	 .word	cloudbustermidi_1_040
 @ 045   ----------------------------------------
 	.byte		N12   , Ds0 , v120
 	.byte	W12
@@ -515,19 +516,19 @@ CloudBuster_1_040:
 	.byte	W12
 @ 046   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_022
+	 .word	cloudbustermidi_1_022
 @ 047   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_023
+	 .word	cloudbustermidi_1_023
 @ 048   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_040
+	 .word	cloudbustermidi_1_040
 @ 049   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_013
+	 .word	cloudbustermidi_1_013
 @ 050   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_014
+	 .word	cloudbustermidi_1_014
 @ 051   ----------------------------------------
 	.byte		N12   , Ds1 , v120
 	.byte	W12
@@ -581,7 +582,7 @@ CloudBuster_1_040:
 	.byte	W12
 @ 054   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_1_001
+	 .word	cloudbustermidi_1_001
 @ 055   ----------------------------------------
 	.byte		N12   , Fn0 , v120
 	.byte	W12
@@ -719,16 +720,20 @@ CloudBuster_1_040:
 	.byte		        Gs0 
 	.byte	W12
 @ 074   ----------------------------------------
+	.byte	W24
+	.byte	GOTO
+	 .word	cloudbustermidi_1_B1
+cloudbustermidi_1_B2:
 	.byte	FINE
 
 @**************** Track 2 (Midi-Chn.2) ****************@
 
-CloudBuster_2:
-	.byte	KEYSH , CloudBuster_key+0
+cloudbustermidi_2:
+	.byte	KEYSH , cloudbustermidi_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 42
+	.byte		VOICE , 0
 	.byte		PAN   , c_v-10
-	.byte		VOL   , 120*CloudBuster_mvl/mxv
+	.byte		VOL   , 120*cloudbustermidi_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte		N06   , Fn2 , v080
@@ -748,7 +753,7 @@ CloudBuster_2:
 	.byte		        Fn2 
 	.byte	W12
 @ 001   ----------------------------------------
-CloudBuster_2_001:
+cloudbustermidi_2_001:
 	.byte		N06   , Fs2 , v080
 	.byte	W12
 	.byte		        Cs2 
@@ -767,7 +772,7 @@ CloudBuster_2_001:
 	.byte	W12
 	.byte	PEND
 @ 002   ----------------------------------------
-CloudBuster_2_002:
+cloudbustermidi_2_002:
 	.byte		N06   , Gs2 , v080
 	.byte	W12
 	.byte		        Ds2 
@@ -787,7 +792,7 @@ CloudBuster_2_002:
 	.byte	PEND
 @ 003   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_001
+	 .word	cloudbustermidi_2_001
 @ 004   ----------------------------------------
 	.byte		N06   , Fn2 , v080
 	.byte	W12
@@ -807,15 +812,15 @@ CloudBuster_2_002:
 	.byte	W12
 @ 005   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_001
+	 .word	cloudbustermidi_2_001
 @ 006   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_002
+	 .word	cloudbustermidi_2_002
 @ 007   ----------------------------------------
 	.byte		N06   , An2 , v080
 	.byte	W96
 @ 008   ----------------------------------------
-CloudBuster_2_008:
+cloudbustermidi_2_008:
 	.byte		N30   , Fn1 , v120
 	.byte	W36
 	.byte		        As1 
@@ -824,7 +829,7 @@ CloudBuster_2_008:
 	.byte	W24
 	.byte	PEND
 @ 009   ----------------------------------------
-CloudBuster_2_009:
+cloudbustermidi_2_009:
 	.byte		N30   , Cn2 , v120
 	.byte	W36
 	.byte		        Gs1 
@@ -833,7 +838,7 @@ CloudBuster_2_009:
 	.byte	W24
 	.byte	PEND
 @ 010   ----------------------------------------
-CloudBuster_2_010:
+cloudbustermidi_2_010:
 	.byte		N30   , Ds1 , v120
 	.byte	W36
 	.byte		TIE   , Fn1 
@@ -845,9 +850,9 @@ CloudBuster_2_010:
 	.byte	W48
 @ 012   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_008
+	 .word	cloudbustermidi_2_008
 @ 013   ----------------------------------------
-CloudBuster_2_013:
+cloudbustermidi_2_013:
 	.byte		N30   , Cn2 , v120
 	.byte	W36
 	.byte		        Cs2 
@@ -856,7 +861,7 @@ CloudBuster_2_013:
 	.byte	W24
 	.byte	PEND
 @ 014   ----------------------------------------
-CloudBuster_2_014:
+cloudbustermidi_2_014:
 	.byte		N30   , Ds2 , v120
 	.byte	W36
 	.byte		TIE   , Fn2 
@@ -866,6 +871,7 @@ CloudBuster_2_014:
 	.byte	W48
 	.byte		EOT   
 	.byte	W48
+cloudbustermidi_2_B1:
 @ 016   ----------------------------------------
 	.byte	W96
 @ 017   ----------------------------------------
@@ -884,26 +890,26 @@ CloudBuster_2_014:
 	.byte	W96
 @ 024   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_008
+	 .word	cloudbustermidi_2_008
 @ 025   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_009
+	 .word	cloudbustermidi_2_009
 @ 026   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_010
+	 .word	cloudbustermidi_2_010
 @ 027   ----------------------------------------
 	.byte	W48
 	.byte		EOT   , Fn1 
 	.byte	W48
 @ 028   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_008
+	 .word	cloudbustermidi_2_008
 @ 029   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_013
+	 .word	cloudbustermidi_2_013
 @ 030   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_014
+	 .word	cloudbustermidi_2_014
 @ 031   ----------------------------------------
 	.byte	W48
 	.byte		EOT   , Fn2 
@@ -923,7 +929,7 @@ CloudBuster_2_014:
 @ 038   ----------------------------------------
 	.byte	W96
 @ 039   ----------------------------------------
-CloudBuster_2_039:
+cloudbustermidi_2_039:
 	.byte		N18   , As1 , v120
 	.byte	W24
 	.byte		        Cn2 
@@ -934,7 +940,7 @@ CloudBuster_2_039:
 	.byte	W24
 	.byte	PEND
 @ 040   ----------------------------------------
-CloudBuster_2_040:
+cloudbustermidi_2_040:
 	.byte		N66   , As2 , v120
 	.byte	W72
 	.byte		N18   
@@ -959,7 +965,7 @@ CloudBuster_2_040:
 	.byte		EOT   
 	.byte	W06
 @ 044   ----------------------------------------
-CloudBuster_2_044:
+cloudbustermidi_2_044:
 	.byte		N66   , Cs2 , v120
 	.byte	W72
 	.byte		N18   
@@ -979,10 +985,10 @@ CloudBuster_2_044:
 	.byte	W96
 @ 047   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_039
+	 .word	cloudbustermidi_2_039
 @ 048   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_040
+	 .word	cloudbustermidi_2_040
 @ 049   ----------------------------------------
 	.byte		N18   , Cn3 , v120
 	.byte	W24
@@ -1010,7 +1016,7 @@ CloudBuster_2_044:
 	.byte	W24
 @ 052   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_044
+	 .word	cloudbustermidi_2_044
 @ 053   ----------------------------------------
 	.byte		N18   , Ds2 , v120
 	.byte	W24
@@ -1039,7 +1045,7 @@ CloudBuster_2_044:
 	.byte		EOT   
 	.byte	W06
 @ 058   ----------------------------------------
-CloudBuster_2_058:
+cloudbustermidi_2_058:
 	.byte		N06   , As2 , v080
 	.byte	W12
 	.byte		        Fn2 
@@ -1059,60 +1065,64 @@ CloudBuster_2_058:
 	.byte	PEND
 @ 059   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 060   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 061   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 062   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 063   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 064   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 065   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 066   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 067   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 068   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 069   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 070   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 071   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 072   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_2_058
+	 .word	cloudbustermidi_2_058
 @ 073   ----------------------------------------
 	.byte		N06   , Gs2 , v080
 	.byte	W96
 @ 074   ----------------------------------------
+	.byte	W24
+	.byte	GOTO
+	 .word	cloudbustermidi_2_B1
+cloudbustermidi_2_B2:
 	.byte	FINE
 
 @**************** Track 3 (Midi-Chn.3) ****************@
 
-CloudBuster_3:
-	.byte	KEYSH , CloudBuster_key+0
+cloudbustermidi_3:
+	.byte	KEYSH , cloudbustermidi_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 42
+	.byte		VOICE , 0
 	.byte		PAN   , c_v+10
-	.byte		VOL   , 120*CloudBuster_mvl/mxv
+	.byte		VOL   , 120*cloudbustermidi_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte		N06   , Cn2 , v080
@@ -1132,7 +1142,7 @@ CloudBuster_3:
 	.byte		        Cn2 
 	.byte	W12
 @ 001   ----------------------------------------
-CloudBuster_3_001:
+cloudbustermidi_3_001:
 	.byte		N06   , Cs2 , v080
 	.byte	W12
 	.byte		        As1 
@@ -1151,7 +1161,7 @@ CloudBuster_3_001:
 	.byte	W12
 	.byte	PEND
 @ 002   ----------------------------------------
-CloudBuster_3_002:
+cloudbustermidi_3_002:
 	.byte		N06   , Ds2 , v080
 	.byte	W12
 	.byte		        Cn2 
@@ -1171,7 +1181,7 @@ CloudBuster_3_002:
 	.byte	PEND
 @ 003   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_001
+	 .word	cloudbustermidi_3_001
 @ 004   ----------------------------------------
 	.byte		N06   , Cn2 , v080
 	.byte	W12
@@ -1191,15 +1201,15 @@ CloudBuster_3_002:
 	.byte	W12
 @ 005   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_001
+	 .word	cloudbustermidi_3_001
 @ 006   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_002
+	 .word	cloudbustermidi_3_002
 @ 007   ----------------------------------------
 	.byte		N06   , Fn2 , v080
 	.byte	W96
 @ 008   ----------------------------------------
-CloudBuster_3_008:
+cloudbustermidi_3_008:
 	.byte		N30   , Fn0 , v120
 	.byte	W36
 	.byte		        As0 
@@ -1208,7 +1218,7 @@ CloudBuster_3_008:
 	.byte	W24
 	.byte	PEND
 @ 009   ----------------------------------------
-CloudBuster_3_009:
+cloudbustermidi_3_009:
 	.byte		N30   , Cn1 , v120
 	.byte	W36
 	.byte		        Gs0 
@@ -1217,7 +1227,7 @@ CloudBuster_3_009:
 	.byte	W24
 	.byte	PEND
 @ 010   ----------------------------------------
-CloudBuster_3_010:
+cloudbustermidi_3_010:
 	.byte		N30   , Ds0 , v120
 	.byte	W36
 	.byte		TIE   , Fn0 
@@ -1229,9 +1239,9 @@ CloudBuster_3_010:
 	.byte	W48
 @ 012   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_008
+	 .word	cloudbustermidi_3_008
 @ 013   ----------------------------------------
-CloudBuster_3_013:
+cloudbustermidi_3_013:
 	.byte		N30   , Cn1 , v120
 	.byte	W36
 	.byte		        Cs1 
@@ -1240,7 +1250,7 @@ CloudBuster_3_013:
 	.byte	W24
 	.byte	PEND
 @ 014   ----------------------------------------
-CloudBuster_3_014:
+cloudbustermidi_3_014:
 	.byte		N30   , Ds1 , v120
 	.byte	W36
 	.byte		TIE   , Fn1 
@@ -1250,6 +1260,7 @@ CloudBuster_3_014:
 	.byte	W48
 	.byte		EOT   
 	.byte	W48
+cloudbustermidi_3_B1:
 @ 016   ----------------------------------------
 	.byte	W96
 @ 017   ----------------------------------------
@@ -1268,26 +1279,26 @@ CloudBuster_3_014:
 	.byte	W96
 @ 024   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_008
+	 .word	cloudbustermidi_3_008
 @ 025   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_009
+	 .word	cloudbustermidi_3_009
 @ 026   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_010
+	 .word	cloudbustermidi_3_010
 @ 027   ----------------------------------------
 	.byte	W48
 	.byte		EOT   , Fn0 
 	.byte	W48
 @ 028   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_008
+	 .word	cloudbustermidi_3_008
 @ 029   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_013
+	 .word	cloudbustermidi_3_013
 @ 030   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_014
+	 .word	cloudbustermidi_3_014
 @ 031   ----------------------------------------
 	.byte	W48
 	.byte		EOT   , Fn1 
@@ -1307,7 +1318,7 @@ CloudBuster_3_014:
 @ 038   ----------------------------------------
 	.byte	W96
 @ 039   ----------------------------------------
-CloudBuster_3_039:
+cloudbustermidi_3_039:
 	.byte		N18   , As0 , v120
 	.byte	W24
 	.byte		        Cn1 
@@ -1318,7 +1329,7 @@ CloudBuster_3_039:
 	.byte	W24
 	.byte	PEND
 @ 040   ----------------------------------------
-CloudBuster_3_040:
+cloudbustermidi_3_040:
 	.byte		N66   , As1 , v120
 	.byte	W72
 	.byte		N18   
@@ -1343,7 +1354,7 @@ CloudBuster_3_040:
 	.byte		EOT   
 	.byte	W06
 @ 044   ----------------------------------------
-CloudBuster_3_044:
+cloudbustermidi_3_044:
 	.byte		N66   , Cs1 , v120
 	.byte	W72
 	.byte		N18   
@@ -1363,10 +1374,10 @@ CloudBuster_3_044:
 	.byte	W96
 @ 047   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_039
+	 .word	cloudbustermidi_3_039
 @ 048   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_040
+	 .word	cloudbustermidi_3_040
 @ 049   ----------------------------------------
 	.byte		N18   , Cn2 , v120
 	.byte	W24
@@ -1394,7 +1405,7 @@ CloudBuster_3_044:
 	.byte	W24
 @ 052   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_044
+	 .word	cloudbustermidi_3_044
 @ 053   ----------------------------------------
 	.byte		N18   , Ds1 , v120
 	.byte	W24
@@ -1423,7 +1434,7 @@ CloudBuster_3_044:
 	.byte		EOT   
 	.byte	W06
 @ 058   ----------------------------------------
-CloudBuster_3_058:
+cloudbustermidi_3_058:
 	.byte		N06   , Fn2 , v080
 	.byte	W12
 	.byte		        Cs2 
@@ -1443,9 +1454,9 @@ CloudBuster_3_058:
 	.byte	PEND
 @ 059   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_058
+	 .word	cloudbustermidi_3_058
 @ 060   ----------------------------------------
-CloudBuster_3_060:
+cloudbustermidi_3_060:
 	.byte		N06   , Fn2 , v080
 	.byte	W12
 	.byte		        Cs2 , v052
@@ -1464,7 +1475,7 @@ CloudBuster_3_060:
 	.byte	W12
 	.byte	PEND
 @ 061   ----------------------------------------
-CloudBuster_3_061:
+cloudbustermidi_3_061:
 	.byte		N06   , Fn2 , v052
 	.byte	W12
 	.byte		        Cs2 
@@ -1484,51 +1495,55 @@ CloudBuster_3_061:
 	.byte	PEND
 @ 062   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_058
+	 .word	cloudbustermidi_3_058
 @ 063   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_058
+	 .word	cloudbustermidi_3_058
 @ 064   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_058
+	 .word	cloudbustermidi_3_058
 @ 065   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_058
+	 .word	cloudbustermidi_3_058
 @ 066   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_058
+	 .word	cloudbustermidi_3_058
 @ 067   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_058
+	 .word	cloudbustermidi_3_058
 @ 068   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_060
+	 .word	cloudbustermidi_3_060
 @ 069   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_061
+	 .word	cloudbustermidi_3_061
 @ 070   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_058
+	 .word	cloudbustermidi_3_058
 @ 071   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_058
+	 .word	cloudbustermidi_3_058
 @ 072   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_3_058
+	 .word	cloudbustermidi_3_058
 @ 073   ----------------------------------------
 	.byte		N06   , Ds2 , v080
 	.byte	W96
 @ 074   ----------------------------------------
+	.byte	W24
+	.byte	GOTO
+	 .word	cloudbustermidi_3_B1
+cloudbustermidi_3_B2:
 	.byte	FINE
 
 @**************** Track 4 (Midi-Chn.4) ****************@
 
-CloudBuster_4:
-	.byte	KEYSH , CloudBuster_key+0
+cloudbustermidi_4:
+	.byte	KEYSH , cloudbustermidi_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 1
 	.byte		PAN   , c_v-10
-	.byte		VOL   , 120*CloudBuster_mvl/mxv
+	.byte		VOL   , 120*cloudbustermidi_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -1562,15 +1577,16 @@ CloudBuster_4:
 	.byte	W96
 @ 015   ----------------------------------------
 	.byte	W96
+cloudbustermidi_4_B1:
 @ 016   ----------------------------------------
-CloudBuster_4_016:
+cloudbustermidi_4_016:
 	.byte		N72   , Fs4 , v120
 	.byte	W72
 	.byte		N24   , As3 
 	.byte	W24
 	.byte	PEND
 @ 017   ----------------------------------------
-CloudBuster_4_017:
+cloudbustermidi_4_017:
 	.byte		N36   , Cn4 , v120
 	.byte	W36
 	.byte		        Gs4 
@@ -1579,14 +1595,14 @@ CloudBuster_4_017:
 	.byte	W24
 	.byte	PEND
 @ 018   ----------------------------------------
-CloudBuster_4_018:
+cloudbustermidi_4_018:
 	.byte		N72   , Fn4 , v120
 	.byte	W72
 	.byte		N24   , Gs3 
 	.byte	W24
 	.byte	PEND
 @ 019   ----------------------------------------
-CloudBuster_4_019:
+cloudbustermidi_4_019:
 	.byte		N36   , As3 , v120
 	.byte	W36
 	.byte		        Fs4 
@@ -1630,16 +1646,16 @@ CloudBuster_4_019:
 	.byte	W96
 @ 032   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_4_016
+	 .word	cloudbustermidi_4_016
 @ 033   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_4_017
+	 .word	cloudbustermidi_4_017
 @ 034   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_4_018
+	 .word	cloudbustermidi_4_018
 @ 035   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_4_019
+	 .word	cloudbustermidi_4_019
 @ 036   ----------------------------------------
 	.byte		N96   , Ds4 , v120
 	.byte	W96
@@ -1726,16 +1742,20 @@ CloudBuster_4_019:
 @ 073   ----------------------------------------
 	.byte	W96
 @ 074   ----------------------------------------
+	.byte	W24
+	.byte	GOTO
+	 .word	cloudbustermidi_4_B1
+cloudbustermidi_4_B2:
 	.byte	FINE
 
 @**************** Track 5 (Midi-Chn.5) ****************@
 
-CloudBuster_5:
-	.byte	KEYSH , CloudBuster_key+0
+cloudbustermidi_5:
+	.byte	KEYSH , cloudbustermidi_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 127
+	.byte		VOICE , 34
+	.byte		VOL   , 103*cloudbustermidi_mvl/mxv
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 127*CloudBuster_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte		N06   , Cs0 , v120
@@ -1754,8 +1774,7 @@ CloudBuster_5:
 	.byte		N24   , Fn1 , v080
 	.byte	W24
 @ 001   ----------------------------------------
-CloudBuster_5_001:
-	.byte		N06   , En1 , v080
+	.byte		N06   , En1 
 	.byte	W12
 	.byte		        Cs0 , v120
 	.byte		N06   , En1 , v080
@@ -1772,9 +1791,7 @@ CloudBuster_5_001:
 	.byte		N24   , En0 , v120
 	.byte		N24   , Fn1 , v080
 	.byte	W24
-	.byte	PEND
 @ 002   ----------------------------------------
-CloudBuster_5_002:
 	.byte		N06   , Cs0 , v120
 	.byte		N06   , En1 , v080
 	.byte	W24
@@ -1790,7 +1807,6 @@ CloudBuster_5_002:
 	.byte		N24   , En0 , v120
 	.byte		N24   , Fn1 , v080
 	.byte	W24
-	.byte	PEND
 @ 003   ----------------------------------------
 	.byte		N06   , En1 
 	.byte	W12
@@ -1815,8 +1831,7 @@ CloudBuster_5_002:
 	.byte		N12   , Bn0 , v120
 	.byte	W12
 @ 004   ----------------------------------------
-CloudBuster_5_004:
-	.byte		N06   , Cs0 , v120
+	.byte		N06   , Cs0 
 	.byte		N24   , Gn1 
 	.byte	W24
 	.byte		        En0 
@@ -1827,56 +1842,15 @@ CloudBuster_5_004:
 	.byte	W24
 	.byte		        Cs0 , v100
 	.byte		N06   , En1 , v080
-	.byte	W12
-	.byte		N24   , En0 , v120
-	.byte		N24   , Fn1 , v080
-	.byte	W24
-	.byte	PEND
+	.byte	W06
+	.byte		N24   , Bn1 , v064
+	.byte	W30
 @ 005   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_001
-@ 006   ----------------------------------------
-	.byte		N06   , Cs0 , v120
-	.byte		N06   , En1 , v080
-	.byte	W24
+cloudbustermidi_5_005:
 	.byte		N24   , En0 , v120
-	.byte		N12   , Fn1 , v080
-	.byte	W12
-	.byte		N06   , Cs0 , v120
-	.byte		N06   , En1 , v080
-	.byte	W24
-	.byte		        Cs0 , v100
-	.byte		N06   , En1 , v080
-	.byte	W12
-	.byte		N12   , En0 , v120
 	.byte		N24   , Fn1 , v080
-	.byte	W12
-	.byte		N12   , Bn0 , v120
-	.byte	W12
-@ 007   ----------------------------------------
-	.byte		N06   , Cs0 
-	.byte		N24   , Gn1 
 	.byte	W24
-	.byte		        Cn2 , v100
-	.byte	W24
-	.byte		N24   
-	.byte	W12
-	.byte		N06   , Cs0 , v120
-	.byte	W12
-	.byte		N24   , En0 
-	.byte		N24   , Bn1 
-	.byte	W24
-@ 008   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_004
-@ 009   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_001
-@ 010   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_002
-@ 011   ----------------------------------------
-	.byte		N06   , En1 , v080
+	.byte		N06   , En1 
 	.byte	W12
 	.byte		        Cs0 , v120
 	.byte		N06   , En1 , v080
@@ -1890,14 +1864,72 @@ CloudBuster_5_004:
 	.byte		        Cs0 , v100
 	.byte		N06   , En1 , v080
 	.byte	W12
+	.byte	PEND
+@ 006   ----------------------------------------
+cloudbustermidi_5_006:
+	.byte		N24   , En0 , v120
+	.byte		N24   , Fn1 , v080
+	.byte	W24
+	.byte		N06   , Cs0 , v120
+	.byte		N06   , En1 , v080
+	.byte	W24
+	.byte		N24   , En0 , v120
+	.byte		N12   , Fn1 , v080
+	.byte	W12
+	.byte		N06   , Cs0 , v120
+	.byte		N06   , En1 , v080
+	.byte	W24
+	.byte		        Cs0 , v100
+	.byte		N06   , En1 , v080
+	.byte	W12
+	.byte	PEND
+@ 007   ----------------------------------------
+	.byte		N12   , En0 , v120
+	.byte		N24   , Fn1 , v080
+	.byte	W12
+	.byte		N12   , Bn0 , v120
+	.byte	W12
+	.byte		N06   , Cs0 
+	.byte		N24   , Gn1 
+	.byte	W24
+	.byte		        Cn2 , v100
+	.byte	W24
+	.byte		N24   
+	.byte	W12
+	.byte		N06   , Cs0 , v120
+	.byte	W12
+@ 008   ----------------------------------------
+	.byte		N24   , En0 
+	.byte		N24   , Bn1 
+	.byte	W24
+	.byte		N06   , Cs0 
+	.byte		N24   , Gn1 
+	.byte	W24
+	.byte		        En0 
+	.byte		N12   , Fn1 , v080
+	.byte	W12
+	.byte		N06   , Cs0 , v120
+	.byte		N06   , En1 , v080
+	.byte	W24
+	.byte		        Cs0 , v100
+	.byte		N06   , En1 , v080
+	.byte	W12
+@ 009   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_005
+@ 010   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_006
+@ 011   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_005
+@ 012   ----------------------------------------
 	.byte		N12   , En0 , v120
 	.byte	W12
 	.byte		N06   , Cs0 , v100
 	.byte		N12   , An0 , v120
 	.byte	W12
-@ 012   ----------------------------------------
-CloudBuster_5_012:
-	.byte		N06   , Cs0 , v120
+	.byte		N06   , Cs0 
 	.byte		N24   , Bn1 
 	.byte	W24
 	.byte		        En0 
@@ -1909,18 +1941,17 @@ CloudBuster_5_012:
 	.byte		        Cs0 , v100
 	.byte		N06   , En1 , v080
 	.byte	W12
+@ 013   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_005
+@ 014   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_006
+@ 015   ----------------------------------------
 	.byte		N24   , En0 , v120
 	.byte		N24   , Fn1 , v080
 	.byte	W24
-	.byte	PEND
-@ 013   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_001
-@ 014   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_002
-@ 015   ----------------------------------------
-	.byte		N06   , En1 , v080
+	.byte		N06   , En1 
 	.byte	W12
 	.byte		        Cs0 , v120
 	.byte		N06   , En1 , v080
@@ -1935,16 +1966,17 @@ CloudBuster_5_012:
 	.byte	W06
 	.byte		        En0 , v080
 	.byte	W06
-	.byte		        En0 , v120
+cloudbustermidi_5_B1:
+@ 016   ----------------------------------------
+cloudbustermidi_5_016:
+	.byte		N06   , En0 , v120
 	.byte	W06
 	.byte		        En0 , v100
 	.byte	W06
 	.byte		        Cs0 
 	.byte		N12   , Bn0 , v120
 	.byte	W12
-@ 016   ----------------------------------------
-CloudBuster_5_016:
-	.byte		N06   , Cs0 , v120
+	.byte		N06   , Cs0 
 	.byte		N24   , Gn1 
 	.byte	W24
 	.byte		        En0 
@@ -1955,12 +1987,12 @@ CloudBuster_5_016:
 	.byte		N06   , Cs0 , v100
 	.byte		N12   , Cn2 , v060
 	.byte	W12
+	.byte	PEND
+@ 017   ----------------------------------------
+cloudbustermidi_5_017:
 	.byte		N24   , En0 , v120
 	.byte		N24   , Cn2 , v100
 	.byte	W24
-	.byte	PEND
-@ 017   ----------------------------------------
-CloudBuster_5_017:
 	.byte		N06   , Cs0 , v120
 	.byte		N12   , Cn2 , v080
 	.byte	W12
@@ -1976,12 +2008,12 @@ CloudBuster_5_017:
 	.byte		N06   , Cs0 , v100
 	.byte		N12   , Cn2 , v060
 	.byte	W12
+	.byte	PEND
+@ 018   ----------------------------------------
+cloudbustermidi_5_018:
 	.byte		N24   , En0 , v120
 	.byte		N24   , Cn2 , v100
 	.byte	W24
-	.byte	PEND
-@ 018   ----------------------------------------
-CloudBuster_5_018:
 	.byte		N06   , Cs0 , v120
 	.byte		N24   , Cn2 , v080
 	.byte	W24
@@ -1993,32 +2025,34 @@ CloudBuster_5_018:
 	.byte		N06   , Cs0 , v100
 	.byte		N12   , Cn2 , v060
 	.byte	W12
-	.byte		N24   , En0 , v120
-	.byte		N24   , Cn2 , v100
-	.byte	W24
 	.byte	PEND
 @ 019   ----------------------------------------
-	.byte		N06   , Cs0 , v120
-	.byte		N12   , Cn2 , v080
-	.byte	W12
-	.byte		N06   , Cs0 , v100
-	.byte		N12   , Cn2 , v060
-	.byte	W12
-	.byte		N24   , En0 , v120
-	.byte		N24   , Cn2 , v100
-	.byte	W12
-	.byte		N06   , Cs0 , v120
-	.byte	W12
-	.byte		N12   , Cn2 , v080
-	.byte	W12
-	.byte		N06   , Cs0 , v100
-	.byte		N12   , Cn2 , v060
-	.byte	W12
+cloudbustermidi_5_019:
 	.byte		N24   , En0 , v120
 	.byte		N24   , Cn2 , v100
 	.byte	W24
+	.byte		N06   , Cs0 , v120
+	.byte		N12   , Cn2 , v080
+	.byte	W12
+	.byte		N06   , Cs0 , v100
+	.byte		N12   , Cn2 , v060
+	.byte	W12
+	.byte		N24   , En0 , v120
+	.byte		N24   , Cn2 , v100
+	.byte	W12
+	.byte		N06   , Cs0 , v120
+	.byte	W12
+	.byte		N12   , Cn2 , v080
+	.byte	W12
+	.byte		N06   , Cs0 , v100
+	.byte		N12   , Cn2 , v060
+	.byte	W12
+	.byte	PEND
 @ 020   ----------------------------------------
-CloudBuster_5_020:
+cloudbustermidi_5_020:
+	.byte		N24   , En0 , v120
+	.byte		N24   , Cn2 , v100
+	.byte	W24
 	.byte		N06   , Cs0 , v120
 	.byte		N24   , Gn1 
 	.byte	W24
@@ -2032,12 +2066,12 @@ CloudBuster_5_020:
 	.byte		N06   , Cs0 , v100
 	.byte		N12   , Cn2 , v060
 	.byte	W12
+	.byte	PEND
+@ 021   ----------------------------------------
+cloudbustermidi_5_021:
 	.byte		N24   , En0 , v120
 	.byte		N24   , Cn2 , v100
 	.byte	W24
-	.byte	PEND
-@ 021   ----------------------------------------
-CloudBuster_5_021:
 	.byte		N12   , Cn2 , v080
 	.byte	W12
 	.byte		N06   , Cs0 , v120
@@ -2052,11 +2086,11 @@ CloudBuster_5_021:
 	.byte		N06   , Cs0 , v100
 	.byte		N12   , Cn2 , v060
 	.byte	W12
+	.byte	PEND
+@ 022   ----------------------------------------
 	.byte		N24   , En0 , v120
 	.byte		N24   , Cn2 , v100
 	.byte	W24
-	.byte	PEND
-@ 022   ----------------------------------------
 	.byte		N06   , Cs0 , v120
 	.byte		N24   , Bn1 
 	.byte	W24
@@ -2070,10 +2104,10 @@ CloudBuster_5_021:
 	.byte		N06   , Cs0 , v100
 	.byte		N12   , Cn2 , v060
 	.byte	W12
+@ 023   ----------------------------------------
 	.byte		N24   , En0 , v120
 	.byte		N24   , Cn2 , v100
 	.byte	W24
-@ 023   ----------------------------------------
 	.byte		N12   , Cn2 , v080
 	.byte	W12
 	.byte		N06   , Cs0 , v120
@@ -2090,6 +2124,7 @@ CloudBuster_5_021:
 	.byte		        Cs0 
 	.byte		N12   , Bn0 , v120
 	.byte	W12
+@ 024   ----------------------------------------
 	.byte		N06   , En0 
 	.byte	W06
 	.byte		        En0 , v100
@@ -2097,48 +2132,58 @@ CloudBuster_5_021:
 	.byte		        Cs0 
 	.byte		N12   , An0 , v120
 	.byte	W12
-@ 024   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_004
-@ 025   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_001
-@ 026   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_002
-@ 027   ----------------------------------------
-	.byte		N06   , En1 , v080
-	.byte	W12
-	.byte		        Cs0 , v120
-	.byte		N06   , En1 , v080
-	.byte	W12
-	.byte		N24   , En0 , v120
-	.byte		N24   , Fn1 , v080
+	.byte		N06   , Cs0 
+	.byte		N24   , Gn1 
 	.byte	W24
+	.byte		        En0 
+	.byte		N12   , Fn1 , v080
+	.byte	W12
 	.byte		N06   , Cs0 , v120
 	.byte		N06   , En1 , v080
-	.byte	W12
+	.byte	W24
 	.byte		        Cs0 , v100
 	.byte		N06   , En1 , v080
 	.byte	W12
-	.byte		        En0 , v120
+@ 025   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_005
+@ 026   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_006
+@ 027   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_005
+@ 028   ----------------------------------------
+	.byte		N06   , En0 , v120
 	.byte	W06
 	.byte		        Bn0 
 	.byte	W06
 	.byte		        Cs0 , v100
 	.byte		N06   , An0 , v120
 	.byte	W12
-@ 028   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_012
+	.byte		        Cs0 
+	.byte		N24   , Bn1 
+	.byte	W24
+	.byte		        En0 
+	.byte		N12   , Fn1 , v080
+	.byte	W12
+	.byte		N06   , Cs0 , v120
+	.byte		N06   , En1 , v080
+	.byte	W24
+	.byte		        Cs0 , v100
+	.byte		N06   , En1 , v080
+	.byte	W12
 @ 029   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_5_001
+	 .word	cloudbustermidi_5_005
 @ 030   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_5_002
+	 .word	cloudbustermidi_5_006
 @ 031   ----------------------------------------
-	.byte		N06   , En1 , v080
+	.byte		N24   , En0 , v120
+	.byte		N24   , Fn1 , v080
+	.byte	W24
+	.byte		N06   , En1 
 	.byte	W12
 	.byte		        Cs0 , v120
 	.byte		N06   , En1 , v080
@@ -2156,30 +2201,29 @@ CloudBuster_5_021:
 	.byte	W06
 	.byte		        En0 , v100
 	.byte	W06
-	.byte		        En0 , v120
+@ 032   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_016
+@ 033   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_017
+@ 034   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_018
+@ 035   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_019
+@ 036   ----------------------------------------
+	.byte		N06   , En0 , v120
 	.byte	W06
 	.byte		        En0 , v100
 	.byte	W06
+	.byte		        En0 , v120
+	.byte	W12
 	.byte		        Cs0 
-	.byte		N12   , Bn0 , v120
-	.byte	W12
-@ 032   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_016
-@ 033   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_017
-@ 034   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_018
-@ 035   ----------------------------------------
-	.byte		N06   , Cs0 , v120
-	.byte		N12   , Cn2 , v080
-	.byte	W12
-	.byte		N06   , Cs0 , v100
-	.byte		N12   , Cn2 , v060
-	.byte	W12
-	.byte		N24   , En0 , v120
+	.byte		N24   , Gn1 
+	.byte	W24
+	.byte		        En0 
 	.byte		N24   , Cn2 , v100
 	.byte	W12
 	.byte		N06   , Cs0 , v120
@@ -2189,23 +2233,17 @@ CloudBuster_5_021:
 	.byte		N06   , Cs0 , v100
 	.byte		N12   , Cn2 , v060
 	.byte	W12
-	.byte		N06   , En0 , v120
-	.byte	W06
-	.byte		        En0 , v100
-	.byte	W06
-	.byte		        En0 , v120
-	.byte	W12
-@ 036   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_020
 @ 037   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_5_021
+	 .word	cloudbustermidi_5_021
 @ 038   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_5_020
+	 .word	cloudbustermidi_5_020
 @ 039   ----------------------------------------
-	.byte		N24   , Bn1 , v120
+	.byte		N24   , En0 , v120
+	.byte		N24   , Cn2 , v100
+	.byte	W24
+	.byte		        Bn1 , v120
 	.byte	W12
 	.byte		N06   , Cs0 
 	.byte	W06
@@ -2229,6 +2267,7 @@ CloudBuster_5_021:
 	.byte	W06
 	.byte		        Bn0 , v100
 	.byte	W06
+@ 040   ----------------------------------------
 	.byte		        An0 , v120
 	.byte	W06
 	.byte		        An0 , v100
@@ -2238,9 +2277,7 @@ CloudBuster_5_021:
 	.byte	W06
 	.byte		        Gn0 , v100
 	.byte	W06
-@ 040   ----------------------------------------
-CloudBuster_5_040:
-	.byte		N06   , Cs0 , v120
+	.byte		        Cs0 , v120
 	.byte		N24   , Gn1 
 	.byte	W24
 	.byte		        En0 
@@ -2251,12 +2288,11 @@ CloudBuster_5_040:
 	.byte	W12
 	.byte		N06   , Cs0 , v100
 	.byte	W12
+@ 041   ----------------------------------------
+cloudbustermidi_5_041:
 	.byte		N24   , En0 , v120
 	.byte		N24   , Fn1 , v080
 	.byte	W24
-	.byte	PEND
-@ 041   ----------------------------------------
-CloudBuster_5_041:
 	.byte		N06   , Cs0 , v120
 	.byte		N24   , Fn1 , v072
 	.byte	W12
@@ -2272,12 +2308,12 @@ CloudBuster_5_041:
 	.byte	W12
 	.byte		N06   , Cs0 , v100
 	.byte	W12
+	.byte	PEND
+@ 042   ----------------------------------------
+cloudbustermidi_5_042:
 	.byte		N24   , En0 , v120
 	.byte		N24   , Fn1 , v080
 	.byte	W24
-	.byte	PEND
-@ 042   ----------------------------------------
-CloudBuster_5_042:
 	.byte		N06   , Cs0 , v120
 	.byte		N24   , Fn1 , v072
 	.byte	W24
@@ -2289,42 +2325,38 @@ CloudBuster_5_042:
 	.byte	W12
 	.byte		N06   , Cs0 , v100
 	.byte	W12
-	.byte		N24   , En0 , v120
-	.byte		N24   , Fn1 , v080
-	.byte	W24
 	.byte	PEND
 @ 043   ----------------------------------------
-	.byte		N06   , Cs0 , v120
-	.byte		N24   , Fn1 , v072
-	.byte	W12
-	.byte		N06   , Cs0 , v100
-	.byte	W12
-	.byte		N24   , En0 , v120
-	.byte		N24   , Fn1 , v080
-	.byte	W12
-	.byte		N06   , Cs0 , v100
-	.byte	W12
-	.byte		        Cs0 , v120
-	.byte		N24   , Fn1 , v072
-	.byte	W12
-	.byte		N06   , Cs0 , v100
-	.byte	W12
+	.byte	PATT
+	 .word	cloudbustermidi_5_041
+@ 044   ----------------------------------------
 	.byte		N12   , En0 , v120
 	.byte		N24   , Fn1 , v080
 	.byte	W12
 	.byte		N06   , Cs0 , v100
 	.byte		N12   , Bn0 , v120
 	.byte	W12
-@ 044   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_040
+	.byte		N06   , Cs0 
+	.byte		N24   , Gn1 
+	.byte	W24
+	.byte		        En0 
+	.byte		N24   , Fn1 , v080
+	.byte	W24
+	.byte		N06   , Cs0 , v120
+	.byte		N24   , Fn1 , v072
+	.byte	W12
+	.byte		N06   , Cs0 , v100
+	.byte	W12
 @ 045   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_5_041
+	 .word	cloudbustermidi_5_041
 @ 046   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_5_042
+	 .word	cloudbustermidi_5_042
 @ 047   ----------------------------------------
+	.byte		N24   , En0 , v120
+	.byte		N24   , Fn1 , v080
+	.byte	W24
 	.byte		N06   , Cs0 , v120
 	.byte		N24   , Fn1 , v072
 	.byte	W12
@@ -2342,6 +2374,7 @@ CloudBuster_5_042:
 	.byte	W06
 	.byte		        En0 , v080
 	.byte	W06
+@ 048   ----------------------------------------
 	.byte		        En0 , v120
 	.byte	W06
 	.byte		        En0 , v100
@@ -2349,32 +2382,28 @@ CloudBuster_5_042:
 	.byte		        Cs0 
 	.byte		N12   , Bn0 , v120
 	.byte	W12
-@ 048   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_040
-@ 049   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_041
-@ 050   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_042
-@ 051   ----------------------------------------
+	.byte		N06   , Cs0 
+	.byte		N24   , Gn1 
+	.byte	W24
+	.byte		        En0 
+	.byte		N24   , Fn1 , v080
+	.byte	W24
 	.byte		N06   , Cs0 , v120
 	.byte		N24   , Fn1 , v072
 	.byte	W12
 	.byte		N06   , Cs0 , v100
 	.byte	W12
-	.byte		N24   , En0 , v120
-	.byte		N24   , Fn1 , v080
-	.byte	W12
-	.byte		N06   , Cs0 , v100
-	.byte	W12
-	.byte		        Cs0 , v120
-	.byte		N24   , Fn1 , v072
-	.byte	W12
-	.byte		N06   , Cs0 , v100
-	.byte	W12
-	.byte		        En0 , v120
+@ 049   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_041
+@ 050   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_042
+@ 051   ----------------------------------------
+	.byte	PATT
+	 .word	cloudbustermidi_5_041
+@ 052   ----------------------------------------
+	.byte		N06   , En0 , v120
 	.byte		N24   , Fn1 , v080
 	.byte	W06
 	.byte		N06   , En0 , v100
@@ -2382,13 +2411,24 @@ CloudBuster_5_042:
 	.byte		        Cs0 
 	.byte		N12   , Bn0 , v120
 	.byte	W12
-@ 052   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_040
+	.byte		N06   , Cs0 
+	.byte		N24   , Gn1 
+	.byte	W24
+	.byte		        En0 
+	.byte		N24   , Fn1 , v080
+	.byte	W24
+	.byte		N06   , Cs0 , v120
+	.byte		N24   , Fn1 , v072
+	.byte	W12
+	.byte		N06   , Cs0 , v100
+	.byte	W12
 @ 053   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_5_041
+	 .word	cloudbustermidi_5_041
 @ 054   ----------------------------------------
+	.byte		N24   , En0 , v120
+	.byte		N24   , Fn1 , v080
+	.byte	W24
 	.byte		N06   , Cs0 , v120
 	.byte		N24   , Bn1 
 	.byte	W24
@@ -2400,34 +2440,30 @@ CloudBuster_5_042:
 	.byte	W12
 	.byte		N06   , Cs0 , v100
 	.byte	W12
-	.byte		N24   , En0 , v120
-	.byte		N24   , Fn1 , v080
-	.byte	W24
 @ 055   ----------------------------------------
-	.byte		N06   , Cs0 , v120
-	.byte		N24   , Fn1 , v072
-	.byte	W12
-	.byte		N06   , Cs0 , v100
-	.byte	W12
+	.byte	PATT
+	 .word	cloudbustermidi_5_041
+@ 056   ----------------------------------------
 	.byte		N24   , En0 , v120
 	.byte		N24   , Fn1 , v080
 	.byte	W12
 	.byte		N06   , Cs0 , v100
 	.byte	W12
 	.byte		        Cs0 , v120
+	.byte		N24   , Gn1 
+	.byte	W24
+	.byte		        En0 
+	.byte		N24   , Fn1 , v080
+	.byte	W24
+	.byte		N06   , Cs0 , v120
 	.byte		N24   , Fn1 , v072
 	.byte	W12
 	.byte		N06   , Cs0 , v100
 	.byte	W12
+@ 057   ----------------------------------------
 	.byte		N24   , En0 , v120
 	.byte		N24   , Fn1 , v080
-	.byte	W12
-	.byte		N06   , Cs0 , v100
-	.byte	W12
-@ 056   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_040
-@ 057   ----------------------------------------
+	.byte	W24
 	.byte		N06   , Cs0 , v120
 	.byte		N24   , Bn1 
 	.byte	W12
@@ -2449,6 +2485,7 @@ CloudBuster_5_042:
 	.byte	W06
 	.byte		        Cn1 , v100
 	.byte	W06
+@ 058   ----------------------------------------
 	.byte		        Bn0 , v120
 	.byte	W06
 	.byte		        Bn0 , v100
@@ -2458,9 +2495,7 @@ CloudBuster_5_042:
 	.byte	W06
 	.byte		        Gn0 , v100
 	.byte	W06
-@ 058   ----------------------------------------
-CloudBuster_5_058:
-	.byte		N06   , Cs0 , v120
+	.byte		        Cs0 , v120
 	.byte		N24   , Gn1 
 	.byte	W24
 	.byte		N06   , En1 , v080
@@ -2471,13 +2506,8 @@ CloudBuster_5_058:
 	.byte	W12
 	.byte		        En1 , v040
 	.byte	W12
-	.byte		        En1 , v080
-	.byte	W12
-	.byte		        En1 , v040
-	.byte	W12
-	.byte	PEND
 @ 059   ----------------------------------------
-CloudBuster_5_059:
+cloudbustermidi_5_059:
 	.byte		N06   , En1 , v080
 	.byte	W12
 	.byte		        En1 , v040
@@ -2492,13 +2522,17 @@ CloudBuster_5_059:
 	.byte	W12
 	.byte		        En1 , v080
 	.byte	W12
+	.byte		        En1 , v040
+	.byte	W12
+	.byte	PEND
+@ 060   ----------------------------------------
+cloudbustermidi_5_060:
+	.byte		N06   , En1 , v080
+	.byte	W12
 	.byte		        Cs0 , v100
 	.byte		N06   , En0 , v120
 	.byte		N12   , Fn1 , v080
 	.byte	W12
-	.byte	PEND
-@ 060   ----------------------------------------
-CloudBuster_5_060:
 	.byte		N06   , Cs0 , v120
 	.byte		N06   , En1 , v080
 	.byte	W12
@@ -2512,13 +2546,13 @@ CloudBuster_5_060:
 	.byte	W12
 	.byte		        En1 , v040
 	.byte	W12
+	.byte	PEND
+@ 061   ----------------------------------------
 	.byte		        En1 , v080
 	.byte	W12
 	.byte		        Cs0 , v100
 	.byte		N06   , En1 , v040
 	.byte	W12
-	.byte	PEND
-@ 061   ----------------------------------------
 	.byte		        Cs0 , v120
 	.byte		N06   , En1 , v080
 	.byte	W12
@@ -2532,23 +2566,37 @@ CloudBuster_5_060:
 	.byte	W12
 	.byte		        En1 , v040
 	.byte	W12
+@ 062   ----------------------------------------
 	.byte		        En1 , v080
 	.byte	W12
 	.byte		        Cs0 , v100
 	.byte		N06   , En0 , v120
 	.byte		N12   , Fn1 , v080
 	.byte	W12
-@ 062   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_058
+	.byte		N06   , Cs0 , v120
+	.byte		N24   , Gn1 
+	.byte	W24
+	.byte		N06   , En1 , v080
+	.byte	W12
+	.byte		        En1 , v040
+	.byte	W12
+	.byte		        En1 , v080
+	.byte	W12
+	.byte		        En1 , v040
+	.byte	W12
 @ 063   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_5_059
+	 .word	cloudbustermidi_5_059
 @ 064   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_5_060
+	 .word	cloudbustermidi_5_060
 @ 065   ----------------------------------------
-	.byte		N06   , Cs0 , v120
+	.byte		N06   , En1 , v080
+	.byte	W12
+	.byte		        Cs0 , v100
+	.byte		N06   , En1 , v040
+	.byte	W12
+	.byte		        Cs0 , v120
 	.byte		N06   , En1 , v080
 	.byte		N12   , Bn1 , v120
 	.byte	W12
@@ -2564,13 +2612,12 @@ CloudBuster_5_060:
 	.byte	W12
 	.byte		        En0 , v100
 	.byte	W12
+@ 066   ----------------------------------------
 	.byte		        Bn0 , v120
 	.byte	W12
 	.byte		N06   , Cs0 , v100
 	.byte		N12   , An0 
 	.byte	W12
-@ 066   ----------------------------------------
-CloudBuster_5_066:
 	.byte		N06   , Cs0 , v120
 	.byte		N24   , Gn1 
 	.byte	W24
@@ -2581,14 +2628,13 @@ CloudBuster_5_066:
 	.byte		N12   , En0 , v120
 	.byte		N06   , En1 , v080
 	.byte	W24
+@ 067   ----------------------------------------
+cloudbustermidi_5_067:
 	.byte		N24   , Cs2 , v100
 	.byte	W12
 	.byte		N06   , Cs0 
 	.byte	W12
-	.byte	PEND
-@ 067   ----------------------------------------
-CloudBuster_5_067:
-	.byte		N06   , En1 , v080
+	.byte		        En1 , v080
 	.byte	W12
 	.byte		        Cs0 , v120
 	.byte	W12
@@ -2599,12 +2645,12 @@ CloudBuster_5_067:
 	.byte		N12   , En0 , v120
 	.byte		N06   , En1 , v080
 	.byte	W24
-	.byte		N24   , Cs2 , v100
-	.byte	W12
-	.byte		N06   , Cs0 
-	.byte	W12
 	.byte	PEND
 @ 068   ----------------------------------------
+	.byte		N24   , Cs2 , v100
+	.byte	W12
+	.byte		N06   , Cs0 
+	.byte	W12
 	.byte		        Cs0 , v120
 	.byte	W24
 	.byte		N24   , Cs2 , v100
@@ -2614,11 +2660,11 @@ CloudBuster_5_067:
 	.byte		N12   , En0 , v120
 	.byte		N06   , En1 , v080
 	.byte	W24
+@ 069   ----------------------------------------
 	.byte		N24   , Cs2 , v100
 	.byte	W12
 	.byte		N06   , Cs0 
 	.byte	W12
-@ 069   ----------------------------------------
 	.byte		        En1 , v080
 	.byte	W12
 	.byte		        Cs0 , v120
@@ -2632,27 +2678,39 @@ CloudBuster_5_067:
 	.byte	W12
 	.byte		        Cs0 , v100
 	.byte	W12
+@ 070   ----------------------------------------
 	.byte		N24   , Cs2 
 	.byte	W12
 	.byte		N06   , Cs0 
 	.byte	W12
-@ 070   ----------------------------------------
-	.byte	PATT
-	 .word	CloudBuster_5_066
+	.byte		        Cs0 , v120
+	.byte		N24   , Gn1 
+	.byte	W24
+	.byte		        Cs2 , v100
+	.byte	W12
+	.byte		N06   , Cs0 
+	.byte	W12
+	.byte		N12   , En0 , v120
+	.byte		N06   , En1 , v080
+	.byte	W24
 @ 071   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_5_067
+	 .word	cloudbustermidi_5_067
 @ 072   ----------------------------------------
-	.byte		N06   , Cs0 , v120
+	.byte		N24   , Cs2 , v100
+	.byte	W12
+	.byte		N06   , Cs0 
+	.byte	W12
+	.byte		        Cs0 , v120
 	.byte	W24
 	.byte		N24   , Cs2 , v100
 	.byte	W24
 	.byte		N12   , En0 , v120
 	.byte		N06   , En1 , v080
 	.byte	W24
+@ 073   ----------------------------------------
 	.byte		N24   , Cs2 , v100
 	.byte	W24
-@ 073   ----------------------------------------
 	.byte		N12   , Bn1 , v120
 	.byte	W18
 	.byte		N06   , En0 , v100
@@ -2673,6 +2731,7 @@ CloudBuster_5_067:
 	.byte	W06
 	.byte		        Cn1 , v100
 	.byte	W06
+@ 074   ----------------------------------------
 	.byte		        Bn0 , v120
 	.byte	W06
 	.byte		        An0 , v100
@@ -2681,17 +2740,19 @@ CloudBuster_5_067:
 	.byte	W06
 	.byte		        Fn0 , v100
 	.byte	W06
-@ 074   ----------------------------------------
+	.byte	GOTO
+	 .word	cloudbustermidi_5_B1
+cloudbustermidi_5_B2:
 	.byte	FINE
 
 @**************** Track 6 (Midi-Chn.8) ****************@
 
-CloudBuster_6:
-	.byte	KEYSH , CloudBuster_key+0
+cloudbustermidi_6:
+	.byte	KEYSH , cloudbustermidi_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 48
+	.byte		VOICE , 100
 	.byte		PAN   , c_v-64
-	.byte		VOL   , 127*CloudBuster_mvl/mxv
+	.byte		VOL   , 127*cloudbustermidi_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte		N92   , Cn3 , v052
@@ -2741,8 +2802,9 @@ CloudBuster_6:
 	.byte	W96
 @ 015   ----------------------------------------
 	.byte	W96
+cloudbustermidi_6_B1:
 @ 016   ----------------------------------------
-	.byte		N92   , Cs3 
+	.byte		N92   , Cs3 , v052
 	.byte		N92   , Fs3 
 	.byte	W96
 @ 017   ----------------------------------------
@@ -2860,7 +2922,7 @@ CloudBuster_6:
 	.byte		N92   , Ds3 
 	.byte	W96
 @ 046   ----------------------------------------
-CloudBuster_6_046:
+cloudbustermidi_6_046:
 	.byte		TIE   , Cn3 , v060
 	.byte		TIE   , Fn3 
 	.byte	W96
@@ -2897,7 +2959,7 @@ CloudBuster_6_046:
 	.byte	W96
 @ 054   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_6_046
+	 .word	cloudbustermidi_6_046
 @ 055   ----------------------------------------
 	.byte	W92
 	.byte	W01
@@ -2906,7 +2968,7 @@ CloudBuster_6_046:
 	.byte	W03
 @ 056   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_6_046
+	 .word	cloudbustermidi_6_046
 @ 057   ----------------------------------------
 	.byte	W92
 	.byte	W01
@@ -2969,16 +3031,20 @@ CloudBuster_6_046:
 	.byte		N06   , Gs3 
 	.byte	W96
 @ 074   ----------------------------------------
+	.byte	W24
+	.byte	GOTO
+	 .word	cloudbustermidi_6_B1
+cloudbustermidi_6_B2:
 	.byte	FINE
 
 @**************** Track 7 (Midi-Chn.9) ****************@
 
-CloudBuster_7:
-	.byte	KEYSH , CloudBuster_key+0
+cloudbustermidi_7:
+	.byte	KEYSH , cloudbustermidi_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 48
+	.byte		VOICE , 100
 	.byte		PAN   , c_v+63
-	.byte		VOL   , 127*CloudBuster_mvl/mxv
+	.byte		VOL   , 127*cloudbustermidi_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte		N92   , Fn2 , v052
@@ -3028,8 +3094,9 @@ CloudBuster_7:
 	.byte	W96
 @ 015   ----------------------------------------
 	.byte	W96
+cloudbustermidi_7_B1:
 @ 016   ----------------------------------------
-	.byte		N92   , Fs2 
+	.byte		N92   , Fs2 , v052
 	.byte		N92   , As2 
 	.byte	W96
 @ 017   ----------------------------------------
@@ -3181,7 +3248,7 @@ CloudBuster_7:
 	.byte		N92   , Fs2 
 	.byte	W96
 @ 054   ----------------------------------------
-CloudBuster_7_054:
+cloudbustermidi_7_054:
 	.byte		TIE   , Fn2 , v060
 	.byte		TIE   , As2 
 	.byte	W96
@@ -3241,7 +3308,7 @@ CloudBuster_7_054:
 	.byte	W48
 @ 070   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_7_054
+	 .word	cloudbustermidi_7_054
 @ 071   ----------------------------------------
 	.byte	W92
 	.byte	W01
@@ -3257,16 +3324,20 @@ CloudBuster_7_054:
 	.byte		N06   , Cn3 
 	.byte	W96
 @ 074   ----------------------------------------
+	.byte	W24
+	.byte	GOTO
+	 .word	cloudbustermidi_7_B1
+cloudbustermidi_7_B2:
 	.byte	FINE
 
 @**************** Track 8 (Midi-Chn.11) ****************@
 
-CloudBuster_8:
-	.byte	KEYSH , CloudBuster_key+0
+cloudbustermidi_8:
+	.byte	KEYSH , cloudbustermidi_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 1
 	.byte		PAN   , c_v+10
-	.byte		VOL   , 120*CloudBuster_mvl/mxv
+	.byte		VOL   , 120*cloudbustermidi_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -3300,15 +3371,16 @@ CloudBuster_8:
 	.byte	W96
 @ 015   ----------------------------------------
 	.byte	W96
+cloudbustermidi_8_B1:
 @ 016   ----------------------------------------
-CloudBuster_8_016:
+cloudbustermidi_8_016:
 	.byte		N72   , Fs3 , v120
 	.byte	W72
 	.byte		N24   , As2 
 	.byte	W24
 	.byte	PEND
 @ 017   ----------------------------------------
-CloudBuster_8_017:
+cloudbustermidi_8_017:
 	.byte		N36   , Cn3 , v120
 	.byte	W36
 	.byte		        Gs3 
@@ -3317,14 +3389,14 @@ CloudBuster_8_017:
 	.byte	W24
 	.byte	PEND
 @ 018   ----------------------------------------
-CloudBuster_8_018:
+cloudbustermidi_8_018:
 	.byte		N72   , Fn3 , v120
 	.byte	W72
 	.byte		N24   , Gs2 
 	.byte	W24
 	.byte	PEND
 @ 019   ----------------------------------------
-CloudBuster_8_019:
+cloudbustermidi_8_019:
 	.byte		N36   , As2 , v120
 	.byte	W36
 	.byte		        Fs3 
@@ -3368,16 +3440,16 @@ CloudBuster_8_019:
 	.byte	W96
 @ 032   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_8_016
+	 .word	cloudbustermidi_8_016
 @ 033   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_8_017
+	 .word	cloudbustermidi_8_017
 @ 034   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_8_018
+	 .word	cloudbustermidi_8_018
 @ 035   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_8_019
+	 .word	cloudbustermidi_8_019
 @ 036   ----------------------------------------
 	.byte		N96   , Ds3 , v120
 	.byte	W96
@@ -3464,16 +3536,20 @@ CloudBuster_8_019:
 @ 073   ----------------------------------------
 	.byte	W96
 @ 074   ----------------------------------------
+	.byte	W24
+	.byte	GOTO
+	 .word	cloudbustermidi_8_B1
+cloudbustermidi_8_B2:
 	.byte	FINE
 
 @**************** Track 9 (Midi-Chn.12) ****************@
 
-CloudBuster_9:
-	.byte	KEYSH , CloudBuster_key+0
+cloudbustermidi_9:
+	.byte	KEYSH , cloudbustermidi_key+0
 @ 000   ----------------------------------------
-	.byte		VOICE , 121
+	.byte		VOICE , 13
 	.byte		PAN   , c_v+0
-	.byte		VOL   , 127*CloudBuster_mvl/mxv
+	.byte		VOL   , 127*cloudbustermidi_mvl/mxv
 	.byte		MOD   , 0
 	.byte		BEND  , c_v+0
 	.byte		N30   , An1 , v060
@@ -3485,7 +3561,7 @@ CloudBuster_9:
 	.byte		N54   , Fn3 
 	.byte	W60
 @ 001   ----------------------------------------
-CloudBuster_9_001:
+cloudbustermidi_9_001:
 	.byte		N30   , As1 , v060
 	.byte		N30   , Cs2 
 	.byte		N30   , Fs2 
@@ -3496,7 +3572,7 @@ CloudBuster_9_001:
 	.byte	W60
 	.byte	PEND
 @ 002   ----------------------------------------
-CloudBuster_9_002:
+cloudbustermidi_9_002:
 	.byte		N30   , Cn2 , v060
 	.byte		N30   , Ds2 
 	.byte		N30   , Gs2 
@@ -3508,7 +3584,7 @@ CloudBuster_9_002:
 	.byte	PEND
 @ 003   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_001
+	 .word	cloudbustermidi_9_001
 @ 004   ----------------------------------------
 	.byte		N30   , An1 , v060
 	.byte		N30   , Cn2 
@@ -3520,10 +3596,10 @@ CloudBuster_9_002:
 	.byte	W60
 @ 005   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_001
+	 .word	cloudbustermidi_9_001
 @ 006   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_002
+	 .word	cloudbustermidi_9_002
 @ 007   ----------------------------------------
 	.byte		N06   , Cn3 , v060
 	.byte		N06   , Fn3 
@@ -3554,7 +3630,7 @@ CloudBuster_9_002:
 	.byte		N06   , Cn2 
 	.byte	W06
 @ 008   ----------------------------------------
-CloudBuster_9_008:
+cloudbustermidi_9_008:
 	.byte		N06   , Cs2 , v060
 	.byte		N06   , Fn2 
 	.byte		N06   , As2 
@@ -3571,7 +3647,7 @@ CloudBuster_9_008:
 	.byte		        Gs2 
 	.byte	W06
 @ 010   ----------------------------------------
-CloudBuster_9_010:
+cloudbustermidi_9_010:
 	.byte		N06   , As1 , v060
 	.byte		N06   , Cs2 
 	.byte		N06   , Fs2 
@@ -3582,7 +3658,7 @@ CloudBuster_9_010:
 	.byte	W60
 	.byte	PEND
 @ 011   ----------------------------------------
-CloudBuster_9_011:
+cloudbustermidi_9_011:
 	.byte		N06   , Cn2 , v060
 	.byte		N06   , Ds2 
 	.byte		N06   , Gs2 
@@ -3594,7 +3670,7 @@ CloudBuster_9_011:
 	.byte	PEND
 @ 012   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_008
+	 .word	cloudbustermidi_9_008
 @ 013   ----------------------------------------
 	.byte	W90
 	.byte		EOT   , Cn2 
@@ -3602,7 +3678,7 @@ CloudBuster_9_011:
 	.byte		        Gs2 
 	.byte	W06
 @ 014   ----------------------------------------
-CloudBuster_9_014:
+cloudbustermidi_9_014:
 	.byte		N06   , Cs2 , v060
 	.byte		N06   , Fn2 
 	.byte		N06   , Gs2 
@@ -3614,9 +3690,10 @@ CloudBuster_9_014:
 	.byte	PEND
 @ 015   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_011
+	 .word	cloudbustermidi_9_011
+cloudbustermidi_9_B1:
 @ 016   ----------------------------------------
-CloudBuster_9_016:
+cloudbustermidi_9_016:
 	.byte		N90   , As2 , v060
 	.byte		N90   , Cs3 
 	.byte		N90   , Fs3 
@@ -3628,7 +3705,7 @@ CloudBuster_9_016:
 	.byte		N90   , Ds3 
 	.byte	W96
 @ 018   ----------------------------------------
-CloudBuster_9_018:
+cloudbustermidi_9_018:
 	.byte		N90   , Gs2 , v060
 	.byte		N90   , Cs3 
 	.byte		N90   , Fn3 
@@ -3636,7 +3713,7 @@ CloudBuster_9_018:
 	.byte	PEND
 @ 019   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_016
+	 .word	cloudbustermidi_9_016
 @ 020   ----------------------------------------
 	.byte		N90   , Fs2 , v060
 	.byte		N90   , As2 
@@ -3664,7 +3741,7 @@ CloudBuster_9_018:
 	.byte	W06
 @ 024   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_008
+	 .word	cloudbustermidi_9_008
 @ 025   ----------------------------------------
 	.byte	W90
 	.byte		EOT   , Cn2 
@@ -3673,13 +3750,13 @@ CloudBuster_9_018:
 	.byte	W06
 @ 026   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_010
+	 .word	cloudbustermidi_9_010
 @ 027   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_011
+	 .word	cloudbustermidi_9_011
 @ 028   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_008
+	 .word	cloudbustermidi_9_008
 @ 029   ----------------------------------------
 	.byte	W90
 	.byte		EOT   , Cn2 
@@ -3688,15 +3765,15 @@ CloudBuster_9_018:
 	.byte	W06
 @ 030   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_014
+	 .word	cloudbustermidi_9_014
 @ 031   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_011
+	 .word	cloudbustermidi_9_011
 @ 032   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_016
+	 .word	cloudbustermidi_9_016
 @ 033   ----------------------------------------
-CloudBuster_9_033:
+cloudbustermidi_9_033:
 	.byte		N90   , Cn3 , v060
 	.byte		N90   , Ds3 
 	.byte		N90   , Gs3 
@@ -3704,7 +3781,7 @@ CloudBuster_9_033:
 	.byte	PEND
 @ 034   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_018
+	 .word	cloudbustermidi_9_018
 @ 035   ----------------------------------------
 	.byte		N42   , As2 , v060
 	.byte		N42   , Cs3 
@@ -3721,7 +3798,7 @@ CloudBuster_9_033:
 	.byte	W96
 @ 037   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_033
+	 .word	cloudbustermidi_9_033
 @ 038   ----------------------------------------
 	.byte		N90   , Cs3 , v060
 	.byte		N90   , Fn3 
@@ -3745,7 +3822,7 @@ CloudBuster_9_033:
 	.byte		N18   , Gs3 
 	.byte	W24
 @ 040   ----------------------------------------
-CloudBuster_9_040:
+cloudbustermidi_9_040:
 	.byte		N90   , As2 , v060
 	.byte		N90   , Cs3 
 	.byte		N90   , Fn3 
@@ -3788,9 +3865,9 @@ CloudBuster_9_040:
 	.byte	W60
 @ 044   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_016
+	 .word	cloudbustermidi_9_016
 @ 045   ----------------------------------------
-CloudBuster_9_045:
+cloudbustermidi_9_045:
 	.byte		N18   , Fs2 , v060
 	.byte		N18   , As2 
 	.byte		N18   , Ds3 
@@ -3824,7 +3901,7 @@ CloudBuster_9_045:
 	.byte	W96
 @ 048   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_040
+	 .word	cloudbustermidi_9_040
 @ 049   ----------------------------------------
 	.byte		N18   , Cn3 , v060
 	.byte		N18   , Ds3 
@@ -3862,10 +3939,10 @@ CloudBuster_9_045:
 	.byte	W60
 @ 052   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_016
+	 .word	cloudbustermidi_9_016
 @ 053   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_045
+	 .word	cloudbustermidi_9_045
 @ 054   ----------------------------------------
 	.byte		TIE   , Cn3 , v060
 	.byte		TIE   , Fn3 
@@ -3895,7 +3972,7 @@ CloudBuster_9_045:
 	.byte	W06
 @ 058   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_008
+	 .word	cloudbustermidi_9_008
 @ 059   ----------------------------------------
 	.byte	W90
 	.byte		EOT   , Cn2 
@@ -3904,13 +3981,13 @@ CloudBuster_9_045:
 	.byte	W06
 @ 060   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_010
+	 .word	cloudbustermidi_9_010
 @ 061   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_011
+	 .word	cloudbustermidi_9_011
 @ 062   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_008
+	 .word	cloudbustermidi_9_008
 @ 063   ----------------------------------------
 	.byte	W90
 	.byte		EOT   , Cn2 
@@ -3919,13 +3996,13 @@ CloudBuster_9_045:
 	.byte	W06
 @ 064   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_010
+	 .word	cloudbustermidi_9_010
 @ 065   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_011
+	 .word	cloudbustermidi_9_011
 @ 066   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_008
+	 .word	cloudbustermidi_9_008
 @ 067   ----------------------------------------
 	.byte	W90
 	.byte		EOT   , Cn2 
@@ -3934,13 +4011,13 @@ CloudBuster_9_045:
 	.byte	W06
 @ 068   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_010
+	 .word	cloudbustermidi_9_010
 @ 069   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_011
+	 .word	cloudbustermidi_9_011
 @ 070   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_008
+	 .word	cloudbustermidi_9_008
 @ 071   ----------------------------------------
 	.byte	W90
 	.byte		EOT   , Cn2 
@@ -3949,34 +4026,38 @@ CloudBuster_9_045:
 	.byte	W06
 @ 072   ----------------------------------------
 	.byte	PATT
-	 .word	CloudBuster_9_010
+	 .word	cloudbustermidi_9_010
 @ 073   ----------------------------------------
 	.byte		N06   , Cn2 , v060
 	.byte		N06   , Ds2 
 	.byte		N06   , Gs2 
 	.byte	W96
 @ 074   ----------------------------------------
+	.byte	W24
+	.byte	GOTO
+	 .word	cloudbustermidi_9_B1
+cloudbustermidi_9_B2:
 	.byte	FINE
 
 @******************************************************@
 	.align	2
 
-CloudBuster:
+cloudbustermidi:
 	.byte	9	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	CloudBuster_pri	@ Priority
-	.byte	CloudBuster_rev	@ Reverb.
+	.byte	cloudbustermidi_pri	@ Priority
+	.byte	cloudbustermidi_rev	@ Reverb.
 
-	.word	CloudBuster_grp
+	.word	cloudbustermidi_grp
 
-	.word	CloudBuster_1
-	.word	CloudBuster_2
-	.word	CloudBuster_3
-	.word	CloudBuster_4
-	.word	CloudBuster_5
-	.word	CloudBuster_6
-	.word	CloudBuster_7
-	.word	CloudBuster_8
-	.word	CloudBuster_9
+	.word	cloudbustermidi_1
+	.word	cloudbustermidi_2
+	.word	cloudbustermidi_3
+	.word	cloudbustermidi_4
+	.word	cloudbustermidi_5
+	.word	cloudbustermidi_6
+	.word	cloudbustermidi_7
+	.word	cloudbustermidi_8
+	.word	cloudbustermidi_9
 
 	.end

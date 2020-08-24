@@ -1,28 +1,28 @@
 //Event file generated from Sappy .s format.
 	#include "MPlayDef.event"
 
-	#define	CloudBuster_grp  voicegroup000
-	#define	CloudBuster_pri  0
-	#define	CloudBuster_rev  0
-	#define	CloudBuster_mvl  127
-	#define	CloudBuster_key  0
-	#define	CloudBuster_tbs  1
-	#define	CloudBuster_exg  0
-	#define	CloudBuster_cmp  1
+	#define	cloudbustermidi_grp  voicegroup000
+	#define	cloudbustermidi_pri  0
+	#define	cloudbustermidi_rev  0
+	#define	cloudbustermidi_mvl  50
+	#define	cloudbustermidi_key  0
+	#define	cloudbustermidi_tbs  1
+	#define	cloudbustermidi_exg  0
+	#define	cloudbustermidi_cmp  1
 
 	// .rodata
-	//	CloudBuster
+	//	cloudbustermidi
 	ALIGN 4
 
 //**************** Track 1 (Midi-Chn.1) ****************//
 
-CloudBuster_1:
-	BYTE	KEYSH   CloudBuster_key+0
+cloudbustermidi_1:
+	BYTE	KEYSH   cloudbustermidi_key+0
 // 000   ----------------------------------------
-	BYTE	TEMPO   200*CloudBuster_tbs/2
-	BYTE		VOICE   34
+	BYTE	TEMPO   200*cloudbustermidi_tbs/2
+	BYTE		VOICE   33
+	BYTE		VOL     75*cloudbustermidi_mvl/mxv
 	BYTE		PAN     c_v+0
-	BYTE		VOL     127*CloudBuster_mvl/mxv
 	BYTE		MOD     0
 	BYTE		BEND    c_v+0
 	BYTE		N12     Fn0   v120
@@ -42,7 +42,7 @@ CloudBuster_1:
 	BYTE		N12   
 	BYTE	W12
 // 001   ----------------------------------------
-CloudBuster_1_001:
+cloudbustermidi_1_001:
 	BYTE		N12     Fn0   v120
 	BYTE	W12
 	BYTE		N12   
@@ -62,7 +62,7 @@ CloudBuster_1_001:
 	BYTE	PEND
 // 002   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_001
+	 POIN2	cloudbustermidi_1_001
 // 003   ----------------------------------------
 	BYTE		N12     Fn0   v120
 	BYTE	W12
@@ -82,13 +82,13 @@ CloudBuster_1_001:
 	BYTE	W12
 // 004   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_001
+	 POIN2	cloudbustermidi_1_001
 // 005   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_001
+	 POIN2	cloudbustermidi_1_001
 // 006   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_001
+	 POIN2	cloudbustermidi_1_001
 // 007   ----------------------------------------
 	BYTE		N12     Fn0   v120
 	BYTE	W48
@@ -101,7 +101,7 @@ CloudBuster_1_001:
 	BYTE		        Fn0 
 	BYTE	W12
 // 008   ----------------------------------------
-CloudBuster_1_008:
+cloudbustermidi_1_008:
 	BYTE		N12     As0   v120
 	BYTE	W12
 	BYTE		N12   
@@ -121,9 +121,9 @@ CloudBuster_1_008:
 	BYTE	PEND
 // 009   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_008
+	 POIN2	cloudbustermidi_1_008
 // 010   ----------------------------------------
-CloudBuster_1_010:
+cloudbustermidi_1_010:
 	BYTE		N12     As0   v120
 	BYTE	W12
 	BYTE		N12   
@@ -142,7 +142,7 @@ CloudBuster_1_010:
 	BYTE	W12
 	BYTE	PEND
 // 011   ----------------------------------------
-CloudBuster_1_011:
+cloudbustermidi_1_011:
 	BYTE		N12     Gs0   v120
 	BYTE	W12
 	BYTE		N12   
@@ -162,9 +162,9 @@ CloudBuster_1_011:
 	BYTE	PEND
 // 012   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_008
+	 POIN2	cloudbustermidi_1_008
 // 013   ----------------------------------------
-CloudBuster_1_013:
+cloudbustermidi_1_013:
 	BYTE		N12     Gs0   v120
 	BYTE	W12
 	BYTE		N12   
@@ -183,7 +183,7 @@ CloudBuster_1_013:
 	BYTE	W12
 	BYTE	PEND
 // 014   ----------------------------------------
-CloudBuster_1_014:
+cloudbustermidi_1_014:
 	BYTE		N12     Cs1   v120
 	BYTE	W12
 	BYTE		N12   
@@ -203,9 +203,10 @@ CloudBuster_1_014:
 	BYTE	PEND
 // 015   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_011
+	 POIN2	cloudbustermidi_1_011
+cloudbustermidi_1_B1:
 // 016   ----------------------------------------
-CloudBuster_1_016:
+cloudbustermidi_1_016:
 	BYTE		N12     Fs0   v120
 	BYTE	W12
 	BYTE		N12   
@@ -224,7 +225,7 @@ CloudBuster_1_016:
 	BYTE	W12
 	BYTE	PEND
 // 017   ----------------------------------------
-CloudBuster_1_017:
+cloudbustermidi_1_017:
 	BYTE		N12     Gs0   v120
 	BYTE	W12
 	BYTE		N12   
@@ -311,7 +312,7 @@ CloudBuster_1_017:
 	BYTE		        Cn1 
 	BYTE	W12
 // 022   ----------------------------------------
-CloudBuster_1_022:
+cloudbustermidi_1_022:
 	BYTE		N12     Fn0   v120
 	BYTE	W12
 	BYTE		N12   
@@ -330,7 +331,7 @@ CloudBuster_1_022:
 	BYTE	W12
 	BYTE	PEND
 // 023   ----------------------------------------
-CloudBuster_1_023:
+cloudbustermidi_1_023:
 	BYTE		N12     Fn0   v120
 	BYTE	W12
 	BYTE		N12   
@@ -350,34 +351,34 @@ CloudBuster_1_023:
 	BYTE	PEND
 // 024   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_008
+	 POIN2	cloudbustermidi_1_008
 // 025   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_008
+	 POIN2	cloudbustermidi_1_008
 // 026   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_010
+	 POIN2	cloudbustermidi_1_010
 // 027   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_011
+	 POIN2	cloudbustermidi_1_011
 // 028   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_008
+	 POIN2	cloudbustermidi_1_008
 // 029   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_013
+	 POIN2	cloudbustermidi_1_013
 // 030   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_014
+	 POIN2	cloudbustermidi_1_014
 // 031   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_011
+	 POIN2	cloudbustermidi_1_011
 // 032   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_016
+	 POIN2	cloudbustermidi_1_016
 // 033   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_017
+	 POIN2	cloudbustermidi_1_017
 // 034   ----------------------------------------
 	BYTE		N12     Fn0   v120
 	BYTE	W12
@@ -414,10 +415,10 @@ CloudBuster_1_023:
 	BYTE	W12
 // 036   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_016
+	 POIN2	cloudbustermidi_1_016
 // 037   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_017
+	 POIN2	cloudbustermidi_1_017
 // 038   ----------------------------------------
 	BYTE		N12     As0   v120
 	BYTE	W12
@@ -453,7 +454,7 @@ CloudBuster_1_023:
 	BYTE		        As0 
 	BYTE	W12
 // 040   ----------------------------------------
-CloudBuster_1_040:
+cloudbustermidi_1_040:
 	BYTE		N12     Fs0   v120
 	BYTE	W12
 	BYTE		N12   
@@ -473,10 +474,10 @@ CloudBuster_1_040:
 	BYTE	PEND
 // 041   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_013
+	 POIN2	cloudbustermidi_1_013
 // 042   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_010
+	 POIN2	cloudbustermidi_1_010
 // 043   ----------------------------------------
 	BYTE		N12     Gs0   v120
 	BYTE	W12
@@ -496,7 +497,7 @@ CloudBuster_1_040:
 	BYTE	W12
 // 044   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_040
+	 POIN2	cloudbustermidi_1_040
 // 045   ----------------------------------------
 	BYTE		N12     Ds0   v120
 	BYTE	W12
@@ -516,19 +517,19 @@ CloudBuster_1_040:
 	BYTE	W12
 // 046   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_022
+	 POIN2	cloudbustermidi_1_022
 // 047   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_023
+	 POIN2	cloudbustermidi_1_023
 // 048   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_040
+	 POIN2	cloudbustermidi_1_040
 // 049   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_013
+	 POIN2	cloudbustermidi_1_013
 // 050   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_014
+	 POIN2	cloudbustermidi_1_014
 // 051   ----------------------------------------
 	BYTE		N12     Ds1   v120
 	BYTE	W12
@@ -582,7 +583,7 @@ CloudBuster_1_040:
 	BYTE	W12
 // 054   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_1_001
+	 POIN2	cloudbustermidi_1_001
 // 055   ----------------------------------------
 	BYTE		N12     Fn0   v120
 	BYTE	W12
@@ -720,16 +721,20 @@ CloudBuster_1_040:
 	BYTE		        Gs0 
 	BYTE	W12
 // 074   ----------------------------------------
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	cloudbustermidi_1_B1
+cloudbustermidi_1_B2:
 	BYTE	FINE
 
 //**************** Track 2 (Midi-Chn.2) ****************//
 
-CloudBuster_2:
-	BYTE	KEYSH   CloudBuster_key+0
+cloudbustermidi_2:
+	BYTE	KEYSH   cloudbustermidi_key+0
 // 000   ----------------------------------------
-	BYTE		VOICE   42
+	BYTE		VOICE   0
 	BYTE		PAN     c_v-10
-	BYTE		VOL     120*CloudBuster_mvl/mxv
+	BYTE		VOL     120*cloudbustermidi_mvl/mxv
 	BYTE		MOD     0
 	BYTE		BEND    c_v+0
 	BYTE		N06     Fn2   v080
@@ -749,7 +754,7 @@ CloudBuster_2:
 	BYTE		        Fn2 
 	BYTE	W12
 // 001   ----------------------------------------
-CloudBuster_2_001:
+cloudbustermidi_2_001:
 	BYTE		N06     Fs2   v080
 	BYTE	W12
 	BYTE		        Cs2 
@@ -768,7 +773,7 @@ CloudBuster_2_001:
 	BYTE	W12
 	BYTE	PEND
 // 002   ----------------------------------------
-CloudBuster_2_002:
+cloudbustermidi_2_002:
 	BYTE		N06     Gs2   v080
 	BYTE	W12
 	BYTE		        Ds2 
@@ -788,7 +793,7 @@ CloudBuster_2_002:
 	BYTE	PEND
 // 003   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_001
+	 POIN2	cloudbustermidi_2_001
 // 004   ----------------------------------------
 	BYTE		N06     Fn2   v080
 	BYTE	W12
@@ -808,15 +813,15 @@ CloudBuster_2_002:
 	BYTE	W12
 // 005   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_001
+	 POIN2	cloudbustermidi_2_001
 // 006   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_002
+	 POIN2	cloudbustermidi_2_002
 // 007   ----------------------------------------
 	BYTE		N06     An2   v080
 	BYTE	W96
 // 008   ----------------------------------------
-CloudBuster_2_008:
+cloudbustermidi_2_008:
 	BYTE		N30     Fn1   v120
 	BYTE	W36
 	BYTE		        As1 
@@ -825,7 +830,7 @@ CloudBuster_2_008:
 	BYTE	W24
 	BYTE	PEND
 // 009   ----------------------------------------
-CloudBuster_2_009:
+cloudbustermidi_2_009:
 	BYTE		N30     Cn2   v120
 	BYTE	W36
 	BYTE		        Gs1 
@@ -834,7 +839,7 @@ CloudBuster_2_009:
 	BYTE	W24
 	BYTE	PEND
 // 010   ----------------------------------------
-CloudBuster_2_010:
+cloudbustermidi_2_010:
 	BYTE		N30     Ds1   v120
 	BYTE	W36
 	BYTE		TIE     Fn1 
@@ -846,9 +851,9 @@ CloudBuster_2_010:
 	BYTE	W48
 // 012   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_008
+	 POIN2	cloudbustermidi_2_008
 // 013   ----------------------------------------
-CloudBuster_2_013:
+cloudbustermidi_2_013:
 	BYTE		N30     Cn2   v120
 	BYTE	W36
 	BYTE		        Cs2 
@@ -857,7 +862,7 @@ CloudBuster_2_013:
 	BYTE	W24
 	BYTE	PEND
 // 014   ----------------------------------------
-CloudBuster_2_014:
+cloudbustermidi_2_014:
 	BYTE		N30     Ds2   v120
 	BYTE	W36
 	BYTE		TIE     Fn2 
@@ -867,6 +872,7 @@ CloudBuster_2_014:
 	BYTE	W48
 	BYTE		EOT   
 	BYTE	W48
+cloudbustermidi_2_B1:
 // 016   ----------------------------------------
 	BYTE	W96
 // 017   ----------------------------------------
@@ -885,26 +891,26 @@ CloudBuster_2_014:
 	BYTE	W96
 // 024   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_008
+	 POIN2	cloudbustermidi_2_008
 // 025   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_009
+	 POIN2	cloudbustermidi_2_009
 // 026   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_010
+	 POIN2	cloudbustermidi_2_010
 // 027   ----------------------------------------
 	BYTE	W48
 	BYTE		EOT     Fn1 
 	BYTE	W48
 // 028   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_008
+	 POIN2	cloudbustermidi_2_008
 // 029   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_013
+	 POIN2	cloudbustermidi_2_013
 // 030   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_014
+	 POIN2	cloudbustermidi_2_014
 // 031   ----------------------------------------
 	BYTE	W48
 	BYTE		EOT     Fn2 
@@ -924,7 +930,7 @@ CloudBuster_2_014:
 // 038   ----------------------------------------
 	BYTE	W96
 // 039   ----------------------------------------
-CloudBuster_2_039:
+cloudbustermidi_2_039:
 	BYTE		N18     As1   v120
 	BYTE	W24
 	BYTE		        Cn2 
@@ -935,7 +941,7 @@ CloudBuster_2_039:
 	BYTE	W24
 	BYTE	PEND
 // 040   ----------------------------------------
-CloudBuster_2_040:
+cloudbustermidi_2_040:
 	BYTE		N66     As2   v120
 	BYTE	W72
 	BYTE		N18   
@@ -960,7 +966,7 @@ CloudBuster_2_040:
 	BYTE		EOT   
 	BYTE	W06
 // 044   ----------------------------------------
-CloudBuster_2_044:
+cloudbustermidi_2_044:
 	BYTE		N66     Cs2   v120
 	BYTE	W72
 	BYTE		N18   
@@ -980,10 +986,10 @@ CloudBuster_2_044:
 	BYTE	W96
 // 047   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_039
+	 POIN2	cloudbustermidi_2_039
 // 048   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_040
+	 POIN2	cloudbustermidi_2_040
 // 049   ----------------------------------------
 	BYTE		N18     Cn3   v120
 	BYTE	W24
@@ -1011,7 +1017,7 @@ CloudBuster_2_044:
 	BYTE	W24
 // 052   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_044
+	 POIN2	cloudbustermidi_2_044
 // 053   ----------------------------------------
 	BYTE		N18     Ds2   v120
 	BYTE	W24
@@ -1040,7 +1046,7 @@ CloudBuster_2_044:
 	BYTE		EOT   
 	BYTE	W06
 // 058   ----------------------------------------
-CloudBuster_2_058:
+cloudbustermidi_2_058:
 	BYTE		N06     As2   v080
 	BYTE	W12
 	BYTE		        Fn2 
@@ -1060,60 +1066,64 @@ CloudBuster_2_058:
 	BYTE	PEND
 // 059   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 060   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 061   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 062   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 063   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 064   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 065   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 066   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 067   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 068   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 069   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 070   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 071   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 072   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_2_058
+	 POIN2	cloudbustermidi_2_058
 // 073   ----------------------------------------
 	BYTE		N06     Gs2   v080
 	BYTE	W96
 // 074   ----------------------------------------
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	cloudbustermidi_2_B1
+cloudbustermidi_2_B2:
 	BYTE	FINE
 
 //**************** Track 3 (Midi-Chn.3) ****************//
 
-CloudBuster_3:
-	BYTE	KEYSH   CloudBuster_key+0
+cloudbustermidi_3:
+	BYTE	KEYSH   cloudbustermidi_key+0
 // 000   ----------------------------------------
-	BYTE		VOICE   42
+	BYTE		VOICE   0
 	BYTE		PAN     c_v+10
-	BYTE		VOL     120*CloudBuster_mvl/mxv
+	BYTE		VOL     120*cloudbustermidi_mvl/mxv
 	BYTE		MOD     0
 	BYTE		BEND    c_v+0
 	BYTE		N06     Cn2   v080
@@ -1133,7 +1143,7 @@ CloudBuster_3:
 	BYTE		        Cn2 
 	BYTE	W12
 // 001   ----------------------------------------
-CloudBuster_3_001:
+cloudbustermidi_3_001:
 	BYTE		N06     Cs2   v080
 	BYTE	W12
 	BYTE		        As1 
@@ -1152,7 +1162,7 @@ CloudBuster_3_001:
 	BYTE	W12
 	BYTE	PEND
 // 002   ----------------------------------------
-CloudBuster_3_002:
+cloudbustermidi_3_002:
 	BYTE		N06     Ds2   v080
 	BYTE	W12
 	BYTE		        Cn2 
@@ -1172,7 +1182,7 @@ CloudBuster_3_002:
 	BYTE	PEND
 // 003   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_001
+	 POIN2	cloudbustermidi_3_001
 // 004   ----------------------------------------
 	BYTE		N06     Cn2   v080
 	BYTE	W12
@@ -1192,15 +1202,15 @@ CloudBuster_3_002:
 	BYTE	W12
 // 005   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_001
+	 POIN2	cloudbustermidi_3_001
 // 006   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_002
+	 POIN2	cloudbustermidi_3_002
 // 007   ----------------------------------------
 	BYTE		N06     Fn2   v080
 	BYTE	W96
 // 008   ----------------------------------------
-CloudBuster_3_008:
+cloudbustermidi_3_008:
 	BYTE		N30     Fn0   v120
 	BYTE	W36
 	BYTE		        As0 
@@ -1209,7 +1219,7 @@ CloudBuster_3_008:
 	BYTE	W24
 	BYTE	PEND
 // 009   ----------------------------------------
-CloudBuster_3_009:
+cloudbustermidi_3_009:
 	BYTE		N30     Cn1   v120
 	BYTE	W36
 	BYTE		        Gs0 
@@ -1218,7 +1228,7 @@ CloudBuster_3_009:
 	BYTE	W24
 	BYTE	PEND
 // 010   ----------------------------------------
-CloudBuster_3_010:
+cloudbustermidi_3_010:
 	BYTE		N30     Ds0   v120
 	BYTE	W36
 	BYTE		TIE     Fn0 
@@ -1230,9 +1240,9 @@ CloudBuster_3_010:
 	BYTE	W48
 // 012   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_008
+	 POIN2	cloudbustermidi_3_008
 // 013   ----------------------------------------
-CloudBuster_3_013:
+cloudbustermidi_3_013:
 	BYTE		N30     Cn1   v120
 	BYTE	W36
 	BYTE		        Cs1 
@@ -1241,7 +1251,7 @@ CloudBuster_3_013:
 	BYTE	W24
 	BYTE	PEND
 // 014   ----------------------------------------
-CloudBuster_3_014:
+cloudbustermidi_3_014:
 	BYTE		N30     Ds1   v120
 	BYTE	W36
 	BYTE		TIE     Fn1 
@@ -1251,6 +1261,7 @@ CloudBuster_3_014:
 	BYTE	W48
 	BYTE		EOT   
 	BYTE	W48
+cloudbustermidi_3_B1:
 // 016   ----------------------------------------
 	BYTE	W96
 // 017   ----------------------------------------
@@ -1269,26 +1280,26 @@ CloudBuster_3_014:
 	BYTE	W96
 // 024   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_008
+	 POIN2	cloudbustermidi_3_008
 // 025   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_009
+	 POIN2	cloudbustermidi_3_009
 // 026   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_010
+	 POIN2	cloudbustermidi_3_010
 // 027   ----------------------------------------
 	BYTE	W48
 	BYTE		EOT     Fn0 
 	BYTE	W48
 // 028   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_008
+	 POIN2	cloudbustermidi_3_008
 // 029   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_013
+	 POIN2	cloudbustermidi_3_013
 // 030   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_014
+	 POIN2	cloudbustermidi_3_014
 // 031   ----------------------------------------
 	BYTE	W48
 	BYTE		EOT     Fn1 
@@ -1308,7 +1319,7 @@ CloudBuster_3_014:
 // 038   ----------------------------------------
 	BYTE	W96
 // 039   ----------------------------------------
-CloudBuster_3_039:
+cloudbustermidi_3_039:
 	BYTE		N18     As0   v120
 	BYTE	W24
 	BYTE		        Cn1 
@@ -1319,7 +1330,7 @@ CloudBuster_3_039:
 	BYTE	W24
 	BYTE	PEND
 // 040   ----------------------------------------
-CloudBuster_3_040:
+cloudbustermidi_3_040:
 	BYTE		N66     As1   v120
 	BYTE	W72
 	BYTE		N18   
@@ -1344,7 +1355,7 @@ CloudBuster_3_040:
 	BYTE		EOT   
 	BYTE	W06
 // 044   ----------------------------------------
-CloudBuster_3_044:
+cloudbustermidi_3_044:
 	BYTE		N66     Cs1   v120
 	BYTE	W72
 	BYTE		N18   
@@ -1364,10 +1375,10 @@ CloudBuster_3_044:
 	BYTE	W96
 // 047   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_039
+	 POIN2	cloudbustermidi_3_039
 // 048   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_040
+	 POIN2	cloudbustermidi_3_040
 // 049   ----------------------------------------
 	BYTE		N18     Cn2   v120
 	BYTE	W24
@@ -1395,7 +1406,7 @@ CloudBuster_3_044:
 	BYTE	W24
 // 052   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_044
+	 POIN2	cloudbustermidi_3_044
 // 053   ----------------------------------------
 	BYTE		N18     Ds1   v120
 	BYTE	W24
@@ -1424,7 +1435,7 @@ CloudBuster_3_044:
 	BYTE		EOT   
 	BYTE	W06
 // 058   ----------------------------------------
-CloudBuster_3_058:
+cloudbustermidi_3_058:
 	BYTE		N06     Fn2   v080
 	BYTE	W12
 	BYTE		        Cs2 
@@ -1444,9 +1455,9 @@ CloudBuster_3_058:
 	BYTE	PEND
 // 059   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_058
+	 POIN2	cloudbustermidi_3_058
 // 060   ----------------------------------------
-CloudBuster_3_060:
+cloudbustermidi_3_060:
 	BYTE		N06     Fn2   v080
 	BYTE	W12
 	BYTE		        Cs2   v052
@@ -1465,7 +1476,7 @@ CloudBuster_3_060:
 	BYTE	W12
 	BYTE	PEND
 // 061   ----------------------------------------
-CloudBuster_3_061:
+cloudbustermidi_3_061:
 	BYTE		N06     Fn2   v052
 	BYTE	W12
 	BYTE		        Cs2 
@@ -1485,51 +1496,55 @@ CloudBuster_3_061:
 	BYTE	PEND
 // 062   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_058
+	 POIN2	cloudbustermidi_3_058
 // 063   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_058
+	 POIN2	cloudbustermidi_3_058
 // 064   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_058
+	 POIN2	cloudbustermidi_3_058
 // 065   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_058
+	 POIN2	cloudbustermidi_3_058
 // 066   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_058
+	 POIN2	cloudbustermidi_3_058
 // 067   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_058
+	 POIN2	cloudbustermidi_3_058
 // 068   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_060
+	 POIN2	cloudbustermidi_3_060
 // 069   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_061
+	 POIN2	cloudbustermidi_3_061
 // 070   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_058
+	 POIN2	cloudbustermidi_3_058
 // 071   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_058
+	 POIN2	cloudbustermidi_3_058
 // 072   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_3_058
+	 POIN2	cloudbustermidi_3_058
 // 073   ----------------------------------------
 	BYTE		N06     Ds2   v080
 	BYTE	W96
 // 074   ----------------------------------------
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	cloudbustermidi_3_B1
+cloudbustermidi_3_B2:
 	BYTE	FINE
 
 //**************** Track 4 (Midi-Chn.4) ****************//
 
-CloudBuster_4:
-	BYTE	KEYSH   CloudBuster_key+0
+cloudbustermidi_4:
+	BYTE	KEYSH   cloudbustermidi_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   1
 	BYTE		PAN     c_v-10
-	BYTE		VOL     120*CloudBuster_mvl/mxv
+	BYTE		VOL     120*cloudbustermidi_mvl/mxv
 	BYTE		MOD     0
 	BYTE		BEND    c_v+0
 	BYTE	W96
@@ -1563,15 +1578,16 @@ CloudBuster_4:
 	BYTE	W96
 // 015   ----------------------------------------
 	BYTE	W96
+cloudbustermidi_4_B1:
 // 016   ----------------------------------------
-CloudBuster_4_016:
+cloudbustermidi_4_016:
 	BYTE		N72     Fs4   v120
 	BYTE	W72
 	BYTE		N24     As3 
 	BYTE	W24
 	BYTE	PEND
 // 017   ----------------------------------------
-CloudBuster_4_017:
+cloudbustermidi_4_017:
 	BYTE		N36     Cn4   v120
 	BYTE	W36
 	BYTE		        Gs4 
@@ -1580,14 +1596,14 @@ CloudBuster_4_017:
 	BYTE	W24
 	BYTE	PEND
 // 018   ----------------------------------------
-CloudBuster_4_018:
+cloudbustermidi_4_018:
 	BYTE		N72     Fn4   v120
 	BYTE	W72
 	BYTE		N24     Gs3 
 	BYTE	W24
 	BYTE	PEND
 // 019   ----------------------------------------
-CloudBuster_4_019:
+cloudbustermidi_4_019:
 	BYTE		N36     As3   v120
 	BYTE	W36
 	BYTE		        Fs4 
@@ -1631,16 +1647,16 @@ CloudBuster_4_019:
 	BYTE	W96
 // 032   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_4_016
+	 POIN2	cloudbustermidi_4_016
 // 033   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_4_017
+	 POIN2	cloudbustermidi_4_017
 // 034   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_4_018
+	 POIN2	cloudbustermidi_4_018
 // 035   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_4_019
+	 POIN2	cloudbustermidi_4_019
 // 036   ----------------------------------------
 	BYTE		N96     Ds4   v120
 	BYTE	W96
@@ -1727,16 +1743,20 @@ CloudBuster_4_019:
 // 073   ----------------------------------------
 	BYTE	W96
 // 074   ----------------------------------------
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	cloudbustermidi_4_B1
+cloudbustermidi_4_B2:
 	BYTE	FINE
 
 //**************** Track 5 (Midi-Chn.5) ****************//
 
-CloudBuster_5:
-	BYTE	KEYSH   CloudBuster_key+0
+cloudbustermidi_5:
+	BYTE	KEYSH   cloudbustermidi_key+0
 // 000   ----------------------------------------
-	BYTE		VOICE   127
+	BYTE		VOICE   34
+	BYTE		VOL     103*cloudbustermidi_mvl/mxv
 	BYTE		PAN     c_v+0
-	BYTE		VOL     127*CloudBuster_mvl/mxv
 	BYTE		MOD     0
 	BYTE		BEND    c_v+0
 	BYTE		N06     Cs0   v120
@@ -1755,8 +1775,7 @@ CloudBuster_5:
 	BYTE		N24     Fn1   v080
 	BYTE	W24
 // 001   ----------------------------------------
-CloudBuster_5_001:
-	BYTE		N06     En1   v080
+	BYTE		N06     En1 
 	BYTE	W12
 	BYTE		        Cs0   v120
 	BYTE		N06     En1   v080
@@ -1773,9 +1792,7 @@ CloudBuster_5_001:
 	BYTE		N24     En0   v120
 	BYTE		N24     Fn1   v080
 	BYTE	W24
-	BYTE	PEND
 // 002   ----------------------------------------
-CloudBuster_5_002:
 	BYTE		N06     Cs0   v120
 	BYTE		N06     En1   v080
 	BYTE	W24
@@ -1791,7 +1808,6 @@ CloudBuster_5_002:
 	BYTE		N24     En0   v120
 	BYTE		N24     Fn1   v080
 	BYTE	W24
-	BYTE	PEND
 // 003   ----------------------------------------
 	BYTE		N06     En1 
 	BYTE	W12
@@ -1816,8 +1832,7 @@ CloudBuster_5_002:
 	BYTE		N12     Bn0   v120
 	BYTE	W12
 // 004   ----------------------------------------
-CloudBuster_5_004:
-	BYTE		N06     Cs0   v120
+	BYTE		N06     Cs0 
 	BYTE		N24     Gn1 
 	BYTE	W24
 	BYTE		        En0 
@@ -1828,56 +1843,15 @@ CloudBuster_5_004:
 	BYTE	W24
 	BYTE		        Cs0   v100
 	BYTE		N06     En1   v080
-	BYTE	W12
-	BYTE		N24     En0   v120
-	BYTE		N24     Fn1   v080
-	BYTE	W24
-	BYTE	PEND
+	BYTE	W06
+	BYTE		N24     Bn1   v064
+	BYTE	W30
 // 005   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_001
-// 006   ----------------------------------------
-	BYTE		N06     Cs0   v120
-	BYTE		N06     En1   v080
-	BYTE	W24
+cloudbustermidi_5_005:
 	BYTE		N24     En0   v120
-	BYTE		N12     Fn1   v080
-	BYTE	W12
-	BYTE		N06     Cs0   v120
-	BYTE		N06     En1   v080
-	BYTE	W24
-	BYTE		        Cs0   v100
-	BYTE		N06     En1   v080
-	BYTE	W12
-	BYTE		N12     En0   v120
 	BYTE		N24     Fn1   v080
-	BYTE	W12
-	BYTE		N12     Bn0   v120
-	BYTE	W12
-// 007   ----------------------------------------
-	BYTE		N06     Cs0 
-	BYTE		N24     Gn1 
 	BYTE	W24
-	BYTE		        Cn2   v100
-	BYTE	W24
-	BYTE		N24   
-	BYTE	W12
-	BYTE		N06     Cs0   v120
-	BYTE	W12
-	BYTE		N24     En0 
-	BYTE		N24     Bn1 
-	BYTE	W24
-// 008   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_004
-// 009   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_001
-// 010   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_002
-// 011   ----------------------------------------
-	BYTE		N06     En1   v080
+	BYTE		N06     En1 
 	BYTE	W12
 	BYTE		        Cs0   v120
 	BYTE		N06     En1   v080
@@ -1891,14 +1865,72 @@ CloudBuster_5_004:
 	BYTE		        Cs0   v100
 	BYTE		N06     En1   v080
 	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+cloudbustermidi_5_006:
+	BYTE		N24     En0   v120
+	BYTE		N24     Fn1   v080
+	BYTE	W24
+	BYTE		N06     Cs0   v120
+	BYTE		N06     En1   v080
+	BYTE	W24
+	BYTE		N24     En0   v120
+	BYTE		N12     Fn1   v080
+	BYTE	W12
+	BYTE		N06     Cs0   v120
+	BYTE		N06     En1   v080
+	BYTE	W24
+	BYTE		        Cs0   v100
+	BYTE		N06     En1   v080
+	BYTE	W12
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE		N12     En0   v120
+	BYTE		N24     Fn1   v080
+	BYTE	W12
+	BYTE		N12     Bn0   v120
+	BYTE	W12
+	BYTE		N06     Cs0 
+	BYTE		N24     Gn1 
+	BYTE	W24
+	BYTE		        Cn2   v100
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W12
+	BYTE		N06     Cs0   v120
+	BYTE	W12
+// 008   ----------------------------------------
+	BYTE		N24     En0 
+	BYTE		N24     Bn1 
+	BYTE	W24
+	BYTE		N06     Cs0 
+	BYTE		N24     Gn1 
+	BYTE	W24
+	BYTE		        En0 
+	BYTE		N12     Fn1   v080
+	BYTE	W12
+	BYTE		N06     Cs0   v120
+	BYTE		N06     En1   v080
+	BYTE	W24
+	BYTE		        Cs0   v100
+	BYTE		N06     En1   v080
+	BYTE	W12
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_005
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_006
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_005
+// 012   ----------------------------------------
 	BYTE		N12     En0   v120
 	BYTE	W12
 	BYTE		N06     Cs0   v100
 	BYTE		N12     An0   v120
 	BYTE	W12
-// 012   ----------------------------------------
-CloudBuster_5_012:
-	BYTE		N06     Cs0   v120
+	BYTE		N06     Cs0 
 	BYTE		N24     Bn1 
 	BYTE	W24
 	BYTE		        En0 
@@ -1910,18 +1942,17 @@ CloudBuster_5_012:
 	BYTE		        Cs0   v100
 	BYTE		N06     En1   v080
 	BYTE	W12
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_006
+// 015   ----------------------------------------
 	BYTE		N24     En0   v120
 	BYTE		N24     Fn1   v080
 	BYTE	W24
-	BYTE	PEND
-// 013   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_001
-// 014   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_002
-// 015   ----------------------------------------
-	BYTE		N06     En1   v080
+	BYTE		N06     En1 
 	BYTE	W12
 	BYTE		        Cs0   v120
 	BYTE		N06     En1   v080
@@ -1936,16 +1967,17 @@ CloudBuster_5_012:
 	BYTE	W06
 	BYTE		        En0   v080
 	BYTE	W06
-	BYTE		        En0   v120
+cloudbustermidi_5_B1:
+// 016   ----------------------------------------
+cloudbustermidi_5_016:
+	BYTE		N06     En0   v120
 	BYTE	W06
 	BYTE		        En0   v100
 	BYTE	W06
 	BYTE		        Cs0 
 	BYTE		N12     Bn0   v120
 	BYTE	W12
-// 016   ----------------------------------------
-CloudBuster_5_016:
-	BYTE		N06     Cs0   v120
+	BYTE		N06     Cs0 
 	BYTE		N24     Gn1 
 	BYTE	W24
 	BYTE		        En0 
@@ -1956,12 +1988,12 @@ CloudBuster_5_016:
 	BYTE		N06     Cs0   v100
 	BYTE		N12     Cn2   v060
 	BYTE	W12
+	BYTE	PEND
+// 017   ----------------------------------------
+cloudbustermidi_5_017:
 	BYTE		N24     En0   v120
 	BYTE		N24     Cn2   v100
 	BYTE	W24
-	BYTE	PEND
-// 017   ----------------------------------------
-CloudBuster_5_017:
 	BYTE		N06     Cs0   v120
 	BYTE		N12     Cn2   v080
 	BYTE	W12
@@ -1977,12 +2009,12 @@ CloudBuster_5_017:
 	BYTE		N06     Cs0   v100
 	BYTE		N12     Cn2   v060
 	BYTE	W12
+	BYTE	PEND
+// 018   ----------------------------------------
+cloudbustermidi_5_018:
 	BYTE		N24     En0   v120
 	BYTE		N24     Cn2   v100
 	BYTE	W24
-	BYTE	PEND
-// 018   ----------------------------------------
-CloudBuster_5_018:
 	BYTE		N06     Cs0   v120
 	BYTE		N24     Cn2   v080
 	BYTE	W24
@@ -1994,32 +2026,34 @@ CloudBuster_5_018:
 	BYTE		N06     Cs0   v100
 	BYTE		N12     Cn2   v060
 	BYTE	W12
-	BYTE		N24     En0   v120
-	BYTE		N24     Cn2   v100
-	BYTE	W24
 	BYTE	PEND
 // 019   ----------------------------------------
-	BYTE		N06     Cs0   v120
-	BYTE		N12     Cn2   v080
-	BYTE	W12
-	BYTE		N06     Cs0   v100
-	BYTE		N12     Cn2   v060
-	BYTE	W12
-	BYTE		N24     En0   v120
-	BYTE		N24     Cn2   v100
-	BYTE	W12
-	BYTE		N06     Cs0   v120
-	BYTE	W12
-	BYTE		N12     Cn2   v080
-	BYTE	W12
-	BYTE		N06     Cs0   v100
-	BYTE		N12     Cn2   v060
-	BYTE	W12
+cloudbustermidi_5_019:
 	BYTE		N24     En0   v120
 	BYTE		N24     Cn2   v100
 	BYTE	W24
+	BYTE		N06     Cs0   v120
+	BYTE		N12     Cn2   v080
+	BYTE	W12
+	BYTE		N06     Cs0   v100
+	BYTE		N12     Cn2   v060
+	BYTE	W12
+	BYTE		N24     En0   v120
+	BYTE		N24     Cn2   v100
+	BYTE	W12
+	BYTE		N06     Cs0   v120
+	BYTE	W12
+	BYTE		N12     Cn2   v080
+	BYTE	W12
+	BYTE		N06     Cs0   v100
+	BYTE		N12     Cn2   v060
+	BYTE	W12
+	BYTE	PEND
 // 020   ----------------------------------------
-CloudBuster_5_020:
+cloudbustermidi_5_020:
+	BYTE		N24     En0   v120
+	BYTE		N24     Cn2   v100
+	BYTE	W24
 	BYTE		N06     Cs0   v120
 	BYTE		N24     Gn1 
 	BYTE	W24
@@ -2033,12 +2067,12 @@ CloudBuster_5_020:
 	BYTE		N06     Cs0   v100
 	BYTE		N12     Cn2   v060
 	BYTE	W12
+	BYTE	PEND
+// 021   ----------------------------------------
+cloudbustermidi_5_021:
 	BYTE		N24     En0   v120
 	BYTE		N24     Cn2   v100
 	BYTE	W24
-	BYTE	PEND
-// 021   ----------------------------------------
-CloudBuster_5_021:
 	BYTE		N12     Cn2   v080
 	BYTE	W12
 	BYTE		N06     Cs0   v120
@@ -2053,11 +2087,11 @@ CloudBuster_5_021:
 	BYTE		N06     Cs0   v100
 	BYTE		N12     Cn2   v060
 	BYTE	W12
+	BYTE	PEND
+// 022   ----------------------------------------
 	BYTE		N24     En0   v120
 	BYTE		N24     Cn2   v100
 	BYTE	W24
-	BYTE	PEND
-// 022   ----------------------------------------
 	BYTE		N06     Cs0   v120
 	BYTE		N24     Bn1 
 	BYTE	W24
@@ -2071,10 +2105,10 @@ CloudBuster_5_021:
 	BYTE		N06     Cs0   v100
 	BYTE		N12     Cn2   v060
 	BYTE	W12
+// 023   ----------------------------------------
 	BYTE		N24     En0   v120
 	BYTE		N24     Cn2   v100
 	BYTE	W24
-// 023   ----------------------------------------
 	BYTE		N12     Cn2   v080
 	BYTE	W12
 	BYTE		N06     Cs0   v120
@@ -2091,6 +2125,7 @@ CloudBuster_5_021:
 	BYTE		        Cs0 
 	BYTE		N12     Bn0   v120
 	BYTE	W12
+// 024   ----------------------------------------
 	BYTE		N06     En0 
 	BYTE	W06
 	BYTE		        En0   v100
@@ -2098,48 +2133,58 @@ CloudBuster_5_021:
 	BYTE		        Cs0 
 	BYTE		N12     An0   v120
 	BYTE	W12
-// 024   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_004
-// 025   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_001
-// 026   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_002
-// 027   ----------------------------------------
-	BYTE		N06     En1   v080
-	BYTE	W12
-	BYTE		        Cs0   v120
-	BYTE		N06     En1   v080
-	BYTE	W12
-	BYTE		N24     En0   v120
-	BYTE		N24     Fn1   v080
+	BYTE		N06     Cs0 
+	BYTE		N24     Gn1 
 	BYTE	W24
+	BYTE		        En0 
+	BYTE		N12     Fn1   v080
+	BYTE	W12
 	BYTE		N06     Cs0   v120
 	BYTE		N06     En1   v080
-	BYTE	W12
+	BYTE	W24
 	BYTE		        Cs0   v100
 	BYTE		N06     En1   v080
 	BYTE	W12
-	BYTE		        En0   v120
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_005
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_006
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_005
+// 028   ----------------------------------------
+	BYTE		N06     En0   v120
 	BYTE	W06
 	BYTE		        Bn0 
 	BYTE	W06
 	BYTE		        Cs0   v100
 	BYTE		N06     An0   v120
 	BYTE	W12
-// 028   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_012
+	BYTE		        Cs0 
+	BYTE		N24     Bn1 
+	BYTE	W24
+	BYTE		        En0 
+	BYTE		N12     Fn1   v080
+	BYTE	W12
+	BYTE		N06     Cs0   v120
+	BYTE		N06     En1   v080
+	BYTE	W24
+	BYTE		        Cs0   v100
+	BYTE		N06     En1   v080
+	BYTE	W12
 // 029   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_5_001
+	 POIN2	cloudbustermidi_5_005
 // 030   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_5_002
+	 POIN2	cloudbustermidi_5_006
 // 031   ----------------------------------------
-	BYTE		N06     En1   v080
+	BYTE		N24     En0   v120
+	BYTE		N24     Fn1   v080
+	BYTE	W24
+	BYTE		N06     En1 
 	BYTE	W12
 	BYTE		        Cs0   v120
 	BYTE		N06     En1   v080
@@ -2157,30 +2202,29 @@ CloudBuster_5_021:
 	BYTE	W06
 	BYTE		        En0   v100
 	BYTE	W06
-	BYTE		        En0   v120
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_016
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_017
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_018
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_019
+// 036   ----------------------------------------
+	BYTE		N06     En0   v120
 	BYTE	W06
 	BYTE		        En0   v100
 	BYTE	W06
+	BYTE		        En0   v120
+	BYTE	W12
 	BYTE		        Cs0 
-	BYTE		N12     Bn0   v120
-	BYTE	W12
-// 032   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_016
-// 033   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_017
-// 034   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_018
-// 035   ----------------------------------------
-	BYTE		N06     Cs0   v120
-	BYTE		N12     Cn2   v080
-	BYTE	W12
-	BYTE		N06     Cs0   v100
-	BYTE		N12     Cn2   v060
-	BYTE	W12
-	BYTE		N24     En0   v120
+	BYTE		N24     Gn1 
+	BYTE	W24
+	BYTE		        En0 
 	BYTE		N24     Cn2   v100
 	BYTE	W12
 	BYTE		N06     Cs0   v120
@@ -2190,23 +2234,17 @@ CloudBuster_5_021:
 	BYTE		N06     Cs0   v100
 	BYTE		N12     Cn2   v060
 	BYTE	W12
-	BYTE		N06     En0   v120
-	BYTE	W06
-	BYTE		        En0   v100
-	BYTE	W06
-	BYTE		        En0   v120
-	BYTE	W12
-// 036   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_020
 // 037   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_5_021
+	 POIN2	cloudbustermidi_5_021
 // 038   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_5_020
+	 POIN2	cloudbustermidi_5_020
 // 039   ----------------------------------------
-	BYTE		N24     Bn1   v120
+	BYTE		N24     En0   v120
+	BYTE		N24     Cn2   v100
+	BYTE	W24
+	BYTE		        Bn1   v120
 	BYTE	W12
 	BYTE		N06     Cs0 
 	BYTE	W06
@@ -2230,6 +2268,7 @@ CloudBuster_5_021:
 	BYTE	W06
 	BYTE		        Bn0   v100
 	BYTE	W06
+// 040   ----------------------------------------
 	BYTE		        An0   v120
 	BYTE	W06
 	BYTE		        An0   v100
@@ -2239,9 +2278,7 @@ CloudBuster_5_021:
 	BYTE	W06
 	BYTE		        Gn0   v100
 	BYTE	W06
-// 040   ----------------------------------------
-CloudBuster_5_040:
-	BYTE		N06     Cs0   v120
+	BYTE		        Cs0   v120
 	BYTE		N24     Gn1 
 	BYTE	W24
 	BYTE		        En0 
@@ -2252,12 +2289,11 @@ CloudBuster_5_040:
 	BYTE	W12
 	BYTE		N06     Cs0   v100
 	BYTE	W12
+// 041   ----------------------------------------
+cloudbustermidi_5_041:
 	BYTE		N24     En0   v120
 	BYTE		N24     Fn1   v080
 	BYTE	W24
-	BYTE	PEND
-// 041   ----------------------------------------
-CloudBuster_5_041:
 	BYTE		N06     Cs0   v120
 	BYTE		N24     Fn1   v072
 	BYTE	W12
@@ -2273,12 +2309,12 @@ CloudBuster_5_041:
 	BYTE	W12
 	BYTE		N06     Cs0   v100
 	BYTE	W12
+	BYTE	PEND
+// 042   ----------------------------------------
+cloudbustermidi_5_042:
 	BYTE		N24     En0   v120
 	BYTE		N24     Fn1   v080
 	BYTE	W24
-	BYTE	PEND
-// 042   ----------------------------------------
-CloudBuster_5_042:
 	BYTE		N06     Cs0   v120
 	BYTE		N24     Fn1   v072
 	BYTE	W24
@@ -2290,42 +2326,38 @@ CloudBuster_5_042:
 	BYTE	W12
 	BYTE		N06     Cs0   v100
 	BYTE	W12
-	BYTE		N24     En0   v120
-	BYTE		N24     Fn1   v080
-	BYTE	W24
 	BYTE	PEND
 // 043   ----------------------------------------
-	BYTE		N06     Cs0   v120
-	BYTE		N24     Fn1   v072
-	BYTE	W12
-	BYTE		N06     Cs0   v100
-	BYTE	W12
-	BYTE		N24     En0   v120
-	BYTE		N24     Fn1   v080
-	BYTE	W12
-	BYTE		N06     Cs0   v100
-	BYTE	W12
-	BYTE		        Cs0   v120
-	BYTE		N24     Fn1   v072
-	BYTE	W12
-	BYTE		N06     Cs0   v100
-	BYTE	W12
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_041
+// 044   ----------------------------------------
 	BYTE		N12     En0   v120
 	BYTE		N24     Fn1   v080
 	BYTE	W12
 	BYTE		N06     Cs0   v100
 	BYTE		N12     Bn0   v120
 	BYTE	W12
-// 044   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_040
+	BYTE		N06     Cs0 
+	BYTE		N24     Gn1 
+	BYTE	W24
+	BYTE		        En0 
+	BYTE		N24     Fn1   v080
+	BYTE	W24
+	BYTE		N06     Cs0   v120
+	BYTE		N24     Fn1   v072
+	BYTE	W12
+	BYTE		N06     Cs0   v100
+	BYTE	W12
 // 045   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_5_041
+	 POIN2	cloudbustermidi_5_041
 // 046   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_5_042
+	 POIN2	cloudbustermidi_5_042
 // 047   ----------------------------------------
+	BYTE		N24     En0   v120
+	BYTE		N24     Fn1   v080
+	BYTE	W24
 	BYTE		N06     Cs0   v120
 	BYTE		N24     Fn1   v072
 	BYTE	W12
@@ -2343,6 +2375,7 @@ CloudBuster_5_042:
 	BYTE	W06
 	BYTE		        En0   v080
 	BYTE	W06
+// 048   ----------------------------------------
 	BYTE		        En0   v120
 	BYTE	W06
 	BYTE		        En0   v100
@@ -2350,32 +2383,28 @@ CloudBuster_5_042:
 	BYTE		        Cs0 
 	BYTE		N12     Bn0   v120
 	BYTE	W12
-// 048   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_040
-// 049   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_041
-// 050   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_042
-// 051   ----------------------------------------
+	BYTE		N06     Cs0 
+	BYTE		N24     Gn1 
+	BYTE	W24
+	BYTE		        En0 
+	BYTE		N24     Fn1   v080
+	BYTE	W24
 	BYTE		N06     Cs0   v120
 	BYTE		N24     Fn1   v072
 	BYTE	W12
 	BYTE		N06     Cs0   v100
 	BYTE	W12
-	BYTE		N24     En0   v120
-	BYTE		N24     Fn1   v080
-	BYTE	W12
-	BYTE		N06     Cs0   v100
-	BYTE	W12
-	BYTE		        Cs0   v120
-	BYTE		N24     Fn1   v072
-	BYTE	W12
-	BYTE		N06     Cs0   v100
-	BYTE	W12
-	BYTE		        En0   v120
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_041
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_042
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_041
+// 052   ----------------------------------------
+	BYTE		N06     En0   v120
 	BYTE		N24     Fn1   v080
 	BYTE	W06
 	BYTE		N06     En0   v100
@@ -2383,13 +2412,24 @@ CloudBuster_5_042:
 	BYTE		        Cs0 
 	BYTE		N12     Bn0   v120
 	BYTE	W12
-// 052   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_040
+	BYTE		N06     Cs0 
+	BYTE		N24     Gn1 
+	BYTE	W24
+	BYTE		        En0 
+	BYTE		N24     Fn1   v080
+	BYTE	W24
+	BYTE		N06     Cs0   v120
+	BYTE		N24     Fn1   v072
+	BYTE	W12
+	BYTE		N06     Cs0   v100
+	BYTE	W12
 // 053   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_5_041
+	 POIN2	cloudbustermidi_5_041
 // 054   ----------------------------------------
+	BYTE		N24     En0   v120
+	BYTE		N24     Fn1   v080
+	BYTE	W24
 	BYTE		N06     Cs0   v120
 	BYTE		N24     Bn1 
 	BYTE	W24
@@ -2401,34 +2441,30 @@ CloudBuster_5_042:
 	BYTE	W12
 	BYTE		N06     Cs0   v100
 	BYTE	W12
-	BYTE		N24     En0   v120
-	BYTE		N24     Fn1   v080
-	BYTE	W24
 // 055   ----------------------------------------
-	BYTE		N06     Cs0   v120
-	BYTE		N24     Fn1   v072
-	BYTE	W12
-	BYTE		N06     Cs0   v100
-	BYTE	W12
+	BYTE	PATT
+	 POIN2	cloudbustermidi_5_041
+// 056   ----------------------------------------
 	BYTE		N24     En0   v120
 	BYTE		N24     Fn1   v080
 	BYTE	W12
 	BYTE		N06     Cs0   v100
 	BYTE	W12
 	BYTE		        Cs0   v120
+	BYTE		N24     Gn1 
+	BYTE	W24
+	BYTE		        En0 
+	BYTE		N24     Fn1   v080
+	BYTE	W24
+	BYTE		N06     Cs0   v120
 	BYTE		N24     Fn1   v072
 	BYTE	W12
 	BYTE		N06     Cs0   v100
 	BYTE	W12
+// 057   ----------------------------------------
 	BYTE		N24     En0   v120
 	BYTE		N24     Fn1   v080
-	BYTE	W12
-	BYTE		N06     Cs0   v100
-	BYTE	W12
-// 056   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_040
-// 057   ----------------------------------------
+	BYTE	W24
 	BYTE		N06     Cs0   v120
 	BYTE		N24     Bn1 
 	BYTE	W12
@@ -2450,6 +2486,7 @@ CloudBuster_5_042:
 	BYTE	W06
 	BYTE		        Cn1   v100
 	BYTE	W06
+// 058   ----------------------------------------
 	BYTE		        Bn0   v120
 	BYTE	W06
 	BYTE		        Bn0   v100
@@ -2459,9 +2496,7 @@ CloudBuster_5_042:
 	BYTE	W06
 	BYTE		        Gn0   v100
 	BYTE	W06
-// 058   ----------------------------------------
-CloudBuster_5_058:
-	BYTE		N06     Cs0   v120
+	BYTE		        Cs0   v120
 	BYTE		N24     Gn1 
 	BYTE	W24
 	BYTE		N06     En1   v080
@@ -2472,13 +2507,8 @@ CloudBuster_5_058:
 	BYTE	W12
 	BYTE		        En1   v040
 	BYTE	W12
-	BYTE		        En1   v080
-	BYTE	W12
-	BYTE		        En1   v040
-	BYTE	W12
-	BYTE	PEND
 // 059   ----------------------------------------
-CloudBuster_5_059:
+cloudbustermidi_5_059:
 	BYTE		N06     En1   v080
 	BYTE	W12
 	BYTE		        En1   v040
@@ -2493,13 +2523,17 @@ CloudBuster_5_059:
 	BYTE	W12
 	BYTE		        En1   v080
 	BYTE	W12
+	BYTE		        En1   v040
+	BYTE	W12
+	BYTE	PEND
+// 060   ----------------------------------------
+cloudbustermidi_5_060:
+	BYTE		N06     En1   v080
+	BYTE	W12
 	BYTE		        Cs0   v100
 	BYTE		N06     En0   v120
 	BYTE		N12     Fn1   v080
 	BYTE	W12
-	BYTE	PEND
-// 060   ----------------------------------------
-CloudBuster_5_060:
 	BYTE		N06     Cs0   v120
 	BYTE		N06     En1   v080
 	BYTE	W12
@@ -2513,13 +2547,13 @@ CloudBuster_5_060:
 	BYTE	W12
 	BYTE		        En1   v040
 	BYTE	W12
+	BYTE	PEND
+// 061   ----------------------------------------
 	BYTE		        En1   v080
 	BYTE	W12
 	BYTE		        Cs0   v100
 	BYTE		N06     En1   v040
 	BYTE	W12
-	BYTE	PEND
-// 061   ----------------------------------------
 	BYTE		        Cs0   v120
 	BYTE		N06     En1   v080
 	BYTE	W12
@@ -2533,23 +2567,37 @@ CloudBuster_5_060:
 	BYTE	W12
 	BYTE		        En1   v040
 	BYTE	W12
+// 062   ----------------------------------------
 	BYTE		        En1   v080
 	BYTE	W12
 	BYTE		        Cs0   v100
 	BYTE		N06     En0   v120
 	BYTE		N12     Fn1   v080
 	BYTE	W12
-// 062   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_058
+	BYTE		N06     Cs0   v120
+	BYTE		N24     Gn1 
+	BYTE	W24
+	BYTE		N06     En1   v080
+	BYTE	W12
+	BYTE		        En1   v040
+	BYTE	W12
+	BYTE		        En1   v080
+	BYTE	W12
+	BYTE		        En1   v040
+	BYTE	W12
 // 063   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_5_059
+	 POIN2	cloudbustermidi_5_059
 // 064   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_5_060
+	 POIN2	cloudbustermidi_5_060
 // 065   ----------------------------------------
-	BYTE		N06     Cs0   v120
+	BYTE		N06     En1   v080
+	BYTE	W12
+	BYTE		        Cs0   v100
+	BYTE		N06     En1   v040
+	BYTE	W12
+	BYTE		        Cs0   v120
 	BYTE		N06     En1   v080
 	BYTE		N12     Bn1   v120
 	BYTE	W12
@@ -2565,13 +2613,12 @@ CloudBuster_5_060:
 	BYTE	W12
 	BYTE		        En0   v100
 	BYTE	W12
+// 066   ----------------------------------------
 	BYTE		        Bn0   v120
 	BYTE	W12
 	BYTE		N06     Cs0   v100
 	BYTE		N12     An0 
 	BYTE	W12
-// 066   ----------------------------------------
-CloudBuster_5_066:
 	BYTE		N06     Cs0   v120
 	BYTE		N24     Gn1 
 	BYTE	W24
@@ -2582,14 +2629,13 @@ CloudBuster_5_066:
 	BYTE		N12     En0   v120
 	BYTE		N06     En1   v080
 	BYTE	W24
+// 067   ----------------------------------------
+cloudbustermidi_5_067:
 	BYTE		N24     Cs2   v100
 	BYTE	W12
 	BYTE		N06     Cs0 
 	BYTE	W12
-	BYTE	PEND
-// 067   ----------------------------------------
-CloudBuster_5_067:
-	BYTE		N06     En1   v080
+	BYTE		        En1   v080
 	BYTE	W12
 	BYTE		        Cs0   v120
 	BYTE	W12
@@ -2600,12 +2646,12 @@ CloudBuster_5_067:
 	BYTE		N12     En0   v120
 	BYTE		N06     En1   v080
 	BYTE	W24
-	BYTE		N24     Cs2   v100
-	BYTE	W12
-	BYTE		N06     Cs0 
-	BYTE	W12
 	BYTE	PEND
 // 068   ----------------------------------------
+	BYTE		N24     Cs2   v100
+	BYTE	W12
+	BYTE		N06     Cs0 
+	BYTE	W12
 	BYTE		        Cs0   v120
 	BYTE	W24
 	BYTE		N24     Cs2   v100
@@ -2615,11 +2661,11 @@ CloudBuster_5_067:
 	BYTE		N12     En0   v120
 	BYTE		N06     En1   v080
 	BYTE	W24
+// 069   ----------------------------------------
 	BYTE		N24     Cs2   v100
 	BYTE	W12
 	BYTE		N06     Cs0 
 	BYTE	W12
-// 069   ----------------------------------------
 	BYTE		        En1   v080
 	BYTE	W12
 	BYTE		        Cs0   v120
@@ -2633,27 +2679,39 @@ CloudBuster_5_067:
 	BYTE	W12
 	BYTE		        Cs0   v100
 	BYTE	W12
+// 070   ----------------------------------------
 	BYTE		N24     Cs2 
 	BYTE	W12
 	BYTE		N06     Cs0 
 	BYTE	W12
-// 070   ----------------------------------------
-	BYTE	PATT
-	 POIN2	CloudBuster_5_066
+	BYTE		        Cs0   v120
+	BYTE		N24     Gn1 
+	BYTE	W24
+	BYTE		        Cs2   v100
+	BYTE	W12
+	BYTE		N06     Cs0 
+	BYTE	W12
+	BYTE		N12     En0   v120
+	BYTE		N06     En1   v080
+	BYTE	W24
 // 071   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_5_067
+	 POIN2	cloudbustermidi_5_067
 // 072   ----------------------------------------
-	BYTE		N06     Cs0   v120
+	BYTE		N24     Cs2   v100
+	BYTE	W12
+	BYTE		N06     Cs0 
+	BYTE	W12
+	BYTE		        Cs0   v120
 	BYTE	W24
 	BYTE		N24     Cs2   v100
 	BYTE	W24
 	BYTE		N12     En0   v120
 	BYTE		N06     En1   v080
 	BYTE	W24
+// 073   ----------------------------------------
 	BYTE		N24     Cs2   v100
 	BYTE	W24
-// 073   ----------------------------------------
 	BYTE		N12     Bn1   v120
 	BYTE	W18
 	BYTE		N06     En0   v100
@@ -2674,6 +2732,7 @@ CloudBuster_5_067:
 	BYTE	W06
 	BYTE		        Cn1   v100
 	BYTE	W06
+// 074   ----------------------------------------
 	BYTE		        Bn0   v120
 	BYTE	W06
 	BYTE		        An0   v100
@@ -2682,17 +2741,19 @@ CloudBuster_5_067:
 	BYTE	W06
 	BYTE		        Fn0   v100
 	BYTE	W06
-// 074   ----------------------------------------
+	BYTE	GoTo
+	 POIN2	cloudbustermidi_5_B1
+cloudbustermidi_5_B2:
 	BYTE	FINE
 
 //**************** Track 6 (Midi-Chn.8) ****************//
 
-CloudBuster_6:
-	BYTE	KEYSH   CloudBuster_key+0
+cloudbustermidi_6:
+	BYTE	KEYSH   cloudbustermidi_key+0
 // 000   ----------------------------------------
-	BYTE		VOICE   48
+	BYTE		VOICE   100
 	BYTE		PAN     c_v-64
-	BYTE		VOL     127*CloudBuster_mvl/mxv
+	BYTE		VOL     127*cloudbustermidi_mvl/mxv
 	BYTE		MOD     0
 	BYTE		BEND    c_v+0
 	BYTE		N92     Cn3   v052
@@ -2742,8 +2803,9 @@ CloudBuster_6:
 	BYTE	W96
 // 015   ----------------------------------------
 	BYTE	W96
+cloudbustermidi_6_B1:
 // 016   ----------------------------------------
-	BYTE		N92     Cs3 
+	BYTE		N92     Cs3   v052
 	BYTE		N92     Fs3 
 	BYTE	W96
 // 017   ----------------------------------------
@@ -2861,7 +2923,7 @@ CloudBuster_6:
 	BYTE		N92     Ds3 
 	BYTE	W96
 // 046   ----------------------------------------
-CloudBuster_6_046:
+cloudbustermidi_6_046:
 	BYTE		TIE     Cn3   v060
 	BYTE		TIE     Fn3 
 	BYTE	W96
@@ -2898,7 +2960,7 @@ CloudBuster_6_046:
 	BYTE	W96
 // 054   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_6_046
+	 POIN2	cloudbustermidi_6_046
 // 055   ----------------------------------------
 	BYTE	W92
 	BYTE	W01
@@ -2907,7 +2969,7 @@ CloudBuster_6_046:
 	BYTE	W03
 // 056   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_6_046
+	 POIN2	cloudbustermidi_6_046
 // 057   ----------------------------------------
 	BYTE	W92
 	BYTE	W01
@@ -2970,16 +3032,20 @@ CloudBuster_6_046:
 	BYTE		N06     Gs3 
 	BYTE	W96
 // 074   ----------------------------------------
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	cloudbustermidi_6_B1
+cloudbustermidi_6_B2:
 	BYTE	FINE
 
 //**************** Track 7 (Midi-Chn.9) ****************//
 
-CloudBuster_7:
-	BYTE	KEYSH   CloudBuster_key+0
+cloudbustermidi_7:
+	BYTE	KEYSH   cloudbustermidi_key+0
 // 000   ----------------------------------------
-	BYTE		VOICE   48
+	BYTE		VOICE   100
 	BYTE		PAN     c_v+63
-	BYTE		VOL     127*CloudBuster_mvl/mxv
+	BYTE		VOL     127*cloudbustermidi_mvl/mxv
 	BYTE		MOD     0
 	BYTE		BEND    c_v+0
 	BYTE		N92     Fn2   v052
@@ -3029,8 +3095,9 @@ CloudBuster_7:
 	BYTE	W96
 // 015   ----------------------------------------
 	BYTE	W96
+cloudbustermidi_7_B1:
 // 016   ----------------------------------------
-	BYTE		N92     Fs2 
+	BYTE		N92     Fs2   v052
 	BYTE		N92     As2 
 	BYTE	W96
 // 017   ----------------------------------------
@@ -3182,7 +3249,7 @@ CloudBuster_7:
 	BYTE		N92     Fs2 
 	BYTE	W96
 // 054   ----------------------------------------
-CloudBuster_7_054:
+cloudbustermidi_7_054:
 	BYTE		TIE     Fn2   v060
 	BYTE		TIE     As2 
 	BYTE	W96
@@ -3242,7 +3309,7 @@ CloudBuster_7_054:
 	BYTE	W48
 // 070   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_7_054
+	 POIN2	cloudbustermidi_7_054
 // 071   ----------------------------------------
 	BYTE	W92
 	BYTE	W01
@@ -3258,16 +3325,20 @@ CloudBuster_7_054:
 	BYTE		N06     Cn3 
 	BYTE	W96
 // 074   ----------------------------------------
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	cloudbustermidi_7_B1
+cloudbustermidi_7_B2:
 	BYTE	FINE
 
 //**************** Track 8 (Midi-Chn.11) ****************//
 
-CloudBuster_8:
-	BYTE	KEYSH   CloudBuster_key+0
+cloudbustermidi_8:
+	BYTE	KEYSH   cloudbustermidi_key+0
 // 000   ----------------------------------------
 	BYTE		VOICE   1
 	BYTE		PAN     c_v+10
-	BYTE		VOL     120*CloudBuster_mvl/mxv
+	BYTE		VOL     120*cloudbustermidi_mvl/mxv
 	BYTE		MOD     0
 	BYTE		BEND    c_v+0
 	BYTE	W96
@@ -3301,15 +3372,16 @@ CloudBuster_8:
 	BYTE	W96
 // 015   ----------------------------------------
 	BYTE	W96
+cloudbustermidi_8_B1:
 // 016   ----------------------------------------
-CloudBuster_8_016:
+cloudbustermidi_8_016:
 	BYTE		N72     Fs3   v120
 	BYTE	W72
 	BYTE		N24     As2 
 	BYTE	W24
 	BYTE	PEND
 // 017   ----------------------------------------
-CloudBuster_8_017:
+cloudbustermidi_8_017:
 	BYTE		N36     Cn3   v120
 	BYTE	W36
 	BYTE		        Gs3 
@@ -3318,14 +3390,14 @@ CloudBuster_8_017:
 	BYTE	W24
 	BYTE	PEND
 // 018   ----------------------------------------
-CloudBuster_8_018:
+cloudbustermidi_8_018:
 	BYTE		N72     Fn3   v120
 	BYTE	W72
 	BYTE		N24     Gs2 
 	BYTE	W24
 	BYTE	PEND
 // 019   ----------------------------------------
-CloudBuster_8_019:
+cloudbustermidi_8_019:
 	BYTE		N36     As2   v120
 	BYTE	W36
 	BYTE		        Fs3 
@@ -3369,16 +3441,16 @@ CloudBuster_8_019:
 	BYTE	W96
 // 032   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_8_016
+	 POIN2	cloudbustermidi_8_016
 // 033   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_8_017
+	 POIN2	cloudbustermidi_8_017
 // 034   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_8_018
+	 POIN2	cloudbustermidi_8_018
 // 035   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_8_019
+	 POIN2	cloudbustermidi_8_019
 // 036   ----------------------------------------
 	BYTE		N96     Ds3   v120
 	BYTE	W96
@@ -3465,16 +3537,20 @@ CloudBuster_8_019:
 // 073   ----------------------------------------
 	BYTE	W96
 // 074   ----------------------------------------
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	cloudbustermidi_8_B1
+cloudbustermidi_8_B2:
 	BYTE	FINE
 
 //**************** Track 9 (Midi-Chn.12) ****************//
 
-CloudBuster_9:
-	BYTE	KEYSH   CloudBuster_key+0
+cloudbustermidi_9:
+	BYTE	KEYSH   cloudbustermidi_key+0
 // 000   ----------------------------------------
-	BYTE		VOICE   121
+	BYTE		VOICE   13
 	BYTE		PAN     c_v+0
-	BYTE		VOL     127*CloudBuster_mvl/mxv
+	BYTE		VOL     127*cloudbustermidi_mvl/mxv
 	BYTE		MOD     0
 	BYTE		BEND    c_v+0
 	BYTE		N30     An1   v060
@@ -3486,7 +3562,7 @@ CloudBuster_9:
 	BYTE		N54     Fn3 
 	BYTE	W60
 // 001   ----------------------------------------
-CloudBuster_9_001:
+cloudbustermidi_9_001:
 	BYTE		N30     As1   v060
 	BYTE		N30     Cs2 
 	BYTE		N30     Fs2 
@@ -3497,7 +3573,7 @@ CloudBuster_9_001:
 	BYTE	W60
 	BYTE	PEND
 // 002   ----------------------------------------
-CloudBuster_9_002:
+cloudbustermidi_9_002:
 	BYTE		N30     Cn2   v060
 	BYTE		N30     Ds2 
 	BYTE		N30     Gs2 
@@ -3509,7 +3585,7 @@ CloudBuster_9_002:
 	BYTE	PEND
 // 003   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_001
+	 POIN2	cloudbustermidi_9_001
 // 004   ----------------------------------------
 	BYTE		N30     An1   v060
 	BYTE		N30     Cn2 
@@ -3521,10 +3597,10 @@ CloudBuster_9_002:
 	BYTE	W60
 // 005   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_001
+	 POIN2	cloudbustermidi_9_001
 // 006   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_002
+	 POIN2	cloudbustermidi_9_002
 // 007   ----------------------------------------
 	BYTE		N06     Cn3   v060
 	BYTE		N06     Fn3 
@@ -3555,7 +3631,7 @@ CloudBuster_9_002:
 	BYTE		N06     Cn2 
 	BYTE	W06
 // 008   ----------------------------------------
-CloudBuster_9_008:
+cloudbustermidi_9_008:
 	BYTE		N06     Cs2   v060
 	BYTE		N06     Fn2 
 	BYTE		N06     As2 
@@ -3572,7 +3648,7 @@ CloudBuster_9_008:
 	BYTE		        Gs2 
 	BYTE	W06
 // 010   ----------------------------------------
-CloudBuster_9_010:
+cloudbustermidi_9_010:
 	BYTE		N06     As1   v060
 	BYTE		N06     Cs2 
 	BYTE		N06     Fs2 
@@ -3583,7 +3659,7 @@ CloudBuster_9_010:
 	BYTE	W60
 	BYTE	PEND
 // 011   ----------------------------------------
-CloudBuster_9_011:
+cloudbustermidi_9_011:
 	BYTE		N06     Cn2   v060
 	BYTE		N06     Ds2 
 	BYTE		N06     Gs2 
@@ -3595,7 +3671,7 @@ CloudBuster_9_011:
 	BYTE	PEND
 // 012   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_008
+	 POIN2	cloudbustermidi_9_008
 // 013   ----------------------------------------
 	BYTE	W90
 	BYTE		EOT     Cn2 
@@ -3603,7 +3679,7 @@ CloudBuster_9_011:
 	BYTE		        Gs2 
 	BYTE	W06
 // 014   ----------------------------------------
-CloudBuster_9_014:
+cloudbustermidi_9_014:
 	BYTE		N06     Cs2   v060
 	BYTE		N06     Fn2 
 	BYTE		N06     Gs2 
@@ -3615,9 +3691,10 @@ CloudBuster_9_014:
 	BYTE	PEND
 // 015   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_011
+	 POIN2	cloudbustermidi_9_011
+cloudbustermidi_9_B1:
 // 016   ----------------------------------------
-CloudBuster_9_016:
+cloudbustermidi_9_016:
 	BYTE		N90     As2   v060
 	BYTE		N90     Cs3 
 	BYTE		N90     Fs3 
@@ -3629,7 +3706,7 @@ CloudBuster_9_016:
 	BYTE		N90     Ds3 
 	BYTE	W96
 // 018   ----------------------------------------
-CloudBuster_9_018:
+cloudbustermidi_9_018:
 	BYTE		N90     Gs2   v060
 	BYTE		N90     Cs3 
 	BYTE		N90     Fn3 
@@ -3637,7 +3714,7 @@ CloudBuster_9_018:
 	BYTE	PEND
 // 019   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_016
+	 POIN2	cloudbustermidi_9_016
 // 020   ----------------------------------------
 	BYTE		N90     Fs2   v060
 	BYTE		N90     As2 
@@ -3665,7 +3742,7 @@ CloudBuster_9_018:
 	BYTE	W06
 // 024   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_008
+	 POIN2	cloudbustermidi_9_008
 // 025   ----------------------------------------
 	BYTE	W90
 	BYTE		EOT     Cn2 
@@ -3674,13 +3751,13 @@ CloudBuster_9_018:
 	BYTE	W06
 // 026   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_010
+	 POIN2	cloudbustermidi_9_010
 // 027   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_011
+	 POIN2	cloudbustermidi_9_011
 // 028   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_008
+	 POIN2	cloudbustermidi_9_008
 // 029   ----------------------------------------
 	BYTE	W90
 	BYTE		EOT     Cn2 
@@ -3689,15 +3766,15 @@ CloudBuster_9_018:
 	BYTE	W06
 // 030   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_014
+	 POIN2	cloudbustermidi_9_014
 // 031   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_011
+	 POIN2	cloudbustermidi_9_011
 // 032   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_016
+	 POIN2	cloudbustermidi_9_016
 // 033   ----------------------------------------
-CloudBuster_9_033:
+cloudbustermidi_9_033:
 	BYTE		N90     Cn3   v060
 	BYTE		N90     Ds3 
 	BYTE		N90     Gs3 
@@ -3705,7 +3782,7 @@ CloudBuster_9_033:
 	BYTE	PEND
 // 034   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_018
+	 POIN2	cloudbustermidi_9_018
 // 035   ----------------------------------------
 	BYTE		N42     As2   v060
 	BYTE		N42     Cs3 
@@ -3722,7 +3799,7 @@ CloudBuster_9_033:
 	BYTE	W96
 // 037   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_033
+	 POIN2	cloudbustermidi_9_033
 // 038   ----------------------------------------
 	BYTE		N90     Cs3   v060
 	BYTE		N90     Fn3 
@@ -3746,7 +3823,7 @@ CloudBuster_9_033:
 	BYTE		N18     Gs3 
 	BYTE	W24
 // 040   ----------------------------------------
-CloudBuster_9_040:
+cloudbustermidi_9_040:
 	BYTE		N90     As2   v060
 	BYTE		N90     Cs3 
 	BYTE		N90     Fn3 
@@ -3789,9 +3866,9 @@ CloudBuster_9_040:
 	BYTE	W60
 // 044   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_016
+	 POIN2	cloudbustermidi_9_016
 // 045   ----------------------------------------
-CloudBuster_9_045:
+cloudbustermidi_9_045:
 	BYTE		N18     Fs2   v060
 	BYTE		N18     As2 
 	BYTE		N18     Ds3 
@@ -3825,7 +3902,7 @@ CloudBuster_9_045:
 	BYTE	W96
 // 048   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_040
+	 POIN2	cloudbustermidi_9_040
 // 049   ----------------------------------------
 	BYTE		N18     Cn3   v060
 	BYTE		N18     Ds3 
@@ -3863,10 +3940,10 @@ CloudBuster_9_045:
 	BYTE	W60
 // 052   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_016
+	 POIN2	cloudbustermidi_9_016
 // 053   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_045
+	 POIN2	cloudbustermidi_9_045
 // 054   ----------------------------------------
 	BYTE		TIE     Cn3   v060
 	BYTE		TIE     Fn3 
@@ -3896,7 +3973,7 @@ CloudBuster_9_045:
 	BYTE	W06
 // 058   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_008
+	 POIN2	cloudbustermidi_9_008
 // 059   ----------------------------------------
 	BYTE	W90
 	BYTE		EOT     Cn2 
@@ -3905,13 +3982,13 @@ CloudBuster_9_045:
 	BYTE	W06
 // 060   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_010
+	 POIN2	cloudbustermidi_9_010
 // 061   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_011
+	 POIN2	cloudbustermidi_9_011
 // 062   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_008
+	 POIN2	cloudbustermidi_9_008
 // 063   ----------------------------------------
 	BYTE	W90
 	BYTE		EOT     Cn2 
@@ -3920,13 +3997,13 @@ CloudBuster_9_045:
 	BYTE	W06
 // 064   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_010
+	 POIN2	cloudbustermidi_9_010
 // 065   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_011
+	 POIN2	cloudbustermidi_9_011
 // 066   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_008
+	 POIN2	cloudbustermidi_9_008
 // 067   ----------------------------------------
 	BYTE	W90
 	BYTE		EOT     Cn2 
@@ -3935,13 +4012,13 @@ CloudBuster_9_045:
 	BYTE	W06
 // 068   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_010
+	 POIN2	cloudbustermidi_9_010
 // 069   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_011
+	 POIN2	cloudbustermidi_9_011
 // 070   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_008
+	 POIN2	cloudbustermidi_9_008
 // 071   ----------------------------------------
 	BYTE	W90
 	BYTE		EOT     Cn2 
@@ -3950,34 +4027,38 @@ CloudBuster_9_045:
 	BYTE	W06
 // 072   ----------------------------------------
 	BYTE	PATT
-	 POIN2	CloudBuster_9_010
+	 POIN2	cloudbustermidi_9_010
 // 073   ----------------------------------------
 	BYTE		N06     Cn2   v060
 	BYTE		N06     Ds2 
 	BYTE		N06     Gs2 
 	BYTE	W96
 // 074   ----------------------------------------
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	cloudbustermidi_9_B1
+cloudbustermidi_9_B2:
 	BYTE	FINE
 
 //******************************************************//
 	ALIGN 4
 
-CloudBuster:
+cloudbustermidi:
 	BYTE	9	// NumTrks
 	BYTE	0	// NumBlks
-	BYTE	CloudBuster_pri	// Priority
-	BYTE	CloudBuster_rev	// Reverb.
+	BYTE	cloudbustermidi_pri	// Priority
+	BYTE	cloudbustermidi_rev	// Reverb.
 
-	POIN2	CloudBuster_grp
+	POIN2	cloudbustermidi_grp
 
-	POIN2	CloudBuster_1
-	POIN2	CloudBuster_2
-	POIN2	CloudBuster_3
-	POIN2	CloudBuster_4
-	POIN2	CloudBuster_5
-	POIN2	CloudBuster_6
-	POIN2	CloudBuster_7
-	POIN2	CloudBuster_8
-	POIN2	CloudBuster_9
+	POIN2	cloudbustermidi_1
+	POIN2	cloudbustermidi_2
+	POIN2	cloudbustermidi_3
+	POIN2	cloudbustermidi_4
+	POIN2	cloudbustermidi_5
+	POIN2	cloudbustermidi_6
+	POIN2	cloudbustermidi_7
+	POIN2	cloudbustermidi_8
+	POIN2	cloudbustermidi_9
 
 	
