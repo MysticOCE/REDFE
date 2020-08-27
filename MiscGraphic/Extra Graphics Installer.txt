@@ -1,5 +1,5 @@
 NewTitleScroll:
-#incext Png2Dmp "empty.png" --lz77
+#incext Png2Dmp "empty4.png" --lz77
 
 
 
@@ -15,6 +15,8 @@ POIN NewTitleScroll
 
 //ORG $C5486
 //BYTE 0x59
+ORG $AAC5B0
+#incbin "FEKill.bin"
 
 POP
 
