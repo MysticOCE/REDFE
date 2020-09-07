@@ -242,15 +242,24 @@ TEXTEND
 LABEL 0x3
 REMA
 */
-ClearBackground
-FADI 64
+//ClearBackground
+//FADI 64
 //Text(preASMCtext)
 //ASMC 0x8659D
-//Text(postASMCtext)
+Text(postASMCtext)
 REMU 0xF
+CHECK_ALIVE Bernard
+BEQ 0x4 sC s0
 REMU Bernard
+LABEL 0x4
+CHECK_ALIVE Kieran
+BEQ 0x5 sC s0
 REMU Kieran
+LABEL 0x5
+CHECK_ALIVE Miledy
+BEQ 0x6 sC s0
 REMU Miledy
+LABEL 0x6
 MNCH 0xA
 ENDB
 

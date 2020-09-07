@@ -28,11 +28,11 @@ ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
 CharacterBasedEvents:
 //CharacterEvent(0x7,RoyRecruitsBernard,Roy,Bernard)
-CharacterEvent(0x8,LukasRecruitsBernard,Lukas,Bernard)
+CharacterEventBothWays(0x8,LukasRecruitsBernard,Lukas,Bernard)
 CharacterEvent(0x9,RoyRecruitsEliwood,Roy,Eliwood)
 CharacterEvent(0xA, EliwoodRecruitsBernard, Eliwood, Bernard)
 CharacterEvent(0xB, MiledyRecruitsBernard, Miledy, Bernard)
-//CharacterEvent(0xA,LossEdits,Dorcas,Roy)
+//CharacterEvent(0x1A,LossEdits,Dorcas,Roy)
 END_MAIN
 
 LocationBasedEvents:
@@ -264,6 +264,7 @@ MUSC Comrades
 TEXTCONT
 TEXTEND
 TurnAlly(Bernard)
+ENUT 0x8
 ENUT 0xA
 ENUT 0xB
 ENDA
@@ -280,6 +281,7 @@ TEXTCONT
 TEXTEND
 REMA
 TurnAlly(Bernard)
+ENUT 0x8
 ENUT 0x9
 ENUT 0xB
 ENDA
@@ -296,6 +298,7 @@ TEXTCONT
 TEXTEND
 REMA
 TurnAlly(Bernard)
+ENUT 0x8
 ENUT 0x9
 ENUT 0xA
 ENDA

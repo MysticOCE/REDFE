@@ -290,7 +290,6 @@
 
 #include "Support editors\Support bonus editor.event"
 
-
 #include "Terrain Editors\FE8 Movement Cost Editor.event"
 
 #include "Terrain Editors\FE8 Terrain Bonus Editor.event"

@@ -41,8 +41,9 @@ may want to be aware of that.[A]
 
 ## preASMCtext
 [OpenMidLeft][LoadRadd]
-Pre ASMC[X]
+Pre ASMC[A][X]
 
 ## postASMCtext
 [OpenMidLeft][LoadRadd]
+[Beat][A]
 [X]
