@@ -66,6 +66,7 @@ PUSH
 #include "wm/Prologue.txt"
 #include "wm/Ch2Intro.txt"
 #include "wm/Ch3.txt"
+#include "wm/Ch16WM.event"
 }
 POP
 

@@ -24,7 +24,7 @@ END_MAIN
 ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
 
 CharacterBasedEvents:
-//CharacterEvent(0x0, SummonCheck, Roy, Alan)
+//CharacterEvent(0x0, EndingScene, Roy, Alan)
 END_MAIN
 
 LocationBasedEvents:
@@ -130,7 +130,7 @@ SetBackground(Black)
 TEXTSTART
 TEXTSHOW V2EndText
 TEXTEND
-//MoveToChapter(Ch16Eirika)
+MoveToChapter(Ch16Eirika)
 ENDB
 
 #define WarpIn(xcoord,ycoord) "SCOORD sB [xcoord,ycoord]; WARP_IN"
