@@ -33,7 +33,7 @@
 	//More Graphics
 	#include "MiscGraphic/Extra Graphics Installer.txt"
     MESSAGE Used free space ends at currentOffset
-
+	String(I haven't used this command since going through ut2)
 #else
     ERROR You are not assembling FE8 events!
 #endif
