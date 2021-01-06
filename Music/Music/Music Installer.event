@@ -41,6 +41,8 @@
 //#include "decisive2.event"
 //#include "AllHailShadow.event"
 //Example song
+#include "boss09.event"
+SongTable(9,boss09,1)
 
 
 

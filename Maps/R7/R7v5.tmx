@@ -8,7 +8,7 @@
    <property name="ChapterID" value="0x10"/>
    <property name="Main" value=""/>
    <property name="MapChangesID" value="0x46"/>
-   <property name="MapID" value="0x45"/>
+   <property name="MapID" value="0x49"/>
    <property name="ObjectType" value="0x18"/>
    <property name="PaletteID" value="0x48"/>
    <property name="TileConfig" value="0x1a"/>

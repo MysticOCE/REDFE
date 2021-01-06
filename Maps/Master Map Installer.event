@@ -50,3 +50,6 @@
 {
 #include "R6/R6.event"
 }
+{
+#include "R7/R7v5.event"
+}

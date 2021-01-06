@@ -1,0 +1,117 @@
+﻿//Made by Camtech075 of SerenesForest
+//Modified by Nintenlord
+
+#include EAstdlib.event
+
+EventPointerTable(0x4B,ThisChapter)
+
+ThisChapter:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno Dunno Dunno
+POIN Tutorial
+POIN TrapData TrapData
+POIN Units Units
+POIN $0 $0 $0 $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+ALIGN 32 //For some reason, CharacterBasedEvents have to be 32-Aligned?
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+AREA 0x7 RightTriggers [19,3] [20,4]
+AREA 0x8 LeftTriggers [4,16] [5,17]
+END_MAIN
+
+Dunno:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+TrapData:
+ENDTRAP
+
+ALIGN 4
+
+Units:
+UNIT Roy RoyLord 0x0 Level(1, Ally, 0) [19,24] 0x00 0x00 0x0 0x00 [Rapier, Vulnerary] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [19,22] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [18,23] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [18,25] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [20,23] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [20,25] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [3,4] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [2,4] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [1,3] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [2,3] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [1,5] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI
+UNIT Lukas Cavalier 0x0 Level(4,Ally,0) [2,5] 0x00 0x00 0x0 0x00 [Longsword,Javelin] NoAI 
+UNIT
+
+Enemies:
+UNIT Duessel GreatKnight 0x0 Level(5,Enemy,1) [12,4] 0 0 0 0 [Spear, Garm] GuardTileAI
+UNIT 0x80 General 0 Level(4,Enemy,1) [12,11] 0 0 0 0 [SilverSword] AttackInRangeAI
+UNIT 0x80 Hero 0 Level(2,Enemy,1) [11,11] 0 0 0 0 [SteelSword] AttackInRangeAI
+UNIT 0x80 Hero 0 Level(2,Enemy,1) [13,11] 0 0 0 0 [SteelSword] AttackInRangeAI
+UNIT 0x80 Sage 0 Level(4,Enemy,1) [11,5] 0 0 0 0 [Fimbulvetr] AttackInRangeAI
+UNIT 0x80 Sage 0 Level(4,Enemy,1) [13,5] 0 0 0 0 [Fimbulvetr] AttackInRangeAI
+UNIT 0x80 Warrior 0 Level(4,Enemy,1) [19,6] 0 0 0 0 [SilverAxe] AttackInRangeAI
+UNIT 0x80 Warrior 0 Level(4,Enemy,1) [20,6] 0 0 0 0 [SilverAxe] AttackInRangeAI
+UNIT 0x80 Sniper 0 Level(4,Enemy,1) [18,5] 0 0 0 0 [SilverBow] AttackInRangeAI
+UNIT
+
+Prisoners:
+UNIT 0xFA 0x6D 0 Level(5,NPC,1) [5,22] 0 0 0 0 [0x0] DefaultAI
+UNIT 0xFB 0x6E 0 Level(5,NPC,1) [11,23] 0 0 0 0 [0x0] DefaultAI
+UNIT
+
+RightTriggers:
+ENUT 0x7
+CALL BothTilesCheck
+ENDA
+
+LeftTriggers:
+ENUT 0x8
+CALL BothTilesCheck
+ENDA
+
+BothTilesCheck:
+CHECK_EVENTID 0x7
+BEQ 0x1 0x0 0xC
+	CHECK_EVENTID 0x8
+	BEQ 0x2 0x0 0xC
+	CALL EndingScene
+LABEL 0x1
+LABEL 0x2
+ENDA
+
+BeginningScene:
+LOAD1 0x1 Units
+ENUN
+LOAD1 0x1 Enemies
+ENUN
+LOAD1 0x1 Prisoners
+ENUN
+GotoPrepScreen
+ENDA
+
+EndingScene:
+SetBackground(Black)
+TEXTSTART
+TEXTSHOW V2EndText
+TEXTEND
+ENDA
+
+MESSAGE Events end at offset CURRENTOFFSET
