@@ -62,7 +62,7 @@ UNIT
 
 Enemies:
 UNIT Duessel GreatKnight 0x0 Level(5,Enemy,1) [12,4] 0 0 0 0 [Spear, Garm] GuardTileAI
-UNIT 0x80 General 0 Level(4,Enemy,1) [12,11] 0 0 0 0 [SilverSword] AttackInRangeAI
+UNIT 0x80 General 0 Level(4,Enemy,1) [12,11] 0 0 0 0 [SilverLance] AttackInRangeAI
 UNIT 0x80 Hero 0 Level(2,Enemy,1) [11,11] 0 0 0 0 [SteelSword] AttackInRangeAI
 UNIT 0x80 Hero 0 Level(2,Enemy,1) [13,11] 0 0 0 0 [SteelSword] AttackInRangeAI
 UNIT 0x80 Sage 0 Level(4,Enemy,1) [11,5] 0 0 0 0 [Fimbulvetr] AttackInRangeAI
@@ -70,10 +70,25 @@ UNIT 0x80 Sage 0 Level(4,Enemy,1) [13,5] 0 0 0 0 [Fimbulvetr] AttackInRangeAI
 UNIT 0x80 Warrior 0 Level(4,Enemy,1) [19,6] 0 0 0 0 [SilverAxe] AttackInRangeAI
 UNIT 0x80 Warrior 0 Level(4,Enemy,1) [20,6] 0 0 0 0 [SilverAxe] AttackInRangeAI
 UNIT 0x80 Sniper 0 Level(4,Enemy,1) [18,5] 0 0 0 0 [SilverBow] AttackInRangeAI
+UNIT 0x80 General 0 Level(4,Enemy,1) [8,20] 0 0 0 0 [SilverLance] AttackInRangeAI
+UNIT 0x80 General 0 Level(2,Enemy,1) [1,15] 0 0 0 0 [SteelLance] AttackInRangeAI
+UNIT 0x80 General 0 Level(2,Enemy,1) [2,15] 0 0 0 0 [SteelLance] AttackInRangeAI
+UNIT 0x80 Hero 0 Level(2,Enemy,1) [2,10] 0 0 0 0 [SteelSword] AttackInRangeAI
+UNIT
+
+StaticEnemies2:
+UNIT 0x80 Sniper 0 Level(2,Enemy,1) [3,11] 0 0 0 0 [SilverBow] AttackInRangeAI
+UNIT 0x80 Druid 0 Level(2,Enemy,1) [6,18] 0 0 0 0 [Fenrir, Physic] HealUnits
+UNIT 0x80 Berserker 0 Level(4,Enemy,1) [14,22] 0 0 0 0 [KillerAxe] AttackInRangeAI
+UNIT
+
+
+MovingEnemies:
+UNIT 0x80 Swordmaster 0 Level(4,Enemy,1) [9,17] 0 0 0 0 [SteelSword] DefaultAI
 UNIT
 
 Prisoners:
-UNIT 0xFA 0x6D 0 Level(5,NPC,1) [5,22] 0 0 0 0 [0x0] DefaultAI
+UNIT 0xFA 0x6D 0 Level(5,NPC,1) [5,24] 0 0 0 0 [0x0] DefaultAI
 UNIT 0xFB 0x6E 0 Level(5,NPC,1) [11,23] 0 0 0 0 [0x0] DefaultAI
 UNIT
 
@@ -101,6 +116,8 @@ BeginningScene:
 LOAD1 0x1 Units
 ENUN
 LOAD1 0x1 Enemies
+ENUN
+LOAD 0x1 MovingEnemies
 ENUN
 LOAD1 0x1 Prisoners
 ENUN
